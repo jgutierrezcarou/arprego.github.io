@@ -1,0 +1,34 @@
+{
+  "name": "bower-redactor",
+  "version": "10.2.0",
+  "description": "npm package for Imperavi's redactor",
+  "people": [
+    {
+      "name": "Tom Stones",
+      "email": "tom@tomstones.com.au",
+      "url": "http://www.tomstones.com.au/"
+    },
+    {
+      "name": "Alex Antonov",
+      "email": "kaburbundokel11g@gmail.com",
+      "url": "http://asiniy.github.io"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "stones/bower-redactor"
+  },
+  "homepage": "https://github.com/stones/bower-redactor",
+  "files": [
+    "README.md",
+    "redactor"
+  ],
+  "main": "redactor/redactor.js",
+  "license": "MIT",
+  "keywords": [
+    "redactor",
+    "wysiwig",
+    "editor",
+    "imperavi"
+  ]
+}

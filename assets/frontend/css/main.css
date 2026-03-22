@@ -1,0 +1,471 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:300,400,500,600,700");
+/**
+ * Append version and build to an URL
+ *
+ * @param   string  $url
+ * @return  string
+ */
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: rgba(51, 102, 153, 0.25);
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+}
+body audio {
+  background-color: black;
+  filter: invert(100%);
+}
+body main {
+  min-height: 75vh;
+}
+body picture {
+  display: inline-block;
+}
+body picture.svg svg {
+  height: auto;
+  width: 100%;
+}
+body picture.svg-white svg g, body picture.svg-white svg path {
+  fill: white;
+}
+body .btn-brand {
+  background-color: #336699;
+  color: white;
+}
+body a {
+  color: #336699;
+  font-weight: 500;
+}
+body .primary {
+  background-color: #336699;
+  color: white;
+}
+body .navbar {
+  position: fixed;
+  width: 100%;
+}
+body .navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: -0.05rem;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+body .navbar .nav-item .dropdown-menu .dropdown-item a {
+  color: black;
+}
+body .navbar .nav-item-tall .nav-link br {
+  display: none;
+}
+body .no-wrap {
+  white-space: nowrap;
+}
+body .separator {
+  background-color: black;
+  border: 0;
+  display: block;
+  margin: 3em 0;
+  height: 2px;
+  width: 100%;
+}
+body mark, body .highlight {
+  background-color: transparent !important;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  padding: 0 !important;
+}
+body mark:before, body .highlight:before {
+  background-color: yellow;
+  content: "";
+  display: block;
+  height: calc(100% + 2px);
+  left: -3px;
+  position: absolute;
+  top: -1px;
+  width: calc(100% + 6px);
+  z-index: -1;
+}
+
+block {
+  background-color: white;
+  display: block;
+  margin-bottom: 2em;
+  padding: 1em;
+  text-align: justify;
+}
+
+section {
+  padding: 3em 0;
+}
+section h1 {
+  border-bottom: 2px solid currentColor;
+  margin-bottom: 1em;
+}
+section h1.lion {
+  position: relative;
+}
+section h1.lion:before {
+  background-image: url("../img/leonep.gif?v=2.0.0.20190912");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 4.75rem;
+}
+section h1.lion .updated {
+  font-size: 0.875rem;
+  position: absolute;
+  right: 0;
+  bottom: 0.25em;
+}
+section h1 .header-link {
+  float: right;
+  font-size: 1rem !important;
+  margin-top: 1em;
+}
+section h2 {
+  margin-bottom: 1em;
+}
+section.intro {
+  padding-top: 5em;
+}
+section.intro .content .logo {
+  margin-bottom: 2em;
+  text-align: center;
+}
+section.intro .content .logo picture {
+  padding: 0 2em;
+  width: 100%;
+}
+section.intro .content .logo picture img {
+  max-width: 100%;
+}
+section.intro .content .introductions .introduction {
+  display: none;
+  font-size: 0.625em;
+  padding: 1em;
+  text-align: justify;
+}
+section.intro .content .introductions .introduction-active {
+  display: block;
+}
+section.intro .content .introductions ul {
+  border-top: 1px solid black;
+  padding: 1em;
+  margin: 1em 0;
+}
+section.intro .content .introductions ul li a {
+  color: black;
+}
+section.intro .content .introductions ul li a.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+section.intro .content .granters {
+  text-align: center;
+}
+section.first {
+  padding-top: 6rem;
+}
+section.paper {
+  position: relative;
+}
+section.paper::before {
+  background-image: url("../img/paper.jpg?v=2.0.0.20190912");
+  background-position: center center;
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+section.essays p {
+  padding-left: 1.5em;
+  text-indent: -1.1em;
+}
+section.page .content.indented p {
+  padding-left: 1.5em;
+  text-indent: -1.1em;
+}
+section.search .results + .results {
+  position: relative;
+  margin-top: 3em;
+  padding-top: 3em;
+}
+section.search .results + .results:before {
+  background-color: black;
+  content: "";
+  height: 1px;
+  left: 0;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+section.team {
+  position: relative;
+}
+section.team img {
+  margin-bottom: 1em;
+}
+section.team p .contact {
+  display: inline-block;
+  font-size: 0.875em;
+  padding-left: 4.5em;
+  visibility: hidden;
+}
+section.team p.indent {
+  padding-left: 3.5em;
+  text-indent: -3.5em;
+}
+section.team p:hover .contact {
+  visibility: visible;
+}
+section.sections {
+  padding-bottom: 6em;
+}
+section.error {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+section.error .container {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+section.error .container h2 {
+  color: #bf5329;
+  font-size: 4rem;
+}
+
+#map {
+  border: 1px solid black;
+  height: 50vh;
+  margin-bottom: 3em;
+}
+#map .location {
+  display: none;
+}
+
+.table-container {
+  padding: 0;
+  position: relative;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+.table-container .filters {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+  z-index: 100;
+}
+.data-table {
+  border-collapse: collapse;
+  font-size: 0.875em;
+  width: 100%;
+}
+.data-table tr th, .data-table tr td {
+  border: 1px solid #336699;
+  padding: 0.5em;
+  vertical-align: top;
+}
+.data-table tr th {
+  background-color: rgba(51, 102, 153, 0.75);
+  color: white;
+  line-height: 1em;
+  vertical-align: middle;
+}
+.data-table tr th.sorting_asc, .data-table tr th.sorting_desc {
+  background-color: rgba(51, 102, 153, 0.5);
+}
+.data-table tr td p {
+  margin: 0;
+}
+.data-table tr td p + p {
+  margin-top: 0;
+}
+.data-table tr td .expand span:after {
+  content: "+";
+}
+.data-table tr.shown .expand span:after {
+  content: "-";
+}
+.data-table tr .expanded p.first + p {
+  margin-top: 0;
+}
+.data-table-profile th {
+  font-size: 1.25em;
+}
+.data-table-profile .key {
+  color: brown;
+  display: block;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+}
+.data-table-profile .value {
+  text-align: justify;
+}
+.data-table-profile .value audio {
+  display: inline-block;
+  width: 100%;
+}
+.data-table + .data-table, .data-table + h3 {
+  margin-top: 2em;
+}
+
+table.dataTable {
+  border-collapse: collapse !important;
+}
+
+h3 + .dataTables_wrapper, h3 + .table-container {
+  transform: translateY(-2.5em);
+}
+
+footer {
+  background-color: #336699;
+  color: white;
+  padding: 3em 0;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: white;
+}
+footer block {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+footer block.copyright {
+  margin-top: 2em;
+  padding: 0 1em;
+}
+footer block.logos a {
+  display: inline-block;
+  vertical-align: top;
+}
+footer block.logos a picture {
+  display: block;
+  height: 6em;
+  text-align: center;
+  width: 100%;
+}
+footer block.logos a picture img, footer block.logos a picture svg {
+  height: 5em;
+  max-width: 100%;
+  width: auto;
+}
+footer block.logos a + a {
+  margin-left: 1em;
+}
+
+/**
+ * Other imports
+ */
+@media (min-width: 992px) {
+  body .navbar .nav-item-tall {
+    line-height: 1em !important;
+  }
+  body .navbar .nav-item-tall .nav-link {
+    padding: 0.1rem 0.5rem !important;
+  }
+  body .navbar .nav-item-tall .nav-link br {
+    display: block;
+  }
+  section {
+    padding-top: 2em;
+  }
+  section.intro .content {
+    font-size: 1.125em;
+  }
+  section.intro .granters {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+  }
+  section.intro .granters img {
+    max-width: 300px;
+  }
+  .table-container {
+    overflow-x: initial;
+  }
+  footer block.logos a picture {
+    height: 6em;
+    width: 100%;
+  }
+  footer block.logos a picture img, footer block.logos a picture svg {
+    height: 5em;
+    width: auto;
+  }
+  footer block.logos a + a {
+    margin-left: 1em;
+  }
+}
+@media (min-width: 1440px) {
+  section {
+    padding-top: 3em;
+    scroll-margin-top: 3.5rem;
+  }
+  section.intro .content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.125em;
+    max-width: 64rem;
+    width: 100%;
+  }
+  section.intro .content .introductions .introduction {
+    font-size: 0.875em;
+    padding: 1em 0;
+  }
+  section.intro .content .introductions ul {
+    padding: 0;
+  }
+  section.indicator {
+    position: relative;
+  }
+  section.indicator .jump {
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    height: 2em;
+    width: 2em;
+    bottom: 1em;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  section.indicator .jump:after {
+    bottom: 0.125em;
+    color: black;
+    content: "⌄";
+    font-size: 2em;
+    display: block;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+  section.indicator .jump:hover {
+    opacity: 0.5;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

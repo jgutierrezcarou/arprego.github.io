@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link  active " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="profile first">
+
+        <div class="container">
+
+            <h1 class="lion"></h1>
+
+            <!-- section 1 -->
+            <table class="data-table data-table-profile" summary="I. Titolo e dati bibliografici">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">I. Titolo e dati bibliografici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="35%">
+                        <div class="key">00. Schedatore/Schedatrice</div>
+                        <div class="value">Rodríguez Gómez, Inés</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="key">01. Autore</div>
+                        <div class="value">Cicognini, Giacinto Andrea</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <div class="key">
+                            02. Titolo                                                    </div>
+                        <div class="value"><em>Moglie di quattro mariti, La</em></div>
+                    </td>
+                    <td width="30%">
+                        <div class="key">03. Titolo completo</div>
+                        <div class="value"><p><i>La moglie di quattro mariti</i>. Opera tragica di Giacinto Andrea Cicognini fiorentino.</p></div>
+                    </td>
+                    <td>
+                        <div class="key">04. Manoscritti</div>
+                        <div class="value"><p>Ms. apografo 1250 della Biblioteca Casanatense di Roma.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">05. Edizioni utilizzate</div>
+                        <div class="value"><p><i>La moglie di quattro mariti</i>, M. A. S. (Marc’Antonio Salini), Perugia, Sebastiano Zecchini, 1656;</p>  <p><i>La moglie di quattro mariti</i>, Milano, Giovan Pietro Cardi et Gioseffo Marelli, 1659;<i></i></p>  <p><i>La moglie di quattro mariti</i>, Macerata, Eredi di Agostino Grisei e Giuseppe Piccini, 1659; </p>  <p><i>La moglie di quattro mariti</i>, Venezia, Giacomo Batti, 1659; </p>  <p><i>La moglie di quattro mariti</i>, Venezia, Nicolò Pezzana, 1661; </p>  <p><i>La moglie di quattro mariti</i>, Bartolomeo Lupardi, Roma, Dragondelli, 1663; </p>  <p><i>La moglie di quattro mariti</i>, Domenico Barbieri, Bologna, Eredi di Domenico Barbieri, 1664; </p>  <p><i>La moglie di quattro mariti</i>, Macerata, Grisei e Gioseppe Piccini, 1671.</p>  <p><i>La moglie di quattro mariti</i>, Venezia, Appresso Angelo Bodio, 1677; </p>  <p><i>La moglie di quattro mariti</i>, Venezia, Giacomo Didini, 1677; </p>  <p><i>La moglie di quattro mariti</i>, Venezia, Giacomo Zini, 1677; </p>  <i>La moglie di quattro mariti</i>, Francesco Lupardi, Roma, Stamperia di Giuseppe Gorvo e Bartolomeo Lupardi- Stamperie Camerali, 1677.</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 2-->
+            <table class="data-table data-table-profile" summary="II. Tipo">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">II. Tipo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">06. Genere</div>
+                        <div class="value"><p>Opera tragica, commedia d’intreccio, «comedia palatina».</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">06. Sottogenere</div>
+                        <div class="value">-</div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">07. Generi interni</div>
+                        <div class="value"><p>All’interno dell’intreccio usa elementi del sottogenere della «comedia de secretario» che è una variante della «comedia palatina» spagnola.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 3-->
+            <table class="data-table data-table-profile page-break" summary="III. Personaggi e rapporti">
+                <thead>
+                <tr>
+                    <th scope="col">III. Personaggi e rapporti</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="key">08. Elenco dei personaggi</div>
+                        <div class="value"><p>Enrico, re; Isabella, regina, Ernelinda, principessa; Conte Odoardo, consigliero del re; Filandro, cameriero della regina; Ferramondo, segretario della principessa; marchese Filiberto, ambasciatore di Licestre; Gabinetto, servo di Ferramondo; Ghiribizzo, paggio di corte; Cassiopea, nutrice della principessa.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">09. Protagonisti</div>
+                        <div class="value"><p>Principessa Ernelinda, Ferramondo; il re Enrico e la regina Isabella.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
+                        <div class="value"><p>Filandro, che ha il significato letterario di “amatore”; Ghiribizzo che significa idea strana, bizzarra e improvvisa, capriccio (infatti questo personaggio è simpatico, assurdo, bizzarro e il suo nome lo descrive perfettamente); Gabinetto, servo di Ferramondo, il cui nome fa riferimento al consiglio segreto del sovrano e in questo caso al fatto di essere il personaggio confidente di Ferramondo e di mantenere il segreto della sua identità e dei suoi obiettivi.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">12. Rapporti fra i personaggi</div>
+                        <div class="value"><p>Regina, matrigna del re Enrico; Re Enrico, innamorato di Ernelinda; Ernelinda-Ferramondo, innamorati; Filandro, innamorato di Ernelinda, cameriere della regina, creduto figlio del marchese Filiberto di Licestre, ma figlio segreto del re e della regina e quindi fratello di Ernelinda; Ferramondo, vero figlio del marchese Filiberto di Licestre, padrone di Gabinetto; Cassiopea, nutrice di Ernelinda e madre di Ghiribizzo; Ernelinda, scoperta figlia segreta della regina e del re e, dunque, sorella di Ferramondo.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">13. Personaggi speculari</div>
+                        <div class="value"><p>Ferramondo e Filandro. Filandro è arrivato in corte come paggio inviato dal marchese Filiberto, che fa credere a tutti che è suo figlio. In realtà si chiama Ferramondo ed è figlio segreto del re e della regina. Ferramondo vero figlio del marchese Filiberto, arrivato in corte per conoscere la principessa Ernelinda, lui in realtà si chiama Filandro. Il marchese Filiberto scambiò i due bambini per avere con sé il suo vero figlio. Nella corte di Londra Ferramondo e Filandro sono innamorati di Ernelinda e sono, dunque, rivali nell’amore di Ernelinda con degli atteggiamenti diversi fra di loro e sono anche rivali perché ambidue affermano di essere l’unico figlio del marchese Filiberto.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
+                        <div class="value"><p>I.10.1, Ferramondo, innamorato per fama della principessa Ernelinda, si congratula di servirla come segretario; I.12.1, Filandro legge la lettera del re per Ernelinda e scopre di essere stato ingannato dal re e utilizzato come intermediario; I.17.1, Ferramondo confuso riguardo i sentimenti della principessa Ernelinda; I.19.9, Ernelinda, innamorata di Ferramondo, si dibatte tra l’amore e l’onore perché Ferramondo è di livello sociale inferiore. I.21.1, Ferramondo, contento per i regali ricevuti di Ernelinda, che crede prove di amore; II.2.1, Filandro, dopo avere sentito come la regina vieta al re di sposare Ernelinda, è più deciso a ottenerla e decide di parlare con Cassiopea per indagare sui sentimenti della principessa; III.3.1, Ernelinda, guardando il ritratto di Ferramondo, confessa di amarlo e il re, che si trova nascosto, sente tutto; III.6.1, Gabinetto fa sapere che Ferramondo è stato mandato via dal re, che resta con la dama; ricorda che è andato fin lì per avere esperienze e che deve rifare la strada.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
+                        <div class="value"><p>I.4.1-14, la regina dice al re di opporsi al matrimonio tra re e Ernelinda perché esiste un motivo molto grave, ma quando sta per dirlo sviene. I.6.1-13. Il re nomina Ferramondo, appena arrivato in corte, segretario della principessa Ernelinda. I.8.19-39. Ernelinda e Ferramondo si conoscono e Ernelinda si innamora di Ferramondo. II.14.4-32. La regina racconta al re che Ernelinda ama un servo e che è riamata. Il re detta ordine per far allontanare Ferramondo dal regno. II.15.5-36. Il re consegna a Ferramondo il biglietto con l’ordine ad Ernelinda di farlo andare via dal regno e fa avvertire la principessa del immediato matrimonio. Il re scopre l’anello di diamanti che poco prima le aveva regalato a Ernelinda nella mano di Ferramondo. La regina interroga Ferramondo per sapere chi sia in realtà e si allarma molto quando lui le dice di essere figlio del marchese Filiberto. III.11.1-73. Cassiopea arriva nel momento della cerimonia di matrimonio gridando che la regina si è suicidata e ha scritto una lettera con il proprio sangue. La lettera è una confessione nella quale si scopre che Ernelinda è figlia della regina e del re, per cui il matrimonio non si può celebrare. Ferramondo la chiede in sposa ma la lettera continua dicendo che Ferramondo è fratello di Ernelinda. Filandro chiede in sposa Ernelinda e il re gliela concede. III.12.1-28. Arriva il marchese Filiberto e racconta come la regina nascose Ferramondo presso di lui e che dopo gli chiese suo figlio come paggio, ma lui come padre scambiò i due bambini, motivo per il quale Ferramondo è Filandro e Filandro è l’autentico Ferramondo, figlio del re e fratello di Ernelinda. Ferramondo, ormai Filandro, chiede come sposa Ernelinda e gli viene concessa.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">16. Uso particolarmente rilevante degli a parte</div>
+                        <div class="value"><p>I.5.12. Re, si duole perché Filandro gli ha chiesto in sposa Ernelinda della quale è innamorato e vuole sposare; I.8.22. Ernelinda rimane affascinata quando conosce Ferramondo; II.15.7. Il re conferma i sospetti su Ferramondo quando scopre che porta l’anello che lui ha regalato ad Ernelinda; II.15.23. La regina si lamenta di ascoltare che Ferramondo ama Ernelinda; II.15.35. La regina decide punire il fallo e chiama la morte. III.2.19. Ernelinda si rammarica perché Ferramondo è costretto a partire dalla corte. III.4.5. Il re non ha più dubbi che Ernelinda ami Ferramondo.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">17. Personaggi che parlano solo in verso</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">18. Personaggi che parlano solo in prosa</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">19. Personaggi che parlano a soggetto</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">21. Personaggi che parlano solo in italiano</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
+                        <div class="value"><p>--</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
+                        <div class="value"><p>Cassiopea, III.11.10, metafora: inchiostro di sangue tolto dal calamaro di una ferita ch’ella s’aperse nel seno.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 4-->
+            <table class="data-table data-table-profile page-break" summary="IV. Intreccio">
+                <thead>
+                <tr>
+                    <th scope="col">IV. Intreccio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="value"><p>Atto I: Re e regina discutono perché il re vuole sposare Ernelinda ma la regina si oppone. Il re assegna Ferramondo come segretario della principessa chi, appena visto il giovane, se ne innamora di lui. Filandro chiede in sposa Ernelinda, il re gli consegna per lei una lettera, una catena e un anello. Filandro scopre che in realtà è il re chi vuole sposarla. Ernelinda è innamorata del segretario ma non riesce a confessarglielo per motivi di decoro, per questo idea diverse situazioni per farglielo capire.</p>      <p>Atto II: Il re continua deciso a sposare Ernelinda, mentre Ernelinda cerca di sapere se Ferramondo sia innamorato di lei e, allo stesso tempo, vuole fargli capire che lo ama usando diversi stratagemmi. Si scambiano i ritratti. Filandro comincia a sospettare di Ferramando e parla con Gabinetto per scoprire l’identità di Ferramondo e con Cassiopea per sapere sui sentimenti tra Ernelinda e Ferramondo. La regina parla di impedimenti gravi per il matrimonio tra re ed Ernelinda e gli racconta che Ernelinda ama riamata Ferramondo. Il re decide cacciare Ferramondo dal regno e continuare con il matrimonio. </p>      Atto III: Il re scopre Ernelinda parlando al ritratto di Ferramondo e confesando i propri sentimenti amorosi. Quando il re la interroga Ferramondo, parla in difesa di Ernelinda, e confessa al re di essere innamorato di Ernelinda. Il re lo compatisce e lo nomina suo cameriere. Filandro geloso discute con Ferramondo circa i suoi origini negando che sia figlio del marchese Filiberto e affermando che è proprio lui il suo unico figlio. Nel momento della cerimonia per il matrimonio tra re e Ernelinda arriva Cassiopea con forti grida raccontando che la regina si è suicidata e ha scritto una lettera di confessione con il proprio sangue. Nella lettera la regina confessa che Ernelinda e Ferramondo sono fratelli e figli suoi e del re. Filandro chiede in sposa Ernelinda e il re gliela concede. Arriva il marchese Filiberto e racconta che in realtà il figlio del re è Filandro, che gli fu consegnato appena nato e che anni dopo la regina chiese al marchese di portare in palazzo il figlio di lui come paggio ma il marchese, che non volle restare senza suo figlio, scambiò i due bambini e i loro nomi. Con questa notizia si scopre che il creduto Filandro è in realtà il figlio del re e fratello di Ernelinda. Finalmente Ferramondo, ormai Filandro, la chiede di nuovo in sposa e la ottiene, ormai liberi di impedimenti.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">25. Tema principale</div>
+                        <div class="value"><p>Amore.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">26. Temi secondari</div>
+                        <div class="value"><p>Onore, uguaglianza sociale, rivalità.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">27. Comicità</div>
+                        <div class="value"><p>I.6.19-23, nel momento in cui il re nell’udienza ascolta i memoriali dei sudditi, Cassiopea vuole dire il suo memoriale con delle espressioni spiritose; I.6.33-44, Ghiribizzo fa il suo memoriale chiedendo case e botte di vino, in stile satirico e burlesco; I.7.1-11, dialogo tra Cassiopea e suo figlio Ghiribizzo nel quale si scambiano rimproveri in tono burlesco, II.3.19, dialogo tra Filandro e Cassiopea. Filandro da soldi a Cassiopea perché questa faccia la spia ma lei riesce a farsi regalare un braccialetto; II.7.1-24, Ghiribizzo imita Filandro e dice che non gli racconta che la principessa è innamorata di Ferramondo; II.8.1-56, Cassiopea dà informazione a Filandro senza rendersi conto più interessata a ottenere più benefici di Filandro; III.7.1-25, Ghiribizzo e Gabinetto parlano di tutto quello che è accaduto in modo scherzoso e Gabinetto informa che deve andarsene perché sono stati scoperti gli amori tra Ferramondo e Ernelinda. Ghiribizzo confessa che è stato lui a fare la spia; III.8.23-35, Ghiribizzo e Gabinetto scambiano detti e espressioni; III.8.44, Ghiribizzo scherza in riferimento alle scoperte sulla parentela tra Ernelinda e i pretendenti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">28. Elementi polemici, satirici e parodici</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 5-->
+            <table class="data-table data-table-profile page-break" summary="V. Luogo e tempo">
+                <thead>
+                <tr>
+                    <th scope="col">V. Luogo e tempo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">29. Luogo generale</div>
+                        <div class="value"><p>Londra.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">30. Cambiamenti di luogo</div>
+                        <div class="value"><p>I, sala regia; I.7, città; II.8, anticamera di Ernelinda; II.11, sala regia; II.15, anticamera di Ernelinda; II.1, sala regia; II.4, anticamera di Ernelinda; II.9,sala regia; II.11, anticamera di Ernelinda; II.13, sala regia; II.16, anticamera di Ernelinda; III.1, sala regia; III.2, anticamera di Ernelinda; III.6, sala regia.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="value">Circa dodici ore.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
+                        <div class="value">Tutte le scene si susseguono nel tempo in modo lineare, senza salti temporali. Infatti, l’azione trascorre in una giornata dalla mattina alla sera, ma non si danno indicazioni temporali eccetto in III.6.1. </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
+                        <div class="value"><p>III.6.1, Gabinetto indica che Ferramondo è stato segretario di Ernelinda durante sette ore (si tenga conto che l’azione dell’opera comincia quando Ferramondo è assunto come segretario e finisce poco dopo che abbia smesso di esserlo).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 6-->
+            <table class="data-table data-table-profile page-break" summary="VI. Rispetto della regola delle tre unità">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="2">VI. Rispetto della regola delle tre unità</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="20%">
+                        <div class="key">34. Tempo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">35. Circostanze temporali</div>
+                        <div class="value"><p>L’azione avviene in una giornata, concretamente durante le ore del sole. L’unico riferimento al tempo trascorso avviene quando Gabinetto pensa nello stipendio che devono dare a suo padrone per il lavoro svolto come segretario di Ernelinda che è durato sette ore. Ferramondo era stato assegnato come segretario durante la udienza all’inizio dell’opera (I.6) e viene congedato quasi alla fine della commedia (III.5).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">36. Luogo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">37. Circostanze spaziali</div>
+                        <div class="value"><p>La scena si rappresenta a Londra come si spiega nella didascalia iniziale. Tutta l’opera avviene nella corte del re d’Inghilterra. L’unica eccezione è rappresentata dalla scena I.7, che si colloca nello spazio della città e ha come personaggi a Cassiopea e suo figlio Ghiribizzo: tutti e due appartengono alla classe sociale subalterna, per cui l’unico momento nel quale si trovano insieme e dialogano avviene all’esterno della reggia. Il resto dell’azione viene ridotta a soltanto due spazi interni del palazzo reale: la sala regia e l’anticamera di Ernelinda. In questi due spazi si svolge l’azione della commedia separando i due livelli argomentali dell’azione. Da una parte il re con i suoi affari inerenti alla corona e anche con i suoi desideri come monarca, imponendo il matrimonio che desidera con Ernelinda; dall’altra, in una sfera più privata, si svolge la storia di amore tra Ernelinda e Ferramondo, che avviene in uno spazio appartenente alla giovane principessa, uno spazio privato, l’anticamera, dove l’azione si riduce allo scambio amoroso, fuori dagli sguardi degli abitanti della corte.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">38. Azione</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="value"><p>L’azione si concentra negli amori tra Ferramondo ed Ernelinda e anche nei pretendenti di lei, che si presentano come ostacoli al loro amore: il re che la vuole sposare malgrado l’opposizione di sua matrigna, la regina, e di Filandro, che si mostra geloso di Ferramondo perché anche innamorato della principessa. Questa situazione dà luogo all’introduzione di temi come il decoro, l’onore e la disuguaglianza sociale nei rapporti amorosi.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 7-->
+            <table class="data-table data-table-profile page-break" summary="VII. Elementi materiali, performativi e didascalici">
+                <thead>
+                <tr>
+                    <th scope="col">VII. Elementi materiali, performativi e didascalici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">40. Uso di oggetti particolari</div>
+                        <div class="value"><p>Catena e anello di diamante (I.5.10, I.9.11-12, I.11.2, I.12.1, I.13.13, II.3.10); anello di diamante (II.11.47, II.15.7, III.5.22); specchio (II.11.34-42, III.5.11); ritratto di Ferramondo (II.11.43-47, III.5.12, III.5.22); ritratto di Ernelinda (II.11.53); guanto (I.20.32, I.20.44); e fazzoletto (II.16-50, II.16.60, II.17.1, II.18.12).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">41. Uso di effetti sonori e musicali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">42. Uso di effetti speciali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">43. Scena con ampia presenza di personaggi</div>
+                        <div class="value"><p>I.6, Enrico celebra la sua prima udienza come re e si trovano sulla scena tutti personaggi tranne la regina e la principessa Ernelina (quindi, sono sei i personaggi Ferramondo, Gabinetto, Cassiopea, Ghiribizzo, il conte Odoardo e il re); III.10, devono celebrare il matrimonio del re e di Ernelinda e si trovano presenti: il re, Ernelinda, Ferramondo, Filandro, il conte Odoardo, Gabinetto e Ghiribizzo; III.11, arriva Cassiopea con notizia del suicidio della regina (quindi si trovano sulla scena: Cassiopea, il re, Ernelinda, Ferramondo, Filandro, il conte Odoardo, Gabinetto e Ghiribizzo); III.12, arriva il marchese Filiberto con le ultime novità sulla vera identità di Ferramondo e Filandro (nell’ultima scena, dunque, si trovano presenti tutti i personaggi, eccetto la regina che si è suicidata, ma l’arrivo del marchese Filiberto ricompone il numero di personaggi. Troviamo, dunque, sulla scena: il marchese Filiberto, il re, Ernelinda, Ferramondo, Filandro, il conte Odoardo, Gabinetto e Ghiribizzo, Cassiopea).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">44. Didascalie di particolare importanza</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 8-->
+            <table class="data-table data-table-profile page-break" summary="VIII. Prima recita">
+                <thead>
+                <tr>
+                    <th scope="col">VIII. Prima recita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">45. Prima recita</div>
+                        <div class="value"><p>Ignota.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">46. Altre recite nel Settecento</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 9-->
+            <table class="data-table data-table-profile page-break" summary="IX. Il testo in Goldoni">
+                <thead>
+                <tr>
+                    <th scope="col">IX. Il testo in Goldoni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
+                        <div class="value"><p>Nelle <i>Memorie</i> di Carlo Goldoni, nel capitolo I della prima parte l’autore scrisse: «Tra gli autori comici che io leggevo e rileggevo spesso, Cicognini era quello che preferivo ad ogni altro. Codesto autore fiorentino, pochissimo noto nella repubblica delle lettere, aveva composto parecchie commedie d’intreccio, miste di patetico lagrimoso e di comico triviale; tuttavia ci si trovava parecchio interesse, era assai abile nel dosare la sospensione e nell’inventare gradevoli scioglimenti. Me ne appassionai infinitamente, lo studiai molto; e all’età di otto anni ebbe l’ardire di abbozzare una commedia.» (Carlo Goldoni, <i>Memorie</i>, a cura di Guido Davico Bonino, Torino, Einaudi, 1993, p. 13).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
+                        <div class="value"><p>Nel testo si danno degli elementi che Goldoni impara dalle letture delle commedie di Cicognini come, per esempio, l’importanza della figura femminile diventata centro della commedia intorno alla quale si muovono il resto di personaggi. Ernelinda, inoltre, possiede alcuni tratti che Goldoni sviluppa nei suoi personaggi femminili. Si tratta di una donna sola che si muove in mondo maschile del quale deve accettare le regole, ma che tenta di imporre la propria volontà.</p>    <p>È anche evidente una certa relazione nella rappresentazione dei rapporti tra i servi. Nell’opera di Cicognini si danno gli elementi comici ma anche si avverte un rapporto di amicizia leale e una visone equilibrata del mondo dei signori. Questo è un tratto importante nel teatro di Carlo Goldoni che usa la visione e i commenti dei servi sui loro padroni con uno sguardi critico ed equilibrato. </p>    Anche se l’argomento si rivela molto diverso, l’idea di questa commedia ricorda quella de <i>La vedova scaltra</i> di Carlo Goldoni. Una donna sola che affronta la corte di quattro spasimanti, tra i quali sceglierà quello più conveniente per lei, dopo aver messo alla prova i suoi pretendenti. Nella commedia di Cicognini Ernelinda si vede circondata da tre pretendenti, quattro con il cambio d’identità, per rimanere insieme a quello del quale si era innamorato in precedenza.</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 10-->
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+                <thead>
+                <tr>
+                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">49. Dati dei paratesti</div>
+                        <div class="value"><p>La commedia fu edita per la prima volta a Perugia, nel 1656, nella stamperia di Sebastiano Zecchini. Questa edizione porta una dedica al signore Ridolfo Monaldi firmata dalle sigle M. A. S., che è stato identificato come Marc’Antonio Salini da Saverio Franchi ne <i>Le impressioni sceniche. Dizionario bio-bibliografico degli editori e stampatori romani e laziali di testi drammatici e libretti per musica dal 1579 al 1800</i>, Roma, Storia e Letteratura, 1994.</p>      <p>Questo stesso prologo, con minime differenze, si presenta nell’edizione fatta a Roma, nella tipografia Dragondelli, nel 1663, ma in questo caso il testo di dedica è rivolto all’abate Angelo Cimarelli, segretario del maestro di Camera di Papa Alessandro VII.</p>      <p>Nell'edizione di Macerata, di 1659, la dedica è rivolta a Giuseppe Ciccolini della Accademia degli Inetti di Macerata. In questa dedica si indicano i meriti di Giacinto Andrea Cicognini e della sua commedia: «...le invenzione impareggiabile, di cui son piene l’opre del Signore Cicognini; onde ha contribuito loro quegli applausi, che non han potuto meritare qualunque altro, che nel nostro idioma abbia sinora affaticata la penna su la più fina imitazione di Seneca, di Terenzio, e di Plauto. Noi dunque confidati di poter aggiunger nome alla nostra stampa col rinovare l’impressione di alcuna, abbiamo scelta quella della <i>Moglie di quattro mariti</i>, che rispondendo a meraviglia coll’artifizio della composizione alla novità del titolo è riputata senz’alcun dubbio uno de più vaghi parti di quell’ingegno fecondo.»</p>      <p>Nell'edizione di Venezia del 1659, fatta da Giacomo Batti, oltre alla dedica rivolta a Giovan Battista Frachasetti si legge un prologo («Al benigno lettore»). Nella dedica si afferma che <i>La moglie di quattro mariti</i> è un «felicissimo parto del signor Cicognino», mentre che nel prologo al lettore, attraverso la metafora del «giardino letterario», dopo aver affermato che lo stampatore ha pubblicato le migliori commedie italiane e straniere, continua dicendo: «Così ho fatto di molte belle piante prodotte già dal fecondissimo ingegno del signor dottor Cicognino. Al presente ti faccio rinascer dalle stampe, <i>La moglie de i quattro mariti</i>, che sarà forse uno dei fiori più belli, che possino offerirsi all’odorato de virtuosi.»</p>      <p>Nella stampa di Venezia del 1661, presso lo stampatore Nicolò Pezzana, figura lo stesso prologo «Al benigno lettore» dell’edizione veneziana del 1659 fatta dal Batti.</p>      <p>Nella stampa di Bologna, del 1664, presso la stamperia di Domenico Barbieri, con dedica al Conte Odoardo Peppoli, Senatore di Bologna, si legge la seguente informazione: «Ora affidato dalla gentilezza sua, ardisco presentarli <i>La moglie di quattro mariti</i>, fatica del gran Cicognini; assicurandomi, che sarà per gradirla e maggiormente essendo stata rappresentata nell’illustrissima sua casa, e non solo lodata, ma stupita, et insieme ammirata.»</p>      <p>Nell’edizione allestita a Roma nel 1677, presso la stamperia di Giuseppe Gorvo e Bartolomeo Lupardi, si legge la dedica fatta a Mercuriale Blasii da Forlì: «L’applauso commune, che si sono acquistate le opere del signor dottor Giacinto Andrea Cicognini, mi hanno dato animo di darle di nuovo alle stampe, si per la qualità de soggetti, che in esse si contengono, come anche per satisfare il genio di molti miei padroni, e giudicandosi esser la presente migliore di tutte, il cui nome, è la <i>Moglie di 4 mariti</i>.»</p>      <p>Le edizioni stampate a Venezia nel 1677, una fatta di Giacomo Didini e l’altra di Giacomo Zini, portano tutte e due lo stesso prologo al «Benigno lettore» nel quale si afferma: «Che tra tutte l’opere sceniche de moderni scrittori a quelle del dottor Giacinto Andrea Cicognini si deva il primo luogo non v’è pur uno, che ne dubiti, poscia che questo solo ha riportato universali gl’applausi. Io però, che non ho altra mira, che di sodisfare alla tua curiosità dopo esser uscite dall’ombre del torchio alla luce delle stampe le <i>Fortunate gelosie, la Forza del fato</i> e la <i>Statua dell’onore</i>, ti presento adesso la <i>Moglie di quattro mariti</i>. È questa un’opera che frammischia al dolce degl’accidenti l’utile della moralità; può ciascheduno riceverne allettamento, apprenderne documento.»</p>      In un’altra edizione stampata a Venezia nello stesso anno di 1677 si trova un prologo dialogato tra tre personaggi: Amore, La Menzogna travestita da Venere e la Verità. La Menzogna fa credere a Amore di essere sua madre per sparare i dardi della menzogna, ma viene scoperta dalla Verità e fatta fuggire. Rimane Amore cantando come le sue frecce danno gioia e dolore.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">50. Osservazioni</div>
+                        <div class="value"><p>Il modo compositivo di Giacinto Andrea Cicogni permette che in questa commedia ci siano elementi di diverse opere precedenti del teatro spagnolo. Non esiste un unico testo fonte perché Cicognini combina diversi elementi e situazioni per creare opere nuove con elementi già utilizzati. </p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 187.65334 121.88"
+   height="121.88"
+   width="187.65334"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,121.88)"
+     id="g10"><g
+       transform="scale(0.1)"
+       id="g12"><path
+         id="path14"
+         style="fill:#1b458f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 493.301,0 -0.008,914.098 914.107,0.019 V 0 H 493.301" /><path
+         id="path16"
+         style="fill:#1b458f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 447.273,837.156 v -17.57 c -52.714,-3.633 -54.527,-4.844 -54.527,-38.773 V 572.395 c 0,-36.356 -6.058,-68.465 -16.351,-89.668 -27.872,-59.985 -91.493,-73.918 -151.473,-73.918 -59.375,0 -122.988,14.543 -150.8595,73.918 -10.3047,20.597 -15.7539,52.707 -16.3594,88.457 v 209.629 c 0,33.929 -1.2109,35.14 -54.52732,38.773 v 17.57 H 172.219 v -17.57 c -52.715,-3.633 -54.535,-4.844 -54.535,-38.773 V 584.512 c 0,-57.559 9.082,-93.91 27.265,-118.145 18.781,-24.238 45.442,-36.351 79.973,-36.351 35.144,0 61.805,12.113 80.578,36.351 18.18,24.235 27.262,60.586 27.262,118.145 v 196.301 c 0,33.929 -1.211,35.14 -54.52,38.773 v 17.57 h 169.031" /><path
+         id="path18"
+         style="fill:none;stroke:#1b458f;stroke-width:6.35099983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 447.273,837.156 v -17.57 c -52.714,-3.633 -54.527,-4.844 -54.527,-38.773 V 572.395 c 0,-36.356 -6.058,-68.465 -16.351,-89.668 -27.872,-59.985 -91.493,-73.918 -151.473,-73.918 -59.375,0 -122.988,14.543 -150.8595,73.918 -10.3047,20.597 -15.7539,52.707 -16.3594,88.457 v 209.629 c 0,33.929 -1.2109,35.14 -54.52732,38.773 v 17.57 H 172.219 v -17.57 c -52.715,-3.633 -54.535,-4.844 -54.535,-38.773 V 584.512 c 0,-57.559 9.082,-93.91 27.265,-118.145 18.781,-24.238 45.442,-36.351 79.973,-36.351 35.144,0 61.805,12.113 80.578,36.351 18.18,24.235 27.262,60.586 27.262,118.145 v 196.301 c 0,33.929 -1.211,35.14 -54.52,38.773 v 17.57 z" /><path
+         id="path20"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 546.633,542.102 h 19.383 c 15.148,-67.86 52.703,-112.086 109.66,-112.086 53.922,0 87.246,31.504 87.246,83.605 0,53.922 -57.563,81.793 -84.219,92.094 l -10.902,4.242 c -63.613,22.414 -114.508,55.742 -114.508,119.356 0,79.972 65.426,116.933 139.352,116.933 41.195,0 82.394,-10.297 102.988,-26.66 V 734.16 h -18.778 c -9.699,61.192 -38.781,90.879 -90.878,90.879 -50.887,0 -77.551,-32.715 -77.551,-76.941 0,-36.356 33.926,-62.41 74.523,-77.555 l 19.387,-7.27 c 70.887,-26.05 119.352,-59.984 119.352,-131.476 0,-61.797 -42.399,-122.988 -149.645,-122.988 -42.406,0 -92.699,11.507 -119.359,36.351 l -6.051,96.942" /><path
+         id="path22"
+         style="fill:none;stroke:#ffffff;stroke-width:6.35099983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 546.633,542.102 h 19.383 c 15.148,-67.86 52.703,-112.086 109.66,-112.086 53.922,0 87.246,31.504 87.246,83.605 0,53.922 -57.563,81.793 -84.219,92.094 l -10.902,4.242 c -63.613,22.414 -114.508,55.742 -114.508,119.356 0,79.972 65.426,116.933 139.352,116.933 41.195,0 82.394,-10.297 102.988,-26.66 V 734.16 h -18.778 c -9.699,61.192 -38.781,90.879 -90.878,90.879 -50.887,0 -77.551,-32.715 -77.551,-76.941 0,-36.356 33.926,-62.41 74.523,-77.555 l 19.387,-7.27 c 70.887,-26.05 119.352,-59.984 119.352,-131.476 0,-61.797 -42.399,-122.988 -149.645,-122.988 -42.406,0 -92.699,11.507 -119.359,36.351 z" /><path
+         id="path24"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1257.91,728.102 h -18.18 c -11.52,71.492 -54.52,96.937 -116.32,96.937 -112.7,0.606 -152.082,-99.359 -152.082,-198.726 0,-73.309 26.055,-196.297 150.872,-196.297 79.36,0 110.26,46.043 127.23,109.05 h 18.17 l -8.48,-101.175 c -29.09,-15.75 -84.82,-29.082 -133.29,-29.082 -67.86,0 -127.236,13.933 -164.807,51.5 -36.347,36.351 -57.554,93.3 -57.554,164.187 0,68.461 20.601,120.567 55.133,159.348 36.359,40.59 96.338,62.402 170.858,62.402 55.14,0 101.18,-10.902 128.45,-23.629 v -94.515" /><path
+         id="path26"
+         style="fill:none;stroke:#ffffff;stroke-width:6.35099983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1257.91,728.102 h -18.18 c -11.52,71.492 -54.52,96.937 -116.32,96.937 -112.7,0.606 -152.082,-99.359 -152.082,-198.726 0,-73.309 26.055,-196.297 150.872,-196.297 79.36,0 110.26,46.043 127.23,109.05 h 18.17 l -8.48,-101.175 c -29.09,-15.75 -84.82,-29.082 -133.29,-29.082 -67.86,0 -127.236,13.933 -164.807,51.5 -36.347,36.351 -57.554,93.3 -57.554,164.187 0,68.461 20.601,120.567 55.133,159.348 36.359,40.59 96.338,62.402 170.858,62.402 55.14,0 101.18,-10.902 128.45,-23.629 z" /><path
+         id="path28"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 545.715,328.512 -0.531,8.066 -3.766,0.535 -0.547,4.309 h 18.301 l -0.547,-4.309 -3.773,-0.535 -0.524,-8.066 v -24.836 c 0,-4.391 0,-11.473 1.52,-15.508 2.062,-5.824 7.89,-8.871 13.886,-8.871 4.942,0 10.317,2.148 12.911,6.453 2.699,4.484 2.421,10.934 2.421,16.047 v 26.715 l -0.535,8.066 -3.761,0.535 -0.547,4.309 h 16.32 l -0.535,-4.309 -3.774,-0.535 -0.523,-8.066 v -24.387 c 0,-7.078 0.348,-13.801 -3.598,-20.078 -4.472,-7.082 -11.023,-9.051 -19.004,-9.051 -6.988,0 -13.98,1.609 -18.64,7.348 -4.395,5.383 -4.754,12.73 -4.754,19.453 v 26.715" /><path
+         id="path30"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 612.137,328.512 -0.535,8.066 -3.758,0.535 -0.547,4.309 h 11.558 l 33.989,-52.805 v 39.895 l -0.547,8.066 -3.762,0.535 -0.535,4.309 h 15.777 l -0.547,-4.309 -3.757,-0.535 -0.539,-8.066 v -52.711 h -7.352 l -33.352,51.902 v -38.187 l 0.547,-8.071 3.762,-0.539 0.539,-4.301 h -15.781 l 0.547,4.301 3.758,0.539 0.535,8.071 v 38.996" /><path
+         id="path32"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 680.449,328.512 -0.535,8.066 -3.773,0.535 -0.536,4.309 h 18.29 l -0.547,-4.309 -3.758,-0.535 -0.539,-8.066 v -38.996 l 0.539,-8.071 3.758,-0.539 0.547,-4.301 h -18.29 l 0.536,4.301 3.773,0.539 0.535,8.071 v 38.996" /><path
+         id="path34"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 708.855,329.496 -3.222,7.082 -2.695,0.535 -0.524,4.309 h 17.832 l -0.539,-4.309 -4.309,-0.535 18.204,-47.332 17.484,47.332 -4.297,0.535 -0.551,4.309 h 13.813 l -0.539,-4.309 -2.688,-0.535 -3.941,-9.14 -19.004,-51.637 h -4.309 l -20.715,53.695" /><path
+         id="path36"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 767.938,276.605 0.531,4.301 3.765,0.539 0.547,8.071 v 38.996 l -0.547,8.066 -3.765,0.535 -0.531,4.309 h 41.054 l -0.547,-9.777 -4.297,0.543 -0.535,4.39 -9.23,0.535 h -13.004 v -24.379 h 22.769 l -0.535,-4.843 -10.851,0.539 h -11.383 v -18.914 l 0.547,-8.071 h 14.695 l 8.879,0.543 0.535,4.836 4.309,0.539 0.523,-10.758 h -42.929" /><path
+         id="path38"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 832.922,309.508 v 26.531 c 2.516,0.625 5.016,1.074 7.625,1.074 7.879,0 13.086,-3.851 13.086,-12.097 0,-4.571 -1.258,-9.328 -4.934,-12.282 -3.847,-3.14 -9.234,-3.226 -14.07,-3.226 z m 0,-4.309 h 7.801 l 17.215,-28.594 h 13.085 l -0.535,4.301 -3.761,0.539 -5.293,7.262 -12.184,18.379 c 8.238,2.691 13.531,9.5 13.531,18.285 0,5.199 -1.972,9.953 -6.363,12.996 -3.859,2.692 -8.789,3.055 -13.363,3.055 H 819.48 l 0.54,-4.309 3.757,-0.535 0.547,-8.066 v -38.996 l -0.547,-8.071 -3.757,-0.539 -0.54,-4.301 h 17.208 l -0.536,4.301 -3.23,0.539 v 23.754" /><path
+         id="path40"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 880.254,288.801 4.305,-0.539 0.539,-4.395 c 3.672,-2.422 7.8,-4.57 12.277,-4.57 7.262,0 13.18,4.656 13.18,12.191 0,8.25 -6.192,11.114 -12.461,14.7 -7.793,4.394 -17.301,9.414 -17.301,19.632 0,4.664 2.066,9.051 5.379,12.282 3.68,3.589 8.152,4.929 13.269,4.929 5.547,0 11.204,-0.984 16.485,-2.687 l -0.528,-10.039 -4.304,0.535 -0.539,4.394 c -3.407,2.059 -7.262,3.496 -11.211,3.496 -5.918,0 -10.125,-5.113 -10.125,-10.847 0,-7.082 5.832,-10.129 11.203,-13.176 3.867,-2.242 8.512,-4.844 12.008,-7.535 4.394,-3.402 6.73,-7.977 6.73,-13.535 0,-11.742 -10.129,-18.641 -21.066,-18.641 -6.192,0 -12.461,1.344 -18.375,2.953 l 0.535,10.852" /><path
+         id="path42"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 934.48,328.512 -0.523,8.066 -3.773,0.535 -0.536,4.309 h 18.29 l -0.547,-4.309 -3.758,-0.535 -0.539,-8.066 v -38.996 l 0.539,-8.071 3.758,-0.539 0.547,-4.301 h -18.29 l 0.536,4.301 3.773,0.539 0.523,8.071 v 38.996" /><path
+         id="path44"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 973.84,281.988 -0.539,7.528 v 47.597 h 5.832 c 7.976,0 15.68,-0.355 21.777,-6.004 6.02,-5.558 8.16,-13.355 8.16,-21.246 0,-6.898 -1.69,-14.879 -6.09,-20.347 -5.121,-6.453 -12.011,-8.071 -19.906,-8.071 z m -13.988,-5.383 h 26.093 c 9.493,0 17.565,1.887 24.105,9.325 5.92,6.722 8.16,15.867 8.16,24.562 0,8.156 -2.24,17.121 -8.16,23.039 -6.27,6.364 -14.249,7.891 -22.855,7.891 h -27.343 l 0.546,-4.309 3.762,-0.535 0.535,-8.066 v -38.996 l -0.535,-8.071 -3.762,-0.539 -0.546,-4.301" /><path
+         id="path46"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1041.34,300.363 11.84,30.297 11.92,-30.297 z m -1.7,-4.304 h 27.16 l 5.91,-14.614 -4.3,-0.539 -0.53,-4.301 h 17.92 l -0.54,4.301 -2.68,0.539 -3.41,7.086 -21.34,53.965 h -5.19 l -20.35,-51.906 -4.39,-9.145 -2.69,-0.539 -0.54,-4.301 h 14.34 l -0.54,4.301 -4.3,0.539 5.47,14.614" /><path
+         id="path48"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1107.31,281.988 -0.53,7.528 v 47.597 h 5.83 c 7.96,0 15.68,-0.355 21.77,-6.004 6.02,-5.558 8.17,-13.355 8.17,-21.246 0,-6.898 -1.71,-14.879 -6.09,-20.347 -5.12,-6.453 -12.02,-8.071 -19.91,-8.071 z m -13.98,-5.383 h 26.1 c 9.49,0 17.55,1.887 24.09,9.325 5.92,6.722 8.17,15.867 8.17,24.562 0,8.156 -2.25,17.121 -8.17,23.039 -6.26,6.364 -14.24,7.891 -22.84,7.891 h -27.35 l 0.54,-4.309 3.76,-0.535 0.55,-8.066 v -38.996 l -0.55,-8.071 -3.76,-0.539 -0.54,-4.301" /><path
+         id="path50"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1162.98,276.605 0.54,4.301 3.77,0.539 0.53,8.071 v 38.996 l -0.53,8.066 -3.77,0.535 -0.54,4.309 h 41.05 l -0.52,-9.777 -4.31,0.543 -0.54,4.39 -9.23,0.535 h -13 v -24.379 h 22.77 l -0.54,-4.843 -10.85,0.539 h -11.38 v -18.914 l 0.53,-8.071 h 14.71 l 8.87,0.543 0.55,4.836 4.29,0.539 0.55,-10.758 h -42.95" /><path
+         id="path52"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 555.938,172.344 -0.54,7.527 v 47.606 h 5.821 c 7.992,0 15.695,-0.364 21.789,-6.008 6.004,-5.563 8.156,-13.36 8.156,-21.25 0,-6.899 -1.699,-14.875 -6.098,-20.348 -5.105,-6.453 -12.011,-8.062 -19.898,-8.062 z m -13.985,-5.379 h 26.086 c 9.5,0 17.566,1.883 24.121,9.324 5.906,6.723 8.141,15.863 8.141,24.563 0,8.156 -2.235,17.121 -8.141,23.035 -6.281,6.367 -14.262,7.89 -22.871,7.89 h -27.336 l 0.535,-4.3 3.77,-0.543 0.531,-8.067 v -38.996 l -0.531,-8.062 -3.77,-0.539 -0.535,-4.305" /><path
+         id="path54"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 611.602,166.965 0.535,4.305 3.773,0.539 0.535,8.062 v 38.996 l -0.535,8.067 -3.773,0.543 -0.535,4.3 h 41.066 l -0.547,-9.769 -4.301,0.535 -0.547,4.391 -9.226,0.543 H 625.051 V 203.09 h 22.769 l -0.547,-4.84 -10.839,0.539 h -11.383 v -18.918 l 0.535,-8.062 h 14.699 l 8.887,0.535 0.523,4.84 4.309,0.535 0.539,-10.754 h -42.941" /><path
+         id="path56"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 691.75,179.156 4.297,-0.539 0.535,-4.394 c 3.68,-2.414 7.801,-4.571 12.273,-4.571 7.27,0 13.188,4.664 13.188,12.196 0,8.246 -6.195,11.109 -12.461,14.699 -7.793,4.391 -17.309,9.41 -17.309,19.629 0,4.664 2.071,9.058 5.383,12.285 3.684,3.586 8.153,4.93 13.27,4.93 5.558,0 11.203,-0.989 16.496,-2.688 l -0.539,-10.043 -4.305,0.535 -0.535,4.395 c -3.41,2.062 -7.27,3.496 -11.211,3.496 -5.918,0 -10.117,-5.106 -10.117,-10.844 0,-7.086 5.82,-10.133 11.187,-13.179 3.868,-2.239 8.528,-4.844 12.024,-7.528 4.383,-3.41 6.719,-7.98 6.719,-13.535 0,-11.742 -10.129,-18.648 -21.063,-18.648 -6.195,0 -12.461,1.343 -18.379,2.961 l 0.547,10.843" /><path
+         id="path58"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 752.961,190.719 11.836,30.301 11.93,-30.301 z m -1.703,-4.305 h 27.168 l 5.918,-14.605 -4.305,-0.539 -0.535,-4.305 h 17.926 l -0.547,4.305 -2.672,0.539 -3.418,7.078 -21.328,53.965 h -5.199 l -20.348,-51.903 -4.398,-9.14 -2.696,-0.539 -0.523,-4.305 h 14.332 l -0.535,4.305 -4.305,0.539 5.465,14.605" /><path
+         id="path60"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 809.797,218.867 -0.531,8.067 -3.766,0.543 -0.551,4.3 h 11.574 l 33.977,-52.8 v 39.89 l -0.551,8.067 -3.758,0.543 -0.539,4.3 h 15.782 l -0.547,-4.3 -3.758,-0.543 -0.535,-8.067 v -52.711 h -7.344 l -33.363,51.907 v -38.192 l 0.547,-8.062 3.761,-0.539 0.535,-4.305 h -15.781 l 0.551,4.305 3.766,0.539 0.531,8.062 v 38.996" /><path
+         id="path62"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 893.801,227.477 h -11.313 l -7.066,-0.543 -0.547,-4.926 -4.301,-0.539 -0.535,10.308 h 56.113 l -0.539,-10.308 -4.297,0.539 -0.546,4.926 -7.079,0.543 h -11.3 v -47.606 l 0.547,-8.062 3.761,-0.539 0.535,-4.305 h -18.277 l 0.523,4.305 3.774,0.539 0.547,8.062 v 47.606" /><path
+         id="path64"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 939.688,218.867 -0.54,8.067 -3.765,0.543 -0.531,4.3 h 18.281 l -0.535,-4.3 -3.758,-0.543 -0.547,-8.067 v -38.996 l 0.547,-8.062 3.758,-0.539 0.535,-4.305 h -18.281 l 0.531,4.305 3.765,0.539 0.54,8.062 v 38.996" /><path
+         id="path66"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 976.883,190.719 11.836,30.301 11.921,-30.301 z m -1.699,-4.305 h 27.166 l 5.92,-14.605 -4.31,-0.539 -0.53,-4.305 h 17.93 l -0.55,4.305 -2.68,0.539 -3.41,7.078 -21.333,53.965 h -5.203 l -20.34,-51.903 -4.399,-9.14 -2.691,-0.539 -0.539,-4.305 h 14.344 l -0.547,4.305 -4.293,0.539 5.465,14.605" /><path
+         id="path68"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1071.9,187.766 -4.92,0.535 -0.55,4.301 h 18.93 l -0.55,-4.301 -3.76,-0.535 -0.53,-9.235 v -9.953 c -6.82,-1.793 -13.72,-3.226 -20.8,-3.226 -20.62,0 -31.37,14.878 -31.37,34.425 0,8.067 2.24,17.481 7.43,23.84 5.92,7.172 14.25,9.774 23.31,9.774 7.44,0 14.88,-1.258 21.96,-3.231 l -0.53,-11.379 -4.31,0.535 -0.53,4.93 c -4.94,2.781 -10.05,4.84 -15.79,4.84 -16.41,0 -22.4,-16.492 -22.4,-30.391 0,-15.414 8.42,-28.773 25.1,-28.773 3.13,0 6.27,0.535 9.31,1.348 v 16.496" /><path
+         id="path70"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1125.07,169.652 c -16.06,0 -20.89,16.496 -20.89,29.672 0,13.27 4.83,29.762 20.89,29.762 15.95,0 20.8,-16.492 20.8,-29.762 0,-13.176 -4.85,-29.672 -20.8,-29.672 z m 0,-4.3 c 9.14,0 17.12,3.226 22.95,10.398 5.46,6.723 6.99,15.148 6.99,23.574 0,8.965 -1.71,17.664 -7.71,24.563 -5.83,6.636 -13.54,9.504 -22.23,9.504 -9.14,0 -17.21,-3.231 -22.95,-10.399 -5.47,-6.722 -7.09,-15.148 -7.09,-23.668 0,-8.695 1.62,-17.211 7.44,-24.019 5.74,-6.907 13.72,-9.953 22.6,-9.953" /><path
+         id="path72"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 555.938,62.6953 -0.54,7.5391 v 47.5976 h 5.821 c 7.992,0 15.695,-0.352 21.789,-6.008 6.004,-5.554 8.156,-13.3552 8.156,-21.2381 0,-6.914 -1.699,-14.8828 -6.098,-20.3515 -5.105,-6.4649 -12.011,-8.0664 -19.898,-8.0664 z m -13.985,-5.3711 h 26.086 c 9.5,0 17.566,1.875 24.121,9.3164 5.906,6.7266 8.141,15.8789 8.141,24.5703 0,8.1524 -2.235,17.1171 -8.141,23.0351 -6.281,6.359 -14.262,7.883 -22.871,7.883 h -27.336 l 0.535,-4.297 3.77,-0.539 0.531,-8.074 V 70.2344 l -0.531,-8.0664 -3.77,-0.5469 -0.535,-4.2969" /><path
+         id="path74"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 611.602,57.3242 0.535,4.2969 3.773,0.5469 0.535,8.0664 v 38.9846 l -0.535,8.074 -3.773,0.539 -0.535,4.297 h 41.066 l -0.547,-9.766 -4.301,0.539 -0.547,4.391 -9.226,0.539 H 625.051 V 93.4492 h 22.769 l -0.547,-4.8359 -10.839,0.5273 H 625.051 V 70.2344 l 0.535,-8.0664 h 14.699 l 8.887,0.5273 0.523,4.8438 4.309,0.5468 0.539,-10.7617 h -42.941" /><path
+         id="path76"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 742.48,120.527 -0.539,-10.312 -4.304,0.535 -0.539,4.574 c -4.481,2.594 -9.137,4.121 -14.16,4.121 -7.54,0 -13.633,-3.136 -17.579,-9.679 -3.57,-5.918 -5.281,-13.809 -5.281,-20.7035 0,-14.8828 8.254,-28.7891 24.559,-28.7891 6.281,0 13.363,2.0704 18.468,5.7422 v -5.1093 c -6.007,-3.8555 -13.269,-5.2032 -20.261,-5.2032 -9.406,0 -17.485,2.3438 -23.75,9.7774 -6.008,6.9922 -8.156,15.5937 -8.156,24.6562 0,8.2422 2.332,17.8323 7.8,24.1993 6.176,7.266 14.516,9.414 23.75,9.414 6.817,0 12.102,-1.172 18.645,-2.871 l 1.347,-0.352" /><path
+         id="path78"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 784.434,60.0117 c -16.047,0 -20.887,16.4922 -20.887,29.6758 0,13.2615 4.84,29.7575 20.887,29.7575 15.949,0 20.789,-16.496 20.789,-29.7575 0,-13.1836 -4.84,-29.6758 -20.789,-29.6758 z m 0,-4.3086 c 9.14,0 17.117,3.2344 22.941,10.4102 5.469,6.7187 6.988,15.1367 6.988,23.5742 0,8.9648 -1.695,17.6565 -7.691,24.5585 -5.84,6.633 -13.547,9.504 -22.238,9.504 -9.153,0 -17.215,-3.223 -22.95,-10.398 -5.468,-6.731 -7.082,-15.1489 -7.082,-23.6645 0,-8.6992 1.614,-17.2148 7.442,-24.0234 5.734,-6.9141 13.711,-9.961 22.59,-9.961" /><path
+         id="path80"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 837.137,70.2344 0.539,-8.0664 3.758,-0.5469 0.546,-4.2969 h -16.316 l 0.535,4.2969 3.77,0.5469 0.539,8.0664 v 38.9846 l -0.539,8.074 -3.77,0.539 -0.535,4.297 h 15.508 l 18.191,-47.6837 18.93,47.6837 h 13.258 l -0.535,-4.297 -3.758,-0.539 -0.547,-8.074 V 70.2344 l 0.547,-8.0664 3.758,-0.5469 0.535,-4.2969 h -17.75 l 0.543,4.2969 3.761,0.5469 0.536,8.0664 v 39.4336 h -0.172 l -18.735,-47.5 h -4.312 l -18.109,47.5 h -0.176 V 70.2344" /><path
+         id="path82"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 916.824,88.6133 v 28.1447 c 2.602,0.625 5.207,1.074 7.805,1.074 8.703,0 13.359,-3.672 13.359,-12.637 0,-4.843 -1.531,-9.863 -5.293,-13.0075 -4.211,-3.4961 -8.965,-3.5742 -14.07,-3.5742 z m 0,-4.3047 h 1.621 c 6.446,0 13.891,0.5352 19.629,3.7578 6.27,3.5938 9.055,10.1367 9.055,17.2146 0,11.828 -7.805,16.848 -18.914,16.848 h -24.828 l 0.531,-4.297 3.766,-0.539 0.539,-8.074 V 70.2344 l -0.539,-8.0664 -3.766,-0.5469 -0.531,-4.2969 h 19.457 l -0.547,4.2969 -5.473,0.5469 v 22.1406" /><path
+         id="path84"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 984.949,60.0117 c -16.031,0 -20.879,16.4922 -20.879,29.6758 0,13.2615 4.848,29.7575 20.879,29.7575 15.961,0 20.801,-16.496 20.801,-29.7575 0,-13.1836 -4.84,-29.6758 -20.801,-29.6758 z m 0,-4.3086 c 9.153,0 17.131,3.2344 22.951,10.4102 5.47,6.7187 6.99,15.1367 6.99,23.5742 0,8.9648 -1.7,17.6565 -7.7,24.5585 -5.83,6.633 -13.538,9.504 -22.241,9.504 -9.14,0 -17.207,-3.223 -22.945,-10.398 -5.461,-6.731 -7.074,-15.1489 -7.074,-23.6645 0,-8.6992 1.613,-17.2148 7.445,-24.0234 5.73,-6.9141 13.711,-9.961 22.574,-9.961" /><path
+         id="path86"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1026.46,69.5117 4.3,-0.5351 0.54,-4.3868 c 3.67,-2.4218 7.8,-4.5781 12.29,-4.5781 7.26,0 13.17,4.6563 13.17,12.1953 0,8.2422 -6.19,11.1133 -12.46,14.6993 -7.81,4.3945 -17.3,9.414 -17.3,19.6367 0,4.648 2.06,9.043 5.38,12.277 3.67,3.582 8.16,4.93 13.26,4.93 5.56,0 11.2,-0.984 16.5,-2.695 l -0.54,-10.039 -4.3,0.547 -0.54,4.386 c -3.41,2.059 -7.26,3.496 -11.21,3.496 -5.91,0 -10.13,-5.109 -10.13,-10.851 0,-7.071 5.83,-10.1252 11.21,-13.176 3.85,-2.2344 8.51,-4.8321 12.01,-7.5274 4.4,-3.4062 6.72,-7.9804 6.72,-13.5351 0,-11.7383 -10.13,-18.6524 -21.06,-18.6524 -6.19,0 -12.46,1.3477 -18.37,2.9688 l 0.53,10.8398" /><path
+         id="path88"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1096.38,117.832 h -11.29 l -7.09,-0.539 -0.53,-4.93 -4.31,-0.539 -0.53,10.305 h 56.11 l -0.54,-10.305 -4.31,0.539 -0.52,4.93 -7.09,0.539 h -11.29 V 70.2344 l 0.53,-8.0664 3.77,-0.5469 0.53,-4.2969 h -18.29 l 0.55,4.2969 3.76,0.5469 0.54,8.0664 v 47.5976" /><path
+         id="path90"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1137.43,57.3242 0.55,4.2969 3.76,0.5469 0.53,8.0664 v 38.9846 l -0.53,8.074 -3.76,0.539 -0.55,4.297 h 41.05 l -0.52,-9.766 -4.31,0.539 -0.54,4.391 -9.23,0.539 h -12.99 V 93.4492 h 22.76 l -0.54,-4.8359 -10.84,0.5273 h -11.38 V 70.2344 l 0.53,-8.0664 h 14.71 l 8.86,0.5273 0.55,4.8438 4.3,0.5468 0.54,-10.7617 h -42.95" /><path
+         id="path92"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1193.82,109.219 -0.54,8.074 -3.76,0.539 -0.55,4.297 h 18.3 l -0.54,-4.297 -3.77,-0.539 -0.53,-8.074 V 70.2344 l 0.62,-8.0664 h 14.62 l 9.13,0.5273 0.55,6.0156 4.3,0.5274 0.54,-11.9141 h -43.22 l 0.55,4.2969 3.76,0.5469 0.54,8.0664 v 38.9846" /><path
+         id="path94"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 1252.09,81.0742 11.83,30.3008 11.92,-30.3008 z m -1.71,-4.2969 h 27.17 l 5.91,-14.6093 -4.3,-0.5469 -0.53,-4.2969 h 17.92 l -0.53,4.2969 -2.7,0.5469 -3.41,7.0703 -21.32,53.9647 h -5.21 l -20.34,-51.8944 -4.4,-9.1406 -2.69,-0.5469 -0.54,-4.2969 h 14.35 l -0.54,4.2969 -4.31,0.5469 5.47,14.6093" /></g></g></svg>                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script src="/assets/frontend/js/main.js?v=2.2.0"></script></body>
+</html>

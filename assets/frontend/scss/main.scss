@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:300,400,500,600,700");
+
+@import "variables";
+@import "mixins";
+@import "functions";
+
+html
+{
+    font-size: 18px;
+}
+
+body
+{
+    background-color: rgba($brand-primary, 0.25);
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+
+    audio
+    {
+        background-color: black;
+        filter: invert(100%);
+    }
+
+    main
+    {
+        min-height: 75vh;
+    }
+
+    p
+    {
+        //line-height: 1.25em;
+    }
+
+    picture
+    {
+        display: inline-block;
+
+        &.svg
+        {
+            svg
+            {
+                height: auto;
+                width: 100%;
+            }
+
+            &-white
+            {
+                @include colorize-svg(white);
+            }
+        }
+    }
+
+    .btn
+    {
+        &-brand
+        {
+            background-color: $brand-primary;
+            color: white;
+        }
+    }
+
+    a
+    {
+        color: $brand-primary;
+        font-weight: 500;
+    }
+
+    .primary
+    {
+        background-color: $brand-primary;
+        color: white;
+    }
+
+    .navbar
+    {
+        position: fixed;
+        width: 100%;
+
+        &-brand
+        {
+            font-size: 1.5rem;
+            letter-spacing: -0.05rem;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        .nav-item
+        {
+            .dropdown-menu
+            {
+                .dropdown-item
+                {
+                    a
+                    {
+                        color: black;
+                    }
+                }
+            }
+
+            &-tall
+            {
+                .nav-link
+                {
+                    br
+                    {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .no-wrap
+    {
+        white-space: nowrap;
+    }
+
+    .separator
+    {
+        background-color: black;
+        border: 0;
+        display: block;
+        margin: 3em 0;
+        height: 2px;
+        width: 100%;
+    }
+
+    mark, .highlight
+    {
+        background-color: transparent !important;
+        display: inline-block;
+        font-weight: 700;
+        position: relative;
+        padding: 0 !important;
+
+        &:before
+        {
+            background-color: yellow;
+            content: '';
+            display: block;
+            height: calc(100% + 2px);
+            left: -3px;
+            position: absolute;
+            top: -1px;
+            width: calc(100% + 6px);
+            z-index: -1;
+        }
+    }
+}
+
+block
+{
+    background-color: white;
+    display: block;
+    margin-bottom: 2em;
+    padding: 1em;
+    text-align: justify;
+}
+
+section
+{
+    padding: 3em 0;
+
+    h1
+    {
+        border-bottom: 2px solid currentColor;
+        margin-bottom: 1em;
+
+        &.lion
+        {
+            position: relative;
+
+            &:before
+            {
+                background-image: url-version('../img/leonep.gif');
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                content: '';
+                display: inline-block;
+                height: 1em;
+                width: 4.75rem;
+            }
+
+            .updated
+            {
+                font-size: 0.875rem;
+                position: absolute;
+                right: 0;
+                bottom: 0.25em;
+            }
+        }
+
+        .header-link
+        {
+            float: right;
+            font-size: 1rem !important;
+            margin-top: 1em;
+        }
+    }
+
+    h2
+    {
+        margin-bottom: 1em;
+    }
+
+    &.intro
+    {
+        padding-top: 5em;
+
+        .content
+        {
+            .logo
+            {
+                margin-bottom: 2em;
+                text-align: center;
+
+                picture
+                {
+                    padding: 0 2em;
+                    width: 100%;
+
+                    img
+                    {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .introductions
+            {
+                .introduction
+                {
+                    display: none;
+                    font-size: 0.625em;
+                    padding: 1em;
+                    text-align: justify;
+
+                    &-active
+                    {
+                        display: block;
+                    }
+                }
+
+                ul
+                {
+                    border-top: 1px solid black;
+                    padding: 1em;
+                    margin: 1em 0;
+
+                    li
+                    {
+                        a
+                        {
+                            color: black;
+
+                            &.active
+                            {
+                                font-weight: 700;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .granters
+            {
+                text-align: center;
+            }
+        }
+    }
+
+    &.first
+    {
+        padding-top: 6rem;
+    }
+
+    &.paper
+    {
+        position: relative;
+
+        &::before
+        {
+            background-image: url-version('../img/paper.jpg');
+            background-position: center center;
+            background-size: cover;
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0.25;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+
+    &.essays
+    {
+        p
+        {
+            padding-left: 1.5em;
+            text-indent: -1.1em;
+        }
+    }
+
+    &.biblio
+    {
+
+    }
+
+    &.page
+    {
+        .content
+        {
+            &.indented
+            {
+                p
+                {
+                    padding-left: 1.5em;
+                    text-indent: -1.1em;
+                }
+            }
+        }
+    }
+
+    &.search
+    {
+        .results + .results
+        {
+            position: relative;
+            margin-top: 3em;
+            padding-top: 3em;
+
+            &:before
+            {
+                background-color: black;
+                content: '';
+                height: 1px;
+                left: 0;
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &.team
+    {
+        position: relative;
+
+        img
+        {
+            margin-bottom: 1em;
+        }
+
+        p
+        {
+            .contact
+            {
+                display: inline-block;
+                font-size: 0.875em;
+                padding-left: 4.5em;
+                visibility: hidden;
+            }
+
+            &.indent
+            {
+                padding-left: 3.5em;
+                text-indent: -3.5em;
+            }
+
+            &:hover
+            {
+                .contact
+                {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    &.sections
+    {
+        padding-bottom: 6em;
+    }
+
+    &.error
+    {
+        height: 100vh;
+        position: relative;
+        width: 100vw;
+
+        .container
+        {
+            left: 50%;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+
+            h2
+            {
+                color: $brand-danger;
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+#map
+{
+    border: 1px solid black;
+    height: 50vh;
+    margin-bottom: 3em;
+
+    .location
+    {
+        display: none;
+    }
+}
+
+.table-container
+{
+    padding: 0;
+    position: relative;
+    max-width: 100%;
+    overflow-x: scroll;
+
+    .filters
+    {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        z-index: 100;
+
+        select
+        {
+
+        }
+    }
+}
+
+.data-table
+{
+    border-collapse: collapse;
+    font-size: 0.875em;
+    width: 100%;
+
+    tr
+    {
+        th, td
+        {
+            border: 1px solid $brand-primary;
+            padding: 0.5em;
+            vertical-align: top;
+        }
+
+        th
+        {
+            background-color: rgba($brand-primary, 0.75);
+            color: white;
+            line-height: 1em;
+            vertical-align: middle;
+
+            &.sorting_asc, &.sorting_desc
+            {
+                background-color: rgba(#336699, 0.5);
+            }
+        }
+
+        td
+        {
+            p
+            {
+                margin: 0;
+
+                & + p
+                {
+                    margin-top: 0;
+                }
+            }
+
+            .expand
+            {
+                span
+                {
+                    &:after
+                    {
+                        content: '+';
+                    }
+                }
+            }
+        }
+
+        &.shown
+        {
+            .expand
+            {
+                span
+                {
+                    &:after
+                    {
+                        content: '-';
+                    }
+                }
+            }
+        }
+
+        .expanded
+        {
+            p
+            {
+                &.first + p
+                {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    &-biblio
+    {
+
+    }
+
+    &-profile
+    {
+        th
+        {
+            font-size: 1.25em;
+        }
+
+        .key
+        {
+            color: brown;
+            display: block;
+            font-size: 1.125em;
+            font-weight: bold;
+            margin-bottom: 0.25em;
+        }
+
+        .value
+        {
+            text-align: justify;
+
+            audio
+            {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+
+    & + &, & + h3
+    {
+        margin-top: 2em;
+    }
+}
+
+table
+{
+    &.dataTable
+    {
+        border-collapse: collapse !important;
+    }
+}
+
+h3 + .dataTables_wrapper, h3 + .table-container
+{
+    transform: translateY(-2.5em);
+}
+
+footer
+{
+    background-color: $brand-primary;
+    color: white;
+    padding: 3em 0;
+
+    a
+    {
+        color: white;
+
+        &:hover
+        {
+            color: white;
+        }
+    }
+
+    block
+    {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+
+        &.copyright
+        {
+            margin-top: 2em;
+            padding: 0 1em;
+        }
+
+        &.logos
+        {
+            a
+            {
+                display: inline-block;
+                vertical-align: top;
+
+                picture
+                {
+                    display: block;
+                    height: 6em;
+                    text-align: center;
+                    width: 100%;
+
+                    img, svg
+                    {
+                        height: 5em;
+                        max-width: 100%;
+                        width: auto;
+                    }
+                }
+
+                & + a
+                {
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Other imports
+ */
+@import "responsive";

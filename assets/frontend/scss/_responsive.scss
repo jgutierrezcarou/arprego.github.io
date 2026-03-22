@@ -1,0 +1,173 @@
+@media (min-width: 576px)
+{
+
+}
+
+
+@media (min-width: 768px)
+{
+
+}
+
+@media (min-width: 992px)
+{
+    body
+    {
+        .navbar
+        {
+            .nav-item
+            {
+                &-tall
+                {
+                    line-height: 1em !important;
+
+                    .nav-link
+                    {
+                        padding: 0.1rem 0.5rem !important;
+
+                        br
+                        {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section
+    {
+        padding-top: 2em;
+
+        &.intro
+        {
+            .content
+            {
+                font-size: 1.125em;
+            }
+
+            .granters
+            {
+                position: absolute;
+                bottom: 2em;
+                right: 2em;
+
+                img
+                {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+
+    .table-container
+    {
+        overflow-x: initial;
+    }
+
+    footer
+    {
+        block
+        {
+            &.logos
+            {
+                a
+                {
+                    picture
+                    {
+                        height: 6em;
+                        width: 100%;
+
+                        img, svg
+                        {
+                            height: 5em;
+                            width: auto;
+                        }
+                    }
+
+                    & + a
+                    {
+                        margin-left: 1em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px)
+{
+
+}
+
+@media (min-width: 1440px)
+{
+    section
+    {
+        padding-top: 3em;
+        scroll-margin-top: 3.5rem;
+
+        &.intro
+        {
+            .content
+            {
+                @include completely-centered();
+
+                font-size: 1.125em;
+                max-width: 64rem;
+                width: 100%;
+
+                .introductions
+                {
+                    .introduction
+                    {
+                        font-size: 0.875em;
+                        padding: 1em 0;
+                    }
+
+                    ul
+                    {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        &.indicator
+        {
+            position: relative;
+
+            .jump
+            {
+                animation-duration: 2s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-name: bounce;
+
+                height: 2em;
+                width: 2em;
+                bottom: 1em;
+                left: 50%;
+                position: absolute;
+                transform: translateX(-50%);
+
+                &:after
+                {
+                    bottom: 0.125em;
+                    color: black;
+                    content: "\2304";
+                    font-size: 2em;
+                    display: block;
+                    left: 50%;
+                    position: absolute;
+                    transform: translateX(-50%);
+                }
+
+                &:hover
+                {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

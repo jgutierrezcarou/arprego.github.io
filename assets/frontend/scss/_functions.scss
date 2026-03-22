@@ -1,0 +1,10 @@
+/**
+ * Append version and build to an URL
+ *
+ * @param   string  $url
+ * @return  string
+ */
+@function url-version($url)
+{
+    @return url('#{$url}?v=#{$version}.#{$build}');
+}

@@ -1,0 +1,30 @@
+{
+  "name": "redactor",
+  "version": "10.2.0",
+  "homepage": "http://imperavi.com/redactor/",
+  "authors": [
+    "Imparavi <http://imperavi.com.au>"
+  ],
+  "description": "A bower package for the Imperavi Redactor WYSIWYG library",
+  "main": "redactor/redactor.min.js",
+  "keywords": [
+    "WYSIWYG"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "10.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v10.2.0",
+    "commit": "cda3bf75e73fc29dd8f48e3817960624b7c6c370"
+  },
+  "_source": "https://github.com/stones/bower-redactor.git",
+  "_target": "~10.2.0",
+  "_originalSource": "redactor-wysiwyg"
+}
