@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link  active " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="profile first">
+
+        <div class="container">
+
+            <h1 class="lion"></h1>
+
+            <!-- section 1 -->
+            <table class="data-table data-table-profile" summary="I. Titolo e dati bibliografici">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">I. Titolo e dati bibliografici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="35%">
+                        <div class="key">00. Schedatore/Schedatrice</div>
+                        <div class="value">Garosi, Linda</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="key">01. Autore</div>
+                        <div class="value">Mondini, Tomaso</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <div class="key">
+                            02. Titolo                                                    </div>
+                        <div class="value"><em>Scioccherie di Gradellino, Le</em></div>
+                    </td>
+                    <td width="30%">
+                        <div class="key">03. Titolo completo</div>
+                        <div class="value"><p><i>Le scioccherie di Gradellino, accresciute dall’astuzie di Fenochio, sturbatore de’ matrimoni</i>. Comedia nuova e curiosissima del signor Simon Tomadoni [= Tomaso Mondini]. </p></div>
+                    </td>
+                    <td>
+                        <div class="key">04. Manoscritti</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">05. Edizioni utilizzate</div>
+                        <div class="value"><p>Simon Tomadoni (= Tomaso Mondini), <i>Le scioccherie di Gradellino</i>. Comedia nuova e curiosissima del signor Simon Tomadoni. Dedicata all’effetto geniale del suo carissimo cognato il signor Checo Eppiseti, Venezia, Domenico Lovisa (Sotto i Portighi della Draparia a Rialto), 1689.</p><p>   Simon Tomadoni (= Tomaso Mondini), <i>Le scioccherie di Gradellino</i>. Comedia nuova e curiosissima, Venezia, Domenico Lovisa, 1703.</p><br></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 2-->
+            <table class="data-table data-table-profile" summary="II. Tipo">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">II. Tipo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">06. Genere</div>
+                        <div class="value"><p>Commedia.</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">06. Sottogenere</div>
+                        <div class="value"><p>Commedia “ridicolosa” (commedia cittadina veneziana).</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">07. Generi interni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 3-->
+            <table class="data-table data-table-profile page-break" summary="III. Personaggi e rapporti">
+                <thead>
+                <tr>
+                    <th scope="col">III. Personaggi e rapporti</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="key">08. Elenco dei personaggi</div>
+                        <div class="value"><p>Dottore, Horatio (Orazio), Hortensia (Ortensia), Gradellino, Pantalone, Teodoro, Flaminia, Finocchio, Spinetta, Coviello, Giangurgolo.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">09. Protagonisti</div>
+                        <div class="value"><p>Gradellino, servo del Dottore, e Finocchio, servo di Pantalone. Le loro figure, e interazione, sono centrali per lo sviluppo comico e per l’intreccio degli equivoci che animano la trama.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="value"><p>Dottore, Pantalone, Spinetta (servetta), Gradellino (secondo zanni), Finocchio (primo zanni), Coviello (anche se abitualmente è un primo zanni napoletano, nel presente testo è unito al qualificativo “Spaccamontagna” e assume tratti che lo assimilano a un Capitano dell’Arte), Giangurgolo (maschera meridionale che unisce le caratteristiche del Capitano dell’Arte e di secondo zanni).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
+                        <div class="value"><p>Spinetta: richiama la “spina”, elemento piccolo ma pungente, e come tale allude al carattere vivace, tagliente, ironico della servetta.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">12. Rapporti fra i personaggi</div>
+                        <div class="value"><p>Dottore, padre di Horatio e Hortensia; Horatio-Flaminia: innamorati; Coviello, pretendente di Hortensia; Gradellino, servo di Dottore; Pantalone, padre di Teodoro e Flaminia; Teodoro-Hortensia, innamorati; Giangurgolo, pretendente di Flaminia; Finocchio e Spinetta, servi di Pantalone.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">13. Personaggi speculari</div>
+                        <div class="value"><p>Gradellino è il servo (zanni) stupido, mentre Finocchio è il servo (zanni) furbo.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
+                        <div class="value"><p>Horatio, disperazione d’amore, I.4.1; Horatio, l’amore è più forte del legame e il volere del padre III.1.1; Finocchio, spiegazione della burla a Gradellino, I.6.1; Hortensia, amore forza irresistibile, I.7.1; Gradellino, intermezzo burlesco, II.1.1 e II.5.1; Gradellino, congedo rivolto agli spettatori, III.8.82.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
+                        <div class="value"><p>Dottore e Gradellino, il servo non ha realizzato adeguatamente il compito affidatogli di consegnare la lettera, I.1.20-23; Horatio e Spinetta, conflitto amoroso e consegna della lettera, I.4.10-19; Hortensia e Finocchio, rivelazione degli inganni e alleanza, I.7.20-27; Dottore e Pantalone, parodia erudita della retorica, II.2.11-64; Dottore e Coviello, rottura dell’accordo matrimoniale, II.6.25-28; Horatio e Flaminia, fuga d’amore, III.1.12-19; Finocchio, Dottore, Pantalone e Gradellino, svelamenti e risoluzione finale, III.6.14-29 e III.6.37-56.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">16. Uso particolarmente rilevante degli a parte</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">17. Personaggi che parlano solo in verso</div>
+                        <div class="value"><p>I versi vengono usati da Horatio una sola volta (I.IV.1) e da Hortensia due volte (I.VII.1, I.VII.29) in alcuni momenti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">18. Personaggi che parlano solo in prosa</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">19. Personaggi che parlano a soggetto</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">21. Personaggi che parlano solo in italiano</div>
+                        <div class="value"><p>Horatio, Flaminia e Spinetta; Hortensia e Teodoro alternano italiano e veneto.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
+                        <div class="value"><p>Dottore (bolognese), Gradellino e Finocchio (bergamasco), Pantalone (veneziano), Coviello (napoletano), Giangurgolo (calabrese).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 4-->
+            <table class="data-table data-table-profile page-break" summary="IV. Intreccio">
+                <thead>
+                <tr>
+                    <th scope="col">IV. Intreccio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="value"><p><strong>Atto I</strong>. Il Dottore intende combinare un matrimonio segreto tra sua figlia Hortensia e Coviello, un forestiero. Affida al suo servo Gradellino, goffo e confusionario, una lettera da consegnare a Coviello. Finocchio, servo furbo di Teodoro (altro pretendente), intercetta Gradellino, si finge Coviello e ottiene la lettera che rivela l’intenzione del Dottore di concludere il matrimonio senza che nessuno lo sappia. Contemporaneamente si avvia la seconda linea dell’intreccio, speculare alla prima: Pantalone incontra Giangurgolo, un altro forestiero, a cui promette in sposa sua figlia Flaminia. Ma Flaminia ama Horatio, figlio del dottore, e in un atto di ribellione alla decisione del padre scrive all’amato una lettera che gli fa recapitare da Spinetta e con cui gli dà appuntamento alle 4 di notte per fuggire insieme. Con l’intenzione di ostacolare i matrimoni d’interesse imposti da Pantalone e Dottore alle loro figlie, Finocchio escogita un nuovo inganno ai danni di Gradellino: lo convince a dargli il suo abito e lo allontana con la promessa di un facile guadagno. Intanto, grazie al travestimento, si introduce in casa di Coviello e gli ruba un cofanetto contenente dei gioielli, regalo di nozze per Hortensia.</p>  <p><strong>Atto II</strong>. Gradellino, vestito da Finocchio, viene scambiato per ladro e minacciato dal Dottore, che però capisce la manipolazione di cui è stato vittima Gradellino, mentre cresce la sua collera nei confronti di Finocchio e la sua ansia di vendetta. Pantalone cerca aiuto per una lite legale, ma il Dottore lo travolge con un discorso filosofico e retorico assurdo e comico. Giangurgolo, che vuole ripartire al più presto, ha fretta di celebrare il matrimonio. Pantalone lo convince di attendere per lo meno l’indomani. Intanto Finocchio continua a orchestrare piani anche per Teodoro e Hortensia. Infine Coviello accusa il Dottore di essere complice del servo che lo ha derubato e lo sfida. Il Dottore nega, lo insulta e fugge. </p>  <strong>Atto III</strong>. Horatio e Flaminia si incontrano di notte per fuggire insieme. Al mattino, Pantalone e Dottore scoprono la fuga dei rispettivi figli. Gradellino, sempre confuso, cerca di capire cosa sia successo, mentre si presenta Finocchio, travestito da astrologo, che invece sa che cosa è successo e promette di dare una soluzione. Intanto i padri si confrontano con i pretendenti: Coviello rompe la promessa e si considera vittima di un raggiro architettato dal Dottore, mentre Giangurgolo si sente tradito dalla promessa sposa e decide di tornare nella sua patria.A questo punto, Finocchio ricompare, sempre travestito da astrologo e propone ai padri di far sposare Flaminia con Horatio e Hortensia con Teodoro. I padri accettano i due matrimoni riparatori, riconoscendo inoltre che i figli si amano davvero. Nella scena ultima, Finocchio si rivela e chiede perdono per gli inganni, che hanno però portato a un lieto fine. Pantalone lo perdona e lo promette in matrimonio con Spinetta, sua serva. Infine anche Dottore e Pantalone si riconciliano, mentre Gradellino, sempre escluso e maltrattato, chiude la commedia congedandosi dal pubblico con un discorso comico e autoironico.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">25. Tema principale</div>
+                        <div class="value"><p>La forza irresistibile dell’amore tra giovani innamorati che supera ogni tipo di ostacolo familiare e sociale.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">26. Temi secondari</div>
+                        <div class="value"><p>Le azioni goffe e buffe di Gradellino; lo “straniero” che minaccia l’ordine familiare; la ribellione dei figli e delle figlie contro il volere dei padri e i loro interessi materiali; il trionfo dell’astuzia; l’inganno che porta al lieto fine.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">27. Comicità</div>
+                        <div class="value"><p>Il plurilinguismo, giochi di parole, storpiature, malintesi fonetici; insulti iperbolici e fantasiosi del Dottore a Gradellino; l’ironia ai danni dei padri autoritari; la burla ai danni del servitore sciocco e dei pretendenti arroganti, vanitosi e facilmente ingannabili; scambi di identità; travestimenti; equivoci.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">28. Elementi polemici, satirici e parodici</div>
+                        <div class="value"><p>Parodia della retorica e della giustizia; rottura della quarta parete; satira sociale contro i matrimoni combinati per interesse; caricatura dei forestieri.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 5-->
+            <table class="data-table data-table-profile page-break" summary="V. Luogo e tempo">
+                <thead>
+                <tr>
+                    <th scope="col">V. Luogo e tempo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">29. Luogo generale</div>
+                        <div class="value"><p>L’azione si svolge in un ambiente cittadino, probabilmente Venezia, ma non viene specificata.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">30. Cambiamenti di luogo</div>
+                        <div class="value"><p>I.1: casa del Dottore; I. 2: spazio indeterminato; I. 3: casa di Pantalone; I. 4: spazio indeterminato; I. 5: casa del Dottore; I. 6-8 spazio indeterminato; II.1-6: spazio indeterminato; III.1: esterno della casa di Pantalone; III. 2: interno della casa di Pantalone; III. 3-8: spazio indeterminato.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="value">La vicenda presenta una durata inferiore a 24 ore. L’azione si svolge, senza interruzioni, dal pomeriggio del primo giorno fino all’ora di pranzo del giorno successivo.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
+                        <div class="value">Tra II e III vi è un salto temporale di qualche ora che comprende le ore notturne. In III riprende l’azione all’alba.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
+                        <div class="value"><p>In I si riscontrano indicazioni temporali che collocano il momento dell’azione nel tardo pomeriggio: p. e. «Signor no, che no ho ancor disnat, e la cena l’ho andada del corp sta nott», I.1.2; «Pofarbacc è tard, bondì.», I.6.59. Nella lettera di Flaminia a Horazio è indicata l’ora del loro appuntamento: «Però verrete questa sera alle quattro della notte», I.4.19.</p>  <p>In II si trovano riferimenti al giorno dopo. Così Pantalone licenzia Giangurgolo dicendogli di tornare l’indomani molto presto, dato che ormai è troppo tardi: «Da ancùo a doman ghe poca tramezaura vedé» (II.3.17) e poi «Doman donca se vederemio per tempo» (II.3.22) e infine «v’aspetterò all’averzer de i polastrei» (II.3.24). Su questa linea, nella scena successiva, anche Teodoro rivolgendosi a Horatio: «Cosa vuoi far di bello dimani?», II.4.10. </p>  Il salto tra II e III è segnato dall’incontro notturno dei due giovani innamorati, Horatio e Flaminia: «E pur giunta quell’ora» (III.1.1) e «Orsù andiamo, che parmi ormai vicino il giorno» (III.1.19). L’alba è prossima come si evince dai riferimenti temporali insistiti contenuti nelle scene successive: «Xe ancora bonora v’è [...] Psì xe abonora quel poco; gnancora i osei no xe desmissiai [...]sta mattina no la sente gnanca alla quarta», III.2.1; «Che si fa in questo luogo così per tempo?», III.3.5. Nella scena si ripetono i riferimenti alla notte appena trascorsa. Sul corso del tempo nell’ultima scena, il giorno volge ormai verso mezzogiorno, l’ora del pranzo è vicina «fè presto, che debotto xe ora da disnar», III.8.16.</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 6-->
+            <table class="data-table data-table-profile page-break" summary="VI. Rispetto della regola delle tre unità">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="2">VI. Rispetto della regola delle tre unità</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="20%">
+                        <div class="key">34. Tempo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">35. Circostanze temporali</div>
+                        <div class="value"><p>Seguendo le indicazioni temporali (cfr. § 33), si evince che la trama si svolge in meno di una giornta. In modo approssimativo, si può dedurre che l’azione inizia nel tardo pomeriggio, forse già dopo cena, e conclude verso mezzogiorno dell’indomani.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">36. Luogo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">37. Circostanze spaziali</div>
+                        <div class="value"><p>Le vicende si svolgono in un unico ambiente cittadino. Si desume dalle battute e dalle scarne didascalie l’alternanza tra interni ed esterni.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">38. Azione</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="value"><p>Tutta l’azione è collegata agli intrighi amorosi tra due coppie di giovani innamorati (Teodoro-Hortensia e Horatio-Flaminia).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 7-->
+            <table class="data-table data-table-profile page-break" summary="VII. Elementi materiali, performativi e didascalici">
+                <thead>
+                <tr>
+                    <th scope="col">VII. Elementi materiali, performativi e didascalici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">40. Uso di oggetti particolari</div>
+                        <div class="value"><p>Lettera del Dottore a Coviello, I.1; lettera di Flaminia a Horatio, I.4; gli abiti di Finocchio e Gradellino, I; lo «scatolin», I.4; la spada di Coviello, II.6.28. il travestimento da astrologo e la barba posticcia di Finocchio, III.3-6-7-8.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">41. Uso di effetti sonori e musicali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">42. Uso di effetti speciali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">43. Scena con ampia presenza di personaggi</div>
+                        <div class="value"><p>III.8 (scena ultima): svelamento e risoluzione finale, tutti i personaggi, meno i due pretendenti forestieri (Coviello e Giangurgolo).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">44. Didascalie di particolare importanza</div>
+                        <div class="value"><p>Alternanza di scene all’interno della casa di Pantalone e di Dottore, e all’esterno con finestre da cui il personaggio si sporge e porte da cui uscire o da cercare di aprire, III.2.</p><p>Indicazione del travestimento di Finocchio, III.3 e 6; Finocchio rivela la sua vera identità, III.8.55.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 8-->
+            <table class="data-table data-table-profile page-break" summary="VIII. Prima recita">
+                <thead>
+                <tr>
+                    <th scope="col">VIII. Prima recita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">45. Prima recita</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">46. Altre recite nel Settecento</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 9-->
+            <table class="data-table data-table-profile page-break" summary="IX. Il testo in Goldoni">
+                <thead>
+                <tr>
+                    <th scope="col">IX. Il testo in Goldoni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 10-->
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+                <thead>
+                <tr>
+                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">49. Dati dei paratesti</div>
+                        <div class="value"><p>Dedica firmata a mano dall’autore e indirizzata a un tale Checo Eppiseti che viene identificato come «cognato» e il cui nome (reale, anagramma o inventato) appare già nel sottotitolo. Una prefazione esplicitamente indirizzata dall’autore al lettore. Nota finale a scopo editoriale che annuncia la prossima pubblicazione di un’altra commedia di Mondini, intitolata <i>Le nuove pazzie del Dottore</i>.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">50. Osservazioni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <img src="/assets/frontend/img/usc.svg" alt="Universidade de Santiago de Compostela" />
+                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" alt="Agencia Estatal de Investigación" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" alt="Ministerio de Ciencia e Innovación" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" alt="Fondo Europeo de Desarrollo Regional" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</body>
+</html>

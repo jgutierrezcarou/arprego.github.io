@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link  active " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="profile first">
+
+        <div class="container">
+
+            <h1 class="lion"></h1>
+
+            <!-- section 1 -->
+            <table class="data-table data-table-profile" summary="I. Titolo e dati bibliografici">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">I. Titolo e dati bibliografici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="35%">
+                        <div class="key">00. Schedatore/Schedatrice</div>
+                        <div class="value">D'Onghia, Luca</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="key">01. Autore</div>
+                        <div class="value">Balbi, Domenico</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <div class="key">
+                            02. Titolo                                                    </div>
+                        <div class="value"><em>Lippa, Il</em></div>
+                    </td>
+                    <td width="30%">
+                        <div class="key">03. Titolo completo</div>
+                        <div class="value"><p><i>Il Lippa, overo el Pantalon burlao. Comedia honestissima piena di sottili inventioni, e tanto per rappresentarla, quanto anco semplicemente per leggerla: tutta ridicolosa. Con alcune compositioni accademiche in Prosa, in Rima ad essa concernenti intrecciate con Ariette Musicali da cantarsi</i>.</p></div>
+                    </td>
+                    <td>
+                        <div class="key">04. Manoscritti</div>
+                        <div class="value"><p>Nessun manoscritto noto; si conoscono quattro edizioni a stampa (Venezia, Valvasense, 1673; Venezia, Didini, 1680; Venezia, Lovisa, s.d., «terza impressione»; Venezia, Lovisa, s.d., «quarta impressione»).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">05. Edizioni utilizzate</div>
+                        <div class="value"><p>Edizione critica a cura di Claudio Benedetto Maggi, basata sulla stampa Valvasense del 1673 con integrazioni dalla stampa Didini del 1680 (si tratta in origine della tesi di laurea triennale discussa all’Università di Pisa, a.a. 2020/2021).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 2-->
+            <table class="data-table data-table-profile" summary="II. Tipo">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">II. Tipo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">06. Genere</div>
+                        <div class="value"><p>Commedia cittadina <i>ridicolosa</i> (personaggi legati alle maschere, uso di vari dialetti, travestimenti, fraintendimenti linguistici, percosse, beffe); ma anche «onestissima comedia» (<i>Dedica</i>), dato il suo contenuto fondamentalmente morale (vedi anche l’<i>Avviso al lettore</i>, nel quale si discorre di «sceniche compositioni entro gli argini della modestia»).</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">06. Sottogenere</div>
+                        <div class="value">-</div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">07. Generi interni</div>
+                        <div class="value"><p>Missive (I.3.12, I.4.14, II.15.11, II.16.32, III.3.37); orazioni accademiche (III.10.1, III.10.3); ariette e canzonette destinate al canto («arietta cantata in musica con suoni»: III.10.2, III.10.5, III.10.7, III.10.11, III.10.13); sonetti (III.10.14-17 [cui seguono nell’edizione Didini altri otto sonetti]; ottave (III.10.18).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 3-->
+            <table class="data-table data-table-profile page-break" summary="III. Personaggi e rapporti">
+                <thead>
+                <tr>
+                    <th scope="col">III. Personaggi e rapporti</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="key">08. Elenco dei personaggi</div>
+                        <div class="value"><p>Pantalone dei Bisognosi; Giacinto; Bagolino primo Zanne; Pandora; Dottore Campanazzo da Budri (Budrio); Bagattino secondo Zanne; Ippolita; Sbirri (che non parlano).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">09. Protagonisti</div>
+                        <div class="value"><p>Pantalone e Bagolino (l’intera commedia è costruita su una sfida tra Bagolino a Pantalone: vedi riassunto al punto 24).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="value"><p>Pantalone (Magnifico), Dottor Campanazzo (Dottore), Bagolino (primo Zanni), Bagattino (secondo Zanni), Pandora (servetta di Pantalone), Giacino e Ippolita (innamorati).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
+                        <div class="value"><p>Il nome del Dottore, Campanazzo (lett. ‘campanaccio’), alluderà alla sua corporatura o alla sua loquela monotona e stordente come il suono delle campane (l’epiteto è tradizionale: si pensi alla commedia di Andreini intitolata <i>Campanaccia</i>); per Bagolino vale il raffronto con il veneziano <i>bagolo</i> ‘baia’, ‘beffa’, ‘passatempo’, ‘sollazzo’ (Boerio 56); per Bagattino, che nella commedia è un povero ciabattino, si dovrà pensare a <i>bagatin</i> ‘moneta di modesto valore’ (Boerio 55; meno probabile l’allusione al <i>bagatto</i> dei tarocchi, che simboleggia la magia e la capacità creativa); i nomi dei giovani amorosi alludono alla loro purezza (Giacinto è il giovane spartano adorato da Apollo e morto precocemente, Ippolita la regina delle Amazzoni). Anche il nomignolo derisorio che dà il titolo alla commedia, Lippa, indicherà la persona beffata e incapace (la <i>lippa</i> è un gioco infantile, e in Boerio 372 è registrata la locuzione <i>Andè a ziogar a la lipa</i> ‘siete un incapace’, ‘andate a farvi friggere’).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">12. Rapporti fra i personaggi</div>
+                        <div class="value"><p>Pantalone è padre di Giacinto e padrone di Bagolino e Pandora; Bagattino è ciabattino e padre di Ippolita; Bagolino e Pandora, Giacinto e Ippolita sono due coppie di innamorati.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">13. Personaggi speculari</div>
+                        <div class="value"><p>I padroni (Pantalone, e entro certi limiti il Dottore) si oppongono ai servi (Bagolino e Pandora); Pantalone si oppone anche al figlio Giacinto.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
+                        <div class="value"><p>Nessuno di particolare importanza; gli unici brevi monologhi della commedia sono di Pantalone (II.7, II.10, II.13) e Bagolino (III.4) e servono a ritmare l’azione segnando per lo più un passaggio dal fuori della strada al dentro delle case, o preannunciando alcuni sviluppi della trama.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
+                        <div class="value"><p>I.8 (Pantalone e il Dottore: lunga scena imperniata sul fraintendimento comico), II.6 (scena di travestimenti dominata da Bagattino, che si camuffa da Pantalone e imita il dialetto veneziano, libera Giacinto e fa ubriacare il Dottore), III.3 (finto pentimento di Giacinto, che ottiene da Pantalone di poter tenere una seduta accademica in casa per la sera stessa), III.10 (seduta accademica in casa di Pantalone: sono presenti tutti i personaggi e si arriva allo scioglimento della commedia).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">16. Uso particolarmente rilevante degli a parte</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">17. Personaggi che parlano solo in verso</div>
+                        <div class="value"><p>Nessuno.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">18. Personaggi che parlano solo in prosa</div>
+                        <div class="value"><p>Tutti i personaggi parlano solo in prosa; nella scena finale alcuni personaggi (Giacinto, il Dottore, Pantalone, Bagattino) cantano o declamano testi in versi (cfr. § 7).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">19. Personaggi che parlano a soggetto</div>
+                        <div class="value"><p>Non determinabile; ma un <i>etc.</i> (II.11.19) e un <i>etcetera</i> (II.11.22) possono far pensare a un repertorio con il quale si poteva farcire a piacere la batttuta (si tratta in entrambi i casi di offese riferite a Pantalone: «quel brut becconaz etc. de Pantalon» e «quel becconazzo, eccetera, de Pantalon»).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
+                        <div class="value"><p>Non determinabile (cfr. §19).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">21. Personaggi che parlano solo in italiano</div>
+                        <div class="value"><p>Giacinto, Ippolita (gli innamorati).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
+                        <div class="value"><p>Pantalone (veneziano), dottor Campanazzo (bolognese, con varie iniezioni di latino più o meno storpiato), Bagolino e Bagattino (bergamasco). Bagolino e Bagattino si concedono l’uso comico o l’imitazione burlesca anche di altre varietà linguistiche, specie quando si travestono: latino (I.5.25, Bagolino; II.5.3, Bagattino; II.14-15, Bagattino), italiano (II.4.1-9, Bagolino), veneziano (II.5, sia Bagolino che Bagattino, con istruzioni metalinguistiche su come parlare il veneziano), bolognese (II.15, Bagattino), spagnolo (III.6, Bagattino), tedesco (III.6, Bagolino).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
+                        <div class="value"><p>Nessuno, salvo il fatto prevedibile che nella parte del dottor Campanazzo abbondano i fraintendimenti e le deformazioni linguistiche di vario genere.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 4-->
+            <table class="data-table data-table-profile page-break" summary="IV. Intreccio">
+                <thead>
+                <tr>
+                    <th scope="col">IV. Intreccio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="value"><p>Atto primo. Il Dottore rivela a Pantalone che suo figlio Giacinto frequenta di nascosto la figlia di un ciabattino e ne ha chiesto la mano (I.1). Pantalone annuncia una punizione esemplare per Giacinto e licenzia il servo Bagolino, suo complice; ma i due gli fanno credere che la figlia del ciabattino, Ippolita, abbia già ricevuto l’anello e che il matrimonio si sia già consumato (I.2). Frattanto Pandora porta a Pantalone una lettera nella quale è annunciato l’imminente matrimonio di Giacinto con una fanciulla di Roma; intercettata la lettera, con l’aiuto di Bagolino Giacinto compone una lettera di tenore opposto, che manda a monte il matrimonio combinato da Pantalone (I.3); questi legge la lettera fasulla ma subito smaschera l’inganno e va su tutte le furie (I.4). Bagolino – che ha già sobillato il Dottore, convincendolo a patrocinare una querela contro Pantalone e a favore di Bagattino, padre di Ippolita – affronta il padrone e lo sfida: se riuscirà a far sposare Giacinto e Ippolita, Pantalone sarà irriso con il nomignolo di Lippa, che altrimenti toccherà a lui, a Bagolino. Pantalone reagisce chiudendo Giacinto a chiave in casa (I.5). Intanto il Dottore promette di aiutare Bagattino e Ippolita contro Pantalone (I.6); costui arriva ed è male accolto dal Dottore (convinto da Bagolino di essere stato offeso da Pantalone), ma parlando con lui capisce che tutto è dovuto a una macchinazione di Bagolino (I.7), riesce a riappacificarsi con lui e non senza fatica lo incarica di ricevere per suo conto la corrispondenza (I.8).</p>  <p>Atto secondo. Tornato sotto la casa dell’ex padrone, Bagolino circuisce Pandora fingendosi offeso con lei, e la convince a far uscire di casa Giacinto; ma Pantalone sopraggiunge (II.1) insieme al Dottore, e decidono di fare uno scherzo a Pandora e di farle credere che Bagolino si è sposato con un’altra donna (II.2); Pandora fraintende il padrone e il Dottore e, temendo di essere stata scoperta nel suo tentativo di far evadere Giacinto, rivela tutti i piani di Bagolino (II.3). Intanto Bagolino, travestitosi da forestiero, riesce a far allontanare Pantalone, che se ne va lasciando il Dottore a guardia del figlio (II.4); ma subito Bagolino istruisce Bagattino su come parlare veneziano (II.5) e lo fa entrare in casa travestito da Pantalone: così Bagattino-Pantalone fa ubriacare il Dottore e apre la porta a Giacinto, che scappa con Bagolino e si dirige verso la casa di Ippolita (II.6). Pantalone rientra a casa (II.7), scopre quanto è accaduto, picchia il Dottore e decide di uscire camuffandosi da straccivendolo (II.8); in queste vesti incontra Bagolino e Bagattino: senza volerlo, e senza accorgersi di chi è davvero il suo interlocutore, il secondo gli rivela le macchinazioni di cui è vittima; ormai informato di tutto, Pantalone decide di allertare i birri e di precipitarsi a casa del ciabattino per far arrestare il figlio (II.9-11). Intanto Bagolino progetta di far travestire Bagattino da Dottore per scucire altri soldi a Pantalone in vista del matrimonio (II.12); Pantalone càpita sulla loro strada dopo essere passato a casa da Pandora (II.13) e riceve da Bagattino, che è stato istruito a imitare la parlata del Dottore, una lettera fasulla, nella quale è annunciata la morte della promessa sposa romana di Giacinto (II.14-15). Poco dopo però Pantalone incontra il vero Dottore, che gli consegna la vera lettera giunta da Roma, nella quale si annuncia l’imminente arrivo a Venezia della promessa sposa di Giacinto (II.16); giunto finalmente a casa del ciabattino, Pantalone fa arrestare il figlio e, credendo di aver preso anche Bagattino, fa arrestare per errore il vero Dottore (II.17). </p>  Atto terzo. Pantalone libera il figlio e il Dottore, che erano stati arrestati (III.1); intanto Bagolino suggerisce a Giacinto di convincere il padre a radunare per la sera stessa un’accademia in casa loro (III.2): fingendosi adirato con Bagolino e pentito per il proprio comportamento, Giacinto ottiene da Pantalone di organizzare un’accademia in casa, e gli detta una violenta lettera di congedo diretta a Bagolino (III.3). Bagolino nel frattempo progetta di recarsi a casa di Pantalone vestito da tedesco, portando con sé Ippolita travestita da principe straniero e Bagattino travestito da spagnolo (III.4); incontra Pantalone, che gli consegna trionfante la lettera di Giacinto: Bagolino ride e se ne va (III.5). Ingannato dai travestimenti, Pantalone accoglie in casa propria Ippolita travestita da principe ungherese (III.6), e racconta compiaciuto al Dottore dell’intrinsechezza che ha notato tra Giacinto e il presunto principe, che si sono ritirati insieme nella camera di Giacinto (III.7). Pantalone accetta le scuse di Bagolino e Bagattino, che chiedono di essere ammessi alla serata accademica: sta calando la notte (III.8). Pandora annuncia è che imminente l’ora d’inizio delle attività (III.9); i convitati alla serata tengono una serie di orazioni a tema e recitano/cantano alcune poesie, e infine Giacinto rivela al padre l’identità del principe unghesere: pur di non essere chiamato Lippa, Pantalone perdona tutti e benedice i matrimoni di Giacinto e Ippolita e di Bagolino e Pandora (III.10).</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">25. Tema principale</div>
+                        <div class="value"><p>Amore tra Giacinto e Ippolita, contrastato da Pantalone e favorito da Bagolino.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">26. Temi secondari</div>
+                        <div class="value"><p>Amore tra Bagolino e Pandora (che si sposano alla fine della commedia insieme a Giacinto e Ippolita).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">27. Comicità</div>
+                        <div class="value"><p>Comicità linguistica determinata da fraintendimento o inceppamento comunicativo (I.8, duetto tra Pantalone e il Dottore, che a partire dalla battuta 50 parlano l’uno sopra l’altro: «parlano tutti e due in un tempo»); comicità linguistica derivata dal travestimento linguistico (II.5-6, Bagattino si finge veneziano; III.6, Bagattino e Bagolino si fingono rispettivamente spagnolo e tedesco); comicità di situazione (II.6 e II.8: il Dottore si ubriaca, rutta, russa e vomita, ed è poi preso a bastonate da Pantalone); comicità legata ai plurimi travestimenti (Bagolino da <i>forastiero</i> II.4; Bagattino da Pantalone II.5-6; Pantalone da <i>strazzarol</i> II.10; Bagattino da Dottore II.15; Ippolita da «prencipe straniero» III.6).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">28. Elementi polemici, satirici e parodici</div>
+                        <div class="value"><p>Oltre ai vari ingredienti letterari/filosofici richiamati parodicamente in alcune battute del Dottore (I.1.12, I.8.48, I.8.50-98, II.8.31) e di Bagattino (I.6.2, I.7.14), vanno segnalate le ottave pronunciate da Bagattino a III.10.18, che si inseriscono nella florida tradizione di parodie del <i>Furioso</i> di Ariosto. Un’allusione blandamente polemica ai censori dei libri si ricava dalla battuta III.10.6 di Pantalone: «E mi diria che sto ricco sapiente fasse el favro, perché cusì el faria de gran opere, e el le manderia in luxe senza licentia dei Superiori».</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 5-->
+            <table class="data-table data-table-profile page-break" summary="V. Luogo e tempo">
+                <thead>
+                <tr>
+                    <th scope="col">V. Luogo e tempo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">29. Luogo generale</div>
+                        <div class="value"><p>Venezia.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">30. Cambiamenti di luogo</div>
+                        <div class="value"><p>I.1-2: casa di Pantalone; I.3-5: strada; I.6: presumibilmente casa del Dottore (cfr. I.6.19); I.7: strada; I.8: presumibilmente casa di Pantalone o del Dottore; II.1: strada (Bagolino) e casa di Pantalone (Pandora, Giacinto); II.2-5: strada (durante II.4 Pantalone si allontana, e alla fine della scena Pandora e il Dottore entrano in casa di Pantalone); II.6: strada (Bagolino) e casa di Pantalone (Pandora, Dottore, Giacinto e Bagattino travestito da Pantalone), con Bagattino e Giacinto che si fanno alla finestra alle battute 49 e 52 (alla battuta 67 Bagattino e Giacinto escono di casa); II.7: strada; II.8: strada, fino alla battuta 27, quindi casa di Pantalone; II.9-17: strada; III.1-9: strada (ma in III.1 a rigore ci si trova o in prigione o con i birri in scena, dato che Giacinto e il Dottore sono definiti <i>prigioni</i> nella didascalia); III.10: casa di Pantalone.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="value">Molto probabilmente dalla mattina (se non dal mezzogiorno) alla sera di una stessa giornata.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
+                        <div class="value">Nessuna evidente soluzione di continuità temporale tra gli atti (e così tra le scene).</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
+                        <div class="value"><p>Quanto al periodo dell’anno, pare abbastanza certo che la commedia si svolga durante il Carnevale, dato che il padre della fanciulla romana che Pantalone vorrebbe far sposare a Giacinto preannuncia il proprio arrivo con una lettera in cui scrive che «per li giorni ultimi del Carnovale sarò a Venetia con la mia figliola» (II.16.32). Per un’altra indicazione di rilievo, relativa alla notte che scende sul finire della commedia, cfr. § 35.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 6-->
+            <table class="data-table data-table-profile page-break" summary="VI. Rispetto della regola delle tre unità">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="2">VI. Rispetto della regola delle tre unità</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="20%">
+                        <div class="key">34. Tempo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">35. Circostanze temporali</div>
+                        <div class="value"><p>L’azione si svolge nella stessa giornata, dalla mattina (o dal mezzogiorno) alla sera (cfr. III.8.16 «el scuro ne xè sorazonto adosso», e III.10 didascalia iniziale «apparato di lumi»).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">36. Luogo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">37. Circostanze spaziali</div>
+                        <div class="value"><p>La commedia si svolge a Venezia, della quale vengono evocati amche alcuni luoghi precisi (I.1.5 Redutto dei marcanti e Riva dal ferro; II.1.1 Piazza San Marco; II.11.32 Ponte della paggia; III.6.6 un Rio terrao).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">38. Azione</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="value"><p>L’azione della commedia è interamente incentrata sulla sfida tra Pantalone e Bagolino, che riesce nell’impresa di far sposare Giacinto e Ippolita contro la volontà di Pantalone (vedi sopra il riassunto al punto 24).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 7-->
+            <table class="data-table data-table-profile page-break" summary="VII. Elementi materiali, performativi e didascalici">
+                <thead>
+                <tr>
+                    <th scope="col">VII. Elementi materiali, performativi e didascalici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">40. Uso di oggetti particolari</div>
+                        <div class="value"><p>Nessuno; tra i paratesti si trova una lista di «robbe necessarie da provedersi oltre li vestiti di cadaun personaggio».</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">41. Uso di effetti sonori e musicali</div>
+                        <div class="value"><p>A II.1.29 Bagolino fischietta e canta la canzoncina <i>Va’ su, Simon</i> (che anche Pantalone sembra conoscere: II.2.1). L’ultima scena (III.10), dedicata all’<i>accademia</i> che si tiene in casa di Pantalone, si apre con l’esecuzione di una <i>sinfonia</i>, senz’altro suonata da un ensemble strumentale (vedi didascalia iniziale); più avanti nella stessa scena vengono cantate (non è chiaro da chi) alcune <i>ariette</i> accompagnate dall’orchestra (III.10.2, III.10.5, III.10.7, III.10.11; e forse è da ritenersi cantata, pur in assenza di esplicita didascalia, anche la <i>canzonetta</i> di III.10.13).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">42. Uso di effetti speciali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">43. Scena con ampia presenza di personaggi</div>
+                        <div class="value"><p>III.10 (è l’ultima scena, nella quale si trovano tutti i personaggi).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">44. Didascalie di particolare importanza</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 8-->
+            <table class="data-table data-table-profile page-break" summary="VIII. Prima recita">
+                <thead>
+                <tr>
+                    <th scope="col">VIII. Prima recita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">45. Prima recita</div>
+                        <div class="value"><p>Non si hanno notizie sulla prima recita, ma essa ebbe luogo prima dell’edizione principe del 1673, come mostra una frase della <i>Dedica</i> che definisce il <i>Lippa</i> «onestissima comedia […] da alcuni ben nati fanciulli fatta rapresentare». La chiusa del <i>Prologo in canzone</i> recitato da Bagolino potrebbe inoltre alludere a una recita a pagamento, perché intima il silenzio e minaccia di espulsione dalla sala chi non si obbedirà, con contestuale restituzione del prezzo del biglietto («E chi farà altriment / el sia condot fo’ dal portiner / a fargh dar [o das] indred i so’ dener»).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">46. Altre recite nel Settecento</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 9-->
+            <table class="data-table data-table-profile page-break" summary="IX. Il testo in Goldoni">
+                <thead>
+                <tr>
+                    <th scope="col">IX. Il testo in Goldoni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
+                        <div class="value"><p>Nessuno evidente, almeno a mia notizia; mi chiedo se il travestimento di Pantalone da <i>strazzarol</i> a II.8 non possa essere stato noto a Goldoni e aver almeno in parte ispirato il medesimo travestimento – con tanto di canzone equivoca – per il personaggio del giovane Baseggio nella scena terza del secondo atto delle <i>Donne gelose</i> (1752).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 10-->
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+                <thead>
+                <tr>
+                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">49. Dati dei paratesti</div>
+                        <div class="value"><p>Oltre a quanto richiamato sopra al punto 45, è da ricordare la gratitudine con cui Balbi rammenta la casa di campagna della famiglia Busenello. Nella <i>Dedica</i> l’autore ringrazia infatti Giovanni Busenello «per avermi più volte cortesemente accolto, nel tempo dell’estate, colà sotto li suoi delitiosi tetti» (la «degnissima Businella famiglia» possedeva tra l’altro una residenza di campagna a Legnaro presso Padova, ma per ora non è chiaro in quale rapporto stia il Giovanni dedicatario del <i>Lippa</i> con il famoso poeta e librettista Giovanni Francesco, proprietario della villa di Legnaro e morto nel 1659).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">50. Osservazioni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <img src="/assets/frontend/img/usc.svg" alt="Universidade de Santiago de Compostela" />
+                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" alt="Agencia Estatal de Investigación" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" alt="Ministerio de Ciencia e Innovación" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" alt="Fondo Europeo de Desarrollo Regional" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</body>
+</html>

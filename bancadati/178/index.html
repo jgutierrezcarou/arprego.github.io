@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link  active " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="profile first">
+
+        <div class="container">
+
+            <h1 class="lion"></h1>
+
+            <!-- section 1 -->
+            <table class="data-table data-table-profile" summary="I. Titolo e dati bibliografici">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">I. Titolo e dati bibliografici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="35%">
+                        <div class="key">00. Schedatore/Schedatrice</div>
+                        <div class="value">Rivas Seivane, Claudia</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="key">01. Autore</div>
+                        <div class="value">Bianchi, Brigida</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <div class="key">
+                            02. Titolo                                                    </div>
+                        <div class="value"><em>Inganno fortunato, L', ovvero L'amante aborrita</em></div>
+                    </td>
+                    <td width="30%">
+                        <div class="key">03. Titolo completo</div>
+                        <div class="value"><p><i>L’inganno fortunato, overo L’amata aborrita</i>, comedia bellissima, transportata dallo Spagnuolo.</p></div>
+                    </td>
+                    <td>
+                        <div class="key">04. Manoscritti</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">05. Edizioni utilizzate</div>
+                        <div class="value"><p><i>L’inganno fortunato, overo l’amata aborrita</i>, Parigi, Claudio Cramoisy, 1659.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 2-->
+            <table class="data-table data-table-profile" summary="II. Tipo">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">II. Tipo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">06. Genere</div>
+                        <div class="value"><p>Commedia.</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">06. Sottogenere</div>
+                        <div class="value">-</div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">07. Generi interni</div>
+                        <div class="value"><p>Epistolare: lettera del principe alla duchessa (I.12).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 3-->
+            <table class="data-table data-table-profile page-break" summary="III. Personaggi e rapporti">
+                <thead>
+                <tr>
+                    <th scope="col">III. Personaggi e rapporti</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="key">08. Elenco dei personaggi</div>
+                        <div class="value"><p>Odoardo, re di Ungheria; Carlo, prencipe [<i>sic</i>] di Transilvania; Laura, infanta di Boemia e nipote di Odoardo; Portia [<i>sic</i>, Porzia], duchessa e cugina di Laura; Federico, duca e parente del re; Celia, dama di Laura; Lodovico, marchese e privato del re; Teodoro, capitano della guardia; Ernesto, servo di Carlo; Floro, servo di Federico; Ottavio, anche servo di Carlo, non parla.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">09. Protagonisti</div>
+                        <div class="value"><p>Laura e Carlo, due innamorati che, a causa degli inganni di Laura, vedono impedito il loro amore ma che, alla fine, riescono a consumarlo e a sposarsi.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">12. Rapporti fra i personaggi</div>
+                        <div class="value"><p>Carlo, figlio di Odoardo; Odoardo-Laura, zio e nipote; Odoardo-Federico, parenti; Carlo-Laura, cugini e innamorati; Carlo-Federico, amici; Laura e Portia, cugine; Federico, innamorato di Portia; Celia, dama di Laura; Lodovico, privato del re; Ernesto e Ottavio, servi di Carlo; Floro, servo di Federico.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">13. Personaggi speculari</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
+                        <div class="value"><p>Laura, contestualizzazione e risentimento con il re per aver sistemato le sue nozze con il principe, I.2.7-40; Carlo, manifestazione d’amore, II.7.26-55; Carlo, gelosia, III.2.32-63; Federico, spiegazione del falso inganno di Laura a Carlo, III.2.69-86; Carlo, ricorda come si sia innamorato e tutto ciò che è accaduto poi per quanto riguarda lui e Laura, III.10.58-87.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
+                        <div class="value"><p>Federico e Portia, confessione d’amore di lui e rifiuto di lei, II.2.27-124; Laura e Federico, inganno della principessa, II.108-160; Laura e Carlo, dichiarazione d’amore di Laura e gioia di Carlo, III.10.104; Laura, scopre l’inganno ai danni del principe e risoluzione dell’intreccio, III.16.29-65.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">16. Uso particolarmente rilevante degli a parte</div>
+                        <div class="value"><p>Carlo, ammirazione della bellezza di Laura, I.6.6-21; Federico, contrarietà verso ciò che dice Carlo, I.14.66-75, 90-101; Laura e Carlo, dichiarazione d’amore non sentita, II.4.204-208; Laura, paragone tra se stessa e Portia, II.5.45-79; Laura e Carlo, conversazione parallela a parte, III.5 (tutta la scena); Carlo e Federico, pacificazione degli amici, III.6.32-38; Portia, inganno di Portia alla vista del gioiello che porta Federico, III.13-20; Laura, progetta il suo inganno, III.8.8-14; Laura, nota l’inganno di Carlo, III.10.44-53.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">17. Personaggi che parlano solo in verso</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">18. Personaggi che parlano solo in prosa</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">19. Personaggi che parlano a soggetto</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">21. Personaggi che parlano solo in italiano</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
+                        <div class="value"><p>Carlo, I.14.22-39, ripetizione di parte delle frasi di Ernesto, rafforza la tensione e l’impazienza del principe.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 4-->
+            <table class="data-table data-table-profile page-break" summary="IV. Intreccio">
+                <thead>
+                <tr>
+                    <th scope="col">IV. Intreccio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="value"><p><strong>Atto primo</strong>: Federico visita la corte della principessa Laura di Boemia per comunicarle che il suo matrimonio con il principe Carlo è stato sistemato dal re. Quando glielo dice, si innamora di Portia, cugina di Laura. La principessa, preoccupata per non avere mai visto il suo promesso sposo, decide di andare in Ungheria sotto la finta identità di Portia, per conoscerlo e assicurarsi che sia un buon marito per lei. Carlo, quando la conosce, si innamora di lei e decide di sposare Portia e non Laura, benché la donna di cui si sia innamorato sia in realtà Laura. Comunica a suo padre che non vuole sposare la principessa e questi, di conseguenza, lo manda fuori dalla corte con la proibizione di rientrarci, ma lui invia il suo servo Ernesto con una nota per Portia. Quando arrivano di nuovo Portia e Laura, questa scopre l’inganno. Il re le dice che il matrimonio è stato cancellato perché vuole darle l’opportunità di scegliere liberamente chi sposare. Quando le donne sono nella sua stanza, arriva Ernesto con la nota per Portia, motivo per cui Laura si turba ma finge di essere contenta, poi Ernesto va via. Carlo parla con Federico e gli dice che non sposerà la principessa perché è innamorato di un’altra, poi arriva Ernesto dicendo che l’amore è corrisposto da Portia; Federico, ascoltando questo nome, si turba e se ne va.</p>  <p><strong>Atto secondo</strong>: Floro dice a Federico che dovrebbe confessare a Portia il suo amore per avere qualche opportunità. Il re permette che Carlo torni a palazzo e Federico riesce a confessarsi con Portia, ma lei lo rifiuta. Poi, Laura chiede a Portia che le dia la sua gemma di diamanti e la appunta sul petto. Arriva Carlo e parte Laura, restando Portia, che lui crede Laura, motivo per cui le chiede scusa e lei gli dice che dovrebbe parlare con sua cugina, e lui crede che lo inviti a confessare il suo amore. Laura arriva e, insieme a Carlo, parla in disparte, e dice che lui non la guarda per disprezzo e lui perché è molto innamorato. Carlo trova Federico e gli dice che il re sta per sposarsi, Federico pensa che sia con Portia. Federico lascia il suo cappello e il suo ferraiuolo a Carlo, che glieli chiede perché nessuno lo riconosca. Quando Carlo e Portia parlano, Laura se ne va e trova Federico, gli dice che lei è la vera Portia e che chi parla con Carlo è una serva perché la regina vuole prenderlo in giro. Gli dice, sotto la finta identità di Portia, di amarlo e gli dà la gemma come dimostrazione del suo impegno. Poi, il  principe vede la gemma del duca e gli dice che gliel’ha data la sua amata.</p>  <strong>Atto terzo</strong>: Federico confessa a Carlo che la gemma è un regalo di Portia e che tutto è stato un inganno di Laura per vendicarsi. Carlo si arrabbia, poi parla con Laura e le dice che vorrebbe parlare con lei un’altra volta quella notte, lei crede che la stia prendendo in giro. Il re crede che ci sia qualche problema tra Federico e Carlo, ma loro fingono che tutto vada bene e, a parte, si riconciliano. Portia nota che Federico ha la sua gemma e crede che Laura si sia innamorata di lui. Arriva la principessa e parla con Portia tentando di svegliare la gelosia in lei, ma non ci riesce. Carlo parla con Laura e la chiama Portia, le dice che la ama dal momento in cui l’ha vista per la prima volta e che per quel motivo ha inviato Ernesto con la lettera. Lei si rende conto che tutto si deve al suo inganno iniziale e che è sempre stato innamorato di lei; lei dice che in realtà non ama Federico, che ama lui, sistema il suo matrimonio con lui e quello di Portia con Federico, ma ancora senza rivelare la sua identità. Il re scopre chi è la sua sposa e Laura scopre l’inganno a Carlo prima di sposarlo.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">25. Tema principale</div>
+                        <div class="value"><p>Amore: dall’amore scaturiscono tutti gli equivoci, inganni e conflitti su cui si basa l’azione, questi si risolvono soltanto quando i veri sentimenti fra gli innamorati vengono rivelati.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">26. Temi secondari</div>
+                        <div class="value"><p>Gelosia: Laura è evidentemente gelosa di Portia perché pensa che il suo innamorato ami invece la cugina.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">27. Comicità</div>
+                        <div class="value"><p>Giochi di parole, doppio senso: quando Carlo dà a Ernesto una catena d’oro per ringraziare i suoi servizi, questo dice di essere il suo «schiavo incatenato» (I.14.80).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">28. Elementi polemici, satirici e parodici</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 5-->
+            <table class="data-table data-table-profile page-break" summary="V. Luogo e tempo">
+                <thead>
+                <tr>
+                    <th scope="col">V. Luogo e tempo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">29. Luogo generale</div>
+                        <div class="value"><p>Ungheria.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">30. Cambiamenti di luogo</div>
+                        <div class="value"><p>I.1: Viaggio tra Ungheria e Boemia (la storia comincia quando Federico arriva in Boemia per comunicare alla principessa che suo zio il re vuole sposarla con il principe Carlo, suo figlio. Poi Laura decide di andare in Ungheria con Francesco, viaggio rimosso nella scena; il loro arrivo alla corte ci è mostrato nella scena, e poi ci sono due nuove rimozioni: quella del ritorno di Laura in Boemia e quella del viaggio di Laura con Portia, di nuovo, verso l’Ungheria, dove si svolge la maggior parte dell’azione); I.2: corte di Boemia; I.3-10: corte d’Ungheria; I.11-12: camera della principessa; I.13-: Boemia, fuori dalla corte; II.1-2: corte di Boemia; II.3: camera della principessa; II.4: corte di Boemia; II.5: camera della principessa; II.6: corte di Boemia; II.7: camera della principessa; II.8-9: corte di Boemia; III.1-3: parco nella corte; III.4-8: corte di Boemia; III.9-11: alla finestra della principessa; III.12-16: corte di Boemia.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="value">I mesi di viaggio (rimossi), un giorno completo e la notte e il mattino del successivo (cfr. § 35).</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
+                        <div class="value">Tra I.2 e I.5 si produce un viaggio dalla corte di Boemia a quella d’Ungheria, che potrebbe durare più di un mese nell’epoca; tra I.6, quando Laura va via e I.9, quando ritorna con Portia, si compie lo stesso viaggio due volte, l’andata e il ritorno; da II.6 fino a II.9 è di notte, il terzo atto comincia quando è ormai giorno; III.9-III.11: notte.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
+                        <div class="value"><p>II.6: «federico: Hor che la fredda notte ha ricoperto il Cielo di nero ammanto...»; II.7: «questa notte»; III.9: <i>Notte</i> (didascalia); III.10: «laura: Non spuntarà l’alba in cielo che per esser foriere dei nostri imenei»; III.11: «Partite, che l’Alba appare».</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 6-->
+            <table class="data-table data-table-profile page-break" summary="VI. Rispetto della regola delle tre unità">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="2">VI. Rispetto della regola delle tre unità</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="20%">
+                        <div class="key">34. Tempo</div>
+                        <div class="value">No</div>
+                    </td>
+                    <td>
+                        <div class="key">35. Circostanze temporali</div>
+                        <div class="value"><p>L’intreccio si svolge in più di 24 ore. I viaggi tra le corti di Ungheria e Boemia fanno sì che dalla prima scena all’ultima siano passati dei mesi.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">36. Luogo</div>
+                        <div class="value">No</div>
+                    </td>
+                    <td>
+                        <div class="key">37. Circostanze spaziali</div>
+                        <div class="value"><p>L’azione si svolge fra le corti di Boemia e Ungheria.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">38. Azione</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="value"><p>L’azione gira intorno all’inganno degli innamorati, che si risolve alla fine della commedia.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 7-->
+            <table class="data-table data-table-profile page-break" summary="VII. Elementi materiali, performativi e didascalici">
+                <thead>
+                <tr>
+                    <th scope="col">VII. Elementi materiali, performativi e didascalici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">40. Uso di oggetti particolari</div>
+                        <div class="value"><p>Lettera, Ernesto e Portia, I.11.16; catena d’oro, Carlo e Ernesto, I.14.77; gioiello di diamanti, Portia e Laura, II.3.17, II.8.151, II.9.13 (Federico); specchio, Laura, II.5.22; cappello, Federico e Carlo II.6.62, II.9.11; ferraiuolo, Federico e Carlo, II.6.61, II.9.10-11.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">41. Uso di effetti sonori e musicali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">42. Uso di effetti speciali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">43. Scena con ampia presenza di personaggi</div>
+                        <div class="value"><p>I.9 (sei personaggi più accompagnamento): arrivano Laura e Portia con Federico e Floro alla corte d’Ungheria, dove ci sono il re, Lodovico e Teodoro per riceverle, oltre al loro accompagnamento; III.16 (nove personaggi): quasi tutti i personaggi – tranne che Celia e Lodovico – sono presenti per celebrare le nozze dei protagonisti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">44. Didascalie di particolare importanza</div>
+                        <div class="value"><p>Sono particolarmente rilevanti gli a parte di Carlo e Laura che manifestano il loro amore verso l’altro, ma che non pronunciano a voce alta, come quelli di I.6 o della fine di II.4.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 8-->
+            <table class="data-table data-table-profile page-break" summary="VIII. Prima recita">
+                <thead>
+                <tr>
+                    <th scope="col">VIII. Prima recita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">45. Prima recita</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">46. Altre recite nel Settecento</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 9-->
+            <table class="data-table data-table-profile page-break" summary="IX. Il testo in Goldoni">
+                <thead>
+                <tr>
+                    <th scope="col">IX. Il testo in Goldoni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 10-->
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+                <thead>
+                <tr>
+                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">49. Dati dei paratesti</div>
+                        <div class="value"><p>Dopo la dedica alla regina, c’è un <i>Avvertimento a chi legge</i>, alla cui fine l’autrice dichiara che non indicherà il «luogo» da cui ha ricavato la commedia spagnola che imita, poiché nel rifacimento si è concessa troppa libertà; aggiunge inoltre che, non essendo sua intenzione ricevere lodi, chiede al lettore di mostrarsi compassionevole.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">50. Osservazioni</div>
+                        <div class="value"><p>Secondo le ricerche di Carmen Marchante Moralejo (L’Inganno Fortunato, overo l’Amata aborrita <i>di Brigida Bianchi e la sua fonte spagnola</i>, «Cuadernos de Filología Italiana», 4, 1997, pp. 117-141), la commedia fonte è <i>La despreciada querida </i>(1621) di Juan de Villegas.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <img src="/assets/frontend/img/usc.svg" alt="Universidade de Santiago de Compostela" />
+                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" alt="Agencia Estatal de Investigación" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" alt="Ministerio de Ciencia e Innovación" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" alt="Fondo Europeo de Desarrollo Regional" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</body>
+</html>

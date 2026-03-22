@@ -73,6 +73,25 @@ var Main =
             Main.instances.push(Main.table($(this)));
         });
 
+        var resizeTimer;
+        $(window).on('resize', function()
+        {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function()
+            {
+                var isMobile = window.innerWidth < 992;
+                Main.instances.forEach(function(dt)
+                {
+                    if (isMobile) {
+                        dt.fixedHeader.disable();
+                    } else {
+                        dt.fixedHeader.enable();
+                        dt.fixedHeader.adjust();
+                    }
+                });
+            }, 150);
+        });
+
         if($('.search.first').length)
         {
             $('.navbar form').on('submit', function(event)
@@ -177,8 +196,10 @@ var Main =
             }
         };
 
-        options.fixedHeader = {
-            headerOffset: $('.navbar').outerHeight()
+        if (window.innerWidth >= 992) {
+            options.fixedHeader = {
+                headerOffset: $('.navbar').outerHeight()
+            };
         }
 
         if(table.data('remote'))

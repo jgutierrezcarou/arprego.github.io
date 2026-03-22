@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link  active " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="profile first">
+
+        <div class="container">
+
+            <h1 class="lion"></h1>
+
+            <!-- section 1 -->
+            <table class="data-table data-table-profile" summary="I. Titolo e dati bibliografici">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">I. Titolo e dati bibliografici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="35%">
+                        <div class="key">00. Schedatore/Schedatrice</div>
+                        <div class="value">Cutrì, Maicol.</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="key">01. Autore</div>
+                        <div class="value">Maggi, Carlo Maria</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <div class="key">
+                            02. Titolo                                                    </div>
+                        <div class="value"><em>Bianca di Castiglia, La</em></div>
+                    </td>
+                    <td width="30%">
+                        <div class="key">03. Titolo completo</div>
+                        <div class="value"><p><i>La Bianca di Castiglia</i>. Dramma per musica.</p></div>
+                    </td>
+                    <td>
+                        <div class="key">04. Manoscritti</div>
+                        <div class="value"><p>- Apografo, Isola Bella, Archivio Borromeo, <i>FM</i>, <i>MS</i>, <i>Frammenti 600 e 700</i>, <i>Libretti e canovacci</i> (due copie ms. del libretto e un <i>Argomento</i> a stampa).</p>  <p>- Apografo, ivi, <i>FM</i>, <i>MS</i>, MS.AU.294 (partiture musicali ms. di Francesco Rossi).</p>  <p>- Apografo, ivi, <i>FM</i>, <i>MS</i>, <i>Prologhi</i>, <i>Melodrammi anonimi ’600</i>, cart. 1 (due versioni ms. del <i>Prologo</i>, uno per la rappresentazione milanese del 1674).</p>  - Apografo, ivi, <i>Rossi Francesco</i> (ms. del<i> Prologo </i>per la rappresentazione sull’isola).</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">05. Edizioni utilizzate</div>
+                        <div class="value"><p><i>La Bianca di Castiglia,</i> […] rappresentata […] nel regio teatro di Milano, l’anno 1674. Musica del sig. Francesco Rossi, Milano, Marc’Antonio Malatesta, s. d.</p>  <p><i>La Bianca di Castiglia, </i>rappresentata […] nel regio teatro di Milano, l’anno 1676. Musica del sig. Francesco Rossi, Milano, Marc’Antonio Malatesta, s. d.</p>  <i>La Bianca di Castiglia. </i>Dramma per musica, in <i>Rime varie di Carlo Maria Maggi, amorose, piacevoli etc., raccolte da Lodovic’Antonio Muratori</i>, tomo IV, Milano, Giuseppe Malatesta, 1700, pp. 239-310.</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 2-->
+            <table class="data-table data-table-profile" summary="II. Tipo">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">II. Tipo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">06. Genere</div>
+                        <div class="value"><p>Dramma comico per musica.</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">06. Sottogenere</div>
+                        <div class="value">-</div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">07. Generi interni</div>
+                        <div class="value"><p>Una quartina di schema ABAB (dalle parole dei personaggi emerge che si tratta della prima strofa di un sonetto), I.11.23-26.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 3-->
+            <table class="data-table data-table-profile page-break" summary="III. Personaggi e rapporti">
+                <thead>
+                <tr>
+                    <th scope="col">III. Personaggi e rapporti</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="key">08. Elenco dei personaggi</div>
+                        <div class="value"><p>Bianca, regina di Castiglia; Elvira, sua cameriera; Consalvo, suo tutore e primo ministro; Ernando, figlio maggiore di Consalvo; Raimondo, figlio minore di Consalvo; Alfonso, segretario di Bianca e infine riconosciuto per Rodrigo, figlio di Consalvo; Codiglio, servo di Consalvo; Perichito, servo di Alfonso; capitano delle guardie di corte.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">09. Protagonisti</div>
+                        <div class="value"><p>Bianca e Alfonso, coppia di innamorati principale; Consalvo, Elvira, Ernando, Raimondo, che ne ostacolano gli amori.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
+                        <div class="value"><p>Codiglio, dallo spagnolo <i>codillo</i>, ‘gomito’ o ‘stinco’; Perichito, probabilmente diminutivo di Perico, ipocoristico in spagnolo di Pedro, a indicare l’inferiorità del servo rispetto al padrone (ma può essere anche un diminutivo di ‘perico’ nel senso di ‘pappagallo’ o di ‘parrucca’, due significati registrati nel <i>Diccionario de autoridades</i> del 1737, t. V). </p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">12. Rapporti fra i personaggi</div>
+                        <div class="value"><p>Bianca-Alfonso: innamorati; Consalvo: consigliere di Bianca e padre di Ernando e Raimondo; Elvira: cameriera di Bianca, innamorata di Ernando; Ernando-Raimondo: figli di Consalvo, aspirano a sposare Bianca; Codiglio: servo di Ernando; Perichito: servo di Alfonso.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">13. Personaggi speculari</div>
+                        <div class="value"><p>Bianca-Elvira, donne innamorate, rispettivamente, di Alfonso-Ernando, generoso e sensibile il primo, opportunista e violento il secondo; Ernando-Raimondo, fratelli, impulsivo il primo, riflessivo il secondo; Codiglio-Perichito, servitori dei due rivali Ernando-Alfonso.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
+                        <div class="value"><p>Ernando, amore di convenienza, I.3.60-79; Alfonso, amore non ricambiato, I.5.1-22; Consalvo, gli affanni della vita di corte, II.12.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
+                        <div class="value"><p>Consalvo-Codiglio-Perichito, prudenza del cortigiano, II.1.8-30; Alfonso-Raimondo-Ernando-Bianca, amicizia dei potenti, II.2-II.3; Alfonso-Perichito, disperazione d’amore, III.10.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">16. Uso particolarmente rilevante degli a parte</div>
+                        <div class="value"><p>In tutto il dramma gli <i>a parte</i> vengono spesso usati per esplicitare la dialettica tra verità e simulazione; in particolare nelle due scene parallele II.5 e III.3, dove il dialogo tra Alfonso e Bianca è condizionato dalla presenza di Ernando e Raimondo che origliano nascosti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">17. Personaggi che parlano solo in verso</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">18. Personaggi che parlano solo in prosa</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">19. Personaggi che parlano a soggetto</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">21. Personaggi che parlano solo in italiano</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
+                        <div class="value"><p>Alfonso, I.1.61-54, metafora della prigionia d’amore, ripresa da Bianca, I.2.21-31, con un parallelo che esplicita i sentimenti dei due personaggi; Alfonso-Bianca, I.5, metafore delle punture d’amore, riprese da Bianca, III.1, in entrambi i casi in parallelo con l’oggetto scenico allusivo della spada di Alfonso; Elvira-Alfonso-Ernando-Raimondo-Perichito-Codiglio, I.7, metafora del gioco per simulare gli intrighi di corte.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 4-->
+            <table class="data-table data-table-profile page-break" summary="IV. Intreccio">
+                <thead>
+                <tr>
+                    <th scope="col">IV. Intreccio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="value"><p><strong>Atto primo</strong>. Il ministro reggente Consalvo passa le redini del regno di Castiglia alla principessa Bianca, ormai ventenne, che lo nomina consigliere, così come nomina i suoi figli, Ernando e Raimondo, rispettivamente capitano generale e gran cancelliere; il cortigiano Alfonso, amato in segreto dalla regina, è nominato suo segretario. Consalvo svela il testamento del re defunto, che impone a Bianca di sposare uno dei suoi figli. Ernando cerca di svincolarsi dalla promessa di matrimonio fatta a Elvira, cameriera di Bianca, per aspirare alla mano della regina. A udienza da Consalvo vengono Codiglio, servo di Ernando, e Perichito, servo di Alfonso, che cercano, inutilmente, di ottenere una mansione più alta; interviene anche Elvira, che chiede e ottiene dal vecchio consigliere che Ernando mantenga la sua promessa nuziale. Nel giardino, Alfonso sfoga le sue pene d’amore incidendo i suoi sentimenti per la regina sul tronco di un albero; interviene Bianca, che fraintende il messaggio credendolo rivolto a Elvira. Per distendere le tensioni, Bianca fa organizzare dei tavoli da gioco: Alfonso è chiamato da Elvira a giocare a carte, per far ingelosire Ernando; Ernando è chiamato da Raimondo a giocare a scacchi, per dimostrare chi dei due sarà degno di sposare Bianca; i due servi si giocano a dadi i favori di corte. Bianca interviene ed evita un duello tra Ernando e Raimondo, ma scorge Alfonso al tavolo con Elvira e si accresce la sua gelosia, per cui spedisce l’innamorato a sbrigare la corrispondenza di corte.</p>  <p><strong>Atto secondo</strong>. Nelle sue stanze, Alfonso deve scrivere le lettere, ma la sua pena d’amore lo spinge a scrivere poesie. Entra Raimondo e gli chiede di favorirlo presso la regina, poi si nasconde dietro a una tenda; lo stesso fa Ernando. Entra la regina, che gli chiede, per provocarlo dopo aver letto sopra dei fogli poesie d’amore che crede dirette ad Elvira, chi lei dovrebbe sposare tra Ernando e Raimondo: Alfonso, temendo ritorsioni dai due che origliano, non si sbilancia. Consalvo annuncia alla regina che Ernando deve sposare Elvira, ma un indugio di Bianca fa credere che sia lei ad esserne innamorata. Ernando ne è felice, Elvira contrariata; Raimondo capisce le vere intenzioni della regina, per cui cerca di favorire il matrimonio tra Elvira ed Ernando e di provocare un duello tra il fratello e Alfonso, così da non avere più ostacoli al suo matrimonio con la regina. Bianca, travestita da Elvira, si introduce, tramite una porta nascosta, nelle stanze di Alfonso per lasciargli una lettera d’amore, ma sente arrivare qualcuno e si nasconde dietro a una tenda. Entra Perichito, inviato a prelevare delle carte, poi Codiglio, con un messaggio per Alfonso, infine Ernando, in cerca del rivale. Entra Alfonso e viene provocato da Ernando a incrociare le spade; Bianca esce dal nascondiglio, preleva spade e candela, poi passa non vista dalla porta nascosta. Gli astanti rimangono confusi. </p>  <strong>Atto terzo</strong>. Bianca, nel suo letto, si tormenta per il suo amore stringendo la spada di Alfonso; all’arrivo di Elvira, si nasconde con la spada; la cameriera vede dunque solo quella di Ernando, per cui sospetta un incontro segreto tra il suo amato e la regina. Tornata nella sua stanza, Bianca cerca di confessare il suo amore ad Alfonso, sopraggiunto per far firmare dei documenti, ma la presenza di Ernando e poi di Raimondo nascosti spinge i due innamorati a mentire. Elvira, credendosi tradita, intende uccidersi con la spada che ha sottratto; Ernando la ferma, ma, riconosciuta la sua spada, crede che fosse lei, prima, nella stanza di Alfonso. Consalvo cerca ancora di imporre a Ernando di sposare Elvira, ma il figlio gli espone i suoi sospetti sulla tresca tra la cameriera e Alfonso, per cui il consigliere decide di incarcerare Alfonso. Alfonso, imprigionato dal capitano delle guardie, ottiene da Codiglio, assunto al grado di carceriere, di poter parlare con Bianca, grazie al pegno di un ciondolo. Raimondo blocca Codiglio e gli sottrae il ciondolo: sopra vi legge il nome di Bianca e crede che sia una prova dell’amore tra Alfonso e la regina. Bianca, travestita nuovamente da Elvira, cerca di liberare Alfonso, ma interviene Ernando e li costringe a scambiarsi una promessa di matrimonio, prima di lasciarli fuggire. Elvira sente Ernando esultare del prossimo matrimonio con la regina e se ne dispera. Interviene Consalvo con l’intento di far sposare Elvira con Alfonso, nonostante le proteste della cameriera, ma è Raimondo a dimostrare che Alfonso teneva come pegno d’amore il ciondolo con il nome di Bianca. Consalvo lo riconosce come gioiello appartenuto a Bianca sua moglie e affidato al figlio creduto disperso in mare; ora Bianca e Alfonso, riconosciuto come Rodrigo, possono dichiararsi il loro amore e stringersi in matrimonio, rispettando il testamento del re defunto; Ernando è finalmente persuaso a prendere in sposa Elvira.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">25. Tema principale</div>
+                        <div class="value"><p>Il vero amore che trionfa sugli intrighi di corte.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">26. Temi secondari</div>
+                        <div class="value"><p>Le astuzie dei cortigiani; le virtù di corte, come la riconoscenza e il rispetto dell’onore.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">27. Comicità</div>
+                        <div class="value"><p>Il servo che istruisce il padrone sul suo mestiere di cortigiano, II.1; dire la verità ai principi, II.4; amore che impedisce di svolgere il proprio mestiere, II.11; i servi che non ricevono ciò che spetta loro, II.14; la facilità con cui la regina parla dei suoi sentimenti, III.4.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">28. Elementi polemici, satirici e parodici</div>
+                        <div class="value"><p>Polemica contro i debiti di gioco, I.6; satira sui segretari che trascurano il proprio dovere per scrivere poesie (autorappresentazione dell’autore), II.11.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 5-->
+            <table class="data-table data-table-profile page-break" summary="V. Luogo e tempo">
+                <thead>
+                <tr>
+                    <th scope="col">V. Luogo e tempo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">29. Luogo generale</div>
+                        <div class="value"><p>Palazzo reale di Castiglia.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">30. Cambiamenti di luogo</div>
+                        <div class="value"><p>I.1-4: sala interna al palazzo; I.5: giardino esterno al palazzo; I.6-7: sala interna al palazzo; II.1-17: stanza di Alfonso, interna al palazzo; III.1-2: stanza di Bianca, interna al palazzo; III.3-4: stanza di Alfonso, interna al palazzo; III.5-9: sala interna al palazzo; III.10-11: stanza di Alfonso, interna al palazzo; III.12-17: carceri, interne al palazzo.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="value">Mancano indicazioni temporali precise, ma si può supporre che l’azione si svolga nell’arco di due giorni.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
+                        <div class="value">Probabilmente tra I.4 e I.5 si passa dalla mattina al pomeriggio; tra I.7 e II.1 dal pomeriggio alla sera; da II.17 a III.1 dalla sera alla notte; da III.8 a III.9 si passa dalla notte al pomeriggio del giorno seguente.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
+                        <div class="value"><p>«Il sol felice io miro / che de’ tuoi anni adempie il vigesimo giro» (I.1.1-3, indicherà il sole mattutino); «lume» (II.13.31), «lume chiedi» (II.17.37), «Portate lume» (II.17.40), presuppongono la poca luce del vespro o le tenebre notturne; «Sul letto penoso / io cado di stento» (III.1.5-6), inquadra l’azione di notte; «Fra poco, all’apparire / d’ombre notturne» (III.12.13-14) e «all’apparir dell’ombre scure» (III.12.29), presuppongono che sia ancora giorno.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 6-->
+            <table class="data-table data-table-profile page-break" summary="VI. Rispetto della regola delle tre unità">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="2">VI. Rispetto della regola delle tre unità</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="20%">
+                        <div class="key">34. Tempo</div>
+                        <div class="value">No</div>
+                    </td>
+                    <td>
+                        <div class="key">35. Circostanze temporali</div>
+                        <div class="value"><p>Il primo atto sembra svolgersi dalla mattina alla sera di un’unica giornata, il secondo dalla notte al tardo pomeriggio del giorno successivo, superando il limite delle ventiquattro ore.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">36. Luogo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">37. Circostanze spaziali</div>
+                        <div class="value"><p>Tutta l’azione si svolge all’interno del palazzo reale o nel giardino circostante.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">38. Azione</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="value"><p>Gli intrighi amorosi ruotano tutti attorno al vincolo imposto a Bianca dal padre defunto di sposare uno dei figli di Consalvo; è verosimile che ciò si svolga nel breve tempo che segue alla lettura del testamento, in I.2.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 7-->
+            <table class="data-table data-table-profile page-break" summary="VII. Elementi materiali, performativi e didascalici">
+                <thead>
+                <tr>
+                    <th scope="col">VII. Elementi materiali, performativi e didascalici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">40. Uso di oggetti particolari</div>
+                        <div class="value"><p>Foglio con il testamento di re Sancio, Consalvo, I.2.1-9; tronco d’albero inciso, Alfonso-Bianca, I.5; tavoli da gioco, Codiglio-Perichito, I.6 (usati dai personaggi anche in I.7); foglio con poesie d’amore, Alfonso-Bianca, II.4.1-11; scatola piena di fogli, Perichito, II.11; maschera e vesti appartenuti a Elvira, lettera d’amore, Bianca, II.13; candela, Perichito, II.14; spada, Alfonso, II.17; spada, chiave, Ernando, II.17; spade di Alfonso e di Ernando, Bianca, III.1; letto, Bianca, III.1; fogli, Alfonso, III.3; spada di Ernando, Elvira, III.5; spada di Ernando, Elvira-Ernando, III.6; spada di Alfonso, Alfonso-capitano delle guardie, III.11; ciondolo di Alfonso, Alfonso-Codiglio, III.12; ciondolo di Alfonso, Codiglio-Raimondo, III.13; chiave, spada, Bianca, III.14; spada, Ernando, III.14; ciondolo di Alfonso, Raimondo, III.16.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">41. Uso di effetti sonori e musicali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">42. Uso di effetti speciali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">43. Scena con ampia presenza di personaggi</div>
+                        <div class="value"><p>I.1, Bianca riceve il comando del regno, sette personaggi: Bianca, Consalvo, Ernando, Raimondo, Alfonso, Codiglio, Perichito; I.7, giochi tra cortigiani, sette personaggi: Ernando, Elvira, Raimondo, Alfonso, Bianca, Perichito, Codiglio; II.4, colloquio tra i protagonisti, con gli antagonisti che origliano, quattro personaggi: Bianca, Alfonso, Ernando, Raimondo; III.3, colloquio tra i protagonisti, con gli antagonisti che origliano, quattro personaggi: Bianca, Alfonso, Ernando, Raimondo; III.18, scena finale, cinque personaggi: Consalvo, Elvira, Raimondo, Bianca, Alfonso.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">44. Didascalie di particolare importanza</div>
+                        <div class="value"><p>«Giardino» (indicazione di luogo), I.5; «Bianca, mascherata» (indicazione sui costumi), III.14. </p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 8-->
+            <table class="data-table data-table-profile page-break" summary="VIII. Prima recita">
+                <thead>
+                <tr>
+                    <th scope="col">VIII. Prima recita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">45. Prima recita</div>
+                        <div class="value"><p>Isola Bella a Stresa (comune in provincia del Verbano-Cusio-Ossola), Palazzo Borromeo, 1669, almeno una replica.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">46. Altre recite nel Settecento</div>
+                        <div class="value"><p>Anche se secentesche, ricordiamo altre due recite del testo: Milano, Teatro Regio, 1674 e 1676.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 9-->
+            <table class="data-table data-table-profile page-break" summary="IX. Il testo in Goldoni">
+                <thead>
+                <tr>
+                    <th scope="col">IX. Il testo in Goldoni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
+                        <div class="value"><p>Nell’antiporta del primo volume dell’edizione Pasquali, in cui si vede Goldoni bambino che scrive la sua prima commedia, in fondo alla stanza c’è uno scaffale con dei libri: sul dorso di uno di essi si legge «Maggi».</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 10-->
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+                <thead>
+                <tr>
+                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">49. Dati dei paratesti</div>
+                        <div class="value"><p>Dal frontespizio dei libretti a stampa (1674, 1676) si evince che il compositore delle musiche fu Francesco Rossi. La nota di Muratori alla ristampa del 1700 informa che l’opera fu composta per volere del conte Vitaliano Borromeo, che la fece rappresentare all’Isola Bella, e che fece poi tappa al Teatro Regio di Milano nel 1674. I due libretti a stampa presentano anche un’appendice di «Ariette mutate ed aggiunte».</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">50. Osservazioni</div>
+                        <div class="value"><p>Commedia degli equivoci giocata su simmetrie e scambi di ruoli, e particolarmente intricata, che intende raggiungere con il frizzante intrattenimento il fine morale di ammonire sui mali della corte. Non mancano godevoli inserti auto-parodici sul segretario (Alfonso nel dramma, ma che richiama lo stesso Maggi) che trascura il proprio dovere per scrivere «ariette» (II.11.15), «sonetti» (II.11.20) e addirittura una «commedia» (II.11.28) per l’innamorata.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <img src="/assets/frontend/img/usc.svg" alt="Universidade de Santiago de Compostela" />
+                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" alt="Agencia Estatal de Investigación" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" alt="Ministerio de Ciencia e Innovación" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" alt="Fondo Europeo de Desarrollo Regional" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</body>
+</html>

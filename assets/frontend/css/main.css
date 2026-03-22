@@ -265,6 +265,7 @@ section.error .container h2 {
   position: relative;
   max-width: 100%;
   overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .table-container .filters {
   left: 0;
@@ -366,13 +367,32 @@ footer block.logos a picture {
   text-align: center;
   width: 100%;
 }
-footer block.logos a picture img, footer block.logos a picture svg {
+footer block.logos a picture img {
   height: 5em;
   max-width: 100%;
   width: auto;
 }
 footer block.logos a + a {
   margin-left: 1em;
+}
+
+/**
+ * Responsive
+ */
+/* Mobile <576px */
+.table-container .filters {
+  position: static;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+.data-table {
+  font-size: 0.75em;
+}
+
+@media (min-width: 576px) {
+  .data-table {
+    font-size: 0.8125em;
+  }
 }
 
 /**
@@ -405,11 +425,19 @@ footer block.logos a + a {
   .table-container {
     overflow-x: initial;
   }
+  .table-container .filters {
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+  .data-table {
+    font-size: 0.875em;
+  }
   footer block.logos a picture {
     height: 6em;
     width: 100%;
   }
-  footer block.logos a picture img, footer block.logos a picture svg {
+  footer block.logos a picture img {
     height: 5em;
     width: auto;
   }
@@ -468,4 +496,3 @@ footer block.logos a + a {
   }
 }
 
-/*# sourceMappingURL=main.css.map */

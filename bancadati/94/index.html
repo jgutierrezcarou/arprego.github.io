@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link  active " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="profile first">
+
+        <div class="container">
+
+            <h1 class="lion"></h1>
+
+            <!-- section 1 -->
+            <table class="data-table data-table-profile" summary="I. Titolo e dati bibliografici">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">I. Titolo e dati bibliografici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="35%">
+                        <div class="key">00. Schedatore/Schedatrice</div>
+                        <div class="value">Mascarell Garcia, Maria</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="key">01. Autore</div>
+                        <div class="value">Gori, Antonio</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <div class="key">
+                            02. Titolo                                                    </div>
+                        <div class="value"><em>Momoletta</em></div>
+                    </td>
+                    <td width="30%">
+                        <div class="key">03. Titolo completo</div>
+                        <div class="value"><p><i>Momoletta. </i>Intermezzo per musica diviso in tre parti.</p></div>
+                    </td>
+                    <td>
+                        <div class="key">04. Manoscritti</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">05. Edizioni utilizzate</div>
+                        <div class="value"><p><i>Momoletta. </i>Intermezzo per musica diviso in tre parti, Venezia, Bassano, 1721 (seguiamo l’esemplare della Raccolta Corniani Algarotti della Biblioteca Nazionale Braidense di Milano disponibile all’indirizzo <a href="http://www.urfm.braidense.it/rd/02441.pdf">http://www.urfm.braidense.it/rd/02441.pdf</a>; l’edizione è priva del nome del librettista, ma lo si deduce dal paratesto intitolato <i>Curioso lettore</i>, in cui, anche se non si fa il nome del librettista, si indicano altre opere di cui sarebbe stato autore, così come anche alcune di cui rifiuta la paternità).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 2-->
+            <table class="data-table data-table-profile" summary="II. Tipo">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">II. Tipo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">06. Genere</div>
+                        <div class="value"><p>Intermezzo per musica.</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">06. Sottogenere</div>
+                        <div class="value">-</div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">07. Generi interni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 3-->
+            <table class="data-table data-table-profile page-break" summary="III. Personaggi e rapporti">
+                <thead>
+                <tr>
+                    <th scope="col">III. Personaggi e rapporti</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="key">08. Elenco dei personaggi</div>
+                        <div class="value"><p>Momola, Lidonia, Brunetto.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">09. Protagonisti</div>
+                        <div class="value"><p>Tutti e tre: la relazione tra gli unici tre personaggi dell’opera è fondamentale per capire l’argomento principale; perciò, devono essere tutti quanti considerati protagonisti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="value"><p>I diversi travestimenti adottati dal personaggio di Momola ricordano gli atteggiamenti del personaggio della ‘servetta’ della commedia dell’arte, soprattutto la sua furbizia per raggiungere il matrimonio con Brunetto.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
+                        <div class="value"><p>Momola: il termine «Momolo/a» è l’ipocoristico di «Gerolamo/a» in veneziano (come si legge, ad esempio, nel <i>Dizionario del dialetto veneziano</i>,<i> </i>1829 di Giuseppe Boerio).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">12. Rapporti fra i personaggi</div>
+                        <div class="value"><p>Momola-Brunetto: innamorati; Lidonia-Brunetto: zia e nipote; Lidonia-Momola: vicine di casa.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">13. Personaggi speculari</div>
+                        <div class="value"><p>Lidonia rappresenta la ricchezza e i pregiudizi prototipici dell’epoca tra i rapporti delle diverse classi sociali, mentre Momola è il personaggio povero che riceve sempre delle critiche per la sua condizione sociale.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
+                        <div class="value"><p>Momola, difende il suo onore, I, p. 5; Lidonia, la solitudine delle zitelle, I, p. 7; Brunetto, economia della zia, I, p. 12; Brunetto, propria povertà e vergogna, II, p. 15; Momola, le donne e la ricchezza, II, pp. 20-21; Brunetto, comportamento femminile, III, pp. 30-31; Lidonia, l’avarizia e il nipote, III, p. 31; Momola, recita per la «morte» di Brunetto, III, p. 33.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
+                        <div class="value"><p>Brunetto e Momola, dichiarazione d’amore, I, p. 4; Lidonia e Brunetto, possibile morte della zia, I, p. 7; Momola e Brunetto, problematica del matrimonio, I, pp. 6-7; Momola, Brunetto e Lidonia, giuramento, I, p. 13; Lidonia e Brunetto, travestimento, II, p. 17; Momola e Brunetto, strategia per il loro matrimonio, II, p. 21; Momola e Brunetto, nuova dichiarazione d’amore, III, p. 25; Momola e Lidonia, donar i beni, III, p. 28; Brunetto e Lidonia, la verità sul «marchese», III, p. 31; Lidonia e Momola, la «morte» di Brunetto, III, p. 32; Lidonia e Brunetto, ultime volontà, III, p. 33; Momola e Lidonia, accettazione delle nozze, III, p. 34; Momola e Brunetto, confessione e matrimonio, III, pp. 35-36.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">16. Uso particolarmente rilevante degli a parte</div>
+                        <div class="value"><p>In tutta l’opera si fa uso degli a parte, poiché i tre unici e principali personaggi si travestono in modi diversi e parlano sia tra loro che al pubblico (anche se non specificato) con la propria voce, ovvero, anche se Momola è travestita da cavaliere-marchese, parlerà come Momola stessa. Solitamente è indicato tra parentesi ma con lo stesso carattere tipografico del testo, e non in corsivo (come le didascalie).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">17. Personaggi che parlano solo in verso</div>
+                        <div class="value"><p>Tutti e tre: Momola, Brunetto e Lidonia.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">18. Personaggi che parlano solo in prosa</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">19. Personaggi che parlano a soggetto</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">21. Personaggi che parlano solo in italiano</div>
+                        <div class="value"><p>Brunetto (italiano con inflessioni veneziane, cf. I, p. 3).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
+                        <div class="value"><p>Momola e Lidonia: veneziano.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 4-->
+            <table class="data-table data-table-profile page-break" summary="IV. Intreccio">
+                <thead>
+                <tr>
+                    <th scope="col">IV. Intreccio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="value"><p>Parte I: Momola (oppure Momoletta) e Brunetto sono due innamorati che non si possono sposare perché la ricca zia di lui, Lidonia, si oppone al matrimonio del nipote con una donna povera (che sembra essere la sua vicina di casa). Dopo una discussione con Lidonia, Brunetto è costretto a giurare di non essersi ancora sposato con Momola, ma a questo punto viene cacciato di casa.</p>  <p>Parte II: Lidonia si pente di aver cacciato Brunetto di casa (II, p. 14), il quale a sua volta si lamenta di non avere nemmeno un soldo<i> </i>e di essere stato espulso dalla «Speciaria» (II, p. 15), restando in rovina e vergognandosi che Momola lo veda in tali condizioni. D’altra parte, la zia Lidonia è travestita da venditrice di canarini per cui Brunetto non la riconosce, quindi le chiede aiuto per entrare nella casa e prendere dei soldi, ma fallisce perché lui non trova la chiave. Quando la zia, non più travestita, incontra Momola, anch’essa travestita, che si presenta come «il signor Pompeo» (II, p. 19), gli propone il loro matrimonio, cioè lei, la stessa Lidonia, sposare Pompeo. Brunetto (che ora è travestito da muto) non riconosce nemmeno Momola e pensa che questo Pompeo sia un truffatore che desidera i soldi della ricca zia; quindi, interviene nella loro proposta di nozze e sfida Pompeo-Momola a duello. </p>  Parte III: Brunetto e Momola parlano dei loro rispettivi inganni alla zia, che ora crede che Pompeo sia stato uccisonel duello contro il muto, per cui Momola si finge un marchese (che in quel momento si trova «in Ongaria»; III, p. 26), indossando tutti i suoi abiti e con Brunetto travestito da maggiordomo (III, p. 27). Lidonia, accecata dal presunto marchese, gli propone di dargli tutti i suoi beni «in dotta» (III, p. 28) e di convolare a nozze, poiché per lei il nipote merita di essere diseredato. Ad un certo punto Momola sembra non riuscire più a continuare con la farsa del marchese, quindi rivela il suo travestimento, e racconta come Brunetto sia stato ferito in duello contro un muto, confondendo Lidonia, che pensava che fosse stato il tale Pompeo ad affrontare il muto. Ora, per la tristezza di vedere il nipote nei suoi ultimi momenti (anche se finti), la zia si pente del suo comportamento e chiede le ultime volontà di Brunetto, quali il perdono di Lidonia e il permesso per sposare Momola (III, pp. 33-34). A questo punto la zia promette che se questo riesce a sopravvivere gli lascerà tutti i suoi beni. I due innamorati svelano tutti gli inganni (Pompeo, il Marchese, il muto, Brunetto ferito, ecc.) e riescono a unirsi in matrimonio senza gli intoppi procurati dalla zia.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">25. Tema principale</div>
+                        <div class="value"><p>L’avarizia.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">26. Temi secondari</div>
+                        <div class="value"><p>Amore, povertà, avidità.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">27. Comicità</div>
+                        <div class="value"><p>La confusione tra tutti e tre i personaggi, risultato del loro continuo travestimento, ad esempio si vedano le seguenti didascalie per i travestimenti: Lidonia travestita da venditrice di canarini (II, p. 14), Momola da venditrice di <i>galanterie </i>alla moda (II, p. 25) e poi da cavaliere/marchese (III, p. 25) e Brunetto da straziato e poi da muto (II, p. 14) e anche da maggiordomo (III, p. 25). Questa comicità è molto evidente in II, pp. 16-18; II, p. 23; III, pp. 26-27; III, p. 31; III, p. 32.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">28. Elementi polemici, satirici e parodici</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 5-->
+            <table class="data-table data-table-profile page-break" summary="V. Luogo e tempo">
+                <thead>
+                <tr>
+                    <th scope="col">V. Luogo e tempo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">29. Luogo generale</div>
+                        <div class="value"><p>Venezia (cf. I, p. 6; III, p. 27), casa della zia Lidonia.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">30. Cambiamenti di luogo</div>
+                        <div class="value"><p>I_II_III: casa della zia Lidonia (interno e davanti alla porta, II, p. 16).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="value">Si tenga conto anche che non c’è nessun riferimento successivo a una nuova giornata. In tutto il testo teatrale non ci sono riferimenti continui al tempo trascorso o salti temporali, e si può pertanto dedurre che l’azione si svolga dalla mattina alla sera della medesima giornata.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
+                        <div class="value">Tutta l’opera sembra iniziare e finire con la stessa configurazione, senza cambiamenti temporali, per cui possiamo dedurre che non ci sono delle variazioni del tempo da considerare come significative.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
+                        <div class="value"><p>Gli unici riferimenti temporali si trovano all’inizio dell’opera («Oggi mia zia, vorrei sposarmi, ma colei non vorrà», I, p. 5) e quasi alla fine della medesima, quando il personaggio di Momola, travestita da marchese, chiede che venga avvisato un cuoco del suo arrivo alla Villa «diman mattina» (III, p. 27).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 6-->
+            <table class="data-table data-table-profile page-break" summary="VI. Rispetto della regola delle tre unità">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="2">VI. Rispetto della regola delle tre unità</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="20%">
+                        <div class="key">34. Tempo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">35. Circostanze temporali</div>
+                        <div class="value"><p>L’azione si svolge in un arco di tempo limitato, certamente non superiore alle 24 ore, in un <i>continuum </i>temporale.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">36. Luogo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">37. Circostanze spaziali</div>
+                        <div class="value"><p>L’azione si svolge sempre all’interno della casa della zia Lidonia e davanti alla sua porta di casa, a Venezia.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">38. Azione</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="value"><p>Si tratta di un’azione unica e lineare. Il filo conduttore sono i diversi inganni (cioè, i travestimenti) da parte di tutti e tre i personaggi, e in modo più concreto, quelli di Momola e Brunetto con lo scopo di avere i soldi della ricca zia e di poter sposarsi.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 7-->
+            <table class="data-table data-table-profile page-break" summary="VII. Elementi materiali, performativi e didascalici">
+                <thead>
+                <tr>
+                    <th scope="col">VII. Elementi materiali, performativi e didascalici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">40. Uso di oggetti particolari</div>
+                        <div class="value"><p>Veste e «zendale»<i>, </i>Lidonia, I. p. 3; «galanterie»<i> </i>[tessuti] alla moda, Momola, II, p. 14; canarini, Lidonia, II, p. 15; porta, Brunetto e Lidonia, II, p. 16; chiave, Brunetto, II, p. 17; «ventoletta», Momola, II, p. 19; arma, Brunetto, II, p. 23; occhiali, Momola, III, p. 32; abiti da vecchia, Momola, III, p. 35.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">41. Uso di effetti sonori e musicali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">42. Uso di effetti speciali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">43. Scena con ampia presenza di personaggi</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">44. Didascalie di particolare importanza</div>
+                        <div class="value"><p>Le didascalie presenti all’inizio delle tre parti sono di particolare importanza per poter capire i diversi travestimenti dei personaggi (cf. § 27 della presente scheda).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 8-->
+            <table class="data-table data-table-profile page-break" summary="VIII. Prima recita">
+                <thead>
+                <tr>
+                    <th scope="col">VIII. Prima recita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">45. Prima recita</div>
+                        <div class="value"><p>Cfr. § 46. </p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">46. Altre recite nel Settecento</div>
+                        <div class="value"><p>Groppo registra come «<i>L’ippocondriaco. Griletta lacandiera. Momoletta. Gli ovi in puntiglio. La birba. La conciateste. Bettina, e Cassandro. </i>Questi sono tutti intermezzi cantanti nell’autunno, e carnevale passato [1735-1736], dai comici nel teatro di S. Samuele» (Lorenzo Galletti, <i>Lo spettacolo senza riforma. La compagnia San Samuele di Venezia (1726-1749)</i>, Firenze, Firenze University Press, 2016, p. 129).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 9-->
+            <table class="data-table data-table-profile page-break" summary="IX. Il testo in Goldoni">
+                <thead>
+                <tr>
+                    <th scope="col">IX. Il testo in Goldoni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
+                        <div class="value"><p>Giuseppe Ortolani (1928) indica che «certo il Gori tentò di rivendicare la paternità della <i>Pelarina </i>stampata nel ’34, e premise, senza segnarle col proprio nome, queste parole, a mo’ di avvertenza, nella <i>Momoletta </i>che uscì pure anonima l’anno dopo (Venezia, Valvasense, 1735)»; Giuseppe Ortolani, <i>Nota storica </i>[de <i>La Pellarina</i>], in Id. (a cura di), <i>Opere Complete di Carlo Goldoni edite dal Municipio di Venezia</i>, Venezia, Stamperia Zanetti, vol. XXVI: <i>Drammi Giocosi per musica di Carlo Goldoni </i>(tomo I, intermezzi), 1928, p. 56).  Goldoni fa riferimento all’autore nelle sue <i>Memorie italiane</i>, ove afferma: «Il signori <i>Gori </i>accennato, mio collega nella professione dell’Avvocato, ed in quella di Poeti comico, Autore di <i>Mestre, e Malghera, </i>e che avea lavorato l’intermezzo della <i>Pellarina</i>, sul piano, della mia <i>Cantatrice</i> non fu contento della mia associazione; e quantunque l’Imer gli protestasse, che le opere sue sarebbero state ben ricevute, e ricompensate, si sdegnò, privò i Comici de’ suoi lavori, e me della sua amicizia: l’invidia ha preso a perseguitarmi prima ancora, ch’io cominciassi. Non aveano ancora dato niente del mio» (Carlo Goldoni, <i>Carlo Goldoni. Memorie italiane, </i>a cura di Epifanio Ajello, Napoli, Liguori Editori, 2008, tomo XIII, p. 276).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
+                        <div class="value"><p>Secondo Valeria Tavazzi «la trama così complessa di questo intermezzo, con una sarabanda di travestimenti così intricata da provocare continui scambi di persona, rivela la possibile influenza della <i>Birba </i>goldoniana, citata dal resto nell’avviso introduttivo e quindi ben nota a Gori al momento di dare alle stampe il testo […] Anche al di là di un confronto diretto con Goldoni, <i>Momoletta</i> conserva poi tracce di una drammaturgia veneziana già abbastanza matura, che accosta all’elaborazione dei travestimenti e all’espediente metateatrale del mondo nuovo, scenette domestiche che sembrano farci pregustare addirittura il Goldoni maggiore» (Valeria Tavazzi, <i>Carlo Goldoni dal San Samuele </i>al Teatro Comico, Torino, Academia University Press, 2024, p. 25).   Lorenzo Galletti afferma come «<i>La cantatrice</i>, secondo Goldoni, era stato rappresentato nel rifacimento-plagio di Antonio Gori, sotto il titolo di <i>Pelarina</i>, e fu al centro di un dibattito di cui rimangono esigue testimonianze, ma il cui clamore deve aver giovato assai alla visibilità pubblica della formazione del San Samuele. […] In secondo luogo, la piccata puntualizzazione di Gori chiarisce che la lite tra i due scrittori per i ‘diritti d’autore’ della<i> Pelarina </i>si era accesa ben prima degli anni Settanta del secolo, quando Carlo scrisse la sua tredicesima prefazione, e forse non riguardava quell’unico intermezzo» (Lorenzo Galletti, <i>Lo spettacolo senza riforma. La compagnia del San Samuele di Venezia (1726-1749)</i>, Firenze, Firenze University Press, 2016, p. 126-128).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 10-->
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+                <thead>
+                <tr>
+                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">49. Dati dei paratesti</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">50. Osservazioni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <img src="/assets/frontend/img/usc.svg" alt="Universidade de Santiago de Compostela" />
+                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" alt="Agencia Estatal de Investigación" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" alt="Ministerio de Ciencia e Innovación" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" alt="Fondo Europeo de Desarrollo Regional" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</body>
+</html>

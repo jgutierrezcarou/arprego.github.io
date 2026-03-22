@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link  active " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="profile first">
+
+        <div class="container">
+
+            <h1 class="lion"></h1>
+
+            <!-- section 1 -->
+            <table class="data-table data-table-profile" summary="I. Titolo e dati bibliografici">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">I. Titolo e dati bibliografici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="35%">
+                        <div class="key">00. Schedatore/Schedatrice</div>
+                        <div class="value">Gregores Pereira, Paula</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="key">01. Autore</div>
+                        <div class="value">Maffei, Scipione</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <div class="key">
+                            02. Titolo                                                    </div>
+                        <div class="value"><em>Cerimonie, Le</em></div>
+                    </td>
+                    <td width="30%">
+                        <div class="key">03. Titolo completo</div>
+                        <div class="value"><p><i>Le cerimonie. </i>Commedia.</p></div>
+                    </td>
+                    <td>
+                        <div class="key">04. Manoscritti</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">05. Edizioni utilizzate</div>
+                        <div class="value"><p>[Scipione Maffei], <i>Le cerimonie</i>, Venezia, Bonifacio Viezzeri, 1728.</p>  <p>[Scipione Maffei], <i>Le cerimonie</i>, Venezia-Lucca, Salvatore e Giandomenico Marescandoli, 1728.</p>  <p>[Scipione Maffei], <i>Le cerimonie</i>, Bologna, Lelio dalla Volpe, s. a.</p>  Scipione Maffei, <i>Le cerimonie</i>, in <i>Teatro del Sig. Marchese Scipione Maffei</i>, Verona, Gio. Aberto Tumermani, 1730, pp. 85-189.</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 2-->
+            <table class="data-table data-table-profile" summary="II. Tipo">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">II. Tipo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">06. Genere</div>
+                        <div class="value"><p>Commedia.</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">06. Sottogenere</div>
+                        <div class="value">-</div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">07. Generi interni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 3-->
+            <table class="data-table data-table-profile page-break" summary="III. Personaggi e rapporti">
+                <thead>
+                <tr>
+                    <th scope="col">III. Personaggi e rapporti</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="key">08. Elenco dei personaggi</div>
+                        <div class="value"><p>Orazio, Leandro, Bruno, Camilla, Antea, Vispo, Aurelia, Massimo, Trespolo.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">09. Protagonisti</div>
+                        <div class="value"><p>Orazio, Camilla. Attorno a questi due personaggi si sviluppa tutta l’azione.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">12. Rapporti fra i personaggi</div>
+                        <div class="value"><p>Orazio-Camilla: promessi sposi; Leandro, padre di Orazio; Antea, madre di Camilla; Massimo, zio di Aurelia; Bruno, servitore di Orazio e di Leandro; Trespolo, servitore di Aurelia e di Massimo; Vispo, servitore di Antea e Camilla.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">13. Personaggi speculari</div>
+                        <div class="value"><p>Orazio e Antea possono essere considerati personaggi speculari dato che incarnano i due modi opposti di considerare le “cerimonie” e le convenzioni sociali: Antea le venera mentre invece Orazio le rifiuta.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
+                        <div class="value"><p>III.1, Leandro e Orazio, sulla cerimoniosità.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">16. Uso particolarmente rilevante degli a parte</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">17. Personaggi che parlano solo in verso</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">18. Personaggi che parlano solo in prosa</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">19. Personaggi che parlano a soggetto</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">21. Personaggi che parlano solo in italiano</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 4-->
+            <table class="data-table data-table-profile page-break" summary="IV. Intreccio">
+                <thead>
+                <tr>
+                    <th scope="col">IV. Intreccio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="value"><p><strong>Atto I.</strong> Orazio, tornato da Parigi nella sua città natale per sposare Aurelia secondo la volontà del padre Leandro, manifesta fin da subito il suo disgusto per le eccessive formalità sociali dopo un incontro con un uomo troppo cerimonioso. In piazza, incrocia Camilla (accompagnata da sua madre, Antea) e se ne invaghisce. Si avvia una conversazione (continuamente ostacolata dalle esagerate regole della cortesia che Antea vuole rispettare e che irritano, invece, Orazio) che permette a Orazio di apprendere che Camilla è già stata promessa in sposa ad un altro uomo. Arriva Bruno, servitore di Orazio. I due uomini si avviano verso casa, mentre Camilla e Antea continuano a parlare di lui, rivelando (al lettore) che Camilla è promessa sposa a Massimo, zio di Aurelia.</p>  <p><strong>Atto II.</strong> Aurelia compare per la prima volta in scena, e viene rappresentata come una donna particolarmente formale, e, dunque, diametralmente opposta a Orazio, che invece cerca di evitare le visite e gli omaggi di rito che i gentiluomini della città gli stanno offrendo in maniera eccessiva. Leandro, il padre di Orazio, si presenta da Aurelia per comunicarle che presto suo figlio andrà a riverirla e le porterà vari regali, fra cui un ventaglio alquanto particolare. Orazio, a sua volta, inconsapevole di questa conversazione, chiede a Bruno di salutargli Camilla e di portarle il ventaglio in omaggio, dato che, anche se sta per sposare Aurelia, il suo futuro e prossimo legame matrimoniale non gli vieta di poter guardare un’altra donna. Quando finalmente avviene l’incontro tra Orazio ed Aurelia, questi la trova rigida e artificiosa, tanto da decidere di rinviare il matrimonio con il pretesto di un viaggio in Italia, decisione che lascia sconcertati tutti gli altri personaggi.</p>  <p><strong>Atto III.</strong> Leandro tenta di persuadere Orazio ad accettare le nozze con Aurelia, ma il figlio rifiuta. Intanto Orazio fa visita a Camilla, la quale, pur cercando di mantenere un certo decoro, fa intendere che ricambia i suoi sentimenti. I due, dunque, si mettono d’accordo per fissare un appuntamento serale per parlarne. Una volta uscito di scena Orazio, Massimo incontra Camilla per corteggiarla, ma lei cerca di evitarlo. Orazio viene richiamato a casa –grazie all’intervento di Leandro e Bruno – per la firma dei contratti nuziali, ma si comporta in modo talmente bizzarro e provocatorio –spingendosi persino al punto di entrare da una finestra pur di evitare le porte “troppo cerimoniose” – che Massimo rompe il fidanzamento, ritenendolo folle.</p>  <p><strong>Atto IV. </strong>Trespolo racconta a Camilla quanto capitato in precedenza: Bruno ha fatto credere a Massimo e ad Aurelia che l’atteggiamento di Orazio era stato frutto di una scommessa e li convince a riunirsi nuovamente poco dopo per firmare definitivamente gli accordi matrimoniali. Intanto Orazio viene inseguito da una folla di personaggi che lo travolgono con saluti e cerimonie man mano più assurdi, che lo portano a perdere tempo, impedendogli di incontrare Camilla e di presentarsi a casa, aggravando la confusione generale.<strong></strong></p>  <strong>Atto V. </strong>Camilla, convinta di essere stata ingannata da Orazio, decide di non parlargli più. Tutti si preparano alle doppie nozze di Orazio con Aurelia e di Camilla con Massimo, ma durante la cerimonia finale Orazio riesce a chiarire l’equivoco del ventaglio e a riconciliarsi con Camilla. Su consiglio di Antea – paradossalmente la più legata alle formalità<i> </i>– Orazio sfrutta una regola cerimoniale utile a sciogliere l’inganno: dà la mano e la fede a Camilla, compiendo così il gesto che sancisce il vero matrimonio. Scoperto l’inganno, Aurelia e Massimo reagiscono con sdegno, ma Orazio e Camilla restano uniti, mentre coloro che hanno più a cuore le convenzioni sociali rimangono, appunto, prigionieri della loro stessa ‘cerimonialità’.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">25. Tema principale</div>
+                        <div class="value"><p>La necessità, o meno, delle convenzioni sociali.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">26. Temi secondari</div>
+                        <div class="value"><p>Amore.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">27. Comicità</div>
+                        <div class="value"><p>La comicità nasce principalmente dall’esagerato uso della cerimoniosità caratterizzante la maggioranza dei personaggi: infiniti saluti, scambi di cortesie, formule e convenevoli che si moltiplicano fino al ridicolo e arrivano a generare malintesi ed equivoci legati all’eccesso di formalità.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">28. Elementi polemici, satirici e parodici</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 5-->
+            <table class="data-table data-table-profile page-break" summary="V. Luogo e tempo">
+                <thead>
+                <tr>
+                    <th scope="col">V. Luogo e tempo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">29. Luogo generale</div>
+                        <div class="value"><p>Città indeterminata.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">30. Cambiamenti di luogo</div>
+                        <div class="value"><p>Una piazzetta in una città indeterminata (cfr. § 37).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="value">Una giornata. L’azione comincia all’alba e si protrae fino alla notte del giorno stesso.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
+                        <div class="value">Tra l’atto II e l’atto III trascorre un breve lasso di tempo, giusto quello necessario affinché Leandro venga a sapere del rifiuto di Orazio di sposare Aurelia e possa intervenire; tra l’atto III e l’atto IV c’è anche un piccolo salto temporale, anche breve.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
+                        <div class="value"><p>Antea, I.2.127: «così di buon mattino»; Massimo, I.5.42: «Io gli ho parlato ieri sera»; Camilla, I.5.44-45: «Ma noi l’abbiamo / veduto qui or ora»; Aurelia e Massimo, II.6.2-3: «aur. E quando/ soscriverassi il contratto? mas. Oggi pure»; Vispo, III.3.53-54: «basta che / verso sera ritrovisi in quel vicolo»; Aurelia, IV.2.6-7: «benchè siamo state insieme / stamattina»; Massimo, IV.2.39-41 «Stamattina / quando Leandro mi parlò delle cose / portate da Parigi»; Camilla, IV.2.68-69 «se viene / a parlarmi sta sera come ha detto»; Leandro, IV.6.32-36 «Tu / impalmerai questa sera la tua / sposa […] / tu non mancar fra mez’oretta d’esservi»»; Orazio, IV.11.3-4: «ma io ho posto un ordine per le / ventiquattro»; Bruno, IV.11.5-6: «Non è più a tempo s’era alle ventiquattro. /È già un’ora di notte».</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 6-->
+            <table class="data-table data-table-profile page-break" summary="VI. Rispetto della regola delle tre unità">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="2">VI. Rispetto della regola delle tre unità</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="20%">
+                        <div class="key">34. Tempo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">35. Circostanze temporali</div>
+                        <div class="value"><p>L’azione si svolge interamente nell’arco di una giornata.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">36. Luogo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">37. Circostanze spaziali</div>
+                        <div class="value"><p>L’azione viene collocata esplicitamente in una piccola piazza all’inizio dell’atto I («Ci possiamo arrestare un poco in questa piazzetta»; I.1.2) e non ci sono indizi che indichino uno spostamento. Tuttavia, in una scena nell’atto III, si produce, più che un cambiamento, un ampliamento della scena, indicato come segue in apertura della scena sesta: «Si apre l’orizonte e si vede una loggia della casa di Massimo» (III.6).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">38. Azione</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 7-->
+            <table class="data-table data-table-profile page-break" summary="VII. Elementi materiali, performativi e didascalici">
+                <thead>
+                <tr>
+                    <th scope="col">VII. Elementi materiali, performativi e didascalici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">40. Uso di oggetti particolari</div>
+                        <div class="value"><p>Il ventaglio è un oggetto fondamentale per lo sviluppo della trama. I ventagli che compaiono nella vicenda sono due, differenti. Il primo ventaglio è quello di Camilla, che compare per la prima volta in I.2, quando questo cade a Camilla e Orazio lo raccoglie. Tale evento coincide con il momento del loro primo incontro e della reciproca conoscenza. Tuttavia, il ventaglio più rilevante per lo sviluppo della trama  è quello di proprietà di Orazio, che lui stesso porta con sé da Parigi e che regala a Camilla anche se era stato, in realtà, promesso ad Aurelia, la quale, quando poi in IV.2 lo nota in mano a Camilla, capisce che Orazio non è interessato a lei, bensì all’altra donna).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">41. Uso di effetti sonori e musicali</div>
+                        <div class="value"><p>Alla fine dell’atto IV si fa riferimento a un ballo: «Segue ballo in riverenza di varie maniere».</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">42. Uso di effetti speciali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">43. Scena con ampia presenza di personaggi</div>
+                        <div class="value"><p>Sono scarse le scene con un’ampia presenza di personaggi, dal momento che questi si presentano regolarmente in combinazioni di due o tre. Fanno eccezione alcune scene particolari, collocate, come di consueto, a fine atto e in coincidenza con le riunioni organizzate per concordare gli accordi matrimoniali. È il caso di I.6, in cui compaiono quattro personaggi (Massimo, Aurelia, Orazio e Bruno); di III.6, in cui appaiono simultaneamente cinque personaggi (Leandro, Aurelia, Massimo, Trespolo e Orazio); e delle scene V.6 e 7, in cui arrivano a essere in scena ben nove personaggi (in V.6 compaiono Antea, Camilla, Vispo, Aurelio, Massimo e Trespolo, personaggi a cui si aggiungono, in V.7, Leandro, Orazio e Bruno).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">44. Didascalie di particolare importanza</div>
+                        <div class="value"><p>Le didascalie non risultano particolarmente rilevanti, anche se alcune di queste, nonostante la loro brevità, si presentano come fondamentali per trasmettere la devozione nei confronti delle cerimonie da parte di alcuni personaggi (e, dunque, utili per generare comicità), come nel caso di quella presente in II.6: «qui Aurelia viene a presentarsi con profonda riverenza fatta adagio adagio».</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 8-->
+            <table class="data-table data-table-profile page-break" summary="VIII. Prima recita">
+                <thead>
+                <tr>
+                    <th scope="col">VIII. Prima recita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">45. Prima recita</div>
+                        <div class="value"><p>Nell’<i>Al lettore </i>firmato da Giulio Cesare Becelli, che precede l’edizione presente nel <i>Teatro italiano</i> del 1730 (che abbiamo elencato in § 5), si fa riferimento, a p. 90, a una recita. Viene detto che la commedia «recitasi a Venezia l’anno 1728 nel carnovale da comici» e che «fu voluta dieci volte seguitamente, con sceltissimo e grandissimo concorso e con ugual diletto ed applauso» (p. 90). Anche Carmelo Alberti riporta notizie di questa recita (Carmelo Alberti, <i>La scena veneziana nell'età di Goldoni</i>, Roma, Bulzoni, 1990, p. 60).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">46. Altre recite nel Settecento</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 9-->
+            <table class="data-table data-table-profile page-break" summary="IX. Il testo in Goldoni">
+                <thead>
+                <tr>
+                    <th scope="col">IX. Il testo in Goldoni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 10-->
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+                <thead>
+                <tr>
+                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">49. Dati dei paratesti</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">50. Osservazioni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <img src="/assets/frontend/img/usc.svg" alt="Universidade de Santiago de Compostela" />
+                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" alt="Agencia Estatal de Investigación" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" alt="Ministerio de Ciencia e Innovación" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" alt="Fondo Europeo de Desarrollo Regional" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</body>
+</html>

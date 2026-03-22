@@ -6,46 +6,37 @@
  */
 body {
   font-family: "DejaVu Serif Condensed";
-  font-size: 9pt;
-}
-body .page-break {
-  page-break-after: always;
-}
+  font-size: 9pt; }
+  body .page-break {
+    page-break-after: always; }
 
 section.profile th {
   font-size: 1.25em;
-  text-align: left;
-}
+  text-align: left; }
 section.profile .key {
   color: brown;
   display: block;
   font-size: 1.125em;
   font-weight: bold;
   margin-bottom: 0.25em;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 .data-table {
   border-collapse: collapse;
   font-size: 0.875em;
   margin-bottom: 2em;
   page-break-inside: avoid;
-  width: 100%;
-}
-.data-table tr th, .data-table tr td {
-  border: 1px solid #336699;
-  padding: 0.5em;
-  vertical-align: top;
-}
-.data-table tr th {
-  background-color: rgba(51, 102, 153, 0.75);
-  color: white;
-}
-.data-table tr td p {
-  margin: 0;
-}
-.data-table tr td p + p {
-  margin-top: 1em;
-}
+  width: 100%; }
+  .data-table tr th, .data-table tr td {
+    border: 1px solid #336699;
+    padding: 0.5em;
+    vertical-align: top; }
+  .data-table tr th {
+    background-color: rgba(51, 102, 153, 0.75);
+    color: white; }
+  .data-table tr td p {
+    margin: 0; }
+    .data-table tr td p + p {
+      margin-top: 1em; }
 
 /*# sourceMappingURL=pdf.css.map */

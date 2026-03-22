@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link  active " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="profile first">
+
+        <div class="container">
+
+            <h1 class="lion"></h1>
+
+            <!-- section 1 -->
+            <table class="data-table data-table-profile" summary="I. Titolo e dati bibliografici">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">I. Titolo e dati bibliografici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="35%">
+                        <div class="key">00. Schedatore/Schedatrice</div>
+                        <div class="value">Scannapieco, Anna</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="key">01. Autore</div>
+                        <div class="value">Miti, Pompilio</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <div class="key">
+                            02. Titolo                                                            → <a href="/upload/doc/miti-ottavianotrionfante-scannapieco-arprego4-definitivo.pdf" target="_blank">Edizione</a>
+                                                    </div>
+                        <div class="value"><em>Ottaviano trionfante di Marcantonio</em></div>
+                    </td>
+                    <td width="30%">
+                        <div class="key">03. Titolo completo</div>
+                        <div class="value"><p><i>Ottaviano trionfante di Marcantonio.</i> <i>Melolepidodramamusicale</i>.</p></div>
+                    </td>
+                    <td>
+                        <div class="key">04. Manoscritti</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">05. Edizioni utilizzate</div>
+                        <div class="value"><p><i>Ottaviano trionfante di Marcantonio. Melolepidodramamusicale da rappresentarsi nel Teatro prope San Salvatore il carnovale 1735. Dedicato  Al Signor  Odmuaponarcemdo Mirop</i>, Venezia, Alvise Valvasense [1735].  È l’unica edizione dell’opera, di cui sono – allo stato attuale delle conoscenze – sopravvissuti sette esemplari.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 2-->
+            <table class="data-table data-table-profile" summary="II. Tipo">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">II. Tipo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">06. Genere</div>
+                        <div class="value"><p>«Melolepidodramamusicale» è dichiarato nel frontespizio, formulazione arcaizante scherzosa per ‘dramma giocoso per musica’; più precisamente, il genere di riferimento è quello dei drammi musicali per i comici, in uso tanto nel teatro di San Samuele, quanto in quello del San Luca.</p></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">06. Sottogenere</div>
+                        <div class="value">-</div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">07. Generi interni</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 3-->
+            <table class="data-table data-table-profile page-break" summary="III. Personaggi e rapporti">
+                <thead>
+                <tr>
+                    <th scope="col">III. Personaggi e rapporti</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <div class="key">08. Elenco dei personaggi</div>
+                        <div class="value"><p>Ottaviano romano, poi Cesare; Cleopatra, ultima regina d’Egitto; Marcantonio, eroe romano marito di Ottavia; Ottavia, sorella di Ottaviano; Oronte, capitan generale di Cleopatra; Trespolo, pescatore, e barbiere confidente di Marcantonio; guardie.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">09. Protagonisti</div>
+                        <div class="value"><p>Il protagonista – da cui si scaturisce tutta la carica parodica del dramma – è indubbiamente Marcantonio; fisiologicamente prominenti le donne (Cleopatra, amante; Ottavia, moglie) che cercano di proteggerlo e salvarlo; un protagonismo estrinseco è quello di Ottaviano, la cui funzione è quella di mettere in moto la scarna vicenda, senza tuttavia ricevere modellizzazioni drammaturgiche significative.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="value"><p>Tutti i personaggi sono storici, ad eccezione di Trespolo, «pescatore, e barbiere confidente di Marcantonio», che, particolarmente in un passo, potrebbe rivelare la sua parentela con il secondo zanni (cfr. 2.10-11: «cleopatra  Io tutto pagherò, non ti sgomenta. / trespolo  A me basta per premio una polenta»).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
+                        <div class="value"><p>Non a caso, l’unico nome parlante potrebbe essere quello di Trespolo: in accezione metaforica vale ‘membro virile’; con valore aggettivale ‘molto magro, scarno’ (cfr. Gdli): a rimarcare la natura buffonesca del personaggio, la sua funzione di ‘zanni’ all’interno del disegno drammaturgico eroicomico.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">12. Rapporti fra i personaggi</div>
+                        <div class="value"><p>Marcantonio marito di Ottavia e amante di Cleopatra; Ottaviano antagonista di Marcantonio; Oronte e Trespolo coadiutori di Cleopatra nel tentativo (inutile) di salvare Marcantonio.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">13. Personaggi speculari</div>
+                        <div class="value"><p>Ottaviano <i>vs</i> Marcantonio; Cleopatra e Ottavia <i>vs</i> Ottaviano.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
+                        <div class="value"><p>Dato il genere di appartenenza, non figurano soliloqui e monologhi; ma possono essere riconosciute funzioni analoghe a certe arie e recitativi. In tal senso, degno di nota è l’<i>incipit</i>, che vede l’irrompere disperato di Cleopatra («Oh me infelice! dove / a questa vita troverò mai scampo?»), alla ricerca di Marcantonio (imperturbabilmente sprofondato nel sonno) per avvertirlo dell’imminente attacco di Ottaviano; o l’aria eroicomica di Trespolo che annuncia la sua (improbabile) collaborazione alla resistenza e alla difesa (2.20-22 e sgg.: « Ancor io d’armi finito / fatto ardito / l’inimico abbatterò […]»). Quasi tutti i personaggi hanno del resto, come d’altronde previsto dalle convenzioni del genere, un’aria a cui è affidato un loro primo piano (cfr. per Oronte i vv. 3.9-16 e per Ottavia i vv. 6.20-29).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
+                        <div class="value"><p>Non è data successione di monologhi, mentre i dialoghi sono spesso animati da un botta e risposta molto animato e mirato alla contrapposizione dei ruoli, sempre in chiave parodica e/o caricaturale. Si veda ad esempio, nella scena incipitaria quello di un accidioso Marcantonio sprofondato nel sonno e di una allarmata Cleopatra che cerca di renderlo consapevole del pericolo incombente, dialogo aperto e chiuso dall’esilarante comportamento dell’antieroe (1.13-34 («Chi mi sveglia, oh Cieli! oh Dei! […] Lascia ch’io dorma, e poi farò la guerra»). Si veda inoltre quanto segnalato nel § 27.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">16. Uso particolarmente rilevante degli a parte</div>
+                        <div class="value"><p>L’unico a parte è, nella scena quinta, quello di Marcantonio, che disturbato nel suo sonno dall’acceso combattimento tra Ottaviano e Oronte, si esprime in un modo parodicamente straniante: «Che creanza è mai questa / di far rumore e non lasciar dormire» (5.1-2).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">17. Personaggi che parlano solo in verso</div>
+                        <div class="value"><p>Tutti i personaggi parlano in verso.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">18. Personaggi che parlano solo in prosa</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">19. Personaggi che parlano a soggetto</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">21. Personaggi che parlano solo in italiano</div>
+                        <div class="value"><p>Tutti.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
+                        <div class="value"><p>Non si riscontra un uso significativo e iterativo di figure retoriche; semmai è rimarchevole, sotto il profilo stilistico, il frequente contagio tra forme espressive ‘alte’ e forme espressive ‘basse’, con effetto di irridente contaminazione. Vedi anche § 27.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 4-->
+            <table class="data-table data-table-profile page-break" summary="IV. Intreccio">
+                <thead>
+                <tr>
+                    <th scope="col">IV. Intreccio</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="value"><p>La trama del <i>melolepidodramamusicale</i> è quanto mai esile (come d’altronde l’articolazione del testo, che si compone di sole dieci scene): Ottaviano furente muove contro l’inetto Marcantonio (secondo modalità allegramente dimentiche della realtà storica), ma a fronte della resistenza di Cleopatra e Ottavia per la salvezza dell’uomo amato, resistenza spinta fino al tentato suicidio, scioglie irrealisticamente i propri intenti bellicisti in una clemenza che risparmia non solo le due donne ma anche l’avversario politico.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">25. Tema principale</div>
+                        <div class="value"><p>La parodia ‘scoronante’ di temi e motivi della storia romana in quanto fonti dell’opera seria per musica e/o della tragedia, unitamente all’irridente rispetto delle tre unità, in una cornice che decostruisce di fatto le regole classicistiche, a partire dalla riduzione degli atti in un «atto unduterzo» (cfr. anche §§ 29-39).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">26. Temi secondari</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">27. Comicità</div>
+                        <div class="value"><p>Il cuore comico dell’intreccio è senz’altro costituito dalla rappresentazione di Marcantonio, la quale ripropone in forme estreme le caratteristiche di quell’‘anti-eroe’ che spesso anima il genere di riferimento e che qui sono piegate a un’iperbole inedita, in quanto il personaggio non è reduce da una, sia pur parodica, stanchezza ‘belligerante’, bensì appare afflitto da una congenita <i>voluptas dormiendi</i>, radicale rovesciamento dell’attitudine dinamica e guerriera del personaggio storico; senza contare la sue riduzione a pavido pupazzetto che, all’occorrenza, si nasconde in un pozzo, da cui si affaccia e vi riemerge nel suo colloquio con la moglie Ottavia (scena 7). </p><p> Altri elementi collaterali di comicità sono offerti, prevedibilmente, da alcuni interventi dello ‘zanni’ Trespolo:  «[…] fra poco Ottaviano / qui ne verrà con furibonda armata, / e vol far di noi tutti una frittata» (3.4-6); «ottaviano […] inflessibil nemico / del vostro Marcantonio, /seco vengo a pugnar con gioia e fasto. // trespolo Vi credea signor l’asin col basto» (4.9-12); «[ottaviano] Mio schiavo sei e ti rompo la zucca» (5.14). Cfr. anche il § 28.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">28. Elementi polemici, satirici e parodici</div>
+                        <div class="value"><p>Oltre a quanto già rilevato ai §§ 25 e 27, l’elemento polemico-satirico più rilevante è quello affidato al corredo paratestuale (elemento, peraltro, che si può apprezzare solo in una prospettiva di lettura). I paratesti dell’<i> Ottaviano trionfante di Marcantonio</i> (d’ora in poi OtM) infatti in misura esorbitante ricalcano, non a caso, quelli che erano stati propri dell’<i>Ulisse il giovane</i>, tragedia di Domenico Lazzarini ben nota all’‘autore-attore dell’ OtM (dedica, lettera dell’autore a destinatario competente, risposta di quest’ultimo, argomento, <i>Al lettore</i>) ed erodono beffardamente gli spazi del testo (del libretto a stampa ben nove pagine su complessive ventitré sono assorbite dai paratesti). Inutile sottolineare che tutti questi orpelli narcisistici sono pretesti per decostruire e irridere la prassi corrente. </p><p> Si possono inoltre individuare all’interno del testo degli anacronismi che pungono satiricamente prassi sociali o abitudini settecentesche: «ottaviano  Per Cleopatra il so, ei ti tradisce. // ottavia  All’uso de’ mariti, egli s’unisce. // ottaviano. T’è marito, e per te non ha costanza. // ottavia  Questo è un affar che passa per usanza» (6.14-17); «(<i>Ottaviano, ed Oronte si mettono a sedere sul letto, e bevono il caffè</i>)» (10.6.did.).</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 5-->
+            <table class="data-table data-table-profile page-break" summary="V. Luogo e tempo">
+                <thead>
+                <tr>
+                    <th scope="col">V. Luogo e tempo</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">29. Luogo generale</div>
+                        <div class="value"><p>«La scena  in campagna, città, atrio, arcova, gabinetto, prigione tutto insieme» recita l’indicazione generale, in un grottesco rispetto dell’unità di luogo, essendo le azioni costrette in un «tutto insieme», una sorta di surreale contenitore di tutti gli spazi in cui si muove l’azione. La prima didascalia di scena dettaglia ulteriormente l’ambientazione: «<i>Campagna spaziosa, da una parte un letto sotto ad un albero; specchio attaccato ad un ramo dell’albero, sedia, tavolino con da scrivere. Pozzo dall’altra parte con girella, e corda; in lontananza fiume, con padiglioni, porta di una camera dalla parte del letto</i>».</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">30. Cambiamenti di luogo</div>
+                        <div class="value"><p>Date le caratteristiche dell’ambientazione generale, non ci sono cambiamenti di luogo.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="value">Entro la giornata.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 6-->
+            <table class="data-table data-table-profile page-break" summary="VI. Rispetto della regola delle tre unità">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="2">VI. Rispetto della regola delle tre unità</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="20%">
+                        <div class="key">34. Tempo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">35. Circostanze temporali</div>
+                        <div class="value"><p>La vicenda si svolge entro una giornata.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">36. Luogo</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">37. Circostanze spaziali</div>
+                        <div class="value"><p>Vedi § 29.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20%">
+                        <div class="key">38. Azione</div>
+                        <div class="value">Sì</div>
+                    </td>
+                    <td>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="value"><p>L’azione comincia con l’irrompere in scena di Cleopatra che cerca di avvertire Marcantonio dell’imminente attacco di Ottaviano, ma l’uomo amato, da ‘indomito guerriero’, preferisce rimanere immerso nel sonno («Lascia ch’io dorma, e poi farò la guerra», 1.33); l’inconsistente resistenza delle guardie della regina, capitanate da Oronte, segna la vittoria di Ottaviano, che tuttavia dura qualche fatica a individuare l’avversario, nascosto in un pozzo. Dopo varie traversie riesce a catturarlo, ma la sua furia bellicista si scioglie davanti alle reazioni di Cleopatra e di Ottavia, pronte alla morte nel caso in cui Marcantonio sia giustiziato, e si trasforma in una delirante clemenza verso tutti.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 7-->
+            <table class="data-table data-table-profile page-break" summary="VII. Elementi materiali, performativi e didascalici">
+                <thead>
+                <tr>
+                    <th scope="col">VII. Elementi materiali, performativi e didascalici</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">40. Uso di oggetti particolari</div>
+                        <div class="value"><p>Grande rilievo nella snella economia drammaturgica del testo ha il pozzo, in cui Marcantonio «da eroe / <i>s</i>’ascond<i>e</i>» (7.24-25); anche lo specchio interviene per una gustosissima <i>gag</i> dissacrante: allorché Ottaviano e Oronte si approssimano battendosi animosamente, «(<i>intanto Marcantonio si alza dal letto, si pulisce gl’occhi, e si distira, e si specchia</i>)» (5.7.did.) e allorché Ottaviano si accorge di lui, ribatte: «Aspetta pur, aspetta, / che la perucca accomodata sia, /e poi dirotti l’oppinione mia» (5.10.12).</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">41. Uso di effetti sonori e musicali</div>
+                        <div class="value"><p>Cfr. § 50.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">42. Uso di effetti speciali</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">43. Scena con ampia presenza di personaggi</div>
+                        <div class="value"><p>L’ultima scena – la decima – vede presente in scena tutti i personaggi.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">44. Didascalie di particolare importanza</div>
+                        <div class="value"><p>Le didascalie sono poche e di carattere satirico-parodico: si vedano quelle menzionate ai §§ 28 e 40.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 8-->
+            <table class="data-table data-table-profile page-break" summary="VIII. Prima recita">
+                <thead>
+                <tr>
+                    <th scope="col">VIII. Prima recita</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">45. Prima recita</div>
+                        <div class="value"><p>Venezia, teatro San Luca, carnevale 1735; non è noto il numero di eventuali repliche.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">46. Altre recite nel Settecento</div>
+                        <div class="value"><p>Non si hanno riscontri documentari di altre recite nel Settecento.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 9-->
+            <table class="data-table data-table-profile page-break" summary="IX. Il testo in Goldoni">
+                <thead>
+                <tr>
+                    <th scope="col">IX. Il testo in Goldoni</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
+                        <div class="value"><p>Negli scritti e nelle opere di Goldoni non sono presenti riferimenti di sorta all’OtM, anche se l’opera certamente contribuì al consolidamento dell’<i>humus</i> in cui Goldoni veniva componendo i suoi drammi musicali per i comici del San Samuele; un riferimento all’autore ricorre, insieme a quello della sua compagnia (e in particolare della moglie, «l’erudita <i>Eularia </i>[…] prima donna») nella prefazione al t. xiii dell’edizione Pasquali, edito nel 1775.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
+                        <div class="value"><p>Nessun aspetto in particolare, ma vedi quanto osservato nel § 47.</p></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- section 10-->
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+                <thead>
+                <tr>
+                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="key">49. Dati dei paratesti</div>
+                        <div class="value"><p>I paratesti si compongono di una dedica a un non meglio identificabile (e forse immaginario) <i>signor Odmuaponarcemdo Mirop</i>; seguono una <i>Lettera dell’autore al signor Compassorio de’ Sicuri agrimensore dignissimo</i> e la <i>Risposta del signor Compassorio de’ Sicuri al signor Itmipolimipo Ronzelo</i>; poi l’<i>Argomento</i> e un conclusivo avviso <i>Al lettore</i>.</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="key">50. Osservazioni</div>
+                        <div class="value"><p>Il nome dell’autore, Pompilio Miti, è nascosto dietro il giocoso quanto trasparente anagramma Itmipolimipo.</p>  <p>Il compositore della musica è Giacomo Maccari (o Macari), che peraltro firma gran parte degli intermezzi/drammi musicali per comici che tra il 1734 e il 1743 Goldoni, allora poeta della compagnia Imer, scrisse per il teatro di San Samuele.</p>  Cfr. quanto segnalato al § 28.</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <img src="/assets/frontend/img/usc.svg" alt="Universidade de Santiago de Compostela" />
+                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" alt="Agencia Estatal de Investigación" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" alt="Ministerio de Ciencia e Innovación" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" alt="Fondo Europeo de Desarrollo Regional" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</body>
+</html>
