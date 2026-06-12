@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Archivio del Teatro Pregoldoniano</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+<body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="/">ArpreGo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/biblio">Biblioteca<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/bancadati">Banca dati<br /> pregoldoniana</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/recita">Banca dati<br /> del repertorio</a>
+            </li>
+            <li class="nav-item nav-item-tall">
+                <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
+            </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/links">
+                        Link
+                    </a>
+                </li>
+                        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    L'équipe
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div class="dropdown-item">
+                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/archivio/1">Convegno 1</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/archivio/2">Convegno 2</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/archivio/3">Convegno 3</a>
+                    </div>
+                    <div class="dropdown-item">
+                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/archivio/4">Convegno 4</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
+                <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
+                    Terzo convegno ArpreGo<br />Riprese video
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
+            <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
+            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+                Ricerca
+            </button>
+        </form>
+    </div>
+</nav>
+    <main id="main">
+        
+    <section class="actor first">
+
+        <div class="container">
+
+            <h1 class="lion">Nogarola,  Antonio</h1>
+
+            <table id="newspaper-b" class="data-table data-table-profile data-table-play">
+                <thead>
+                <tr>
+                    <th scope="col" colspan="3">Attore</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td width="33%">
+                        <div class="key">Nome</div>
+                        <div class="value">Nogarola,  Antonio</div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">Data di nascita</div>
+                        <div class="value"></div>
+                    </td>
+                    <td width="33%">
+                        <div class="key">Data di morte</div>
+                        <div class="value"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="key">Biografia</div>
+                        <div class="value">-</div>
+                    </td>
+                </tr>
+                <tr>
+                </tbody>
+            </table>
+
+            <h3>Recita</h3>
+            <div class="table-container">
+        <table class="data-table data-table-database">
+        <thead>
+            <tr>
+                <th scope="col">Data</th>
+                <th scope="col">Titolo</th>
+                <th scope="col">Autrice/tore</th>
+                                    <th scope="col">Città</th>
+                                                            <th scope="col">Teatro</th>
+                                    <th scope="col">Compagnia</th>
+                <th scope="col">Attrici/tori</th>
+                <th scope="col">Data di creazione/revisione</th>
+                <th scope="col" data-orderable="false" data-searchable="false">
+                    Schedatrice/tore<br />Fonte<br />Note
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+                    <tr id="346" data-json="{&quot;id&quot;:346,&quot;book_id&quot;:449,&quot;company_id&quot;:17,&quot;theater_id&quot;:84,&quot;city_id&quot;:86,&quot;shows&quot;:0,&quot;schedatore&quot;:&quot;Gregores Pereira, Paula&quot;,&quot;notes&quot;:&quot;-&quot;,&quot;description&quot;:null,&quot;source&quot;:&quot;Stilicone, Bologna, Longhi, 1699.&quot;,&quot;period&quot;:&quot;1698, carnevale&quot;,&quot;started_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;ended_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;created_at&quot;:&quot;2026-06-12 15:39:07&quot;,&quot;updated_at&quot;:&quot;2026-06-12 15:39:07&quot;,&quot;pivot&quot;:{&quot;actor_id&quot;:91,&quot;performance_id&quot;:346,&quot;character&quot;:&quot; Onorio&quot;,&quot;comments&quot;:null,&quot;created_at&quot;:&quot;2026-06-12 15:39:07&quot;,&quot;updated_at&quot;:&quot;2026-06-12 15:39:07&quot;}}">
+                <td>1698, carnevale</td>
+                <td><em>Stilicone (tragedia)</em></td>
+                <td>-</td>
+                                    <td>
+                                                    Roma
+                                            </td>
+                                                    <td>Clementino (collegio)</td>
+                                <td>Cavalieri del Collegio Clementino</td>
+                <td>
+                                            Nogarola,  Antonio
+                                            Vizzarroni,  Giovanni Antonio
+                                            Monti,  Antonio
+                                            Belcredi,  Carlo
+                                            Isolani,  Alamano
+                                            Giustiniani,  Lorenzo
+                                            Collalto,  Odoardo
+                                            Gubbio,  Carlo Fabiano da
+                                    </td>
+                <td data-sort="1781271547">
+                    12/06/2026
+                </td>
+                <td data-order="stilicone-tragedia-1698-carnevale-roma"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
+                            </tr>
+                </tbody>
+    </table>
+</div>
+            <h3>Compagnie</h3>
+            <div class="table-container">
+    <table class="data-table data-table-database">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Periodo di attività</th>
+                <th scope="col" data-searchable="false">&nbsp;</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                </tbody>
+    </table>
+</div>        </div>
+
+    </section>
+
+    </main>
+
+    <footer class="main" id="footer">
+    <block class="logos">
+        <div class="container">
+            <a href="https://www.usc.es" target="_blank">
+                <picture class="usc">
+                    <img src="/assets/frontend/img/usc.svg" alt="Universidade de Santiago de Compostela" />
+                </picture>
+            </a>
+            <a href="http://www.aei.gob.es/" target="_blank">
+                <picture class="aei">
+                    <img src="/assets/frontend/img/aei.png" alt="Agencia Estatal de Investigación" />
+                </picture>
+            </a>
+            <a href="http://ciencia.gob.es/" target="_blank">
+                <picture class="mciu">
+                    <img src="/assets/frontend/img/mciu.png" alt="Ministerio de Ciencia e Innovación" />
+                </picture>
+            </a>
+            <a href="https://ec.europa.eu/regional_policy/es/funding/erdf/" target="_blank">
+                <picture class="feder">
+                    <img src="/assets/frontend/img/feder.png" alt="Fondo Europeo de Desarrollo Regional" />
+                </picture>
+            </a>
+        </div>
+    </block>
+
+    <block class="copyright">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8">
+                    &copy; Archivio del Teatro Pregoldoniano, 2012-2026.
+                    Tutti i diritti riservati
+                </div>
+                            </div>
+        </div>
+    </block>
+</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</body>
+</html>
