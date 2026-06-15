@@ -265,6 +265,24 @@ var Main =
             instance.order([ $(this).data('column'), "asc" ]).draw();
         });
 
+        table.on('draw.dt', function()
+        {
+            var term = instance.search();
+            table.find('tbody a[href^="/"]').each(function()
+            {
+                var url = new URL($(this).attr('href'), window.location.origin);
+                if(term)
+                {
+                    url.searchParams.set('highlight', term);
+                }
+                else
+                {
+                    url.searchParams.delete('highlight');
+                }
+                $(this).attr('href', url.pathname + url.search);
+            });
+        });
+
         return instance;
     },
 
