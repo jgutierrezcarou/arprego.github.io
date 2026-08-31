@@ -15,7 +15,11 @@
 <link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">ArpreGo</a>
+    <a class="navbar-brand" href="/">
+        ArpreGo
+        <br />
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -128,7 +132,7 @@
             <div class="filters">
             <button class="btn btn-secondary" id="reset-order" data-column="7">Riordina</button>
         </div>
-        <table class="data-table data-table-database">
+        <table class="data-table data-table-database" data-section="performances">
         <thead>
             <tr>
                 <th scope="col">Data</th>
@@ -142,7 +146,6 @@
                 <th scope="col" data-orderable="false" data-searchable="false">
                     Schedatrice/tore<br />Fonte<br />Note
                 </th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -162,8 +165,7 @@
                     12/06/2026
                 </td>
                 <td data-order="spirito-folletto-lo-commedia-17280208-parma"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Castagneto, Stefano, Una descrizione delle feste per le nozze di Antonio Farnese ed Enrichetta d'Este, in La Parma in festa. Spettacolarità e teatro nel Ducato di Parma nel Settecento, a cura du Luigi Allegri e Renato Di Benedetto, Modena, Mucchi editore, 1987, p. 120.</td>
-            </tr>
+                            </tr>
                     <tr id="363" data-json="{&quot;id&quot;:363,&quot;book_id&quot;:415,&quot;company_id&quot;:25,&quot;theater_id&quot;:138,&quot;city_id&quot;:92,&quot;shows&quot;:0,&quot;schedatore&quot;:&quot;Gregores Pereira, Paula&quot;,&quot;notes&quot;:&quot;-&quot;,&quot;description&quot;:null,&quot;source&quot;:&quot;Turchi, Roberta, La commedia italiana del Settecento, Firenze, Sansoni, 1985, p. 8.&quot;,&quot;period&quot;:&quot;1732&quot;,&quot;started_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;ended_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;created_at&quot;:&quot;2026-06-12 15:39:07&quot;,&quot;updated_at&quot;:&quot;2026-06-12 15:39:07&quot;}">
                 <td>1732</td>
                 <td><em>Cicisbeo sconsolato, Il (commedia)</em></td>
@@ -179,8 +181,7 @@
                     12/06/2026
                 </td>
                 <td data-order="cicisbeo-sconsolato-il-commedia-1732-vienna"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Turchi, Roberta, La commedia italiana del Settecento, Firenze, Sansoni, 1985, p. 8.</td>
-            </tr>
+                            </tr>
                     <tr id="364" data-json="{&quot;id&quot;:364,&quot;book_id&quot;:415,&quot;company_id&quot;:25,&quot;theater_id&quot;:138,&quot;city_id&quot;:92,&quot;shows&quot;:0,&quot;schedatore&quot;:&quot;Gregores Pereira, Paula&quot;,&quot;notes&quot;:&quot;-&quot;,&quot;description&quot;:null,&quot;source&quot;:&quot;Turchi, Roberta, La commedia italiana del Settecento, Firenze, Sansoni, 1985, p. 86.&quot;,&quot;period&quot;:&quot;1739&quot;,&quot;started_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;ended_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;created_at&quot;:&quot;2026-06-12 15:39:07&quot;,&quot;updated_at&quot;:&quot;2026-06-12 15:39:07&quot;}">
                 <td>1739</td>
                 <td><em>Cicisbeo sconsolato, Il (commedia)</em></td>
@@ -196,8 +197,7 @@
                     12/06/2026
                 </td>
                 <td data-order="cicisbeo-sconsolato-il-commedia-1739-vienna"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Turchi, Roberta, La commedia italiana del Settecento, Firenze, Sansoni, 1985, p. 86.</td>
-            </tr>
+                            </tr>
                 </tbody>
     </table>
 </div>
@@ -252,6 +252,9 @@
 <script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
 <script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
 </body>
 </html>

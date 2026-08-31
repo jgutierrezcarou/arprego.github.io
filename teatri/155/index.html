@@ -15,7 +15,11 @@
 <link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">ArpreGo</a>
+    <a class="navbar-brand" href="/">
+        ArpreGo
+        <br />
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -128,7 +132,7 @@
             <div class="filters">
             <button class="btn btn-secondary" id="reset-order" data-column="7">Riordina</button>
         </div>
-        <table class="data-table data-table-database">
+        <table class="data-table data-table-database" data-section="performances">
         <thead>
             <tr>
                 <th scope="col">Data</th>
@@ -142,7 +146,6 @@
                 <th scope="col" data-orderable="false" data-searchable="false">
                     Schedatrice/tore<br />Fonte<br />Note
                 </th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -162,8 +165,7 @@
                     12/06/2026
                 </td>
                 <td data-order="sfortunato-patiente-il-operetta-morale-1667-venezia"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">Riportiamo l’informazione contenuta nell’edizione del testo, nella quale si dà notizia di una futura rappresentazione. Sul frontespizio si legge: «da recitarsi in Venetia sopra la Piazza di S. Marco l'anno 1667». Balbi, Domenico, Lo sfortunato patiente, Venezia, Curti, 1667.</td>
-            </tr>
+                            </tr>
                 </tbody>
     </table>
 </div>
@@ -218,6 +220,9 @@
 <script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
 <script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
 </body>
 </html>

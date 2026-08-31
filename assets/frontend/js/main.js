@@ -1,5 +1,10 @@
-var Main = 
+var Main =
 {
+    searchIndex: null,
+    searchIds: {},
+    currentTerms: '',
+    exactSearch: true,
+
     init: function()
     {
         $('.intro .introductions a').on('click', function(event)
@@ -67,11 +72,38 @@ var Main =
             Main.map();
         }
 
+        $.fn.dataTable.ext.search.push(function(settings, data, index)
+        {
+            if(!Main.currentTerms || !Main.searchIndex) return true;
+
+            var section = $(settings.nTable).data('section') || $(settings.nTable).closest('.results').data('section');
+            var ids = Main.searchIds[section];
+            if(ids === undefined) return true;
+
+            var nTr = settings.aoData[index] ? settings.aoData[index].nTr : null;
+            return nTr ? ids.has(nTr.id) : false;
+        });
+
         Main.instances = [];
         $('.data-table-database').each(function()
         {
             Main.instances.push(Main.table($(this)));
         });
+
+        if($('.data-table-database').length)
+        {
+            fetch('/ricerca/index.json')
+                .then(function(r) { return r.json(); })
+                .then(function(data)
+                {
+                    Main.searchIndex = lunr.Index.load(data);
+                    if(Main.currentTerms) Main.search(Main.currentTerms);
+                })
+                .catch(function(e)
+                {
+                    console.error('Search index failed to load:', e);
+                });
+        }
 
         var resizeTimer;
         $(window).on('resize', function()
@@ -82,6 +114,7 @@ var Main =
                 var isMobile = window.innerWidth < 992;
                 Main.instances.forEach(function(dt)
                 {
+                    if(!dt.fixedHeader) return;
                     if (isMobile) {
                         dt.fixedHeader.disable();
                     } else {
@@ -162,14 +195,15 @@ var Main =
     table: function(table)
     {
         var options = {
-            "info":     false,
-            "mark":     {
+            "autoWidth": false,
+            "info":      false,
+            "mark":      {
                 className: 'hightlight',
                 exclude: ['.no-mark']
             },
-            "order":    [],
-            "paging":   false,
-            "sort":     true
+            "order":     [],
+            "paging":    false,
+            "sort":      true
         };
 
         options.language = {
@@ -196,7 +230,7 @@ var Main =
             }
         };
 
-        if (window.innerWidth >= 992) {
+        if (window.innerWidth >= 992 && table.closest(':hidden').length === 0) {
             options.fixedHeader = {
                 headerOffset: $('.navbar').outerHeight()
             };
@@ -223,6 +257,42 @@ var Main =
         }
 
         var instance = table.DataTable(options);
+
+        var sectionAttr = table.data('section');
+        if(sectionAttr && !$('.search.first').length)
+        {
+            var $input = table.closest('.dataTables_wrapper').find('.dataTables_filter input');
+            $input.off('.DT').on('keyup', function()
+            {
+                var term = $(this).val().trim();
+                Main.currentTerms = term;
+                Main.searchIds = {};
+
+                if(term && Main.searchIndex)
+                {
+                    var variants = Main.termVariants(term);
+                    var query = variants.map(function(v) { return Main.exactSearch ? v : v + '~1'; }).join(' ');
+                    var results = [];
+                    try { results = Main.searchIndex.search(query); } catch(e) {}
+
+                    Main.searchIds[sectionAttr] = new Set();
+                    results.forEach(function(r)
+                    {
+                        var sep = r.ref.indexOf(':');
+                        if(r.ref.substring(0, sep) === sectionAttr)
+                        {
+                            Main.searchIds[sectionAttr].add(r.ref.substring(sep + 1));
+                        }
+                    });
+
+                    instance.search('').draw();
+                }
+                else
+                {
+                    instance.search(term).draw();
+                }
+            });
+        }
 
         table.parents('.table-container').find('.filters select').on('change', function()
         {
@@ -257,6 +327,10 @@ var Main =
             {
                 row.child(info).show();
                 tr.addClass('shown');
+                if(Main.currentTerms)
+                {
+                    row.child().find('.expanded').mark(Main.currentTerms, { className: 'highlight', exclude: ['.no-mark'] });
+                }
             }
         });
 
@@ -267,19 +341,29 @@ var Main =
 
         table.on('draw.dt', function()
         {
-            var term = instance.search();
+            var term = Main.currentTerms;
+
+            table.find('tbody').unmark();
+            if(term)
+            {
+                table.find('tbody').mark(term, { className: 'highlight', exclude: ['.no-mark'] });
+            }
+
             table.find('tbody a[href^="/"]').each(function()
             {
-                var url = new URL($(this).attr('href'), window.location.origin);
+                var $a = $(this);
+                if(!$a.data('href'))
+                {
+                    var clean = new URL($a.attr('href'), window.location.origin);
+                    clean.searchParams.delete('highlight');
+                    $a.data('href', clean.pathname + clean.search);
+                }
+                var url = new URL($a.data('href'), window.location.origin);
                 if(term)
                 {
                     url.searchParams.set('highlight', term);
                 }
-                else
-                {
-                    url.searchParams.delete('highlight');
-                }
-                $(this).attr('href', url.pathname + url.search);
+                $a.attr('href', url.pathname + url.search);
             });
         });
 
@@ -288,17 +372,54 @@ var Main =
 
     search: function(terms)
     {
+        terms = terms ? terms.trim() : '';
+        Main.currentTerms = terms;
+        Main.searchIds = {};
+
+        if(terms && Main.searchIndex)
+        {
+            Main.instances.forEach(function(dt)
+            {
+                var s = $(dt.table().node()).data('section') || $(dt.table().node()).closest('.results').data('section');
+                if(s) Main.searchIds[s] = new Set();
+            });
+
+            var variants = Main.termVariants(terms);
+            var query = variants.map(function(v) { return Main.exactSearch ? v : v + '~1'; }).join(' ');
+            var results = [];
+            try { results = Main.searchIndex.search(query); } catch(e) { console.error('lunr search error:', e, query); }
+
+            results.forEach(function(r)
+            {
+                var sep = r.ref.indexOf(':');
+                var section = r.ref.substring(0, sep);
+                var id = r.ref.substring(sep + 1);
+                if(Main.searchIds[section]) Main.searchIds[section].add(id);
+            });
+        }
+
         var total = 0;
 
         Main.instances.forEach(function(dt)
         {
-            dt.search(terms).draw();
+            if(terms && !Main.searchIndex)
+            {
+                dt.search(terms).draw();
+            }
+            else
+            {
+                dt.search('').draw();
+            }
+
             var count = dt.rows({ filter: 'applied' }).count();
             var section = $(dt.table().container()).closest('.results');
 
             if(terms.length > 0 && count > 0)
             {
                 section.show();
+                section.find('h1 small').text(function(_, text) { return text.replace(/\d+/, count); });
+                dt.columns.adjust();
+                if(dt.fixedHeader && window.innerWidth >= 992) dt.fixedHeader.enable();
                 total += count;
             }
             else
@@ -307,14 +428,35 @@ var Main =
             }
         });
 
-        if(terms.length > 0 && total === 0)
-        {
-            $('.zero-results').show();
-        }
-        else
-        {
-            $('.zero-results').hide();
-        }
+        $('.zero-results').toggle(terms.length > 0 && total === 0);
+    },
+
+    termVariants: function(terms)
+    {
+        var pairs = [['i','j'],['j','i'],['u','v'],['v','u']];
+        var seen = {};
+        var result = [];
+
+        terms.toLowerCase().split(/\s+/).filter(function(t) { return t.length >= 2; })
+            .forEach(function(term)
+            {
+                var group = [term];
+                pairs.forEach(function(pair)
+                {
+                    var current = term;
+                    while(current.indexOf(pair[0]) !== -1)
+                    {
+                        current = current.replace(pair[0], pair[1]);
+                        if(group.indexOf(current) === -1) group.push(current);
+                    }
+                });
+                group.forEach(function(v)
+                {
+                    if(!seen[v]) { seen[v] = true; result.push(v); }
+                });
+            });
+
+        return result;
     }
 };
 

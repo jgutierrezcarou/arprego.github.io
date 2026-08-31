@@ -15,7 +15,11 @@
 <link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">ArpreGo</a>
+    <a class="navbar-brand" href="/">
+        ArpreGo
+        <br />
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -122,7 +126,7 @@
 
             <h3>Recita</h3>
             <div class="table-container">
-        <table class="data-table data-table-database">
+        <table class="data-table data-table-database" data-section="performances">
         <thead>
             <tr>
                 <th scope="col">Data</th>
@@ -136,7 +140,6 @@
                 <th scope="col" data-orderable="false" data-searchable="false">
                     Schedatrice/tore<br />Fonte<br />Note
                 </th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -165,8 +168,7 @@
                     12/06/2026
                 </td>
                 <td data-order="demetrio-ovvero-i-dubbi-eroici-il-opera-scenica-1695-modena"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Boccabadati, Giovan Battista, Il Demetrio, ovvero I dubbi eroici, Modena, Bartolommeo Soliani, 1695.</td>
-            </tr>
+                            </tr>
                     <tr id="385" data-json="{&quot;id&quot;:385,&quot;book_id&quot;:476,&quot;company_id&quot;:40,&quot;theater_id&quot;:4,&quot;city_id&quot;:32,&quot;shows&quot;:0,&quot;schedatore&quot;:&quot;Gregores Pereira, Paula&quot;,&quot;notes&quot;:&quot;-&quot;,&quot;description&quot;:null,&quot;source&quot;:&quot;Boccabadati, Giovan Battista, Il Scipione, ovvero Le gare eroiche, Modena, Antonio Capponi, s. a.&quot;,&quot;period&quot;:&quot;1693&quot;,&quot;started_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;ended_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;created_at&quot;:&quot;2026-06-12 15:39:08&quot;,&quot;updated_at&quot;:&quot;2026-06-12 15:39:08&quot;,&quot;pivot&quot;:{&quot;actor_id&quot;:115,&quot;performance_id&quot;:385,&quot;character&quot;:&quot; Lucio Marcio&quot;,&quot;comments&quot;:null,&quot;created_at&quot;:&quot;2026-06-12 15:39:08&quot;,&quot;updated_at&quot;:&quot;2026-06-12 15:39:08&quot;}}">
                 <td>1693</td>
                 <td><em>Scipione, ovvero Le gare eroiche, Il (opera scenica)</em></td>
@@ -192,21 +194,19 @@
                     12/06/2026
                 </td>
                 <td data-order="scipione-ovvero-le-gare-eroiche-il-opera-scenica-1693-modena"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Boccabadati, Giovan Battista, Il Scipione, ovvero Le gare eroiche, Modena, Antonio Capponi, s. a.</td>
-            </tr>
+                            </tr>
                 </tbody>
     </table>
 </div>
             <h3>Compagnie</h3>
             <div class="table-container">
-    <table class="data-table data-table-database">
+    <table class="data-table data-table-database" data-section="companies">
         <thead>
             <tr>
                 <th scope="col">Nome</th>
                 <th scope="col">Tipo</th>
                 <th scope="col">Periodo di attività</th>
                 <th scope="col" data-searchable="false">&nbsp;</th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -264,6 +264,9 @@
 <script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
 <script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
 </body>
 </html>

@@ -15,7 +15,11 @@
 <link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">ArpreGo</a>
+    <a class="navbar-brand" href="/">
+        ArpreGo
+        <br />
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -125,7 +129,7 @@
             <div class="filters">
             <button class="btn btn-secondary" id="reset-order" data-column="7">Riordina</button>
         </div>
-        <table class="data-table data-table-database">
+        <table class="data-table data-table-database" data-section="performances">
         <thead>
             <tr>
                 <th scope="col">Data</th>
@@ -139,7 +143,6 @@
                 <th scope="col" data-orderable="false" data-searchable="false">
                     Schedatrice/tore<br />Fonte<br />Note
                 </th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -168,22 +171,20 @@
                     12/06/2026
                 </td>
                 <td data-order="rachele-la-1719-carnevale-prato"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Martello, Pier Jacopo, La Rachele, Verona, Pier Antonio Berno, 1719.</td>
-            </tr>
+                            </tr>
                 </tbody>
     </table>
 </div>
             
                             <h3>Teatri</h3>
                 <div class="table-container">
-    <table class="data-table data-table-database">
+    <table class="data-table data-table-database" data-section="theaters">
         <thead>
             <tr>
                 <th scope="col">Nome</th>
                 <th scope="col">Città</th>
                 <th scope="col">Periodo di attività</th>
                 <th scope="col" data-orderable="false" data-searchable="false">&nbsp;</th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -195,7 +196,6 @@
                 <td data-sort="0">
                     <a href="/teatri/119" class="no-mark" title="['Scheda']">Scheda</a>
                 </td>
-                <td style="display:none">-</td>
             </tr>
                 </tbody>
     </table>
@@ -250,6 +250,9 @@
 <script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
 <script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
 </body>
 </html>

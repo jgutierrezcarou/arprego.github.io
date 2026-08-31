@@ -15,7 +15,11 @@
 <link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">ArpreGo</a>
+    <a class="navbar-brand" href="/">
+        ArpreGo
+        <br />
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -125,7 +129,7 @@
             <div class="filters">
             <button class="btn btn-secondary" id="reset-order" data-column="7">Riordina</button>
         </div>
-        <table class="data-table data-table-database">
+        <table class="data-table data-table-database" data-section="performances">
         <thead>
             <tr>
                 <th scope="col">Data</th>
@@ -139,7 +143,6 @@
                 <th scope="col" data-orderable="false" data-searchable="false">
                     Schedatrice/tore<br />Fonte<br />Note
                 </th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -159,8 +162,7 @@
                     24/03/2020
                 </td>
                 <td data-order="marito-confuso-il-1708-bologna"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">Il Macchiavelli non sempre indica l'autore della musica, per cui in diversi casi non è possibile determinare se si tratta di un libretto o di un testo di teatro di prosa. Macchiavelli, Alessandro, Serie cronologica dei drammi recitati sù de’ pubblici Teatri di Bologna dall’anno di nostra salute 1600. Sino al corrente 1737. Opera de’ sig. soccj Filopatrij di Bologna, Bologna, Costantino Pisarri sotto le Scuole, 1737, p. 64.</td>
-            </tr>
+                            </tr>
                     <tr id="18" data-json="{&quot;id&quot;:18,&quot;book_id&quot;:135,&quot;company_id&quot;:7,&quot;theater_id&quot;:1,&quot;city_id&quot;:1,&quot;shows&quot;:0,&quot;schedatore&quot;:&quot;Guti\u00e9rrez Carou, Javier&quot;,&quot;notes&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;source&quot;:&quot;&lt;p&gt;Croce, Benedetto, I teatri di Napoli, Milano, Adelphi, 1992, p. 115. [Schedati i soli capitoli, dall&#039;VIII al XVIII, riguardanti le recite di prosa]&lt;\/p&gt;&quot;,&quot;period&quot;:&quot;1656(?)&quot;,&quot;started_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;ended_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;created_at&quot;:&quot;2020-03-24 23:10:48&quot;,&quot;updated_at&quot;:&quot;2020-03-25 10:26:49&quot;}">
                 <td>1656(?)</td>
                 <td><em>Incostanza punita, L'</em></td>
@@ -176,8 +178,7 @@
                     25/03/2020
                 </td>
                 <td data-order="incostanza-punita-l-1656-napoli"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">Croce, Benedetto, I teatri di Napoli, Milano, Adelphi, 1992, p. 115. [Schedati i soli capitoli, dall'VIII al XVIII, riguardanti le recite di prosa]</td>
-            </tr>
+                            </tr>
                     <tr id="27" data-json="{&quot;id&quot;:27,&quot;book_id&quot;:144,&quot;company_id&quot;:7,&quot;theater_id&quot;:7,&quot;city_id&quot;:1,&quot;shows&quot;:0,&quot;schedatore&quot;:&quot;Guti\u00e9rrez Carou, Javier&quot;,&quot;notes&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;source&quot;:&quot;&lt;p&gt;Croce, Benedetto, I teatri di Napoli, Milano, Adelphi, 1992, p. 155. [Schedati i soli capitoli, dall&#039;VIII al XVIII, riguardanti le recite di prosa]&lt;\/p&gt;&quot;,&quot;period&quot;:&quot;1701, carnevale&quot;,&quot;started_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;ended_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;created_at&quot;:&quot;2020-03-24 23:10:50&quot;,&quot;updated_at&quot;:&quot;2020-03-25 10:25:27&quot;}">
                 <td>1701, carnevale</td>
                 <td><em>Mezzotte - commedia napoletana dialettale</em></td>
@@ -193,22 +194,20 @@
                     25/03/2020
                 </td>
                 <td data-order="mezzotte-commedia-napoletana-dialettale-1701-carnevale-napoli"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">Croce, Benedetto, I teatri di Napoli, Milano, Adelphi, 1992, p. 155. [Schedati i soli capitoli, dall'VIII al XVIII, riguardanti le recite di prosa]</td>
-            </tr>
+                            </tr>
                 </tbody>
     </table>
 </div>
             
                             <h3>Teatri</h3>
                 <div class="table-container">
-    <table class="data-table data-table-database">
+    <table class="data-table data-table-database" data-section="theaters">
         <thead>
             <tr>
                 <th scope="col">Nome</th>
                 <th scope="col">Città</th>
                 <th scope="col">Periodo di attività</th>
                 <th scope="col" data-orderable="false" data-searchable="false">&nbsp;</th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -220,7 +219,6 @@
                 <td data-sort="0">
                     <a href="/teatri/1" class="no-mark" title="['Scheda']">Scheda</a>
                 </td>
-                <td style="display:none">Maddaloni, casa del duca di</td>
             </tr>
                     <tr id="castel-dellovo-casa-del-governatore">
                 <td>Castel dell'Ovo (casa del governatore)</td>
@@ -229,7 +227,6 @@
                 <td data-sort="1">
                     <a href="/teatri/7" class="no-mark" title="['Scheda']">Scheda</a>
                 </td>
-                <td style="display:none">Castel dell'Ovo (casa del governatore)</td>
             </tr>
                     <tr id="calderini-casa">
                 <td>Calderini, casa</td>
@@ -238,7 +235,6 @@
                 <td data-sort="2">
                     <a href="/teatri/77" class="no-mark" title="['Scheda']">Scheda</a>
                 </td>
-                <td style="display:none">Calderini, casa</td>
             </tr>
                 </tbody>
     </table>
@@ -293,6 +289,9 @@
 <script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
 <script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
 </body>
 </html>

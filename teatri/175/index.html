@@ -15,7 +15,11 @@
 <link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">ArpreGo</a>
+    <a class="navbar-brand" href="/">
+        ArpreGo
+        <br />
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -128,7 +132,7 @@
             <div class="filters">
             <button class="btn btn-secondary" id="reset-order" data-column="7">Riordina</button>
         </div>
-        <table class="data-table data-table-database">
+        <table class="data-table data-table-database" data-section="performances">
         <thead>
             <tr>
                 <th scope="col">Data</th>
@@ -142,7 +146,6 @@
                 <th scope="col" data-orderable="false" data-searchable="false">
                     Schedatrice/tore<br />Fonte<br />Note
                 </th>
-                <th style="display:none"></th>
             </tr>
         </thead>
 
@@ -162,8 +165,7 @@
                     12/06/2026
                 </td>
                 <td data-order="adelaide-commedia-170102-pistoia"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Fedi, Maria, Tuo lumine. L'accademia dei Risvegliati e lo spettacolo a Pistoia tra Sei e Settecento, Firenze, Firenze University Press, 2011, p. 290.</td>
-            </tr>
+                            </tr>
                     <tr id="514" data-json="{&quot;id&quot;:514,&quot;book_id&quot;:582,&quot;company_id&quot;:25,&quot;theater_id&quot;:175,&quot;city_id&quot;:117,&quot;shows&quot;:0,&quot;schedatore&quot;:&quot;Gregores Pereira, Paula&quot;,&quot;notes&quot;:&quot;-&quot;,&quot;description&quot;:null,&quot;source&quot;:&quot;Fedi, Maria, Tuo lumine. L&#039;accademia dei Risvegliati e lo spettacolo a Pistoia tra Sei e Settecento, Firenze, Firenze University Press, 2011, p. 357.&quot;,&quot;period&quot;:&quot;1731, carnevale&quot;,&quot;started_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;ended_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;created_at&quot;:&quot;2026-06-12 15:39:13&quot;,&quot;updated_at&quot;:&quot;2026-06-12 15:39:13&quot;}">
                 <td>1731, carnevale</td>
                 <td><em>Innocenza calunniata, L'</em></td>
@@ -179,8 +181,7 @@
                     12/06/2026
                 </td>
                 <td data-order="innocenza-calunniata-l-1731-carnevale-pistoia"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Fedi, Maria, Tuo lumine. L'accademia dei Risvegliati e lo spettacolo a Pistoia tra Sei e Settecento, Firenze, Firenze University Press, 2011, p. 357.</td>
-            </tr>
+                            </tr>
                     <tr id="515" data-json="{&quot;id&quot;:515,&quot;book_id&quot;:508,&quot;company_id&quot;:25,&quot;theater_id&quot;:175,&quot;city_id&quot;:117,&quot;shows&quot;:0,&quot;schedatore&quot;:&quot;Gregores Pereira, Paula&quot;,&quot;notes&quot;:&quot;-&quot;,&quot;description&quot;:null,&quot;source&quot;:&quot;Fedi, Maria, Tuo lumine. L&#039;accademia dei Risvegliati e lo spettacolo a Pistoia tra Sei e Settecento, Firenze, Firenze University Press, 2011, pp. 190, 348.&quot;,&quot;period&quot;:&quot;1729, estate&quot;,&quot;started_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;ended_at&quot;:&quot;-0001-11-30 00:00:00&quot;,&quot;created_at&quot;:&quot;2026-06-12 15:39:13&quot;,&quot;updated_at&quot;:&quot;2026-06-12 15:39:13&quot;}">
                 <td>1729, estate</td>
                 <td><em>Costante Rosalba, La (commedia)</em></td>
@@ -196,8 +197,7 @@
                     12/06/2026
                 </td>
                 <td data-order="costante-rosalba-la-commedia-1729-estate-pistoia"><a href="#" class="expand no-wrap">[ <span></span> ]</a></td>
-                                <td style="display:none">- Fedi, Maria, Tuo lumine. L'accademia dei Risvegliati e lo spettacolo a Pistoia tra Sei e Settecento, Firenze, Firenze University Press, 2011, pp. 190, 348.</td>
-            </tr>
+                            </tr>
                 </tbody>
     </table>
 </div>
@@ -252,6 +252,9 @@
 <script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
 <script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
+<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
 <script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
 </body>
 </html>
