@@ -3,7 +3,6 @@ var Main =
     searchIndex: null,
     searchIds: {},
     currentTerms: '',
-    exactSearch: true,
 
     init: function()
     {
@@ -270,8 +269,7 @@ var Main =
 
                 if(term && Main.searchIndex)
                 {
-                    var variants = Main.termVariants(term);
-                    var query = variants.map(function(v) { return Main.exactSearch ? v : v + '~1'; }).join(' ');
+                    var query = Main.buildQuery(term);
                     var results = [];
                     try { results = Main.searchIndex.search(query); } catch(e) {}
 
@@ -343,6 +341,8 @@ var Main =
         {
             var term = Main.currentTerms;
 
+            table.closest('.container').find('h1 .count').text(instance.rows({ filter: 'applied' }).count());
+
             table.find('tbody').unmark();
             if(term)
             {
@@ -384,8 +384,7 @@ var Main =
                 if(s) Main.searchIds[s] = new Set();
             });
 
-            var variants = Main.termVariants(terms);
-            var query = variants.map(function(v) { return Main.exactSearch ? v : v + '~1'; }).join(' ');
+            var query = Main.buildQuery(terms);
             var results = [];
             try { results = Main.searchIndex.search(query); } catch(e) { console.error('lunr search error:', e, query); }
 
@@ -437,7 +436,7 @@ var Main =
         var seen = {};
         var result = [];
 
-        terms.toLowerCase().split(/\s+/).filter(function(t) { return t.length >= 2; })
+        terms.toLowerCase().split(/\s+/)
             .forEach(function(term)
             {
                 var group = [term];
@@ -457,6 +456,18 @@ var Main =
             });
 
         return result;
+    },
+
+    // Las consultas con comodín ('*') desactivan el pipeline de lunr (no se aplica el stemmer),
+    // así que hay que stemizar el término a mano para comparar con la misma forma que hay en el índice.
+    buildQuery: function(terms)
+    {
+        var variants = Main.termVariants(terms);
+
+        return variants.map(function(v)
+        {
+            return Main.searchIndex.pipeline.runString(v).map(function(t) { return t + '*'; }).join(' ');
+        }).join(' ');
     }
 };
 
