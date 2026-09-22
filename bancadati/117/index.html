@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/117" />
+    <meta name="description" content="Atto primo: Mentre aspetta il suo innamorato Lisimiro, Gentile sa tramite Trofaldino che quegli si è trattenuto per strada a parlare con un’altra donna, per cui..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Amore interrotto dalla prudenza</em></div>
                     </td>
                     <td width="30%">
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -181,7 +190,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Dottore, Trofaldino, Pantalone.</p></div>
                     </td>
                 </tr>
@@ -218,7 +227,7 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +269,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -276,8 +285,8 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
-                        <div class="value"><p><strong>Atto primo</strong>: Mentre aspetta il suo innamorato Lisimiro, Gentile sa tramite Trofaldino che quegli si è trattenuto per strada a parlare con un’altra donna, per cui si ritira indispettita. Restato solo, Trofaldino si lamenta di quanto lo tratti male la sua morosa. Quando arriva Lisimiro, lamentandosi di essere in ritardo contro sua volontà, pensa che la ritardataria sia Gentile. Quando Lisimiro vede il Dottore che arriva, lo saluta e si allontana. Il Dottore pensa che sia andato via intimorito dalla sua presenza e si convince che debba far sposare sua figlia al più presto con l’uomo da lui sceltole. A casa Gentile si lamenta della creduta infedeltà di Lisimiro. Presa dalla disperazione va nella camera accanto (poi si saprà che vi è andata per scrivere una lettera a Lisimiro) e chiede a Trofaldino di avvertirla se fosse arrivato suo padre (il Dottore). Tra sé  Trofaldino dice che, se fosse arrivato il Dottore, sarebbe fuggito, nel frattempo si mette a dormire. Quando arriva il Dottore, Trofaldino fa di tutto per far notare a Gentile che suo padre è arrivato, ma senza riuscirci. Dopo aver chiesto dove è sua figlia senza aver ottenuto risposta, il Dottore va via comandando a Trofaldino di fare una commissione di cui gli aveva parlato il giorno prima. Gentile chiama Trofaldino e questi entra. In strada, mentre si nasconde, il Dottore afferma, proferendo spropositate minacce, che si fermerà a spiare chi entra o esce di casa sua. Quando esce Trofaldino con una lettera (che poi si saprà gli ha dato Gentile per portarla a Lisimiro), il Dottore se ne accorge e lo imbroglia con un lazzo, in modo tale che riesce a sostituite alla lettera di Gentile un’altra sua senza che lo zanni se ne accorga. Il Dottore torna a casa e Trofaldino va via a consegnare la lettera a Lisimiro pensando, felice, alla mancia che questi gli avrebbe dovuto dare.</p>  <p><strong>Atto secondo</strong>: Lisimiro si lamenta che Gentile sia mancata all’appuntamento con lui. Trofaldino consegna la lettera a Lisimiro, che gli chiede di lasciarlo solo per leggerla a suo piacere. Lisimiro resta sbalordito quando legge la lettera piena di spropositi e di conti e pensa che sia stato burlato da Trofaldino. Pantalone dice al Dottore di avere molta fretta di sposare sua figlia perché lo fa sentire pieno di vigore e di forza. Il Dottore gli dice che lei non lo vuole, ma che riuscirà a convincerla. Dopo che Pantalone è andato via, il Dottore racconta a sua figlia i suoi piani di matrimonio per lei. Gentile gli risponde che non basta che lo sposo piaccia al padre, ma che deve piacere anche alla ragazza. Quando viene a sapere che si tratta di Pantalone si rifiuta assolutamente di accettarlo e va via. Da solo, il Dottore si ripromette di riuscire a convincere la figlia e anche di essere molto attento a intercettare la lettera che sicuramente le invierà Lisimiro in risposta a quella che lui ha cambiato a Trofaldino e va via. Arriva lo zanni e racconta a Lisimiro di essere stato bastonato da un altro pretendente della sua ragazza. Lisimiro lo prende in giro e poi lo minaccia egli stesso accusandolo di aver cambiato la lettera di Gentile. Poi gli dà un calcio e, prendendolo per braccio, lo porta via. Dentro la casa Gentile si lamenta di non aver avuto risposta da Lisimiro alla lettera che gli aveva fatto pervenire tramite Trofaldino e, affermando la sua volontà di non sposare Pantalone, depreca il fatto che suo padre voglia maritarla con l’anziano solo per risparmiarsi la dote. Il Dottore finge di voler regalare un abito, che gli avrebbe proposto di acquistare un certo Merdacai, a Trofaldino e gli dice di provarlo. Mentre il Dottore aiuta Trofaldino a svestirsi e a mettersi l’abito che gli vorrebbe regalare gli storce il braccio e gli cambia una lettera che Trofaldino portava in tasca per Gentile (si viene a sapere poi che è la risposta di Lisimiro) con un’altra sua. Mentre il Dottore va a chiedere il prezzo dell’abito a Merdacai, Trofaldino si illude della bella figura che avrebbe fatto con la sua morosa se avesse avuto il vestito. Torna il Dottore e gli dice di toglierlo perché è troppo caro. Trofaldino fugge, il Dottore lo insegue.</p>  <strong>Atto terzo</strong>: Trofaldino consegna a Gentile la lettera con cui il Dottore aveva sostituito quella originale di Lisimiro. Nella lettera Lisimiro (ma in realtà il Dottore) dice a Gentile che verrà da lei la sera per sottrarla al matrimonio con Pantalone. Gentile decide che tale mossa va contro il suo onore e si manifesta contraria ad  assecondare il piano di Lisimiro. Infatti, come si scopre dopo, il Dottore ha scritto la lettera per mettere alla prova l’onorabilità di sua figlia e costringerla a rifiutare Lisimiro per la proposta disonesta che le avrebbe fatto. Gentile ordina a Trofaldino di andare da Lisimiro e di dirgli di andare da lei all’una di notte. Quando la giovane gli chiede di ripetere il messaggio più volte per impararlo bene, Trofaldino si offende, vantandosi della sua intelligenza. Il Dottore si manifesta sempre più convinto di dare Gentile a Pantalone per risparmiarsi la dote, specie se, fra poco, la troverà in una brutta situazione (cioè, con l’amante in casa, come lui stesso aveva procurato che accadesse con la sua lettera). Chiede a sua figlia se ha riflettuto sulla proposta di matrimonio di Pantalone. Gentile gli risponde che non lo accetta e quando il Dottore invoca la sua autorità paterna, la figlia risponde che, nonostante quella, non può costringerla a sposare un uomo che lei non vuole. Pur di liberarsi dal padre Gentile promette al Dottore di ripensare ancora una volta alla sua decisione. In casa di Lisimiro Trofaldino tenta di trasmettergli il messaggio dell’appuntamento di Gentile, ma riesce a ricordare solo che Lisimiro deve fare qualcosa all’una, ma non cosa né dove. Con l’aiuto involontario di Lisimiro, Trofaldino riesce a ricordare. Fingendosi Lisimiro, il Dottore inizia un dialogo amoroso dalla strada con sua figlia, che è alla finestra: lei gli rimprovera la proposta poco onesta che le ha fatto per lettera e mette fine al loro rapporto chiudendo la finestra. Mentre loro parlano, arrivano Lisimiro e Trofaldino e ascoltano (la scena è notturna). Lisimiro, però, si accorge che Gentile pensa di parlare con lui. Il Dottore è contento dell’atteggiamento di sua figlia e del fatto che abbia rinunziato a Lisimiro. Questi, nel frattempo, invia Trofaldino in cerca di un lume mentre sfodera la spada alla ricerca di chi parlava con Gentile. Lisimiro afferra il Dottore minacciandolo di punirlo duramente non solo per averlo soppiantato, ma anche per aver voluto mettere a rischio l’onore di Gentile e di suo padre. Quando arriva Trofaldino con un lume e riconosce il Dottore, Lisimiro resta sbalordito. La battute assennate di Lisimiro sull’onore e sul rispetto fanno che il Dottore inizi a rispettarlo e ad ammirarlo. Quando inoltre Lisimiro gli dice che Pantalone è suo zio, il Dottore resta ancora più sorpreso e incomincia a pensare che forse il matrimonio fra Gentile e lui sarebbe accettabile. In ginocchio Lisimiro chiede al Dottore la mano di Gentile, indicando che non vuole nemmeno la dote, solo la ragazza. Il Dottore gli dice di andare a chiedere il parere di Pantalone al riguardo, intima silenzio assoluto su tutto l’affare a Trofaldino. Da sola Gentile riflette su come il suo amore per Lisimiro sia diventato odio, quando si è resa conto che non rispettava il suo onore. Interroga Trofaldino per sapere dove sia il Dottore e che abbia fatto Lisimiro quando lei ha chiuso la finestra (Gentile non sa ancora che, in realtà, parlava con suo padre, il Dottore). Lo zanni, seguendo le istruzioni del Dottore, si rifiuta di parlare anche se Gentile minaccia di bastonarlo. Arrivano il Dottore, Pantalone e Lisimiro (è da supporre che, nel frattempo, Pantalone abbia accettato il matrimonio di suo nipote con Gentile). Il Dottore annuncia a Gentile che sposerà Lisimiro, ma lei si rifiuta di accettarlo, né vuole Pantalone, accusandolo di aver voluto macchiare il suo onore. Il Dottore parla in disparte con la figlia. Di seguito annuncia agli altri che Gentile ha capito e accetta di sposare Lisimiro. Comunque, lei, prima di ribadire il suo assenso chiede a Lisimiro chi fosse quella donna per la cui colpa era arrivato in ritardo al loro appuntamento. Quando il giovane le chiarisce che si trattava di sua sorella, Gentile resta definitivamente convinta del suo amore a lo accetta.</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
+                        <div class="value"><p><strong>Atto primo</strong>: Mentre aspetta il suo innamorato Lisimiro, Gentile sa tramite Trofaldino che quegli si è trattenuto per strada a parlare con un’altra donna, per cui si ritira indispettita. Restato solo, Trofaldino si lamenta di quanto lo tratti male la sua morosa. Quando arriva Lisimiro, lamentandosi di essere in ritardo contro sua volontà, pensa che la ritardataria sia Gentile. Quando Lisimiro vede il Dottore che arriva, lo saluta e si allontana. Il Dottore pensa che sia andato via intimorito dalla sua presenza e si convince che debba far sposare sua figlia al più presto con l’uomo da lui sceltole. A casa Gentile si lamenta della creduta infedeltà di Lisimiro. Presa dalla disperazione va nella camera accanto (poi si saprà che vi è andata per scrivere una lettera a Lisimiro) e chiede a Trofaldino di avvertirla se fosse arrivato suo padre (il Dottore). Tra sé  Trofaldino dice che, se fosse arrivato il Dottore, sarebbe fuggito, nel frattempo si mette a dormire. Quando arriva il Dottore, Trofaldino fa di tutto per far notare a Gentile che suo padre è arrivato, ma senza riuscirci. Dopo aver chiesto dove è sua figlia senza aver ottenuto risposta, il Dottore va via comandando a Trofaldino di fare una commissione di cui gli aveva parlato il giorno prima. Gentile chiama Trofaldino e questi entra. In strada, mentre si nasconde, il Dottore afferma, proferendo spropositate minacce, che si fermerà a spiare chi entra o esce di casa sua. Quando esce Trofaldino con una lettera (che poi si saprà gli ha dato Gentile per portarla a Lisimiro), il Dottore se ne accorge e lo imbroglia con un lazzo, in modo tale che riesce a sostituite alla lettera di Gentile un’altra sua senza che lo zanni se ne accorga. Il Dottore torna a casa e Trofaldino va via a consegnare la lettera a Lisimiro pensando, felice, alla mancia che questi gli avrebbe dovuto dare.</p><p><br></p>  <p><strong>Atto secondo</strong>: Lisimiro si lamenta che Gentile sia mancata all’appuntamento con lui. Trofaldino consegna la lettera a Lisimiro, che gli chiede di lasciarlo solo per leggerla a suo piacere. Lisimiro resta sbalordito quando legge la lettera piena di spropositi e di conti e pensa che sia stato burlato da Trofaldino. Pantalone dice al Dottore di avere molta fretta di sposare sua figlia perché lo fa sentire pieno di vigore e di forza. Il Dottore gli dice che lei non lo vuole, ma che riuscirà a convincerla. Dopo che Pantalone è andato via, il Dottore racconta a sua figlia i suoi piani di matrimonio per lei. Gentile gli risponde che non basta che lo sposo piaccia al padre, ma che deve piacere anche alla ragazza. Quando viene a sapere che si tratta di Pantalone si rifiuta assolutamente di accettarlo e va via. Da solo, il Dottore si ripromette di riuscire a convincere la figlia e anche di essere molto attento a intercettare la lettera che sicuramente le invierà Lisimiro in risposta a quella che lui ha cambiato a Trofaldino e va via. Arriva lo zanni e racconta a Lisimiro di essere stato bastonato da un altro pretendente della sua ragazza. Lisimiro lo prende in giro e poi lo minaccia egli stesso accusandolo di aver cambiato la lettera di Gentile. Poi gli dà un calcio e, prendendolo per braccio, lo porta via. Dentro la casa Gentile si lamenta di non aver avuto risposta da Lisimiro alla lettera che gli aveva fatto pervenire tramite Trofaldino e, affermando la sua volontà di non sposare Pantalone, depreca il fatto che suo padre voglia maritarla con l’anziano solo per risparmiarsi la dote. Il Dottore finge di voler regalare un abito, che gli avrebbe proposto di acquistare un certo Merdacai, a Trofaldino e gli dice di provarlo. Mentre il Dottore aiuta Trofaldino a svestirsi e a mettersi l’abito che gli vorrebbe regalare gli storce il braccio e gli cambia una lettera che Trofaldino portava in tasca per Gentile (si viene a sapere poi che è la risposta di Lisimiro) con un’altra sua. Mentre il Dottore va a chiedere il prezzo dell’abito a Merdacai, Trofaldino si illude della bella figura che avrebbe fatto con la sua morosa se avesse avuto il vestito. Torna il Dottore e gli dice di toglierlo perché è troppo caro. Trofaldino fugge, il Dottore lo insegue.</p><p><br></p>  <strong>Atto terzo</strong>: Trofaldino consegna a Gentile la lettera con cui il Dottore aveva sostituito quella originale di Lisimiro. Nella lettera Lisimiro (ma in realtà il Dottore) dice a Gentile che verrà da lei la sera per sottrarla al matrimonio con Pantalone. Gentile decide che tale mossa va contro il suo onore e si manifesta contraria ad  assecondare il piano di Lisimiro. Infatti, come si scopre dopo, il Dottore ha scritto la lettera per mettere alla prova l’onorabilità di sua figlia e costringerla a rifiutare Lisimiro per la proposta disonesta che le avrebbe fatto. Gentile ordina a Trofaldino di andare da Lisimiro e di dirgli di andare da lei all’una di notte. Quando la giovane gli chiede di ripetere il messaggio più volte per impararlo bene, Trofaldino si offende, vantandosi della sua intelligenza. Il Dottore si manifesta sempre più convinto di dare Gentile a Pantalone per risparmiarsi la dote, specie se, fra poco, la troverà in una brutta situazione (cioè, con l’amante in casa, come lui stesso aveva procurato che accadesse con la sua lettera). Chiede a sua figlia se ha riflettuto sulla proposta di matrimonio di Pantalone. Gentile gli risponde che non lo accetta e quando il Dottore invoca la sua autorità paterna, la figlia risponde che, nonostante quella, non può costringerla a sposare un uomo che lei non vuole. Pur di liberarsi dal padre Gentile promette al Dottore di ripensare ancora una volta alla sua decisione. In casa di Lisimiro Trofaldino tenta di trasmettergli il messaggio dell’appuntamento di Gentile, ma riesce a ricordare solo che Lisimiro deve fare qualcosa all’una, ma non cosa né dove. Con l’aiuto involontario di Lisimiro, Trofaldino riesce a ricordare. Fingendosi Lisimiro, il Dottore inizia un dialogo amoroso dalla strada con sua figlia, che è alla finestra: lei gli rimprovera la proposta poco onesta che le ha fatto per lettera e mette fine al loro rapporto chiudendo la finestra. Mentre loro parlano, arrivano Lisimiro e Trofaldino e ascoltano (la scena è notturna). Lisimiro, però, si accorge che Gentile pensa di parlare con lui. Il Dottore è contento dell’atteggiamento di sua figlia e del fatto che abbia rinunziato a Lisimiro. Questi, nel frattempo, invia Trofaldino in cerca di un lume mentre sfodera la spada alla ricerca di chi parlava con Gentile. Lisimiro afferra il Dottore minacciandolo di punirlo duramente non solo per averlo soppiantato, ma anche per aver voluto mettere a rischio l’onore di Gentile e di suo padre. Quando arriva Trofaldino con un lume e riconosce il Dottore, Lisimiro resta sbalordito. La battute assennate di Lisimiro sull’onore e sul rispetto fanno che il Dottore inizi a rispettarlo e ad ammirarlo. Quando inoltre Lisimiro gli dice che Pantalone è suo zio, il Dottore resta ancora più sorpreso e incomincia a pensare che forse il matrimonio fra Gentile e lui sarebbe accettabile. In ginocchio Lisimiro chiede al Dottore la mano di Gentile, indicando che non vuole nemmeno la dote, solo la ragazza. Il Dottore gli dice di andare a chiedere il parere di Pantalone al riguardo, intima silenzio assoluto su tutto l’affare a Trofaldino. Da sola Gentile riflette su come il suo amore per Lisimiro sia diventato odio, quando si è resa conto che non rispettava il suo onore. Interroga Trofaldino per sapere dove sia il Dottore e che abbia fatto Lisimiro quando lei ha chiuso la finestra (Gentile non sa ancora che, in realtà, parlava con suo padre, il Dottore). Lo zanni, seguendo le istruzioni del Dottore, si rifiuta di parlare anche se Gentile minaccia di bastonarlo. Arrivano il Dottore, Pantalone e Lisimiro (è da supporre che, nel frattempo, Pantalone abbia accettato il matrimonio di suo nipote con Gentile). Il Dottore annuncia a Gentile che sposerà Lisimiro, ma lei si rifiuta di accettarlo, né vuole Pantalone, accusandolo di aver voluto macchiare il suo onore. Il Dottore parla in disparte con la figlia. Di seguito annuncia agli altri che Gentile ha capito e accetta di sposare Lisimiro. Comunque, lei, prima di ribadire il suo assenso chiede a Lisimiro chi fosse quella donna per la cui colpa era arrivato in ritardo al loro appuntamento. Quando il giovane le chiarisce che si trattava di sua sorella, Gentile resta definitivamente convinta del suo amore a lo accetta.</div>
                     </td>
                 </tr>
                 <tr>
@@ -301,7 +310,7 @@
                 <tr>
                     <td>
                         <div class="key">28. Elementi polemici, satirici e parodici</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>- </p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Ci sono pochi dati precisi, ma non si osservano salti temporali apprezzabili, per cui si può supporre che la commedia si svolga in una giornata fino alla sera, ma prima dell’ora di cena, quando Lisimiro va alla casa del Dottore (l’arrivo del tramonto è chiaramente alluso in una battuta di Trofaldino (cfr. §33).</div>
                     </td>
                 </tr>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>L’unica azione è tutta accentrata sull’amore di Gentile e Lisimiro e sugli ostacoli che devono superare per sposarsi.</p></div>
                     </td>
                 </tr>
@@ -406,7 +415,7 @@
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -441,13 +450,13 @@
                 <tr>
                     <td>
                         <div class="key">45. Prima recita</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">46. Altre recite nel Settecento</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -477,23 +486,23 @@
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
                         <div class="key">49. Dati dei paratesti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">50. Osservazioni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/" />
+    <meta name="description" content="Archivio, biblioteca e banche dati del teatro italiano pregoldoniano: testi, schede analitiche, recite, attori, compagnie, teatri e l&#039;archivio musicale Gherardi." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,15 +92,16 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
-    <div style="position: absolute; top: 4.5rem; right: 1rem; z-index: 100; font-size: .85rem; color: black;">
+            <div style="position: absolute; top: 4.5rem; right: 1rem; z-index: 100; font-size: .85rem; color: black;">
     <a href="https://dinahosting.com" title="Hosting y alojamiento web en dinahosting" target="_blank"
        style="color: black;">Hosting</a> por <a href="https://dinahosting.com" target="_blank"><img
                 src="/assets/frontend/img/dinahosting/logo-color-grande.png" alt="Dinahosting"
                 style="max-height: 1.25rem; vertical-align: middle;" /></a>
 </div>
-
+    
     <section class="intro indicator min-vh-100">
         <div class="container">
             <div class="content">
@@ -104,61 +112,61 @@
                         </picture>
                     </div>
 
-                                            <div class="introduction  introduction-active " id="introduction-italiano">
+                                            <div class="introduction  introduction-active " id="italiano">
                             <p>Il progetto Archivio del Teatro Pregoldoniano (finanziato dal <em>Ministerio de Economía y Competitividad</em> spagnolo: FFI2011-23663, 2012-2015, e FFI2014-53872-P, 2015-2018; e dal <i>Ministerio de Ciencia, Innovación y Universidades </i>e il FEDER: PGC2018-097031-B-I00, 2019-2022, e PID2023-148944NB-I00, 2024-2028) è finalizzato a individuare, da una parte, tutte le opere teatrali italiane fra il 1650 e il 1750, conosciute o meno dal drammaturgo veneziano, in cui siano riscontrabili caratteristiche utili a illuminare i percorsi della riforma goldoniana in tutta la varietà del suo prodursi storico-artistico; dall’altra, a identificare i testi (e i paratesti) drammatici che all’epoca erano in circolazione, nei circuiti teatrali o a stampa, i quali, quando anche non avessero avuto un diretto influsso sulle sue opere, facevano comunque parte dell’humus in cui crebbe il veneziano come drammaturgo. Le edizioni critiche e annotate di queste opere costituiscono la «Biblioteca Pregoldoniana» (i cui volumi possono essere scaricati gratuitamente in formato pdf), mentre le loro schede analitiche formano la «Banca Dati del Teatro Pregoldoniano», consultabile online sempre su questo sito web. Inoltre, lo studio del repertorio del periodo permetterà la creazione della «Banca Dati del Repertorio Teatrale Italiano (1650-1750)». Il progetto si occuperà anche dei contenuti musicali delle edizioni del teatro della <i>Comédie italienne </i>di Evaristo Gherardi, le cui partiture saranno pubblicate in formato PDF e in MP3 nell’«Archivio Musicale Gherardi».</p>
                         </div>
-                                            <div class="introduction " id="introduction-castellano">
+                                            <div class="introduction " id="castellano">
                             <p>El proyecto Archivo del Teatro Pregoldoniano (financiado por el <em>Ministerio de Economía y Competitividad</em>: FFI2011-23663, 2012-2015, y FFI2014-53872-P, 2015-2018; y por el <i>Ministerio de Ciencia, Innovación y Universidades </i>y el FEDER: PGC2018-097031-B-I00, 2019-2022, y PID2023-148944NB-I00, 2024-2028) pretende identificar, por un lado, todas las obras teatrales italianas entre 1650 y 1750, conocidas o no por el dramaturgo veneciano, en las que sea posible detectar características útiles para arrojar luz sobre los itinerarios de la reforma goldoniana en toda su variedad histórico-artística; y, por otra, señalar los textos (y paratextos) dramáticos que circulaban en la época, tanto en circuitos teatrales como en forma de libro, los cuales, aun cuando no tuviesen una influencia directa en sus obras, formaban parte del humus en el que creció el veneciano como dramaturgo. Las ediciones críticas y anotadas de estas obras constituyen la «Biblioteca Pregoldoniana» (cuyos volúmenes pueden ser descargados gratuitamente en formato PDF), mientras que sus fichas analíticas forman la «Base de Datos del Teatro Pregoldoniano», consultables <em>online </em>también en esta página web. Además el estudio del repertorio teatral del período permitirá crear la «Base de Datos del Repertorio Teatral Italiano (1650-1750)». El proyecto prestará también atención a los contenidos musicales de las ediciones del teatro de la <i>Comédie italienne </i>de Evaristo Gherardi, cuyas partituras serán publicadas en formato PDF y en MP3 en el «Archivo Musical Gherardi».</p>
                         </div>
-                                            <div class="introduction " id="introduction-deutsch">
+                                            <div class="introduction " id="deutsch">
                             <p>Das Forschungsprojekt Archivio del teatro pregoldoniano (finanziert vom spanischen <em>Ministerio de Economía y Competitividad</em>: 2012-2015 unter FFI2011-23663, 2015-2018 unter FFI2014-53872-P, und 2019-2022 unter PGC2018-097031-B-I00 vom <i>Ministerio de Ciencia, Innovación y Universidades </i>und FEDER, und 2024-2028 unter PID2023-148944NB-I00) verfolgt zwei Ziele: zum einen soll zwischen 1650 und 1750 entstandenen italienischen Theaterstücken nachgegangen werden, die Goldoni aller Wahrscheinlich nach bekannt waren und in denen sich wichtige Hinweise zum Verlauf der goldonischen Reform und ihren historischen und künstlerischen Aspekten finden; zum anderen gilt das Interesse dramatischen Texten (und Paratexten), die zur Zeit Goldonis in Theaterkreisen verbreitet waren oder gedruckt vorlagen und die Grundlage und den Kontext für Goldonis Entwicklung als Theaterautor bildeten, ohne einen direkten Einfluss auf seine Texte auszuüben. Die kritischen und mit Anmerkungen versehenen Editionen dieser Werke bilden die «Biblioteca Pregoldoniana» (die Texte können kostenlos als PDF heruntergeladen werden), die durch katalogartig angeordnete Daten und Informationen zu den einzelnen Stücken ergänzt wird, die ebenfalls auf dieser Internetseite unter «Banca Dati del Teatro Pregoldoniano» zu finden sind. Das so erfasste Repertoire wird zudem in die «Banca Dati del Repertorio Teatrale Italiano (1650-1750)» einfließen. Darüber hinaus macht das Projekt im «Archivio Musicale Gherardi» in den Formaten PDF und MP3 die Musikstücke zugänglich, die in Evaristo Gherardis Ausgaben der Theaterstücke der <i>Comédie italienne</i> enthalten sind.</p>
                         </div>
-                                            <div class="introduction " id="introduction-english">
+                                            <div class="introduction " id="english">
                             <p>The project Archive of pregoldonian theatre (funded by the <em>Ministry of Economics and Competitividad</em>: FFI2011-23663, 2012-2015, and FFI2014-53872-P, 2015-2018, as well as by the <i>Ministry of Science, Innovation, and Universities </i>and by FEDER PGC2018-097031-B-I00, 2019-2022, and PID2023-148944NB-I00, 2024-2028) aims, on the one hand, to identify all those Italian theatrical works, both known and unknown to Goldoni himself, in which it is possible to detect characteristics useful in shedding light on nature of his reforms in all their historic-artistic variety; and, on the other, to establish the dramatic texts (and paratexts) which were in circulation at the time, both on theatrical circuits and in book form, and which, while not having a direct influence on the Venetian’s works, formed part of the background to his growth and development. The annotated critical editions of these works constitute the «Pregoldonian Library» (the volumes of which can be downloaded free of charge in PDF format), while their analytical files form the «Database of Pregoldonian Theatre», also available for <em>online </em>consultation on this webpage. Moreover, the analysis of the repertoire staged at that time will lead to the creation of the Database of the Italian Theatrical Repertoire (1650-1750). The project will also include the musical contents of Gherardi’s edition of <i>Comédie Italienne</i>, whose scores will be published as PDF and MP3 in <i>Gherardi Musical Archive</i></p>
                         </div>
-                                            <div class="introduction " id="introduction-francais">
+                                            <div class="introduction " id="francais">
                             <p><span class="Aucun">Le projet Archives du théâtre prégoldonien (financé par le </span><span class="Aucun"><i>Ministerio de Econom</i></span><span class="Aucun"><i>ía y Competitividad</i></span> espagnol: FFI2011-23663, 2012-2015, et FFI2014-53872-P, 2025-2018; et par le <i>Ministerio</i> <span class="Aucun"><i>de Ciencia, Innovación y Universidades </i></span><span class="Aucun">et le programme</span><span class="Aucun"><i> </i></span><span class="Aucun">F</span><span class="Aucun">EDER: PGC2018-097031-B-I00, 2019-2022</span><span class="Aucun">, et</span> PID2023-148944NB-I00, 2024-2028<span class="Aucun">), se propose d’une part de procéder au repérage de toutes les œuvres théâtrales italiennes produites entre 1650 et 1750, connues ou non par le dramaturge vé</span><span class="Aucun">nitien, </span><span class="Aucun">dont les caractéristiques peuvent éclairer les parcours de la réforme goldonienne dans toute la variété de sa réalisation historique et artistique; d’autre part d’identifier les textes —et les paratextes— dramatiques qui circulaient à l’époque, dans les milieux théâtraux ou dans l’édition, et qui, même si ils n’ont pas eu une influence directe sur ses œuvres, faisaient partie de l’humus où le dramaturge vé</span><span class="Aucun">nitien s</span><span class="Aucun">’</span><span class="Aucun">est form</span><span class="Aucun">é. Les éditions critiques et annotées de ces ouvrages composent la «Bibliothèque pré-goldonienne» (dont les volumes peuvent être téléchargés gratuitement en format PDF), tandis que leurs fiches analytiques constituent la «Base de Données du Théâtre Pré-goldonien», consultable en ligne, toujours sur ce mê</span><span class="Aucun">me site web.</span><span class="Aucun">En outre, l’étude du répertoire de la période permettra la création de la «Banque de Données du Répertoire Théâtral Italien ( 1650-1750)». Le projet s’occupera aussi des contenus musicaux des éditions du théâtre de la Comédie-Italienne d’Evariste Gherardi, dont les partitions seront publiées en format PDF et en MP3 dans les «Archives Musicales Gherardi».</span></p>
                         </div>
-                                            <div class="introduction " id="introduction-galego">
+                                            <div class="introduction " id="galego">
                             <p>O proxecto Arquivo do Teatro Pregoldoniano (financiado polo <em>Ministerio de Economía y Competitividad</em>: FFI2011-23663, 2012-2015, e FFI2014-53872-P, 2015-2018; e polo <i>Ministerio de Ciencia, Innovación y Universidades </i>e o FEDER: PGC2018-097031-B-I00, 2019-2022, e PID2023-148944NB-I00, 2024-2028) pretende identificar, por unha banda, todas as obras teatrais italianas entre 1650 e 1750, coñecidas ou non polo dramaturgo veneciano, nas que sexa posible detectar características útiles para botar luz sobre os itinerarios da reforma goldoniana en toda a súa variedade histórico-artística; e, por outra, sinalar os textos (e paratextos) dramáticos que circulaban na época, tanto en circuítos teatrais como en forma de libro, os cales, aínda naqueles casos en que non tivesen unha influencia directa nas súas obras, formaban parte do humus en que medrou o veneciano como dramaturgo. As edicións criticas e anotadas destas obras constitúen a «Biblioteca Pregoldoniana» (cuxos volumes poden se descargar gratuitamente en formato PDF), mentres que as súas fichas analíticas forman a «Base de Datos do Teatro Pregoldoniano», consultable en liña tamén nesta páxina web. Ademais, o estudo do repertorio teatral do período permitirá a creación da «Base de Datos do Repertorio Teatral Italiano (1650-1750)». O proxecto ocuparase tamén dos contidos musicais das edicións do teatro de la <i>Comédie italienne</i> de Evaristo Gherardi, cuxas partituras serán publicadas en PDF e MP3 no «Arquivo Musical Gherardi».</p>
                         </div>
-                                            <div class="introduction " id="introduction-portugues">
+                                            <div class="introduction " id="portugues">
                             <p>O projecto Arquivo do Teatro Pregoldoniano (financiado polo <em>Ministerio de Economía y Competitividad espanhol</em>: FFI2011-23663, 2012-2015, e FFI2014-53872-P, 2015-2018, e pelo <i>Ministerio de Ciencia, Innovación y Universidades </i>e pelo FEDER: PGC2018-097031-B-I00, 2019-2022, e PID2023-148944NB-I00, 2024-2028) pretende identificar, por um lado, todas as obras teatrais italianas escritas entre 1650 e 1750, conhecidas ou não pelo dramaturgo veneziano, nas quais seja possível detectar características úteis para esclarecer itinerários da reforma goldoniana em toda a sua variedade histórico-artística; e, por outro, assinalar os textos (e paratextos) dramáticos que circulavam na época, tanto nos circuitos teatrais como em livro, que, mesmo naqueles casos em que possam não ter exercido uma influência directa nas suas obras, formavam parte do húmus em que se desenvolveu como dramaturgo. As edições críticas e anotadas destas obras constituem a «Biblioteca Pregoldoniana» (os volumes podem ser descarregados gratuitamente em formato PDF) e as respectivas as fichas analíticas formam a «Base de Datos do Teatro Pregoldoniano», consultável em linha, também nesta página web. Por outro lado, o estudo do repertório deste período irá permitir a criação da «Base de Dados do Repertório Teatral Italiano (1650-1750)». O projecto abarcará igualmente os conteúdos musicais da <i>Comédie italienne </i>de Evaristo Gherardi, cujas partituras serão publicadas em formato PDF e em MP3 no «Arquivo Musical Gherardi».</p>
                         </div>
-                                            <div class="introduction " id="introduction-ruskki">
+                                            <div class="introduction " id="ruskki">
                             <p>Целью проекта «Архив театра до Гольдони» (финансируемый испанским Министерством Экономики и Конкурентоспособности: FFI2011-23663, 2012-2015, и FFI2014-53872-P, 2015-2018; и Министерством Науки, Инновации и Университетов<i> </i>и FEDER: PGC2018-097031-B-I00, 2019-2022, и PID2023-148944NB-I00, 2024-2028) – изыскание всех произведений итальянского театра, написанных с 1650 по 1750 годы, известных венецианскому драматургу, в которых встречаются элементы, полезные для понимания этапов театральной реформы Гольдони в историко-артистических проявлении. Данный проект направлен также на определение драматических текстов и паратекстов, которые циркулировали в печати и театральных кругах того времени, но не оказали на Гольдони непосредственного влияния, однако представляли ту почву, на которой впоследствии сформировался талант великого венецианского драматурга. Аннотированные критические издания этих произведений входят в «Библиотеку До Гольдони» (доступные для свободного скачивания в формате PDF), в то время как аналитические карты, доступные для консультации на том же интернет сайте, составляют «Базу данных театра до Гольдони». Исследования репертуара театра этого времени более того позволит реализовать «Базу данных репертуара итальянского театра (1650-1750)». Кроме того, проект будет посвящён изучению музыкальных аспектов театрального издания <i>Com</i><i>é</i><i>die</i><i> </i><i>italienne</i><i> </i>Евариста Герарди, партитуры которого будут также опубликованы в форматах PDF и MP3 в «Музыкальном Архиве Герарди».</p>
                         </div>
-                                            <div class="introduction " id="introduction-valencia">
+                                            <div class="introduction " id="valencia">
                             <p>El projecte Arxiu del Teatre Pregoldoniano (finançat pel Ministeri d’Economia i Competitivitat: FFI2011-23663, 2012-2015, i FFI2014-53872-P, 2015-2018, i pel Ministeri de Ciència, Innovació i Universitats i el FEDER: PGC2018-097.031-B-I00, 2019-2022, i PID2023-148944NB-I00, 2024-2028) pretén identificar, d’una banda, totes les obres teatrals italianes entre 1650 i 1750, conegudes o no pel dramaturg venecià, en les què siga possible detectar característiques útils per a fer llum sobre els itineraris de la reforma goldoniana en tota la seua varietat històricoartística; i, d’una altra, assenyalar els textos (i paratextos) dramàtics que circulaven en l’època, tant en circuits teatrals com en forma de llibre, els quals, encara que no tingueren una influència directa en les seves obres, formaven part de l’humus en el que va créixer el venecià com a dramaturg. Les edicions crítiques i anotades d’estes obres constituïxen la «Biblioteca Pregoldoniana» (els volums de la qual poden ser descarregats gratuïtament en format PDF), mentre que les seues fitxes analítiques formen la «Base de Dades del Teatre Pregoldoniano», consultables online també en esta pàgina web. A més l’estudi de l’repertori teatral del període permetrà crear la «Base de Dades del Repertori Teatral Italià (1650-1750)». El projecte prestarà també atenció als continguts musicals de les edicions de teatre de la Comédie italienne d’Evaristo Gherardi, les partitures del qual seran publicades en format PDF i en MP3 en el «Arxiu Musical Gherardi».</p>
                         </div>
                     
                     <ul class="list-inline">
                                             <li class="list-inline-item">
-                            <a class=" active " href="#introduction-italiano">Italiano</a>
+                            <a class=" active " href="#italiano">Italiano</a>
                         </li>
                                             <li class="list-inline-item">
-                            <a class="" href="#introduction-castellano">Castellano</a>
+                            <a class="" href="#castellano">Castellano</a>
                         </li>
                                             <li class="list-inline-item">
-                            <a class="" href="#introduction-deutsch">Deutsch</a>
+                            <a class="" href="#deutsch">Deutsch</a>
                         </li>
                                             <li class="list-inline-item">
-                            <a class="" href="#introduction-english">English</a>
+                            <a class="" href="#english">English</a>
                         </li>
                                             <li class="list-inline-item">
-                            <a class="" href="#introduction-francais">Français</a>
+                            <a class="" href="#francais">Français</a>
                         </li>
                                             <li class="list-inline-item">
-                            <a class="" href="#introduction-galego">Galego</a>
+                            <a class="" href="#galego">Galego</a>
                         </li>
                                             <li class="list-inline-item">
-                            <a class="" href="#introduction-portugues">Português</a>
+                            <a class="" href="#portugues">Português</a>
                         </li>
                                             <li class="list-inline-item">
-                            <a class="" href="#introduction-ruskki">Ruskki</a>
+                            <a class="" href="#ruskki">Ruskki</a>
                         </li>
                                             <li class="list-inline-item">
-                            <a class="" href="#introduction-valencia">Valencià</a>
+                            <a class="" href="#valencia">Valencià</a>
                         </li>
                                         </ul>
                 </div>
@@ -182,7 +190,7 @@
                         Visitateci spesso: le nostre biblioteche, archivi e banche dati sono arricchiti di nuovi materiali regolarmente.
                         <br />
                         <br />
-                        Informazioni, aggiunte e proposte di collaborazione sono sempre gradite (<a href="&#109;&#97;&#x69;lt&#x6f;&#x3a;&#x6a;a&#x76;&#105;&#x65;&#114;&#46;&#103;&#x75;t&#105;&#101;rr&#x65;z.&#99;&#97;&#x72;o&#117;&#x40;&#x75;s&#99;.&#103;&#x61;l" style="color: white">&#x6a;a&#x76;&#105;&#x65;&#114;&#46;&#103;&#x75;t&#105;&#101;rr&#x65;z.&#99;&#97;&#x72;o&#117;&#x40;&#x75;s&#99;.&#103;&#x61;l</a>).
+                        Informazioni, aggiunte e proposte di collaborazione sono sempre gradite (<a href="mailto:javier.gutierrez.carou@usc.gal" style="color: white">javier.gutierrez.carou@usc.gal</a>).
                     </h4>
                 </div>
             </div>
@@ -215,7 +223,7 @@
                 </div>
                 <div class="col-lg-6">
                     <block class="shadow">
-                        <h3>Archivio musicale “Gherardi” </h3>
+                        <h3>Archivio musicale "Gherardi" </h3>
                         <p>Lettura e ascolto delle partiture delle <em>airs</em> delle edizioni del <em>Théâtre Italien</em> di Evaristo Gherardi.</p>
                         <p><a href="/canzoni" class="btn btn-brand"><em>Airs</em></a></p>
                     </block>
@@ -330,18 +338,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

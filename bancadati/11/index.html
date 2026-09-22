@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/11" />
+    <meta name="description" content="Atto I: Flaminia è gelosa delle attenzioni del Dottore verso Merilda, che, per non disgustare Flaminia, afferma di essere disposta ad abbandonare la casa. Flami..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Fortune non conosciute del Dottore, Le</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -181,14 +190,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Dottore; Trofaldino (Truffaldino).</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -200,7 +209,7 @@
                 <tr>
                     <td>
                         <div class="key">13. Personaggi speculari</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -212,19 +221,19 @@
                 <tr>
                     <td>
                         <div class="key">15. Dialoghi e successioni di monologhi di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">17. Personaggi che parlano solo in verso</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -236,13 +245,13 @@
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +269,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -276,7 +285,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p>Atto I: Flaminia è gelosa delle attenzioni del Dottore verso Merilda, che, per non disgustare Flaminia, afferma di essere disposta ad abbandonare la casa. Flaminia dichiara di essere arsa dalla gelosia temendo che Anveglio sia innamorato di Merilda e chiede a Trofaldino di spiare questi ultimi. Merilda dichiara che Anveglio è innamorato di lei, ma che lei ama un altro uomo. Fa capire che è innamorata del Dottore, ma questi non lo capisce e chiede chi sia l’uomo con cui si sposerebbe. Lei si vergogna di dirgli che è proprio lui e dichiara che è un uomo simile in tutto a lui. Il Dottore non capisce e, allora, Merilda esce affermando che quello che resta quando lei parte è l’uomo di cui è innamorata [si tenga conto che nella scena è presente anche Trofaldino]. Il Dottore all’inizio sospetta che sia lui stesso l’uomo di cui parla Merilda, ma poi si convince che la donna sia innamorata di Trofaldino, il che lo fa disperare perché è innamorato di lei. Anveglio dichiara le sue sofferenze per amare Merilda senza essere ricambiato. Flaminia è disperata perché innamorata, non ricambiata, di Anveglio. Leandro dichiara il suo amore a Flaminia, ma lei lo respinge.</p><p> Atto II: mentre Trofaldino li spia, Anveglio dichiara il suo amore a Merilda, lei lo rifiuta. Disperazione del giovane. Il Dottore si dichiara disperato perché Merilda vuole sposare Trofaldino [così erroneamente lo crede]. Merilda gli dice che desidera sposare l’uomo di cui gli ha parlato prima, il Dottore si dispera sempre più pensando che si riferisca a Trofaldino. La conversazione è interrotta da Flaminia che accusa suo padre di parlare sempre segretamente con Merilda mentre a lei non ha mai nulla da dire. Flaminia interroga Trofaldino. Trofaldino riferisce goffamente quello che ha sentito dire a Merilda e Anveglio e Flaminia arriva alla errata conclusione che si amino reciprocamente. Dato che Flaminia non gli ha dato la ricompensa che gli aveva promesso, Trofaldino si pente di aver tradito Merilda. Il Dottore chiede a Merilda con chi desideri di sposarsi. Lei gli dà uno specchio dicendogli che desidera che sia suo sposo l’uomo del ritratto che gli consegna ed esce. Il Dottore si accorge che è uno specchio e pensa che sia proprio lui, ma in quel momento spunta dietro Anveglio e il Dottore pensa che la ragazza sia innamorata del ragazzo. Il Dottore, addolorato, dice a Anveglio che Merilda vuole sposarlo e gli intima di agire presto.</p><p>Atto III: Flaminia, per gelosia, tenta di uccidere Merilda ma Anveglio la ferma. Merilda fugge, Flaminia si dichiara presa della gelosia ad Anveglio, e questi afferma di non voler vederla mai più. Flaminia si dispera. Trofaldino crede morta Flaminia e lo racconta al Dottore, che pensa siano stati Merilda e Anveglio a ucciderla per vendetta. Anveglio si dichiara felice perché presto sposerà Merilda: questa lo rifiuta e lui si sente sbeffeggiato dal Dottore e dalla ragazza, per cui va via giurando di uccidere il vecchio se questi non gli fa sposare Merilda. Flaminia chiede scusa a Merilda. Leandro convince Anveglio a dimenticare la vendetta. Merilda è convinta che il Dottore non la ami. Leandro tenta di convincerla a sposare Anveglio per gratitudine e per evitare che il giovane possa vendicarsi del Dottore, che gliel’aveva promessa come sposa. Merilda dice di non amare Anveglio ma accetta la volontà del Dottore e lo sposa [non scopre mai a nessuno di essere innamorata del Dottore]. Anche Flaminia, senza esserne innamorata, accetta di sposare Leandro.</p></div>
                     </td>
                 </tr>
@@ -301,7 +310,7 @@
                 <tr>
                     <td>
                         <div class="key">28. Elementi polemici, satirici e parodici</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Una giornata.</div>
                     </td>
                 </tr>
@@ -342,7 +351,7 @@
                 <tr>
                     <td>
                         <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>Tutta l’azione è costruita attorno alla complicata vicenda dell’amore del Dottore e di Merilda con gli amori secondari degli altri personaggi.</p></div>
                     </td>
                 </tr>
@@ -406,25 +415,25 @@
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">43. Scena con ampia presenza di personaggi</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">44. Didascalie di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -441,13 +450,13 @@
                 <tr>
                     <td>
                         <div class="key">45. Prima recita</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">46. Altre recite nel Settecento</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -464,7 +473,7 @@
                 <tr>
                     <td>
                         <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -477,17 +486,17 @@
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
                         <div class="key">49. Dati dei paratesti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

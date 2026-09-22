@@ -3,23 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <title>Archivio musicale Gherardi - Archivio del Teatro Pregoldoniano</title>
+    <link rel="canonical" href="/canzoni" />
+    <meta name="description" content="Archivio, biblioteca e banche dati del teatro italiano pregoldoniano: testi, schede analitiche, recite, attori, compagnie, teatri e l&#039;archivio musicale Gherardi." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link  active " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="songs first">
@@ -112,29 +120,15 @@
         </thead>
 
         <tbody>
-                    <tr id="a-cheval-a-cheval-mars-vite-a-la-guerre-2a-edizione">
-                <td><strong>À cheval, à cheval, Mars, vite à la guerre? (2ª edizione)</strong></td>
-                                    <td><em>Adieux des Officiers, Les</em></td>
-                    <td>-</td>
-                
-                <td data-sort="1701337503">
-                    30/11/2023
-                </td>
-                <td data-sort="0">
-                    <a href="/canzoni/44" class="no-mark" title="['Consultazione e scarica']">
-                        <em>Consultazione e scarica</em>
-                    </a>
-                </td>
-            </tr>
                     <tr id="ah-ah-ah-compere-vulcain-2a-edizione">
                 <td><strong>Ah, ah, ah, compère Vulcain! (2ª edizione)</strong></td>
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701338355">
+                <td data-sort="1701341955">
                     30/11/2023
                 </td>
-                <td data-sort="1">
+                <td data-sort="0">
                     <a href="/canzoni/52" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -145,10 +139,10 @@
                                     <td><em>Promenades de Paris, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1648725097">
+                <td data-sort="1648732297">
                     31/03/2022
                 </td>
-                <td data-sort="2">
+                <td data-sort="1">
                     <a href="/canzoni/68" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -159,10 +153,10 @@
                                     <td><em>Champs Élisées, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585334">
+                <td data-sort="1740588934">
                     26/02/2025
                 </td>
-                <td data-sort="3">
+                <td data-sort="2">
                     <a href="/canzoni/29" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -170,13 +164,13 @@
             </tr>
                     <tr id="craignez-le-premier-feu-du-flambeau-2a-edizione">
                 <td><strong>Craignez le premier feu du flambeau (2ª edizione)</strong></td>
-                                    <td><a href="/bancadati/55">Mal-assortis, Les</a></td>
+                                    <td><a href="/repertori/14">Mal-assortis, Les</a></td>
                     <td>Dufresny, Charles</td>
                 
-                <td data-sort="1740586329">
+                <td data-sort="1740589929">
                     26/02/2025
                 </td>
-                <td data-sort="4">
+                <td data-sort="3">
                     <a href="/canzoni/42" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -187,10 +181,10 @@
                                     <td><em>Chinois, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1736875352">
+                <td data-sort="1736878952">
                     14/01/2025
                 </td>
-                <td data-sort="5">
+                <td data-sort="4">
                     <a href="/canzoni/16" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -201,10 +195,10 @@
                                     <td><em>Promenades de Paris, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1648724970">
+                <td data-sort="1648732170">
                     31/03/2022
                 </td>
-                <td data-sort="6">
+                <td data-sort="5">
                     <a href="/canzoni/66" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -215,10 +209,10 @@
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701338827">
+                <td data-sort="1701342427">
                     30/11/2023
                 </td>
-                <td data-sort="7">
+                <td data-sort="6">
                     <a href="/canzoni/51" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -229,10 +223,10 @@
                                     <td><em>Arlequin Mercure galant</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585353">
+                <td data-sort="1740588953">
                     26/02/2025
                 </td>
-                <td data-sort="8">
+                <td data-sort="7">
                     <a href="/canzoni/24" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -243,10 +237,10 @@
                                     <td><em>Baguette de Vulcain, La</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585367">
+                <td data-sort="1740588967">
                     26/02/2025
                 </td>
-                <td data-sort="9">
+                <td data-sort="8">
                     <a href="/canzoni/20" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -254,13 +248,13 @@
             </tr>
                     <tr id="est-il-de-plus-belle-foire">
                 <td><strong>Est-il de plus belle foire</strong></td>
-                                    <td><a href="/bancadati/152">Retour de la foire de Bezons, Le</a></td>
+                                    <td><a href="/repertori/345">Retour de la foire de Bezons, Le</a></td>
                     <td>Gherardi, Evaristo</td>
                 
-                <td data-sort="1648033140">
+                <td data-sort="1648036740">
                     23/03/2022
                 </td>
-                <td data-sort="10">
+                <td data-sort="9">
                     <a href="/canzoni/59" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -271,10 +265,10 @@
                                     <td><em>Originaux, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740588415">
+                <td data-sort="1740592015">
                     26/02/2025
                 </td>
-                <td data-sort="11">
+                <td data-sort="10">
                     <a href="/canzoni/37" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -282,13 +276,13 @@
             </tr>
                     <tr id="heureux-qui-par-son-petit-labourage-2a-edizione">
                 <td><strong>Heureux qui par son petit labourage (2ª edizione)</strong></td>
-                                    <td><a href="/bancadati/55">Mal-assortis, Les</a></td>
+                                    <td><a href="/repertori/14">Mal-assortis, Les</a></td>
                     <td>Dufresny, Charles</td>
                 
-                <td data-sort="1740587349">
+                <td data-sort="1740590949">
                     26/02/2025
                 </td>
-                <td data-sort="12">
+                <td data-sort="11">
                     <a href="/canzoni/41" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -296,13 +290,13 @@
             </tr>
                     <tr id="je-fais-le-malheur-extreme-2a-edizione">
                 <td><strong>Je fais le malheur extrême (2ª edizione)</strong></td>
-                                    <td><a href="/bancadati/55">Mal-assortis, Les</a></td>
+                                    <td><a href="/repertori/14">Mal-assortis, Les</a></td>
                     <td>Dufresny, Charles</td>
                 
-                <td data-sort="1740586999">
+                <td data-sort="1740590599">
                     26/02/2025
                 </td>
-                <td data-sort="13">
+                <td data-sort="12">
                     <a href="/canzoni/38" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -310,13 +304,13 @@
             </tr>
                     <tr id="je-suis-fort-propre-en-menage">
                 <td><strong>Je suis fort propre en ménage</strong></td>
-                                    <td><a href="/bancadati/152">Retour de la foire de Bezons, Le</a></td>
+                                    <td><a href="/repertori/345">Retour de la foire de Bezons, Le</a></td>
                     <td>Gherardi, Evaristo</td>
                 
-                <td data-sort="1648033365">
+                <td data-sort="1648036965">
                     23/03/2022
                 </td>
-                <td data-sort="14">
+                <td data-sort="13">
                     <a href="/canzoni/62" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -327,10 +321,10 @@
                                     <td><em>Originaux, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740588902">
+                <td data-sort="1740592502">
                     26/02/2025
                 </td>
-                <td data-sort="15">
+                <td data-sort="14">
                     <a href="/canzoni/32" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -341,10 +335,10 @@
                                     <td><em>Deux Arlequins, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585271">
+                <td data-sort="1740588871">
                     26/02/2025
                 </td>
-                <td data-sort="16">
+                <td data-sort="15">
                     <a href="/canzoni/57" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -355,10 +349,10 @@
                                     <td><em>Chinois, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585300">
+                <td data-sort="1740588900">
                     26/02/2025
                 </td>
-                <td data-sort="17">
+                <td data-sort="16">
                     <a href="/canzoni/13" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -369,10 +363,10 @@
                                     <td><em>Deux Arlequins, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585647">
+                <td data-sort="1740589247">
                     26/02/2025
                 </td>
-                <td data-sort="18">
+                <td data-sort="17">
                     <a href="/canzoni/56" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -383,10 +377,10 @@
                                     <td><em>Champs Élisées, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1736874052">
+                <td data-sort="1736877652">
                     14/01/2025
                 </td>
-                <td data-sort="19">
+                <td data-sort="18">
                     <a href="/canzoni/28" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -397,10 +391,10 @@
                                     <td><em>Champs Élisées, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585384">
+                <td data-sort="1740588984">
                     26/02/2025
                 </td>
-                <td data-sort="20">
+                <td data-sort="19">
                     <a href="/canzoni/27" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -411,11 +405,25 @@
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701339484">
+                <td data-sort="1701343084">
                     30/11/2023
                 </td>
-                <td data-sort="21">
+                <td data-sort="20">
                     <a href="/canzoni/50" class="no-mark" title="['Consultazione e scarica']">
+                        <em>Consultazione e scarica</em>
+                    </a>
+                </td>
+            </tr>
+                    <tr id="la-paix-est-rendue-a-la-terre-3a-edizione">
+                <td><strong>La Paix est rendue à la terre (3ª edizione)</strong></td>
+                                    <td><em>Arlequin Mercure galant</em></td>
+                    <td>-</td>
+                
+                <td data-sort="1740589146">
+                    26/02/2025
+                </td>
+                <td data-sort="21">
+                    <a href="/canzoni/2" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
                 </td>
@@ -425,7 +433,7 @@
                                     <td><em>Deux Arlequins, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1637432527">
+                <td data-sort="1637436127">
                     20/11/2021
                 </td>
                 <td data-sort="22">
@@ -439,25 +447,11 @@
                                     <td><em>Originaux, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740589132">
+                <td data-sort="1740592732">
                     26/02/2025
                 </td>
                 <td data-sort="23">
                     <a href="/canzoni/30" class="no-mark" title="['Consultazione e scarica']">
-                        <em>Consultazione e scarica</em>
-                    </a>
-                </td>
-            </tr>
-                    <tr id="la-paix-est-rendue-a-la-terre-3a-edizione">
-                <td><strong>La Paix est rendue à la terre (3ª edizione)</strong></td>
-                                    <td><em>Arlequin Mercure galant</em></td>
-                    <td>-</td>
-                
-                <td data-sort="1740585546">
-                    26/02/2025
-                </td>
-                <td data-sort="24">
-                    <a href="/canzoni/2" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
                 </td>
@@ -467,10 +461,10 @@
                                     <td><em>Baguette de Vulcain, La</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585427">
+                <td data-sort="1740589027">
                     26/02/2025
                 </td>
-                <td data-sort="25">
+                <td data-sort="24">
                     <a href="/canzoni/21" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -481,10 +475,10 @@
                                     <td><em>Promenades de Paris, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1648725209">
+                <td data-sort="1648732409">
                     31/03/2022
                 </td>
-                <td data-sort="26">
+                <td data-sort="25">
                     <a href="/canzoni/69" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -495,10 +489,10 @@
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701340365">
+                <td data-sort="1701343965">
                     30/11/2023
                 </td>
-                <td data-sort="27">
+                <td data-sort="26">
                     <a href="/canzoni/49" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -509,10 +503,10 @@
                                     <td><em>Originaux, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740589401">
+                <td data-sort="1740593001">
                     26/02/2025
                 </td>
-                <td data-sort="28">
+                <td data-sort="27">
                     <a href="/canzoni/31" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -523,10 +517,10 @@
                                     <td><em>Deux Arlequins, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585729">
+                <td data-sort="1740589329">
                     26/02/2025
                 </td>
-                <td data-sort="29">
+                <td data-sort="28">
                     <a href="/canzoni/58" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -537,10 +531,10 @@
                                     <td><em>Chinois, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1736875724">
+                <td data-sort="1736879324">
                     14/01/2025
                 </td>
-                <td data-sort="30">
+                <td data-sort="29">
                     <a href="/canzoni/12" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -548,41 +542,27 @@
             </tr>
                     <tr id="les-filletes-de-village">
                 <td><strong>Les filletes de village</strong></td>
-                                    <td><a href="/bancadati/152">Retour de la foire de Bezons, Le</a></td>
+                                    <td><a href="/repertori/345">Retour de la foire de Bezons, Le</a></td>
                     <td>Gherardi, Evaristo</td>
                 
-                <td data-sort="1648033230">
+                <td data-sort="1648036830">
                     23/03/2022
                 </td>
-                <td data-sort="31">
+                <td data-sort="30">
                     <a href="/canzoni/60" class="no-mark" title="['Consultazione e scarica']">
-                        <em>Consultazione e scarica</em>
-                    </a>
-                </td>
-            </tr>
-                    <tr id="mere-qui-gronde-qui-tempete-3a-edizione">
-                <td><strong>Mère qui gronde qui tempête (3ª edizione)</strong></td>
-                                    <td><em>Baguette de Vulcain, La</em></td>
-                    <td>-</td>
-                
-                <td data-sort="1740585401">
-                    26/02/2025
-                </td>
-                <td data-sort="32">
-                    <a href="/canzoni/22" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
                 </td>
             </tr>
                     <tr id="messieurs-nous-vous-donnons">
                 <td><strong>Messieurs nous vous donnons</strong></td>
-                                    <td><a href="/bancadati/152">Retour de la foire de Bezons, Le</a></td>
+                                    <td><a href="/repertori/345">Retour de la foire de Bezons, Le</a></td>
                     <td>Gherardi, Evaristo</td>
                 
-                <td data-sort="1648033480">
+                <td data-sort="1648037080">
                     23/03/2022
                 </td>
-                <td data-sort="33">
+                <td data-sort="31">
                     <a href="/canzoni/63" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -593,11 +573,25 @@
                                     <td><em>Originaux, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740589617">
+                <td data-sort="1740593217">
                     26/02/2025
                 </td>
-                <td data-sort="34">
+                <td data-sort="32">
                     <a href="/canzoni/36" class="no-mark" title="['Consultazione e scarica']">
+                        <em>Consultazione e scarica</em>
+                    </a>
+                </td>
+            </tr>
+                    <tr id="mere-qui-gronde-qui-tempete-3a-edizione">
+                <td><strong>Mère qui gronde qui tempête (3ª edizione)</strong></td>
+                                    <td><em>Baguette de Vulcain, La</em></td>
+                    <td>-</td>
+                
+                <td data-sort="1740589001">
+                    26/02/2025
+                </td>
+                <td data-sort="33">
+                    <a href="/canzoni/22" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
                 </td>
@@ -607,10 +601,10 @@
                                     <td><em>Baguette de Vulcain, La</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585414">
+                <td data-sort="1740589014">
                     26/02/2025
                 </td>
-                <td data-sort="35">
+                <td data-sort="34">
                     <a href="/canzoni/19" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -621,10 +615,10 @@
                                     <td><em>Arlequin Mercure galant</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585490">
+                <td data-sort="1740589090">
                     26/02/2025
                 </td>
-                <td data-sort="36">
+                <td data-sort="35">
                     <a href="/canzoni/7" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -635,10 +629,10 @@
                                     <td><em>Deux Arlequins, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585829">
+                <td data-sort="1740589429">
                     26/02/2025
                 </td>
-                <td data-sort="37">
+                <td data-sort="36">
                     <a href="/canzoni/54" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -649,38 +643,24 @@
                                     <td><em>Arlequin Mercure galant</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585501">
+                <td data-sort="1740589101">
                     26/02/2025
                 </td>
-                <td data-sort="38">
+                <td data-sort="37">
                     <a href="/canzoni/6" class="no-mark" title="['Consultazione e scarica']">
-                        <em>Consultazione e scarica</em>
-                    </a>
-                </td>
-            </tr>
-                    <tr id="o-vous-qui-jouissez-de-la-saison-nouvelle">
-                <td><strong>Ô vous qui jouissez de la saison nouvelle</strong></td>
-                                    <td><em>Promenades de Paris, Les</em></td>
-                    <td>-</td>
-                
-                <td data-sort="1648725032">
-                    31/03/2022
-                </td>
-                <td data-sort="39">
-                    <a href="/canzoni/67" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
                 </td>
             </tr>
                     <tr id="oh-lheureux-menage-2a-edizione">
                 <td><strong>Oh l'heureux ménage (2ª edizione)</strong></td>
-                                    <td><a href="/bancadati/55">Mal-assortis, Les</a></td>
+                                    <td><a href="/repertori/14">Mal-assortis, Les</a></td>
                     <td>Dufresny, Charles</td>
                 
-                <td data-sort="1740587795">
+                <td data-sort="1740591395">
                     26/02/2025
                 </td>
-                <td data-sort="40">
+                <td data-sort="38">
                     <a href="/canzoni/39" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -691,10 +671,10 @@
                                     <td><em>Arlequin Mercure galant</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585478">
+                <td data-sort="1740589078">
                     26/02/2025
                 </td>
-                <td data-sort="41">
+                <td data-sort="39">
                     <a href="/canzoni/11" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -705,10 +685,10 @@
                                     <td><em>Champs Élisées, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1736874298">
+                <td data-sort="1736877898">
                     14/01/2025
                 </td>
-                <td data-sort="42">
+                <td data-sort="40">
                     <a href="/canzoni/26" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -719,10 +699,10 @@
                                     <td><em>Chinois, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1736875963">
+                <td data-sort="1736879563">
                     14/01/2025
                 </td>
-                <td data-sort="43">
+                <td data-sort="41">
                     <a href="/canzoni/14" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -733,10 +713,10 @@
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701340779">
+                <td data-sort="1701344379">
                     30/11/2023
                 </td>
-                <td data-sort="44">
+                <td data-sort="42">
                     <a href="/canzoni/45" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -747,10 +727,10 @@
                                     <td><em>Baguette de Vulcain, La</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585457">
+                <td data-sort="1740589057">
                     26/02/2025
                 </td>
-                <td data-sort="45">
+                <td data-sort="43">
                     <a href="/canzoni/17" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -761,10 +741,10 @@
                                     <td><em>Promenades de Paris, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1648725566">
+                <td data-sort="1648732766">
                     31/03/2022
                 </td>
-                <td data-sort="46">
+                <td data-sort="44">
                     <a href="/canzoni/70" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -775,10 +755,10 @@
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701341106">
+                <td data-sort="1701344706">
                     30/11/2023
                 </td>
-                <td data-sort="47">
+                <td data-sort="45">
                     <a href="/canzoni/53" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -789,10 +769,10 @@
                                     <td><em>Arlequin Mercure galant</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585512">
+                <td data-sort="1740589112">
                     26/02/2025
                 </td>
-                <td data-sort="48">
+                <td data-sort="46">
                     <a href="/canzoni/5" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -803,10 +783,10 @@
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701341601">
+                <td data-sort="1701345201">
                     30/11/2023
                 </td>
-                <td data-sort="49">
+                <td data-sort="47">
                     <a href="/canzoni/48" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -817,10 +797,10 @@
                                     <td><em>Originaux, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740589813">
+                <td data-sort="1740593413">
                     26/02/2025
                 </td>
-                <td data-sort="50">
+                <td data-sort="48">
                     <a href="/canzoni/33" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -831,10 +811,10 @@
                                     <td><em>Arlequin Mercure galant</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585522">
+                <td data-sort="1740589122">
                     26/02/2025
                 </td>
-                <td data-sort="51">
+                <td data-sort="49">
                     <a href="/canzoni/4" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -845,10 +825,10 @@
                                     <td><em>Promenades de Paris, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1648724856">
+                <td data-sort="1648732056">
                     31/03/2022
                 </td>
-                <td data-sort="52">
+                <td data-sort="50">
                     <a href="/canzoni/65" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -856,13 +836,13 @@
             </tr>
                     <tr id="si-lon-troquait-de-femme-et-de-mari-2a-edizione">
                 <td><strong>Si l'on troquait de femme et de mari (2ª edizione)</strong></td>
-                                    <td><a href="/bancadati/55">Mal-assortis, Les</a></td>
+                                    <td><a href="/repertori/14">Mal-assortis, Les</a></td>
                     <td>Dufresny, Charles</td>
                 
-                <td data-sort="1740588026">
+                <td data-sort="1740591626">
                     26/02/2025
                 </td>
-                <td data-sort="53">
+                <td data-sort="51">
                     <a href="/canzoni/40" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -873,10 +853,10 @@
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701341923">
+                <td data-sort="1701345523">
                     30/11/2023
                 </td>
-                <td data-sort="54">
+                <td data-sort="52">
                     <a href="/canzoni/47" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -884,13 +864,13 @@
             </tr>
                     <tr id="si-tous-les-enfans">
                 <td><strong>Si tous les enfans</strong></td>
-                                    <td><a href="/bancadati/152">Retour de la foire de Bezons, Le</a></td>
+                                    <td><a href="/repertori/345">Retour de la foire de Bezons, Le</a></td>
                     <td>Gherardi, Evaristo</td>
                 
-                <td data-sort="1648033299">
+                <td data-sort="1648036899">
                     23/03/2022
                 </td>
-                <td data-sort="55">
+                <td data-sort="53">
                     <a href="/canzoni/61" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -898,13 +878,13 @@
             </tr>
                     <tr id="tornami-in-petto-speranza-cara-3a-edizione">
                 <td><strong>Tornami in petto, speranza cara (3ª edizione)</strong></td>
-                                    <td><a href="/bancadati/104">Arlequin Empereur dans la Lune</a></td>
+                                    <td><a href="/repertori/96">Arlequin Empereur dans la Lune</a></td>
                     <td>-</td>
                 
-                <td data-sort="1740585535">
+                <td data-sort="1740589135">
                     26/02/2025
                 </td>
-                <td data-sort="56">
+                <td data-sort="54">
                     <a href="/canzoni/3" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -915,10 +895,10 @@
                                     <td><em>Champs Élisées, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1736874795">
+                <td data-sort="1736878395">
                     14/01/2025
                 </td>
-                <td data-sort="57">
+                <td data-sort="55">
                     <a href="/canzoni/25" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -929,10 +909,10 @@
                                     <td><em>Originaux, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740590056">
+                <td data-sort="1740593656">
                     26/02/2025
                 </td>
-                <td data-sort="58">
+                <td data-sort="56">
                     <a href="/canzoni/34" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -940,13 +920,13 @@
             </tr>
                     <tr id="tu-dis-quen-troquant-de-femme">
                 <td><strong>Tu dis qu'en troquant de femme</strong></td>
-                                    <td><a href="/bancadati/55">Mal-assortis, Les</a></td>
+                                    <td><a href="/repertori/14">Mal-assortis, Les</a></td>
                     <td>Dufresny, Charles</td>
                 
-                <td data-sort="1633793574">
+                <td data-sort="1633800774">
                     09/10/2021
                 </td>
-                <td data-sort="59">
+                <td data-sort="57">
                     <a href="/canzoni/43" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -957,10 +937,10 @@
                                     <td><em>Baguette de Vulcain, La</em></td>
                     <td>-</td>
                 
-                <td data-sort="1740585443">
+                <td data-sort="1740589043">
                     26/02/2025
                 </td>
-                <td data-sort="60">
+                <td data-sort="58">
                     <a href="/canzoni/18" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -971,10 +951,10 @@
                                     <td><em>Adieux des Officiers, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1701342460">
+                <td data-sort="1701346060">
                     30/11/2023
                 </td>
-                <td data-sort="61">
+                <td data-sort="59">
                     <a href="/canzoni/46" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -985,10 +965,10 @@
                                     <td><em>Promenades de Paris, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1648724789">
+                <td data-sort="1648731989">
                     31/03/2022
                 </td>
-                <td data-sort="62">
+                <td data-sort="60">
                     <a href="/canzoni/64" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
@@ -999,18 +979,47 @@
                                     <td><em>Chinois, Les</em></td>
                     <td>-</td>
                 
-                <td data-sort="1736876366">
+                <td data-sort="1736879966">
                     14/01/2025
                 </td>
-                <td data-sort="63">
+                <td data-sort="61">
                     <a href="/canzoni/15" class="no-mark" title="['Consultazione e scarica']">
+                        <em>Consultazione e scarica</em>
+                    </a>
+                </td>
+            </tr>
+                    <tr id="a-cheval-a-cheval-mars-vite-a-la-guerre-2a-edizione">
+                <td><strong>À cheval, à cheval, Mars, vite à la guerre? (2ª edizione)</strong></td>
+                                    <td><em>Adieux des Officiers, Les</em></td>
+                    <td>-</td>
+                
+                <td data-sort="1701341103">
+                    30/11/2023
+                </td>
+                <td data-sort="62">
+                    <a href="/canzoni/44" class="no-mark" title="['Consultazione e scarica']">
+                        <em>Consultazione e scarica</em>
+                    </a>
+                </td>
+            </tr>
+                    <tr id="o-vous-qui-jouissez-de-la-saison-nouvelle">
+                <td><strong>Ô vous qui jouissez de la saison nouvelle</strong></td>
+                                    <td><em>Promenades de Paris, Les</em></td>
+                    <td>-</td>
+                
+                <td data-sort="1648732232">
+                    31/03/2022
+                </td>
+                <td data-sort="63">
+                    <a href="/canzoni/67" class="no-mark" title="['Consultazione e scarica']">
                         <em>Consultazione e scarica</em>
                     </a>
                 </td>
             </tr>
                 </tbody>
     </table>
-</div>        </div>
+</div>
+        </div>
     </section>
 
     </main>
@@ -1051,18 +1060,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

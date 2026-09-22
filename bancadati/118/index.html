@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/118" />
+    <meta name="description" content="Atto primo: Fabrizio si lamenta che molti creditori siano venuti a chiedergli di pagare i suoi debiti. Invia il suo servo Lisetto a tranquillizzare i suoi molti..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Povertà sollevata e l’invidia abbattuta, La</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -181,14 +190,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Callinfa presenta alcune caratteristiche della servetta dell’arte, sia come confidente che come cameriera di Porfiria (in realtà non lo è, ma agisce come tale): si lamenta che Porfiria non riconosca bene quanto fa per lei (I.4), manifesta di muoversi anche per soddisfare la fame (II.3: «Se ben ch’ me son què da Purfiria per fari cumpagnì, e perchè l’è una ragazza, ch’em dà da manzar vluntira, quand’la n’hà... ») e, in genere, è furba e sa districarsi nelle situazioni difficili. Fillonia ha anche alcune caratteristiche delle servette, ma nella declinazione più negativa e macchinosa di quelle: pettegola, invidiosa e un tanto lussuriosa. Inoltre si veda la scena II.3 in cui Callinfa rincorre Fillonia come in una scena dell’Arte. Lisetto, che adopera l’italiano, si presenta come un servo onorato e garbato, lontano dai secondi zanni dell’Arte, anche se la burla raccontata in II.12 lo avvicina un po’ a questi personaggi.</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -200,7 +209,7 @@
                 <tr>
                     <td>
                         <div class="key">13. Personaggi speculari</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -218,7 +227,7 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +269,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -276,8 +285,8 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
-                        <div class="value"><p><strong>Atto primo:</strong> Fabrizio si lamenta che molti creditori siano venuti a chiedergli di pagare i suoi debiti. Invia il suo servo Lisetto a tranquillizzare i suoi molti creditori mentre lui va da Leandro (personaggio solo nominato), che dice essere innamorato di una sconosciuta donna, per restituirgli dei soldi che gli aveva prestato per giocare. Porfiria, da sola, si lamenta di quanto sia dura la povertà, specie per una giovane, mentre aspetta il ritorno di Callinfa, andata a fare un pegno per lei. Comunque, alla fine, si accontenta della sua povertà perché, a suo avviso, la cosa più importante è essere onorata come è lei, che non fa mai <i>avances</i> agli uomini, anche se gradirebbe che uno onesto volesse sposarla. Arriva Callinfa e dice a Porfiria che le hanno dato pochi soldi al Monte di Pietà: diversi li ha già spesi facendo alcuni acquisti per lei e il poco restante se lo tiene come compenso per i suoi servizi. Inoltre racconta che c’era molta fila per la frenesia di giocare al lotto. Mentre parlano si accorgono che sta arrivando Fillonia e temono che le abbia sentite perché è pettegola e invidiosa. Per imbrogliare Fillonia, Callinfa inventa una storia per farle credere che Porfiria è molto ricca e che si trova in quella povera casa solo per nascondersi dai suoi nemici. Quando Callinfa resta da sola, Fillonia la avvicina facendole molti complimenti e si offre di aiutarla a preparare il banchetto che crede stiano per fare nella casa di Porfiria (per quello che aveva sentito dire alle due, precedentemente, senza accorgersi che la burlavano). Callinfa, dopo aver preso in giro con diverse nuove Fillonia, accetta di assumerla per lavorare da Porfiria a patto che dimostri di non essere malata presentando una cedola del medico e del barbiere e facendosi fare due cauteri. Spaventata Fillonia rifiuta il lavoro. Callinfa entra in casa e Fillonia resta da sola.</p>    <p><strong>Atto secondo:</strong> Fillonia, in strada, vede arrivare un cavaliere a casa di Porfiria e resta a guardare. (Tutta la scena successiva è osservata da Fillonia a parte, anche se Callinfa si accorge della sua presenza). In un dialogo svolto fra Callinfa (alla finestra) e Lisetto (in strada), Fabrizio chiede che Porfiria scenda in strada. Callinfa si rifiuta di chiamarla e risponde che dicano a lei cosa vogliono. Fabrizio dice a Lisetto che dica a Callinfa che è venuto perché gli sia pagato l’affitto della casa entro non più di quattro giorni e va via. In un a parte Fillonia dice di non aver sentito quello che dicono. Lisetto chiede a Callinfa di scendere in strada per trasmetterle il messaggio di Fabrizio, ma lei si rifiuta, allora si fa avanti Fillonia e si offre di farlo lei, presentandosi come un’amica di Porfiria, a proposito della quale afferma che è molto ricca. Lisetto trasmette a Fillonia il messaggio dell’affitto e lei, a parte, ne rimane incantata pensando che Porfiria sia molto ricca, ma molto tirchia. Fillonia conferma che trasmetterà il messaggio. In un a parte dice di essersi resa conto di essere stata precedentemente burlata e che Porfiria è, in realtà, una povera ragazza. Si ripromette di vendicarsi. Fillonia trasmette a Callinfa il messaggio di Lisetto ma in modo equivoco all’inizio e quella, quando alla fine capisce che gli si richiede di pagare l’affitto, rimane scornata. Callinfa perseguita brevemente Fillonia, che fugge. Callinfa entra in casa per dare la notizia a Porfiria. Fillonia torna con un bastone per difendersi di Callinfa. Escono Porfiria e Callinfa: la prima vuole vendere alcune poche stoffe che ha per poter pagare l’affitto. Arriva di corsa Flaminia chiedendo aiuto a Porfiria perché suo fratello vuole ucciderla perché l’ha vista parlare con il suo innamorato. Porfiria le dà la chiave di casa sua e le dice di entrare. Flaminia la ringrazia e le dà una moneta d’oro che Porfiria decide di riservare per pagare l’affitto. Porfiria dice a Callinfa che si coprirà con uno zendale e si farà passare per Flaminia. Arriva Alfonso con una spada in mano e prende Porfiria per un braccio scambiandola per sua sorella Flaminia. Porfiria si lascia portar via da Alfonso. Esce Flaminia e chiede a Callinfa cosa sia successo con suo fratello. Questa le racconta quanto accaduto. Flaminia le dà un anello come ricompensa per quanto hanno fatto, le promette molto di più e si allontana. Quando Callinfa tenta di entrare di nuovo in casa per evitare che possa trovarla Alfonso, si rende conto che, uscendo, Flaminia ha chiuso la porta e si è portata via la chiave. Fillonia e Callinfa mantengono una chiacchiera tesa sull’affitto e sulle diverse burle trascorse fra di loro. Callinfa le fa vedere l’anello e la moneta d’oro. Tra sé, rosa dall’invidia, Fillonia decide di correre da Fabrizio per dirgli che Porfiria ha soldi e, dunque, che la costringa a pagargli l’affitto. Arrivati a casa Alfonso leva il velo a Porfiria e scopre che non è sua sorella e ne rimane ammaliato. Porfiria spiega quanto accaduto ad Alfonso: questi rimane meravigliato della generosità di Porfiria che si era offerta di essere punita al posto di Flaminia. Porfiria gli dice che non deve essere così severo con sua sorella solo perché ha disubbidito al suo divieto di parlare col suo innamorato, che i tempi son cambiati, e gli propone di andare a trovarla e fare pace. Lui accetta. Porfiria tenta di strappargli la promessa di permettere il matrimonio fra sua sorella e Leandro, ma lui si rifiuta perché questi in passato si era intromesso fra lui e la sua innamorata Clotilde (personaggio solo nominato), il che fece sì che si rompesse il loro rapporto. Decidono di andare a trovare Flaminia. Lisetto, da solo, parla di una vendetta che ha appena fatto a Buffettino (che alcuni giorni prima aveva promesso di invitarlo all’osteria ma, in realtà, dopo che ebbero finito di mangiare se la svignò, per cui Lisetto dovette pagare tutto), il quale, mentre lo aspettava, pensò di essere attaccato dal lupo mannaro (era Lisetto a ululare) e fuggì urlando, per cui fu bastonato da alcuni passanti che credevano volesse fargli uno scherzo. Tornano Callinfa e Flaminia: questa informa che è andata da sua zia per mettersi sotto la sua protezione, ma la zia non ha voluto schierarsi con uno dei due fratelli (Flaminia e Alfonso), per cui torna a casa. Callinfa deride le metafore del linguaggio amoroso. Arrivati all’esterno della casa di Porfiria, Alfonso le chiede di interrogare sua sorella per sapere cosa pensa esattamente del suo matrimonio con Leandro e per convincerla a ubbidire a suo fratello. Nel frattempo arriva Lisetto dicendo che Fillonia ha riferito al suo padrone che avevano ricevuto dei soldi e che voleva essere pagato subito. Callinfa lo paga, ma gli chiede anche di dire a Fillonia che ha bisogno di lei per un servizio perché Porfiria sta per sposare Alfonso. Porfiria chiede a Callinfa che vada a cercare Flaminia. Callinfa torna e dice che Flaminia si rifiuta di uscire. Questa, alla finestra, si lamenta di suo fratello. Alfonso, sommamente irritato e minacciando di far rinchiudere sua sorella, parte. Porfiria rimane addolorata perché Alfonso è andato via senza salutarla nemmeno, ma Callinfa la consola.</p>      <strong>Atto terzo:</strong> Lisetto riferisce a Fillonia che Porfiria ha pagato l’affitto e che Callinfa ha bisogno dei suoi servizi perché Porfiria sta per sposarsi. Fillonia sente una grande invidia e Lisetto le ricorda che è vecchia e che non deve invidiare una giovane sposa. Fillonia ribatte che non è ancora vecchia e che potrebbe sposarsi anche lei, mentre insulta Lisetto offendendo sua madre. Dopo un breve battibecco si riappacificano. Fillonia accetta di andarci, anche se sospetta che sia un’altra burla di Callinfa ma che, se è vero, tenterà di rovinare il matrimonio di Porfiria. Lisetto, da solo, si lamenta della povertà del suo padrone per colpa del gioco. Arriva Fabrizio e strappa dalle mani a Lisetto i soldi dell’affitto e anche le poche monete proprie del servo. Vanno via. Flaminia dice a Porfiria che suo fratello Alfonso ha ragione a esigerle ubbidienza, ma che non può andare in furia solo per averla vista parlare un momento dal balcone con il suo innamorato. Sentendola tranquilla e ragionevole, Callinfa va a cercare Alfonso con l’assenso di Porfiria. Da sola Fillonia racconta che ha sentito dire che infatti Porfiria sta per sposarsi e, riconoscendo che la divora l’invidia, si ripromette di fare tutto il possibile per evitare il matrimonio. Fabrizio, da solo, racconta che il suo amico Leandro gli ha chiesto di dire a Flaminia quanto sia addolorato per la lite che ha avuto con suo fratello quando li ha scoperti a parlare. Inoltre dichiara che tenterà di piacere a Flaminia per ottenere la sua dote. Bussa alla porta della casa di Porfiria e chiede a Callinfa, che si affaccia, di parlare con Flaminia. Flaminia riceve in camera Fabrizio con grande gioia per le notizie di Leandro che le porta. Fabrizio tenta di sedurla e, quando se ne accorge, Flaminia si spaventa e va via. Fabrizio chiede a Callinfa di convincere Flaminia a non raccontare a Leandro il suo tentativo di rubargli la ragazza. Callinfa accetta e Fabrizio va via. Torna Flaminia e ribadisce la fermezza del suo amore per Leandro. Alfonso da solo racconta che è stato chiamato da sua zia, che si è offerta di accogliere nella propria casa Flaminia e di aumentare la dote della nipote se si fossero risolti i problemi con Leandro. Alfonso riconosce che, stando così le cose, accetta che la sorella sposi Leandro e decide, inoltre, di dichiarare il suo amore a Porfiria. Fillonia, travestita da fiorentina, racconta ad Alfonso la menzogna che Porfiria è sposata e che lei la cerca per condurla dal marito. Alfonso, anche se sospetta che non sia vero, rimane allibito e decide di non parlare più con la giovane per non danneggiare la sua reputazione, poiché la ritiene sposata, mentre riconosce che tutta la colpa è sua perché non aveva mai chiesto se era maritata o meno. Arriva Callinfa che dice ad Alfonso che Flaminia è calma. Lui le risponde che le dica di recarsi a casa di sua zia e di ringraziare Porfiria per quanto li ha aiutati. Vuole andare via e quando Callinfa lo invita ad entrare a parlare direttamente con le ragazze lui le dice che non può farlo, essendo Porfiria sposata. Callinfa gli chiarisce subito che Porfiria è nubile. Quando Alfonso le racconta la vicenda con la donna fiorentina, Callinfa, a parte, afferma di intuire che tale donna era Fillonia e dice ad Alfonso di tornare dopo mezz’ora per fargli vedere che la fiorentina è, in realtà, una bolognese. Lui accetta. Callinfa va via per accompagnare Flaminia da sua zia, mentre Alfonso, da solo, rimane in pensiero. Quando partono Callinfa e Flaminia, Porfiria si lamenta dell’incostanza di Alfonso, che non ha più voluto parlare con lei, ma accetta la circostanza e riconosce la disuguaglianza dei loro stati. Callinfa smaschera Fillonia, senza rendersi conto che Alfonso le ascolta inosservato, e allora questa afferma che ha mentito sullo stato di Porfiria per proteggerla da Alfonso, che sarebbe un vizioso depravato. Alfonso si fa avanti e chiede a Callinfa di portargli inchiostro e calamaio. Restato da solo con Fillonia (che non lo conosce e non sa che l’ha ascoltata), le dice di recarsi a sua casa per fargli un servizio per cui sarà generosamente ricompensata. Quando torna Callinfa, scrive un biglietto e lo dà a Fillonia perché questa lo consegni al suo maggiordomo. Quando Fillonia va via convinta di essere ben trattata a casa di Alfonso, questi dice a Callinfa che nel biglietto ha scritto che Fillonia doveva essere rinchiusa nei «Pazzarelli» (dal nome sembra un manicomio) per un mese a pane e acqua. Callinfa gli dice che Flaminia si è recata contenta da sua zia. Soddisfatto, Alfonso fa per entrare a parlare con Porfiria, ma Callinfa lo trattiene informandogli che la giovane non vuole vedere nessun uomo. Allora Alfonso le chiede di riferire a Porfiria quanto sia innamorato di lei e che vuole sposarla anche senza dote, perché la cosa più importante è la sua indiscutibile onestà. Esce Porfiria e accetta la proposta di Alfonso, ma raccomandandogli di pensarci bene prima di sposarla perché è povera e senza meriti e forse lui potrebbe pentirsene in futuro. Lui si dichiara innamorato e fedele per sempre e Porfiria accetta la sua proposta definitivamente.</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
+                        <div class="value"><p><strong>Atto primo:</strong> Fabrizio si lamenta che molti creditori siano venuti a chiedergli di pagare i suoi debiti. Invia il suo servo Lisetto a tranquillizzare i suoi molti creditori mentre lui va da Leandro (personaggio solo nominato), che dice essere innamorato di una sconosciuta donna, per restituirgli dei soldi che gli aveva prestato per giocare. Porfiria, da sola, si lamenta di quanto sia dura la povertà, specie per una giovane, mentre aspetta il ritorno di Callinfa, andata a fare un pegno per lei. Comunque, alla fine, si accontenta della sua povertà perché, a suo avviso, la cosa più importante è essere onorata come è lei, che non fa mai <i>avances</i> agli uomini, anche se gradirebbe che uno onesto volesse sposarla. Arriva Callinfa e dice a Porfiria che le hanno dato pochi soldi al Monte di Pietà: diversi li ha già spesi facendo alcuni acquisti per lei e il poco restante se lo tiene come compenso per i suoi servizi. Inoltre racconta che c’era molta fila per la frenesia di giocare al lotto. Mentre parlano si accorgono che sta arrivando Fillonia e temono che le abbia sentite perché è pettegola e invidiosa. Per imbrogliare Fillonia, Callinfa inventa una storia per farle credere che Porfiria è molto ricca e che si trova in quella povera casa solo per nascondersi dai suoi nemici. Quando Callinfa resta da sola, Fillonia la avvicina facendole molti complimenti e si offre di aiutarla a preparare il banchetto che crede stiano per fare nella casa di Porfiria (per quello che aveva sentito dire alle due, precedentemente, senza accorgersi che la burlavano). Callinfa, dopo aver preso in giro con diverse nuove Fillonia, accetta di assumerla per lavorare da Porfiria a patto che dimostri di non essere malata presentando una cedola del medico e del barbiere e facendosi fare due cauteri. Spaventata Fillonia rifiuta il lavoro. Callinfa entra in casa e Fillonia resta da sola.</p><p><br></p>    <p><strong>Atto secondo:</strong> Fillonia, in strada, vede arrivare un cavaliere a casa di Porfiria e resta a guardare. (Tutta la scena successiva è osservata da Fillonia a parte, anche se Callinfa si accorge della sua presenza). In un dialogo svolto fra Callinfa (alla finestra) e Lisetto (in strada), Fabrizio chiede che Porfiria scenda in strada. Callinfa si rifiuta di chiamarla e risponde che dicano a lei cosa vogliono. Fabrizio dice a Lisetto che dica a Callinfa che è venuto perché gli sia pagato l’affitto della casa entro non più di quattro giorni e va via. In un a parte Fillonia dice di non aver sentito quello che dicono. Lisetto chiede a Callinfa di scendere in strada per trasmetterle il messaggio di Fabrizio, ma lei si rifiuta, allora si fa avanti Fillonia e si offre di farlo lei, presentandosi come un’amica di Porfiria, a proposito della quale afferma che è molto ricca. Lisetto trasmette a Fillonia il messaggio dell’affitto e lei, a parte, ne rimane incantata pensando che Porfiria sia molto ricca, ma molto tirchia. Fillonia conferma che trasmetterà il messaggio. In un a parte dice di essersi resa conto di essere stata precedentemente burlata e che Porfiria è, in realtà, una povera ragazza. Si ripromette di vendicarsi. Fillonia trasmette a Callinfa il messaggio di Lisetto ma in modo equivoco all’inizio e quella, quando alla fine capisce che gli si richiede di pagare l’affitto, rimane scornata. Callinfa perseguita brevemente Fillonia, che fugge. Callinfa entra in casa per dare la notizia a Porfiria. Fillonia torna con un bastone per difendersi di Callinfa. Escono Porfiria e Callinfa: la prima vuole vendere alcune poche stoffe che ha per poter pagare l’affitto. Arriva di corsa Flaminia chiedendo aiuto a Porfiria perché suo fratello vuole ucciderla perché l’ha vista parlare con il suo innamorato. Porfiria le dà la chiave di casa sua e le dice di entrare. Flaminia la ringrazia e le dà una moneta d’oro che Porfiria decide di riservare per pagare l’affitto. Porfiria dice a Callinfa che si coprirà con uno zendale e si farà passare per Flaminia. Arriva Alfonso con una spada in mano e prende Porfiria per un braccio scambiandola per sua sorella Flaminia. Porfiria si lascia portar via da Alfonso. Esce Flaminia e chiede a Callinfa cosa sia successo con suo fratello. Questa le racconta quanto accaduto. Flaminia le dà un anello come ricompensa per quanto hanno fatto, le promette molto di più e si allontana. Quando Callinfa tenta di entrare di nuovo in casa per evitare che possa trovarla Alfonso, si rende conto che, uscendo, Flaminia ha chiuso la porta e si è portata via la chiave. Fillonia e Callinfa mantengono una chiacchiera tesa sull’affitto e sulle diverse burle trascorse fra di loro. Callinfa le fa vedere l’anello e la moneta d’oro. Tra sé, rosa dall’invidia, Fillonia decide di correre da Fabrizio per dirgli che Porfiria ha soldi e, dunque, che la costringa a pagargli l’affitto. Arrivati a casa Alfonso leva il velo a Porfiria e scopre che non è sua sorella e ne rimane ammaliato. Porfiria spiega quanto accaduto ad Alfonso: questi rimane meravigliato della generosità di Porfiria che si era offerta di essere punita al posto di Flaminia. Porfiria gli dice che non deve essere così severo con sua sorella solo perché ha disubbidito al suo divieto di parlare col suo innamorato, che i tempi son cambiati, e gli propone di andare a trovarla e fare pace. Lui accetta. Porfiria tenta di strappargli la promessa di permettere il matrimonio fra sua sorella e Leandro, ma lui si rifiuta perché questi in passato si era intromesso fra lui e la sua innamorata Clotilde (personaggio solo nominato), il che fece sì che si rompesse il loro rapporto. Decidono di andare a trovare Flaminia. Lisetto, da solo, parla di una vendetta che ha appena fatto a Buffettino (che alcuni giorni prima aveva promesso di invitarlo all’osteria ma, in realtà, dopo che ebbero finito di mangiare se la svignò, per cui Lisetto dovette pagare tutto), il quale, mentre lo aspettava, pensò di essere attaccato dal lupo mannaro (era Lisetto a ululare) e fuggì urlando, per cui fu bastonato da alcuni passanti che credevano volesse fargli uno scherzo. Tornano Callinfa e Flaminia: questa informa che è andata da sua zia per mettersi sotto la sua protezione, ma la zia non ha voluto schierarsi con uno dei due fratelli (Flaminia e Alfonso), per cui torna a casa. Callinfa deride le metafore del linguaggio amoroso. Arrivati all’esterno della casa di Porfiria, Alfonso le chiede di interrogare sua sorella per sapere cosa pensa esattamente del suo matrimonio con Leandro e per convincerla a ubbidire a suo fratello. Nel frattempo arriva Lisetto dicendo che Fillonia ha riferito al suo padrone che avevano ricevuto dei soldi e che voleva essere pagato subito. Callinfa lo paga, ma gli chiede anche di dire a Fillonia che ha bisogno di lei per un servizio perché Porfiria sta per sposare Alfonso. Porfiria chiede a Callinfa che vada a cercare Flaminia. Callinfa torna e dice che Flaminia si rifiuta di uscire. Questa, alla finestra, si lamenta di suo fratello. Alfonso, sommamente irritato e minacciando di far rinchiudere sua sorella, parte. Porfiria rimane addolorata perché Alfonso è andato via senza salutarla nemmeno, ma Callinfa la consola.</p><p><br></p>      <strong>Atto terzo:</strong> Lisetto riferisce a Fillonia che Porfiria ha pagato l’affitto e che Callinfa ha bisogno dei suoi servizi perché Porfiria sta per sposarsi. Fillonia sente una grande invidia e Lisetto le ricorda che è vecchia e che non deve invidiare una giovane sposa. Fillonia ribatte che non è ancora vecchia e che potrebbe sposarsi anche lei, mentre insulta Lisetto offendendo sua madre. Dopo un breve battibecco si riappacificano. Fillonia accetta di andarci, anche se sospetta che sia un’altra burla di Callinfa ma che, se è vero, tenterà di rovinare il matrimonio di Porfiria. Lisetto, da solo, si lamenta della povertà del suo padrone per colpa del gioco. Arriva Fabrizio e strappa dalle mani a Lisetto i soldi dell’affitto e anche le poche monete proprie del servo. Vanno via. Flaminia dice a Porfiria che suo fratello Alfonso ha ragione a esigerle ubbidienza, ma che non può andare in furia solo per averla vista parlare un momento dal balcone con il suo innamorato. Sentendola tranquilla e ragionevole, Callinfa va a cercare Alfonso con l’assenso di Porfiria. Da sola Fillonia racconta che ha sentito dire che infatti Porfiria sta per sposarsi e, riconoscendo che la divora l’invidia, si ripromette di fare tutto il possibile per evitare il matrimonio. Fabrizio, da solo, racconta che il suo amico Leandro gli ha chiesto di dire a Flaminia quanto sia addolorato per la lite che ha avuto con suo fratello quando li ha scoperti a parlare. Inoltre dichiara che tenterà di piacere a Flaminia per ottenere la sua dote. Bussa alla porta della casa di Porfiria e chiede a Callinfa, che si affaccia, di parlare con Flaminia. Flaminia riceve in camera Fabrizio con grande gioia per le notizie di Leandro che le porta. Fabrizio tenta di sedurla e, quando se ne accorge, Flaminia si spaventa e va via. Fabrizio chiede a Callinfa di convincere Flaminia a non raccontare a Leandro il suo tentativo di rubargli la ragazza. Callinfa accetta e Fabrizio va via. Torna Flaminia e ribadisce la fermezza del suo amore per Leandro. Alfonso da solo racconta che è stato chiamato da sua zia, che si è offerta di accogliere nella propria casa Flaminia e di aumentare la dote della nipote se si fossero risolti i problemi con Leandro. Alfonso riconosce che, stando così le cose, accetta che la sorella sposi Leandro e decide, inoltre, di dichiarare il suo amore a Porfiria. Fillonia, travestita da fiorentina, racconta ad Alfonso la menzogna che Porfiria è sposata e che lei la cerca per condurla dal marito. Alfonso, anche se sospetta che non sia vero, rimane allibito e decide di non parlare più con la giovane per non danneggiare la sua reputazione, poiché la ritiene sposata, mentre riconosce che tutta la colpa è sua perché non aveva mai chiesto se era maritata o meno. Arriva Callinfa che dice ad Alfonso che Flaminia è calma. Lui le risponde che le dica di recarsi a casa di sua zia e di ringraziare Porfiria per quanto li ha aiutati. Vuole andare via e quando Callinfa lo invita ad entrare a parlare direttamente con le ragazze lui le dice che non può farlo, essendo Porfiria sposata. Callinfa gli chiarisce subito che Porfiria è nubile. Quando Alfonso le racconta la vicenda con la donna fiorentina, Callinfa, a parte, afferma di intuire che tale donna era Fillonia e dice ad Alfonso di tornare dopo mezz’ora per fargli vedere che la fiorentina è, in realtà, una bolognese. Lui accetta. Callinfa va via per accompagnare Flaminia da sua zia, mentre Alfonso, da solo, rimane in pensiero. Quando partono Callinfa e Flaminia, Porfiria si lamenta dell’incostanza di Alfonso, che non ha più voluto parlare con lei, ma accetta la circostanza e riconosce la disuguaglianza dei loro stati. Callinfa smaschera Fillonia, senza rendersi conto che Alfonso le ascolta inosservato, e allora questa afferma che ha mentito sullo stato di Porfiria per proteggerla da Alfonso, che sarebbe un vizioso depravato. Alfonso si fa avanti e chiede a Callinfa di portargli inchiostro e calamaio. Restato da solo con Fillonia (che non lo conosce e non sa che l’ha ascoltata), le dice di recarsi a sua casa per fargli un servizio per cui sarà generosamente ricompensata. Quando torna Callinfa, scrive un biglietto e lo dà a Fillonia perché questa lo consegni al suo maggiordomo. Quando Fillonia va via convinta di essere ben trattata a casa di Alfonso, questi dice a Callinfa che nel biglietto ha scritto che Fillonia doveva essere rinchiusa nei «Pazzarelli» (dal nome sembra un manicomio) per un mese a pane e acqua. Callinfa gli dice che Flaminia si è recata contenta da sua zia. Soddisfatto, Alfonso fa per entrare a parlare con Porfiria, ma Callinfa lo trattiene informandogli che la giovane non vuole vedere nessun uomo. Allora Alfonso le chiede di riferire a Porfiria quanto sia innamorato di lei e che vuole sposarla anche senza dote, perché la cosa più importante è la sua indiscutibile onestà. Esce Porfiria e accetta la proposta di Alfonso, ma raccomandandogli di pensarci bene prima di sposarla perché è povera e senza meriti e forse lui potrebbe pentirsene in futuro. Lui si dichiara innamorato e fedele per sempre e Porfiria accetta la sua proposta definitivamente.</div>
                     </td>
                 </tr>
                 <tr>
@@ -295,7 +304,7 @@
                 <tr>
                     <td>
                         <div class="key">27. Comicità</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Tutta l’azione si svolge senza salti per cui si può pensare che si svolga dalla mattina alla sera della stessa giornata.</div>
                     </td>
                 </tr>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>Si tratta della storia di due coppie di innamorati i cui rapporti sono ostacolati da diversi problemi che a poco a poco si risolvono. Il gioco o l’invidia sono motivi secondari annodati perfettamente alla trama principale.</p></div>
                     </td>
                 </tr>
@@ -406,25 +415,25 @@
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">43. Scena con ampia presenza di personaggi</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">44. Didascalie di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -441,13 +450,13 @@
                 <tr>
                     <td>
                         <div class="key">45. Prima recita</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">46. Altre recite nel Settecento</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -470,17 +479,17 @@
                 <tr>
                     <td>
                         <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

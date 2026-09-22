@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/24" />
+    <meta name="description" content="ATTO I: l’atto si apre con un dialogo fra il conte Anzelmo (in realtà Tonno Nasca), e l’abate don Carlo (in realtà Carluccio Suzzo), due birbi votati alla vita..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                            → <a href="/upload/doc/federico-libbirbe-maione-bp25.pdf" target="_blank">Edizione</a>
+                            02. Titolo
+                                                            → <a href="/upload/doc/federico-libbirbe-maione-bp25.pdf" target="_blank">Edizione</a>
                                                     </div>
                         <div class="value"><em>Birbe, Li</em></div>
                     </td>
@@ -124,7 +133,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -151,11 +160,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -182,7 +191,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Esiste un certo influsso della commedia dell’arte nell’opera di Federico, dato non insolito se consideriamo l’atmosfera farsesca che condividono entrambi i generi. La configurazione dei personaggi si nutre allo stesso modo di tali paradigmi; ne sono chiari esempi i ruoli di Zannetta e di Antonejello, i cui atteggiamenti rimandano a quello degli zanni (si veda l’approfondita analisi sulla <i>pièce </i>svolta nel capitolo introduttivo dell’edizione di riferimento, <i>Una bottega del caffè per </i>Li Bbirbe,  in cui si trattano gli influssi della tradizione dell’arte nei personaggi dell’opera).</p></div>
                     </td>
                 </tr>
@@ -201,13 +210,13 @@
                 <tr>
                     <td>
                         <div class="key">13. Personaggi speculari</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -219,7 +228,7 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -237,13 +246,13 @@
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -261,7 +270,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -277,7 +286,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p>ATTO I: l’atto si apre con un dialogo fra il conte Anzelmo (in realtà Tonno Nasca), e l’abate don Carlo (in realtà Carluccio Suzzo), due birbi votati alla vita dell’inganno che parlano sull’abbandono della moglie di Anzelmo, Polidora, una delle vittime del finto conte: Tonno, dopo la morte di suo padre, è rimasto senza eredità, motivo per cui agisce secondo un marcato interesse pecuniario, fingendo false identità per sedurre donne e ottenere i loro soldi. In quest’occasione, dopo aver ammaliato Claudia, responsabile della caffetteria in cui si trovano i personaggi, e aver ottenuto i suoi gioielli, Anzelmo ha ora nel mirino Urzola, figlia del signore Jacovo e promessa sposa di Ciccio, giovane innamorato. Alla conversazione si unisce casualmente la suddetta Urzola, che esce dalla finestra di casa di Jacovo. La donna manifesta un certo interesse verso il conte e un parallelo rifiuto rispetto al suo matrimonio con Ciccio. Questi osserva da lontano la conversazione fra di loro e, guidato dalla rabbia, decide di condividere con Jacovo i sospetti sul possibile interesse tanto del conte quanto di Urzola. Gli intrecci non fanno che aumentare con l’arrivo in città di Cornelia, con la figlia Popa e Bartolomeo, il loro fedele servo, provenienti da Roma alla ricerca del barone Frigaglia, una delle molteplici identità di Tonno Nasca, che, oltre ad aver abbandonato Popa poco prima del matrimonio, ha rubato cento scudi alla famiglia romana. Tutti e tre arrivano alla bottega per trovare Claudia, vedova del defunto figlio di Cornelia. Mentre i suddetti personaggi entrano nella caffetteria, Urzola parla con Ciccio del suo rapporto con Anzelmo: la donna difende la libertà di poter interagire liberamente con gli uomini senza una motivazione amorosa ed esce dalla scena lasciando il promesso sposo da solo. D’altro canto, Jacovo trova Anzelmo per corroborare le sue intenzioni verso la figlia, un interesse che viene negato categoricamente dal conte con la complicità di don Carlo (si ricordi, in realtà Carluccio Suzzo). Nelle ultime scene dell’atto si riuniscono gradualmente i personaggi davanti alla bottega; l’incontro casuale diventa rapidamente un litigio contro Anzelmo nel momento in cui Cornelia e Popa, guardandolo affacciate dalla finestra della casa di Claudia, lo riconoscono come il barone Frigaglia. All’alterco si sommano successivamente Jacovo e Ciccio, quest’ultimo desideroso di picchiare il conte per aver cercato di sedurre Urzola. L’atto si chiude con la fuga di Anzelmo.</p>    <p>ATTO II: i personaggi sono confusi rispetto alla vera identità del conte e alle sue motivazioni. Ne costituisce un’eccezione Carlo che, oltre ad essere a conoscenza della vita di truffatore di Anzelmo, ha sentito dalle donne romane la storia del fallito matrimonio fra Popa (il suo nuovo interesse amoroso) e il barone Frigaglia. Anzelmo torna in scena per spiegare a Carlo in quale modo intende risolvere gli imbrogli orditi: indosserà l’abbigliamento usato a Roma, fingendo di essere il barone Frigaglia, fratello di Anzelmo, il che spiegherebbe le similitudini fisionomiche fra le due identità finte di Tonno Nasca. Per la messa in atto dell’inganno, il conte avrà come complici principali il suo servo, Zannetta, e Carlo. Nel frattempo, Ciccio e Popa dibattono sull’identità del conte. Si uniscono poi Urzola, che ascolta di nascosto, Menecuccio e, posteriormente, Bartolomeo. Urzola approfitta dell’interazione fra Popa e Ciccio per accusare il suo promesso sposo (lo stesso Ciccio) di corteggiare altre donne, in realtà una scusa per evitare il loro matrimonio: infatti, la diatriba viene sentita da Jacovo, provocando in lui un ingiusto disprezzo verso il promesso sposo della figlia. Di seguito appare Tonno con nuovi abiti e parlando in un modo diverso: si presenta agli altri personaggi come il barone Frigaglia, venuto a Napoli per visitare il suo gemello Anzelmo., assente nel momento in cui si presenta il barone, e di Claudia, che, sospettosa, chiede a Zannetta di portare Anzelmo davanti a lei per confermare l’identità di Frigaglia. Risolta la questione dell’identità di Frigaglia, Cornelia vuole riprendere il matrimonio fra lui e sua figlia, nel tentativo di recuperare l’onore apparentemente perso, ma Popa non vuole più sposarlo, preferendogli, invece, Carlo, il quale, dopo essersi invaghito della fanciulla nella conclusione del primo atto, ha cercato di conquistarla. Il dissidio fra Cornelia e Popa dà luogo a una discussione rapidamente aggravata dall’arrivo di Jacovo e di Ciccio, poiché il giovane cerca disperatamente Popa per smentire le menzogne di Urzola. Quest’ultima e Bartolomeo si sommano successivamente alla discussione, la quale finisce con l’entrata in scena di Tonno, sotto l’identità di Frigaglia, che rifiuta il matrimonio con Popa, alludendo alle calunnie di Urzola e incolpando la giovane di legare con altri uomini. </p>    <p>ATTO III: Anzelmo parla nuovamente con Urzola confessandole il suo amore, dichiarazione gratamente corrisposta dalla donna. Nel dialogo non tarda a rendersi palese l’interesse materiale di Anzelmo: il conte propone a Urzola di fuggire durante la notte, specificando che dovrà portare con sé i suoi oggetti di valore. Stabilito il piano di fuga con il conte, la donna intrattiene un’ultima conversazione con Ciccio in cui gli rivela di averlo diffamato deliberatamente per liberarsi del loro matrimonio. Casualmente, i dialoghi della donna con entrambi gli uomini vengono sentiti da Jacovo, sbigottito dall’evidente tentativo di truffa di Anzelmo e adesso deciso non solo a detenere la fuga di sua figlia, ma anche a svelare gli inganni del conte. A tal scopo, Jacovo rinchiude Urzola in casa per evitarne la fuga e parte alla ricerca di Ciccio per ottenere la sua cooperazione. La tensione fra i personaggi cresce quando Anzelmo riafferma davanti a Cornelia e a Popa che suo “fratello” non sposerà la giovane romana. La conversazione, alla quale parteciperanno inoltre Menecuccio, Antonejello e Bartolomeo, finisce fra vituperi contro le donne romane da parte del conte e con un’aggressione fisica di Popa ad Anzelmo. Quest’ultimo fugge inizialmente, ma tornerà poi con gli abiti del barone per minacciare di distruggere la caffetteria come conseguenza degli aggravi subiti dal fratello (cioè, Tonno stesso, ma sotto l’identità del conte). Arrivata l’ora dell’incontro fra Urzola e Anzelmo per la fuga, il conte e Zannetta vanno a casa di Jacovo, da dove comincia a parlare una voce femminile, dietro la quale si nasconde Jacovo fingendosi Urzola. Subitamente, Zannetta, creduto Anzelmo a causa del buio della notte, viene preso per il braccio e imprigionato da Jacovo in casa sua, mentre il conte fugge alla caffetteria. Convinto di aver catturato il truffatore, Jacovo procede a riunirsi con Ciccio e si dirigono anche loro verso la bottega per scoprire gli inganni del conte. Appena arrivati, Tonno si presenta travestito dal barone Frigaglia, apparentemente costernato per le azioni del ‘‘fratello’’ Anzelmo. Tutti i personaggi decidono di andare a casa di Jacovo dove vedono Zannetta (scambiato da Jacovo e Ciccio per Anzelmo), ubriaco, cantando alla finestra. Il servo finalmente accusa il conte di essere un imbroglione svelando la condizione di birbo di Anzelmo. Con l’identità di truffatore parzialmente rivelata, l’opera segna lo scioglimento degli imbrogli con l’arrivo in territorio napoletano di Polidora, moglie di Anzelmo, e di Ceccone, padre di Carlo, che cercano i rispettivi parenti, guidati da Ciccio e da Menecuccio alla caffetteria. Le vere identità di Anzelmo e di Carlo vengono finalmente rivelate da Ceccone e da Polidora. Tale rivelazione viene accompagnata, però, dalla sistemazione dei personaggi, cambiamento che delinea la conclusione dell’opera: Carluccio vuole mettere la testa a posto e sposare Popa; Anzelmo, redento, decide di tornare con Polidora e, infine, Ciccio perdona Urzola, pentita dopo aver scoperto l’inganno del conte.</p></div>
                     </td>
                 </tr>
@@ -302,7 +311,7 @@
                 <tr>
                     <td>
                         <div class="key">28. Elementi polemici, satirici e parodici</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -330,14 +339,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">L’azione presenta una durata inferiore a 24 ore (cfr. § 33).</div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">32. Soluzione di continuità temporale fra gli atti o fra le scene</div>
-                        <div class="value">È possibile distinguere un salto temporale di un numero indeterminato di ore fra il primo e il secondo atto, che comprenderebbe le ore dalla mattina alla sera (cfr. § 33). </div>
+                        <div class="value">È possibile distinguere un salto temporale di un numero indeterminato di ore fra il primo e il secondo atto, che comprenderebbe le ore dalla mattina alla sera (cfr. § 33).</div>
                     </td>
                 </tr>
                 <tr>
@@ -383,7 +392,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>Le confusioni fra i personaggi che determinano lo sviluppo argomentale sono causate dagli imbrogli di Tonno per ottenere un beneficio pecuniario e, più specificamente, dal nuovo tentativo di truffa, ordito ai danni di Urzola.</p></div>
                     </td>
                 </tr>
@@ -407,13 +416,13 @@
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -442,13 +451,13 @@
                 <tr>
                     <td>
                         <div class="key">45. Prima recita</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">46. Altre recite nel Settecento</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -465,7 +474,7 @@
                 <tr>
                     <td>
                         <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -478,17 +487,17 @@
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
                         <div class="key">49. Dati dei paratesti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -542,18 +551,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

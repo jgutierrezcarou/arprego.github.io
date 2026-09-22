@@ -92,15 +92,36 @@ var Main =
         if($('.data-table-database').length)
         {
             fetch('/ricerca/index.json')
-                .then(function(r) { return r.json(); })
-                .then(function(data)
+                .then(function(response) { return response.json(); })
+                .then(function(sections)
                 {
-                    Main.searchIndex = lunr.Index.load(data);
-                    if(Main.currentTerms) Main.search(Main.currentTerms);
+                    var docs = [];
+
+                    Object.keys(sections).forEach(function(section)
+                    {
+                        sections[section].forEach(function(item)
+                        {
+                            docs.push({ ref: section + ':' + item.id, text: item.text });
+                        });
+                    });
+
+                    Main.searchIndex = lunr(function()
+                    {
+                        this.use(lunr.it);
+                        this.ref('ref');
+                        this.field('text');
+
+                        docs.forEach(function(doc) { this.add(doc); }, this);
+                    });
+
+                    if(Main.currentTerms)
+                    {
+                        Main.search(Main.currentTerms);
+                    }
                 })
-                .catch(function(e)
+                .catch(function(error)
                 {
-                    console.error('Search index failed to load:', e);
+                    console.error('Search index failed to load:', error);
                 });
         }
 
@@ -114,9 +135,13 @@ var Main =
                 Main.instances.forEach(function(dt)
                 {
                     if(!dt.fixedHeader) return;
-                    if (isMobile) {
+
+                    if(isMobile)
+                    {
                         dt.fixedHeader.disable();
-                    } else {
+                    }
+                    else
+                    {
                         dt.fixedHeader.enable();
                         dt.fixedHeader.adjust();
                     }
@@ -197,7 +222,7 @@ var Main =
             "autoWidth": false,
             "info":      false,
             "mark":      {
-                className: 'hightlight',
+                className: 'highlight',
                 exclude: ['.no-mark']
             },
             "order":     [],
@@ -229,7 +254,8 @@ var Main =
             }
         };
 
-        if (window.innerWidth >= 992 && table.closest(':hidden').length === 0) {
+        if(window.innerWidth >= 992 && table.closest(':hidden').length === 0)
+        {
             options.fixedHeader = {
                 headerOffset: $('.navbar').outerHeight()
             };
@@ -325,6 +351,7 @@ var Main =
             {
                 row.child(info).show();
                 tr.addClass('shown');
+
                 if(Main.currentTerms)
                 {
                     row.child().find('.expanded').mark(Main.currentTerms, { className: 'highlight', exclude: ['.no-mark'] });
@@ -380,8 +407,8 @@ var Main =
         {
             Main.instances.forEach(function(dt)
             {
-                var s = $(dt.table().node()).data('section') || $(dt.table().node()).closest('.results').data('section');
-                if(s) Main.searchIds[s] = new Set();
+                var section = $(dt.table().node()).data('section') || $(dt.table().node()).closest('.results').data('section');
+                if(section) Main.searchIds[section] = new Set();
             });
 
             var query = Main.buildQuery(terms);
@@ -432,7 +459,7 @@ var Main =
 
     termVariants: function(terms)
     {
-        var pairs = [['i','j'],['j','i'],['u','v'],['v','u']];
+        var pairs = [['i', 'j'], ['j', 'i'], ['u', 'v'], ['v', 'u']];
         var seen = {};
         var result = [];
 
@@ -440,6 +467,7 @@ var Main =
             .forEach(function(term)
             {
                 var group = [term];
+
                 pairs.forEach(function(pair)
                 {
                     var current = term;
@@ -449,9 +477,14 @@ var Main =
                         if(group.indexOf(current) === -1) group.push(current);
                     }
                 });
-                group.forEach(function(v)
+
+                group.forEach(function(variant)
                 {
-                    if(!seen[v]) { seen[v] = true; result.push(v); }
+                    if(!seen[variant])
+                    {
+                        seen[variant] = true;
+                        result.push(variant);
+                    }
                 });
             });
 

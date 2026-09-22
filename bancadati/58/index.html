@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/58" />
+    <meta name="description" content="Argomento stampato nel libretto: «Anselmo Gianozzi, fiorentino mercante di lana, villeggiando in San Casciano, per consiglio di Filandro suo maestro di casa (cu..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Pazzo per forza, Il</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -181,7 +190,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p><span class="Aucun">I personaggi che possono considerarsi derivati dalla Commedia dell’Arte sono: Anselmo, vecchio padre; Flavio, Leandro, Leonora e Isabella: quartetto di innamorati e innamorate; Ligurino, servo astuto che aiuta il padrone a conquistare l’innamorata; Filandro, secondo servo astuto.</span></p></div>
                     </td>
                 </tr>
@@ -230,19 +239,19 @@
                 <tr>
                     <td>
                         <div class="key">18. Personaggi che parlano solo in prosa</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -276,8 +285,8 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
-                        <div class="value"><p>Argomento stampato nel libretto: «Anselmo Gianozzi, fiorentino mercante di lana, villeggiando in San Casciano, per consiglio di Filandro suo maestro di casa (cui non premeva che per interesse proprio i negozii del padrone), aveva stabilito le nozze di Flavio suo figliuolo con Lucinda, donzella romana, e quelle di Leonora, sua figliuola, con Leandro, giovine napoletano. Venendo Leandro a Firenze a sposar Isabella, fermossi in San Casciano, dove a caso vidde insieme e Leonora ed Isabella, della quale invaghito tentò d’ogni possibile, con l’aiuto di Ligurino suo servo, d’ottenerla in moglie, non curandosi di Leonora come appunto gli sarebbe sortito, se mosso dalla pietà per gli accidenti occorsi a Flavio, amante riamato d’Isabella, non avesse superato i moti del genio, quale obbligò all’ardire e al pianto di Leonora». L’argomento è identico nelle due versioni perché Filandro e Beltramina, soppressi nel 1688, non sono menzionati nell’argomento.</p><p><span class="Aucun"></span></p>  <p><span class="Aucun"></span></p>  <p><span class="Aucun">La prima versione è più complessa.</span></p><p><span class="Aucun"></span>Atto I. Appena arrivato incognito da Napoli a San Casciano con il servo Ligurino per sposare Leonora, Leandro s’innamora a caso d’Isabella, che ama riamata Flavio, e decide di conquistarla fingendosi pittor francese. Isabella non lo guarda, mentre Leonora non resta insensibile al pittore, senza sapere che è il suo fidanzato. Isabella si dispera, perché Flavio, sorpreso con lei da Anselmo e Beltramina, è stato costretto dal padre a partire a Roma per sposare la sua promessa, e, su consiglio del machiavellico Filandro, che vuol mettere le mani sui beni del padrone eliminando il figlio, si finge pazzo.</p>  <p><span class="Aucun"></span></p>  <p><span class="Aucun"></span></p>  <p><span class="Aucun">Atto II. Leandro è disperato dall’indifferenza di Isabella. Questa gli chiede di dipingere per lei un ritratto di Flavio. Ligurino, sotto l’abito e le veci d’una zingara, decide di aiutare il padrone e riesce a sostituire, nelle mani d’Isabella, il ritratto di Flavio con quello di Leandro, destinato a Leonora. Questo non manca di ingelosire Flavio al quale Isabella mostra inavvedutamene il ritratto di Leandro, e provoca anche gelosia nel cuore di Leonora. Ad Anselmo, che si lamenta della pazzia del figlio, Ligurino-zingara promette di consultare un medico spagnolo capace di sanarlo: sarà Leandro, sotto un nuovo travestimento, che permetterà al servo di cavare anche soldi dal vecchio. Ligurino, del quale l’oste Trottolo si è infiammato credendolo ‘moretta’, propone a questi di venire a ritrovarla di notte in camera. Con un gioco di sali-scendi da una scala e di cambiamenti continui di posizione di detta scala, tra la casa di Filandro, la casa d’Isabella e l’osteria dov’è Leandro, Ligurino riesce a burlare Trottolo e a rinforzare i sospetti di Flavio contro Isabella e, quindi, la sua pazzia. Infuriato, Flavio si precipita in casa di Beltramina e fa scandalo. Quando vede Leandro travestito da medico spagnolo e lo riconosce per pittor francese, la sua furia raddoppia, e tutti lo risconoscono davvero pazzo. Anselmo è disperato dallo stato del figlio. </span></p>  <p><span class="Aucun"></span></p>  <p><span class="Aucun"></span></p>  <span class="Aucun">Atto III. Ligurino fa poi credere a Beltramina che Isabella ha già sposato il pittor francese, e ottiene dalla vecchia che accetti questo matrimonio. Ma intanto Leandro, commosso dal coraggio e dalla generosità di Leonora, che gli chiede di non sposare Isabella, esita a continuare l’inganno; svela la sua vera identità, e accetta il matrimonio di Isabella con Flavio, il quale racconta la sua finta pazzia. Tutto sembra tornato all’ordine, ma Beltramina annuncia il matrimonio segreto di sua figlia con il «pittor francese», risvegliando le furie amorose di Flavio. Anselmo, consigliato da Filandro, fa ricoverare il figlio all’Ospedale dei pazzi. Alla fine, i maneggi di Filandro sono scoperti grazie a una lettera trovata da Leandro dove il maestro di casa parla della sua intenzione di beffare il vecchio. Anselmo perdona al figlio, caccia Filandro da casa sua, e i matrimoni si fanno tra Flavio e Isabella, e Leonora e Leandro.</span></div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
+                        <div class="value"><p>Argomento stampato nel libretto: «Anselmo Gianozzi, fiorentino mercante di lana, villeggiando in San Casciano, per consiglio di Filandro suo maestro di casa (cui non premeva che per interesse proprio i negozii del padrone), aveva stabilito le nozze di Flavio suo figliuolo con Lucinda, donzella romana, e quelle di Leonora, sua figliuola, con Leandro, giovine napoletano. Venendo Leandro a Firenze a sposar Isabella, fermossi in San Casciano, dove a caso vidde insieme e Leonora ed Isabella, della quale invaghito tentò d’ogni possibile, con l’aiuto di Ligurino suo servo, d’ottenerla in moglie, non curandosi di Leonora come appunto gli sarebbe sortito, se mosso dalla pietà per gli accidenti occorsi a Flavio, amante riamato d’Isabella, non avesse superato i moti del genio, quale obbligò all’ardire e al pianto di Leonora». L’argomento è identico nelle due versioni perché Filandro e Beltramina, soppressi nel 1688, non sono menzionati nell’argomento.</p><p><br></p><p><span class="Aucun"></span></p>  <p><span class="Aucun"></span></p>  <p><span class="Aucun">La prima versione è più complessa.</span></p><p><span class="Aucun"></span>Atto I. Appena arrivato incognito da Napoli a San Casciano con il servo Ligurino per sposare Leonora, Leandro s’innamora a caso d’Isabella, che ama riamata Flavio, e decide di conquistarla fingendosi pittor francese. Isabella non lo guarda, mentre Leonora non resta insensibile al pittore, senza sapere che è il suo fidanzato. Isabella si dispera, perché Flavio, sorpreso con lei da Anselmo e Beltramina, è stato costretto dal padre a partire a Roma per sposare la sua promessa, e, su consiglio del machiavellico Filandro, che vuol mettere le mani sui beni del padrone eliminando il figlio, si finge pazzo.</p>  <p><span class="Aucun"></span></p>  <p><span class="Aucun"></span></p>  <p><span class="Aucun">Atto II. Leandro è disperato dall’indifferenza di Isabella. Questa gli chiede di dipingere per lei un ritratto di Flavio. Ligurino, sotto l’abito e le veci d’una zingara, decide di aiutare il padrone e riesce a sostituire, nelle mani d’Isabella, il ritratto di Flavio con quello di Leandro, destinato a Leonora. Questo non manca di ingelosire Flavio al quale Isabella mostra inavvedutamene il ritratto di Leandro, e provoca anche gelosia nel cuore di Leonora. Ad Anselmo, che si lamenta della pazzia del figlio, Ligurino-zingara promette di consultare un medico spagnolo capace di sanarlo: sarà Leandro, sotto un nuovo travestimento, che permetterà al servo di cavare anche soldi dal vecchio. Ligurino, del quale l’oste Trottolo si è infiammato credendolo ‘moretta’, propone a questi di venire a ritrovarla di notte in camera. Con un gioco di sali-scendi da una scala e di cambiamenti continui di posizione di detta scala, tra la casa di Filandro, la casa d’Isabella e l’osteria dov’è Leandro, Ligurino riesce a burlare Trottolo e a rinforzare i sospetti di Flavio contro Isabella e, quindi, la sua pazzia. Infuriato, Flavio si precipita in casa di Beltramina e fa scandalo. Quando vede Leandro travestito da medico spagnolo e lo riconosce per pittor francese, la sua furia raddoppia, e tutti lo risconoscono davvero pazzo. Anselmo è disperato dallo stato del figlio. </span></p>  <p><span class="Aucun"></span></p>  <p><span class="Aucun"></span></p>  <span class="Aucun">Atto III. Ligurino fa poi credere a Beltramina che Isabella ha già sposato il pittor francese, e ottiene dalla vecchia che accetti questo matrimonio. Ma intanto Leandro, commosso dal coraggio e dalla generosità di Leonora, che gli chiede di non sposare Isabella, esita a continuare l’inganno; svela la sua vera identità, e accetta il matrimonio di Isabella con Flavio, il quale racconta la sua finta pazzia. Tutto sembra tornato all’ordine, ma Beltramina annuncia il matrimonio segreto di sua figlia con il «pittor francese», risvegliando le furie amorose di Flavio. Anselmo, consigliato da Filandro, fa ricoverare il figlio all’Ospedale dei pazzi. Alla fine, i maneggi di Filandro sono scoperti grazie a una lettera trovata da Leandro dove il maestro di casa parla della sua intenzione di beffare il vecchio. Anselmo perdona al figlio, caccia Filandro da casa sua, e i matrimoni si fanno tra Flavio e Isabella, e Leonora e Leandro.</span></div>
                     </td>
                 </tr>
                 <tr>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Circa 24 ore.</div>
                     </td>
                 </tr>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p><span class="Aucun">La fine dell’atto secondo con la burla di Ligurino contro Trottolo diventa una ‘commediola’ interna (vedi II.24.12, Ligurino: «È un gioco di commedia»). Ligurino burla Trottolo invitandolo in quanto ‘moretta’ a raggiungerlo e lo fa salire prima nella camera di Filandro, ciò che provoca la furia di Trottolo che crede infedele la sua amata «moretta» (II.24); poi, cambiata ancora la posizione della scala, manda Flavio nella camera di Leandro all’osteria invece di farlo salire in camera d’Isabella, rendendolo infuriato contro l’amata (II.25).</span></p></div>
                     </td>
                 </tr>
@@ -477,10 +486,10 @@
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

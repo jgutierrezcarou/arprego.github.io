@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/147" />
+    <meta name="description" content="Atto I. Il medico Filizzio è talmente avaro da aver costretto la propria famiglia a trasferirsi da Venezia a Mestre per ridurre le spese. Tutti si lamentano per..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Filizzio medico</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,7 +159,7 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
@@ -181,7 +190,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Arlecchino; Broccolo (primo zanni); Filizzio (derivazione-fusione del taccagno Pantalone e del pedante Dottore).</p></div>
                     </td>
                 </tr>
@@ -206,7 +215,7 @@
                 <tr>
                     <td>
                         <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -218,7 +227,7 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -236,13 +245,13 @@
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +269,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -276,7 +285,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p>Atto I. Il medico Filizzio è talmente avaro da aver costretto la propria famiglia a trasferirsi da Venezia a Mestre per ridurre le spese. Tutti si lamentano per la sua spilorceria: la moglie Ottavia (che non può acquistare in libertà ciò che vuole), la figlia Petronilla (che si annoia mortalmente nella nuova abitazione dove non ha alcuno svago e ha la prospettiva di restare zitella perché il padre non vuole pagare alcuna dote) e il servo Arlecchino (che sostiene di aver sempre la pancia vuota). Arrivano a fargli visita la sorella Porzia con la figlia Isabella, accompagnate dal loro servo Broccolo, ma Filizzio non è affatto contento, perché per sfamare più commensali ha dovuto acquistare molte verdure dall’ortolano Sajone.</p>    <p>Atto II. Giungono fuori dalla casa del medico due nobili, il conte di Casteltrito, follemente innamorato di Petronilla e desideroso di chiederla in sposa, e il marchese di Roccafrusta, senese, che si offre di simulare una malattia (la febbre terzana) per avere la scusa di entrare in casa di Filizzio. Il medico ci casca e, dopo aver sciorinato frasi di Ippocrate, fornisce al paziente moltissimi medicamenti, tutti volti a far durare il più possibile la febbre, in modo da assicurarsi altre visite e maggiori compensi. Filizzio deve scappare a fare un’altra visita e i due nobili ne approfittano per chiedere ad Arlecchino di richiamare l’attenzione delle giovani su di loro.</p>    <p>Atto III. Petronilla e Isabella, disubbidendo alle madri, decidono di uscire a fare una passeggiata in giardino, ma, vedendo i due nobili, scappano in casa e si mettono a suonare il cembalo e a cantare. Arlecchino introduce di nascosto il conte e il marchese nella sala della musica e le due ragazze li accolgono ben liete, pur temendo le punizioni dei genitori. Una volta salutate Petronilla e Isabella, il conte e il marchese chiedono all’ortolano Sajone di intercedere con Ottavia, spiegandole la serietà dei propositi del conte e la volontà di pagare una controdote in modo che Filizzio non debba sborsare nemmeno un soldo per il matrimonio della figlia. Ottavia si fa convincere e concede al conte di frequentare Petronilla, a patto che lei sia sempre presente durante gli incontri. Intanto il marchese confessa all’amico di essersi invaghito di Isabella.</p>    <p>Atto IV. I due nobili vengono ricevuti in casa e si incontrano nuovamente con le ragazze. Tutto sembra andare per il meglio quando Filizzio torna dal suo giro di visite. Il conte e il marchese quindi salutano garbatamente e battono la ritirata. Il medico è arrabbiato perché non vuole che la figlia veda uomini, ma Ottavia riesce a manipolarlo e a fingere che l’incontro fosse stato solo una casualità. Il marchese per avere nuovamente la scusa di entrare in casa finge di avere un attacco di febbre, intanto Sajone, approfittando della distrazione del medico, riesce a recapitare alle ragazze un messaggio: i due nobili fingeranno di andarsene, ma torneranno in casa non appena Filizzio sarà uscito per le altre visite.</p>    <p>Atto V. I quattro giovani si incontrano in casa di Filizzio: il marchese corteggia Isabella e il conte Petronilla. Le due ragazze si mostrano interessate, ma timorose di essere ingannate. I nobili allora le omaggiano con alcuni doni preziosi che le madri, giunte all’improvviso nella stanza, concedono alle ragazze di accettare dopo alcune finte reticenze. Il medico, però, piomba nuovamente in casa e fa una scenata, sentendosi preso in giro e considerando ormai infangato l’onore della figlia e della nipote. Il marchese pone un argine alla sfuriata del medico promettendogli che, per sistemare la faccenda, sposerà Isabella, mentre il conte sposerà Petronilla, aggiungendo che entrambi forniranno una controdote. Filizzio, non appena realizza di non dover pagare nulla per la dote e di non dover più mantenere la figlia, accorda la sua benedizione per le nozze di Petronilla con il conte e altrettanto fa Porzia per le nozze del marchese con Isabella. Gli innamorati sono al sommo della gioia e tutti i personaggi si ritengono soddisfatti, compreso Arlecchino che si vanta di aver agevolato le due unioni.</p></div>
                     </td>
                 </tr>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Un giorno (dalla mattina alla sera).</div>
                     </td>
                 </tr>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>Tutta la commedia gira intorno alla volontà del conte di conquistare Petronilla (e, specularmente, del marchese di far breccia nel cuore di Isabella), ostacolata dall’avarizia di Filizzio. Non sono presenti intrecci secondari.</p></div>
                     </td>
                 </tr>
@@ -400,19 +409,19 @@
                 <tr>
                     <td>
                         <div class="key">40. Uso di oggetti particolari</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -424,7 +433,7 @@
                 <tr>
                     <td>
                         <div class="key">44. Didascalie di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -441,13 +450,13 @@
                 <tr>
                     <td>
                         <div class="key">45. Prima recita</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">46. Altre recite nel Settecento</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -464,30 +473,30 @@
                 <tr>
                     <td>
                         <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
                         <div class="key">49. Dati dei paratesti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

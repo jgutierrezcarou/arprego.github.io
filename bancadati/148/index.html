@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/148" />
+    <meta name="description" content="Atto primo: Geronte, di padre nobile e di madre contadina, ricco e considerato avaro, viene a sapere dal servo Dulipo delle abitudini disordinate e dispendiose..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Sanese, La</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -181,7 +190,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Toffolo Giandussa sembra derivare dalla maschera del Dottor Balanzone, per età, mestiere e tendenza ad una loquela infarcita di figure retoriche e inserti in latino.</p></div>
                     </td>
                 </tr>
@@ -206,7 +215,7 @@
                 <tr>
                     <td>
                         <div class="key">14. Soliloqui e monologhi di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p><del></del>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -218,13 +227,13 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">17. Personaggi che parlano solo in verso</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -236,13 +245,13 @@
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +269,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -276,7 +285,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p><strong>Atto primo</strong>: Geronte, di padre nobile e di madre contadina, ricco e considerato avaro, viene a sapere dal servo Dulipo delle abitudini disordinate e dispendiose del figlio Mandricardo, il quale,  frequentando l’accademia  in Francia, è divenuto seguace dei costumi del <i>gran monde</i> e ha speso molto denaro in acquisti di tabacco, carrozzini, soggiorni. Inoltre si è invaghito di Zaffira, serva di Giandussa, dottor di legge, di cui frequenta lo studio: nella seconda scena, dunque, Geronte informa il giurisperito, suo amico, affinché prenda provvedimenti a riguardo.</p>  <p><strong></strong></p>  <p><strong>Atto secondo</strong>: Zaffira, innamorata non corrisposta e disperata di Arnolfo, «scolare tedesco» del dottor Giandussa, per l’ennesima volta chiede alla ruffiana Beritola di recarsi da lui, per informarlo del suo struggimento e pregarlo di ascoltarla. Dopo alcuni tentativi di consolarla e alcuni consigli per aiutarla a dimenticare il tedesco, magari rivolgendo le proprie attenzioni a Mandricardo, Beritola si rassegna ad avvicinare Arnolfo e a supplicarlo, con un’orazione degna di Demostene, di un atto di carità nei confronti della ragazza, una sola attenzione che possa confortarla e farla ravvedere circa il suo proposito di togliersi la vita. Egli reagisce dapprima in modo altero e scostante, ma dopo l’<i>exemplum</i> fiabesco portato dalla ruffiana, acconsente a incontrare Zaffira, anche se non subito. </p>    <p><strong>Atto terzo</strong>: ignaro dell’amore che Mandricardo nutre per Zaffira, Arnolfo informa l’amico dell’ambasciata appena ricevuta dalla ruffiana: Mandricardo si sente mancare e, su invito del tedesco che non capisce il motivo di tale turbamento, gli confida il proprio amore per la serva, chiedendogli poi di poterlo accompagnare a casa della ruffiana dove è previsto l’incontro fra Arnolfo e Zaffira. Successivamente anche Beritola acconsente e impartisce precisi ordini in vista del singolare appuntamento. Nel frattempo, Dulipo, offeso dai modi ingrati di Mandricardo, comunica a Geronte di voler lasciare la loro casa. </p>    <p><strong>Atto quarto</strong>: il dialogo della prima scena lascia intendere che Mandricardo e Arnolfo, inaspettatamente, si sfidano a duello. Accorrono Dulipo e Geronte, tanto che il tedesco desiste dalla contesa. Richiesto dal padre di spiegare i motivi dello scontro, Mandricardo preferisce raccontare tutto al servo, cui è affidato il compito di relazionare poi a Geronte: durante l’incontro dei due amici con Zaffira combinato a casa della ruffiana e, complici i ruvidi modi di Arnolfo nei riguardi della ragazza, essa si era disamorata di lui, e, nel contempo, aveva deplorato la sfortuna di avere un corteggiatore poco stimato, scialacquatore, superficiale come Mandricardo. All’udire il giudizio di Zaffira su di lui e di fronte alla sua virtù, il giovane aveva provato vergogna dei propri costumi e desiderio di cambiare vita (affermazione che molto stupisce il servo Dulipo), ma al termine dell’incontro era venuta alla luce una verità inattesa: Zaffira aveva rivelato la propria appartenenza alla famiglia Guicciardi da Siena, affermazione che aveva consentito ad Arnolfo, incredulo, di riconoscere in lei la propria sorella. Per questo il tedesco si era scagliato contro Mandricardo, accusandolo di averlo condotto a fare il ruffiano a sua sorella. </p>    <p><strong>Atto quinto</strong>: Geronte è molto felice per la ritrovata saggezza del figlio, ma disdegna il consiglio del servo che lo invita a maritare Mandricardo a Zaffira. Mentre i due discutono, sopraggiunge un nobile signore della famiglia senese proprio dei Guicciardi, con tanto di servo turco, per chiedere loro informazioni circa una giovane donna che dovrebbe essere a servizio nella casa di Giandussa, dottor di legge. Improvvisamente irrompe sulla scena Arnolfo accompagnato da alcuni uomini armati e deciso a fare vendetta dell’azione di Mandricardo: Geronte e il servo riparano in casa, mentre il nobiluomo cerca di calmare Arnolfo. Il loro dialogo li porta a riconoscersi padre e figlio e a ritrovarsi dopo una lunga e avventurosa separazione tra le coste mediterranee dell’Africa e i mari freddi dell’Europa continentale, e inoltre consente al padre di sapere che la serva di Giandussa, Zaffira, è in realtà proprio sua figlia Elena e di venire a conoscenza dei recenti avvenimenti che la riguardano. Su esortazione del padre e nella gioia di averlo ritrovato, Arnolfo depone la propria ira nei confronti di Mandricardo, al quale viene data in sposa Zaffira/Elena, con grande soddisfazione generale.</p></div>
                     </td>
                 </tr>
@@ -324,12 +333,12 @@
                 <tr>
                     <td>
                         <div class="key">30. Cambiamenti di luogo</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Una giornata.</div>
                     </td>
                 </tr>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>Fulcro dell’azione è la figura di Zaffira, il cui infelice amore per Arnolfo muove al ravvedimento di Mandricardo, all’agnizione di Zaffira quale sorella di Arnolfo e all’avvicinamento definitivo fra Zaffira e Mandricardo, alla fine sposi.</p></div>
                     </td>
                 </tr>
@@ -400,19 +409,19 @@
                 <tr>
                     <td>
                         <div class="key">40. Uso di oggetti particolari</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -424,7 +433,7 @@
                 <tr>
                     <td>
                         <div class="key">44. Didascalie di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -464,23 +473,23 @@
                 <tr>
                     <td>
                         <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -493,7 +502,7 @@
                 <tr>
                     <td>
                         <div class="key">50. Osservazioni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/22" />
+    <meta name="description" content="Atto unico.Scena 1: Mezzetin e Scaramouche si contendono una bottiglia di vino che hanno rubato quella mattina in un cabaret. All’arrivo di Arlequin, lo investo..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Tombeau de Maître André, Le</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -170,7 +179,7 @@
                 <tr>
                     <td>
                         <div class="key">08. Elenco dei personaggi</div>
-                        <div class="value"><p>Maître André, Cabaretier, <i>Mezzetin </i>(<i>Mezzettino</i>).</p>  <p>Marinette (Marinetta), femme de Maître André.</p>  <p>Colombine (Colombina), fille de Maître André.</p>  <p>Pierrot (Pedrolino), domestique de Maître André.</p>  <p>Arlequin (Arlecchino), amant de Colombine.</p>  <p>Scaramouche (Scaramuccia), soldato.</p>  <p>Un tambour, <i>Mezzetin </i>(<i>Mezzettino</i>).</p>  <p>Deux garçons cabaretiers chantants, <i>Octave </i>(<i>Ottavio</i>), <i>Léandre </i>(<i>Leandro</i>).</p>  <p>Les suivants (=il corteo) de la Pompe funèbre.</p>    <p>Nelle edizioni anteriori a Paris 1700 (es. Bruxelles 1697, Amsterdam 1698) i personaggi erano:</p>    <p>Maître André, Cabaretier [senza indicazione di <i>Mezzetin</i>].</p>  <p>Marinette, femme de Maître André.</p>  <p>Pierrot, frère de Marinette [= fratello e non domestico].</p>  <p>Colombine, fille de Maître André.</p>  <p>Mezetin, <a name="_Hlk155607588">valet d’intrigue</a>.</p>  <p>Scaramouche, valet d’intrigue.</p>  <p>Arlequin, valet d’intrigue.</p>  <p>Un pleureur (=piagnone) chantant.</p>  Les suivants (=il corteo) de la Pompe funèbre.</div>
+                        <div class="value"><p>Maître André, Cabaretier, <i>Mezzetin </i>(<i>Mezzettino</i>).</p>  <p>Marinette (Marinetta), femme de Maître André.</p>  <p>Colombine (Colombina), fille de Maître André.</p>  <p>Pierrot (Pedrolino), domestique de Maître André.</p>  <p>Arlequin (Arlecchino), amant de Colombine.</p>  <p>Scaramouche (Scaramuccia), soldato.</p>  <p>Un tambour, <i>Mezzetin </i>(<i>Mezzettino</i>).</p>  <p>Deux garçons cabaretiers chantants, <i>Octave </i>(<i>Ottavio</i>), <i>Léandre </i>(<i>Leandro</i>).</p>  <p>Les suivants (=il corteo) de la Pompe funèbre.</p><p><br></p>    <p>Nelle edizioni anteriori a Paris 1700 (es. Bruxelles 1697, Amsterdam 1698) i personaggi erano:</p><p><br></p>    <p>Maître André, Cabaretier [senza indicazione di <i>Mezzetin</i>].</p>  <p>Marinette, femme de Maître André.</p>  <p>Pierrot, frère de Marinette [= fratello e non domestico].</p>  <p>Colombine, fille de Maître André.</p>  <p>Mezetin, <a name="_Hlk155607588">valet d’intrigue</a>.</p>  <p>Scaramouche, valet d’intrigue.</p>  <p>Arlequin, valet d’intrigue.</p>  <p>Un pleureur (=piagnone) chantant.</p>  Les suivants (=il corteo) de la Pompe funèbre.</div>
                     </td>
                 </tr>
                 <tr>
@@ -181,14 +190,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Marinette (Marinetta), Colombine (Colombina), Pierrot (Pedrolino), Arlequin (Arlecchino), Scaramouche (Scaramuccia), Mezzetin (Mezzettino).</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -218,13 +227,13 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">17. Personaggi che parlano solo in verso</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +269,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -276,7 +285,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p>Atto unico.<br></p><p>Scena 1: Mezzetin e Scaramouche si contendono una bottiglia di vino che hanno rubato quella mattina in un <i>cabaret</i>. All’arrivo di Arlequin, lo investono del ruolo di giudice perché dirima la questione della proprietà della bottiglia.</p><p>Scena 2: Arlequin si burla dei due litiganti chiedendo loro di presentargli come testimoni la bottiglia e poi del pane e del salame. Interroga i due contendenti e, intanto, mangia di gusto e si scola tutto il vino. Quando ha finito, emette il suo giudizio e si congeda da Mezzetin e Scaramouche dando all’uno il bicchiere e all’altro la bottiglia vuota. Come nella favola <i>L’Huître et les Plaideurs</i> (<i>L’ostrica e i due litiganti</i>) di Jean de la Fontaine, a cui si ispirano le due prime scene della commedia, i due personaggi si rassegnano al responso. A continuazione, si mettono a pensare al funerale del <i>cabaretier</i> Maître André. </p><p>Scena 3: In una stanza da cui è stata staccata la tappezzeria e dove, su un tavolo, sono state ammassate varie suppellettili, la vedova di Maître André, Marinette, simula un dolore che non prova affatto. Assieme a Pierrot, passa in rassegna i difetti del marito, <i>bon vivant </i>e gran bevitore. Pierrot, che si è già accaparrato l’argenteria e il corredo, invita Marinette ad assicurarsi i tre quarti dell’eredità e gli oggetti più pregiati della casa dato che alla figlia andrà il negozio familiare. </p><p>Scena 4: Colombine sopraggiunge terrorizzata perché le è sembrato di vedere il padre defunto muoversi. Marinette e Pierrot non hanno nessuna fretta di constatare se la giovane ha ragione. Finiscono per lasciare di malavoglia la stanza. Colombine, in un soliloquio, si mostra cosciente che la stanno derubando e si augura di trovare un marito che la protegga e la aiuti a far valere le sue ragioni. Sopraggiunge Arlequin, migliore amico del defunto Maître André.</p><p>Scena 5: In una scena tutta recitata in versi, Arlequin compare vestito da eroe romano «per consolare la sua amante con più energia» (I.5.1). Colombine si lamenta di esser rimasta orfana e alla mercè di una madre avida che assieme a Pierrot la lascerà sul lastrico. Arlequin le dichiara grossolanamente la sua passione, ma, quando lei accetta di sposarlo, tergiversa e dice che ha bisogno di pensarci sopra.</p><p>Scena 6: Arlequin va a consolare Marinette e le chiede la mano della figlia. Marinette va su tutte le furie insinuando che anche lei, in quanto vedova, è una donna da marito. Per convincere Arlequin di essere un buon partito è disposta a fargli leggere il testamento di Maître André. Arlequin, per opportunismo, accetta di sposarla.</p><p>Scena 7: In presenza di Marinette, Colombine, Pierrot e Scaramouche, Arlequin legge ad alta voce il testamento di Maître André. Nel documento che contiene le sue ultime volontà, il <i>cabaretier </i>mostra di essere al corrente delle infedeltà della moglie ma la autorizza a risposarsi e a continuare a vivere in casa, mentre alla figlia lascia la gestione del <i>cabaret</i>. Arlequin si accorge di aver sopravvalutato l’eredità.</p><p>Scena 8: Tutti partecipano alle esequie di Maître André che appare riverso sulla sua tomba con in una mano una bottiglia e nell’altra un bicchiere. Il mausoleo ha per base una botte ed è fabbricato con tutti gli utensili della cucina e del <i>cabaret</i>. A suon di musica e dopo aver sfilato davanti al defunto, i personaggi si dispongono ai due lati della stanza. Un cameriere intona una canzone in onore al <i>cabaretier</i>. A questo punto, Maître André si risveglia e canta una canzone bacchica. I presenti lo festeggiano e inneggiano al vino.</p></div>
                     </td>
                 </tr>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Una giornata.</div>
                     </td>
                 </tr>
@@ -382,7 +391,7 @@
                         <div class="value">No</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>Nell’atto unico, tematicamente composito, si succedono due azioni principali apparentemente distanti ma accomunate dal motivo del “vino” e uno scioglimento burlesco: 1. la disputa per il possesso di una bottiglia di vino rubata (scene 1-2); 2. le conseguenze familiari ed economiche della morte del <i>cabaretier </i>Maître André (scene 3-7); 3. il finale a sorpresa in cui il funerale si risolve in “risurrezione” e in festa (scena 8).</p></div>
                     </td>
                 </tr>
@@ -412,7 +421,7 @@
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -464,30 +473,30 @@
                 <tr>
                     <td>
                         <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
                         <div class="key">49. Dati dei paratesti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

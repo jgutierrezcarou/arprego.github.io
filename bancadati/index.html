@@ -3,23 +3,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <title>Banca dati del teatro pregoldoniano - Archivio del Teatro Pregoldoniano</title>
+    <link rel="canonical" href="/bancadati" />
+    <meta name="description" content="Archivio, biblioteca e banche dati del teatro italiano pregoldoniano: testi, schede analitiche, recite, attori, compagnie, teatri e l&#039;archivio musicale Gherardi." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="database first">
@@ -112,22 +120,21 @@
 
         <tbody>
                                     <tr id="37">
-                    <td>Anonimo</td>
+                    <td>-</td>
                     <td><em>Arlequin misanthrope</em></td>
                     <td><div class="no-wrap">Sansa, Anna</div></td>
-                    <td data-sort="1583915424">
+                    <td data-sort="1583919024">
                         11/03/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/37" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/arlequinmisanthrope-annasansa-bp05-2020-2014-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="158">
-                    <td>Anonimo</td>
+                    <td>-</td>
                     <td><em>Fama dell'onore, La</em></td>
                     <td><div class="no-wrap">Tavazzi, Valeria</div></td>
-                    <td data-sort="1654166687">
+                    <td data-sort="1654173887">
                         02/06/2022
                     </td>
                     <td class="no-wrap">
@@ -135,10 +142,10 @@
                                                                         </td>
                 </tr>
                             <tr id="153">
-                    <td>Anonimo</td>
+                    <td>-</td>
                     <td><em>Opera in comedia, L'</em></td>
                     <td><div class="no-wrap">Tavazzi, Valeria</div></td>
-                    <td data-sort="1641736100">
+                    <td data-sort="1641739700">
                         09/01/2022
                     </td>
                     <td class="no-wrap">
@@ -146,22 +153,21 @@
                                                                         </td>
                 </tr>
                             <tr id="33">
-                    <td>Anonimo</td>
+                    <td>-</td>
                     <td><em>Pastor fido ridicolo, Il</em></td>
                     <td><div class="no-wrap">Gutiérrez Carou, Javier</div></td>
-                    <td data-sort="1704212765">
+                    <td data-sort="1704216365">
                         02/01/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/33" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/pastorfidoridicolo-andreafabiano-arprego-2013-11-20-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="175">
                     <td>Amenta, Niccolò</td>
                     <td><em>Fante, La</em></td>
                     <td><div class="no-wrap">Rodella, Anna</div></td>
-                    <td data-sort="1770382132">
+                    <td data-sort="1770385732">
                         06/02/2026
                     </td>
                     <td class="no-wrap">
@@ -172,7 +178,7 @@
                     <td>Amenta, Niccolò</td>
                     <td><em>Gostanza, commedia, La</em></td>
                     <td><div class="no-wrap">Pistoia, Francesco Maria</div></td>
-                    <td data-sort="1740410516">
+                    <td data-sort="1740414116">
                         24/02/2025
                     </td>
                     <td class="no-wrap">
@@ -183,7 +189,7 @@
                     <td>Amenta, Nicola</td>
                     <td><em>Gemelle, Le</em></td>
                     <td><div class="no-wrap">Morgani, Silvia</div></td>
-                    <td data-sort="1639671417">
+                    <td data-sort="1639675017">
                         16/12/2021
                     </td>
                     <td class="no-wrap">
@@ -194,7 +200,7 @@
                     <td>Balbi, Domenico</td>
                     <td><em>Lippa, Il</em></td>
                     <td><div class="no-wrap">D'Onghia, Luca</div></td>
-                    <td data-sort="1758878514">
+                    <td data-sort="1758885714">
                         26/09/2025
                     </td>
                     <td class="no-wrap">
@@ -205,43 +211,40 @@
                     <td>Barone, Domenico Luigi</td>
                     <td><em>Partenio</em></td>
                     <td><div class="no-wrap">Cotticelli, Francesco</div></td>
-                    <td data-sort="1582026138">
+                    <td data-sort="1582029738">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/42" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/domenicobarone-partenio-francescocotticelli-bp16-2016-11-22.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="8">
                     <td>Baruffaldi, Girolamo</td>
                     <td><em>Poeta, Il</em></td>
                     <td><div class="no-wrap">Contini, Milena</div></td>
-                    <td data-sort="1581956217">
+                    <td data-sort="1581959817">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/8" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/BaruffaldiGirolamo_IlPoeta_MilenaContini_Arprego_2013-01-26_DEFINITIVO.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="62">
                     <td>Becelli, Giulio Cesare</td>
                     <td><em>Agnesa di Faenza, L'</em></td>
                     <td><div class="no-wrap">Frare, Pierantonio</div></td>
-                    <td data-sort="1582029752">
+                    <td data-sort="1582033352">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/62" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/becelli-agnesadafaenza-monicabisi-bp23-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="75">
                     <td>Becelli, Giulio Cesare</td>
                     <td><em>Amalato, L'</em></td>
                     <td><div class="no-wrap">Frare, Pierantonio</div></td>
-                    <td data-sort="1582029732">
+                    <td data-sort="1582033332">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -251,8 +254,8 @@
                             <tr id="76">
                     <td>Becelli, Giulio Cesare</td>
                     <td><em>Falsi letterati, Li</em></td>
-                    <td><div class="no-wrap"> Bisi, Monica</div></td>
-                    <td data-sort="1582030011">
+                    <td><div class="no-wrap">Bisi, Monica</div></td>
+                    <td data-sort="1582033611">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -263,19 +266,18 @@
                     <td>Becelli, Giulio Cesare</td>
                     <td><em>Ingiusta donazione, L'</em></td>
                     <td><div class="no-wrap">Bisi, Monica</div></td>
-                    <td data-sort="1769424727">
+                    <td data-sort="1769428327">
                         26/01/2026
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/77" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/becelli-ingiustadonazione-bisi-arprego4-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="80">
                     <td>Becelli, Giulio Cesare</td>
                     <td><em>Poeti comici, Li</em></td>
                     <td><div class="no-wrap">Cappelletti, Cristina</div></td>
-                    <td data-sort="1582029190">
+                    <td data-sort="1582032790">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -286,7 +288,7 @@
                     <td>Bianchi, Brigida</td>
                     <td><em>Inganno fortunato, L', ovvero L'amante aborrita</em></td>
                     <td><div class="no-wrap">Rivas Seivane, Claudia</div></td>
-                    <td data-sort="1774025088">
+                    <td data-sort="1774028688">
                         20/03/2026
                     </td>
                     <td class="no-wrap">
@@ -297,7 +299,7 @@
                     <td>Boccardi, Michelangelo</td>
                     <td><em>Bacco usurpatore di Parnaso</em></td>
                     <td><div class="no-wrap">Ceccarelli, Marilena</div></td>
-                    <td data-sort="1594306595">
+                    <td data-sort="1594313795">
                         09/07/2020
                     </td>
                     <td class="no-wrap">
@@ -308,7 +310,7 @@
                     <td>Boccardi, Michelangelo</td>
                     <td><em>Mintidaspe il vecchio</em></td>
                     <td><div class="no-wrap">Ceccarelli, Marilena</div></td>
-                    <td data-sort="1594661326">
+                    <td data-sort="1594668526">
                         13/07/2020
                     </td>
                     <td class="no-wrap">
@@ -319,7 +321,7 @@
                     <td>Bonicelli, Giovanni</td>
                     <td><em>Amalato imaginario, L'</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1650646656">
+                    <td data-sort="1650653856">
                         22/04/2022
                     </td>
                     <td class="no-wrap">
@@ -330,19 +332,18 @@
                     <td>Bonicelli, Giovanni</td>
                     <td><em>Arlecchino finto bassà d'Algieri</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1651753343">
+                    <td data-sort="1651760543">
                         05/05/2022
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/90" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/041-bonicelli-arlechinofinto-gregores-definitivo-2024-12-03.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="157">
                     <td>Bonicelli, Giovanni</td>
                     <td><em>Dottor baccheton, Il</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1653404128">
+                    <td data-sort="1653411328">
                         24/05/2022
                     </td>
                     <td class="no-wrap">
@@ -353,7 +354,7 @@
                     <td>Bonicelli, Giovanni</td>
                     <td><em>Lugretia romana violata da Sesto Tarquinio</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1676369881">
+                    <td data-sort="1676373481">
                         14/02/2023
                     </td>
                     <td class="no-wrap">
@@ -364,31 +365,29 @@
                     <td>Bonicelli, Giovanni</td>
                     <td><em>Pantalone bullo</em></td>
                     <td><div class="no-wrap">Ghelfi, Maria</div></td>
-                    <td data-sort="1582025650">
+                    <td data-sort="1582029250">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/34" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/BonicelliGiovanni_PantaloneBullo_MariaGhelfi_Arprego_2013_11_18_DEFINITIVO.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="47">
                     <td>Bonicelli, Giovanni</td>
                     <td><em>Pantalone spezier</em></td>
                     <td><div class="no-wrap">Ghelfi, Maria</div></td>
-                    <td data-sort="1582026301">
+                    <td data-sort="1582029901">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/47" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/bonicelli-pantalonspezier-ghelfi-vescovo-bp22-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="156">
                     <td>Bonicelli, Giovanni</td>
                     <td><em>Prodigalità di Arlichino, La</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1653403588">
+                    <td data-sort="1653410788">
                         24/05/2022
                     </td>
                     <td class="no-wrap">
@@ -399,7 +398,7 @@
                     <td>Bonicelli, Giovanni</td>
                     <td><em>Vita, amori e morte di Sansone</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1669806522">
+                    <td data-sort="1669810122">
                         30/11/2022
                     </td>
                     <td class="no-wrap">
@@ -410,7 +409,7 @@
                     <td>Brugière de Barante, Claude-Ignace.</td>
                     <td><em>Fontaine de Sapience, La</em></td>
                     <td><div class="no-wrap">Sansa, Anna</div></td>
-                    <td data-sort="1636016463">
+                    <td data-sort="1636020063">
                         04/11/2021
                     </td>
                     <td class="no-wrap">
@@ -421,7 +420,7 @@
                     <td>Brugière de Barante, Claude-Ignace.</td>
                     <td><em>Tombeau de Maître André, Le</em></td>
                     <td><div class="no-wrap">Marchisio, Cristina</div></td>
-                    <td data-sort="1726125843">
+                    <td data-sort="1726133043">
                         12/09/2024
                     </td>
                     <td class="no-wrap">
@@ -432,19 +431,18 @@
                     <td>Canzachi, Giovanni Camillo</td>
                     <td><em>Adulatore, L'</em></td>
                     <td><div class="no-wrap">Contini, Milena</div></td>
-                    <td data-sort="1581956188">
+                    <td data-sort="1581959788">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/7" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/canzachi-adulatore-milena-contini-bibliotecapregoldoniana12-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="128">
                     <td>Celano, Carlo</td>
                     <td><em>Ardito vergognoso, L'</em></td>
                     <td><div class="no-wrap">Marcello, Elena E.</div></td>
-                    <td data-sort="1610958370">
+                    <td data-sort="1610961970">
                         18/01/2021
                     </td>
                     <td class="no-wrap">
@@ -455,7 +453,7 @@
                     <td>Celano, Carlo</td>
                     <td><em>Disonori che onorano o sia La molinarella, Gli</em></td>
                     <td><div class="no-wrap">Marcello, Elena E.</div></td>
-                    <td data-sort="1610888453">
+                    <td data-sort="1610892053">
                         17/01/2021
                     </td>
                     <td class="no-wrap">
@@ -466,7 +464,7 @@
                     <td>Celano, Carlo</td>
                     <td><em>Infanta villana, L'</em></td>
                     <td><div class="no-wrap">Marcello, Elena E.</div></td>
-                    <td data-sort="1610889118">
+                    <td data-sort="1610892718">
                         17/01/2021
                     </td>
                     <td class="no-wrap">
@@ -477,7 +475,7 @@
                     <td>Cicognini, Giacinto Andrea</td>
                     <td><em>Adamira ovvero la statua dell'onore, L'</em></td>
                     <td><div class="no-wrap">Rodríguez Gómez, Inés</div></td>
-                    <td data-sort="1582029815">
+                    <td data-sort="1582033415">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -485,10 +483,10 @@
                                                                         </td>
                 </tr>
                             <tr id="129">
-                    <td>[Cicognini, Giacinto Andrea]</td>
+                    <td>Cicognini, Giacinto Andrea</td>
                     <td><em>Caduta del gran capitan Belissario, La</em></td>
                     <td><div class="no-wrap">Korneeva, Tatiana</div></td>
-                    <td data-sort="1582031142">
+                    <td data-sort="1582034742">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -499,7 +497,7 @@
                     <td>Cicognini, Giacinto Andrea</td>
                     <td><em>Don Gastone di Moncada, Il</em></td>
                     <td><div class="no-wrap">Korneeva, Tatiana</div></td>
-                    <td data-sort="1582031163">
+                    <td data-sort="1582034763">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -510,7 +508,7 @@
                     <td>Cicognini, Giacinto Andrea</td>
                     <td><em>Forza del Fato, La</em></td>
                     <td><div class="no-wrap">Rodríguez Gómez, Inés</div></td>
-                    <td data-sort="1582029707">
+                    <td data-sort="1582033307">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -521,7 +519,7 @@
                     <td>Cicognini, Giacinto Andrea</td>
                     <td><em>Forza dell'amicizia, La</em></td>
                     <td><div class="no-wrap">Rodríguez Gómez, Inés</div></td>
-                    <td data-sort="1649234906">
+                    <td data-sort="1649242106">
                         06/04/2022
                     </td>
                     <td class="no-wrap">
@@ -532,7 +530,7 @@
                     <td>Cicognini, Giacinto Andrea</td>
                     <td><em>Moglie di quattro mariti, La</em></td>
                     <td><div class="no-wrap">Rodríguez Gómez, Inés</div></td>
-                    <td data-sort="1582029957">
+                    <td data-sort="1582033557">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -543,7 +541,7 @@
                     <td>Cicognini, Giacinto Andrea</td>
                     <td><em>Pazzia d'Orlando (L'amorose furie d'Orlando)</em></td>
                     <td><div class="no-wrap">Guastella, Elisa</div></td>
-                    <td data-sort="1770382597">
+                    <td data-sort="1770386197">
                         06/02/2026
                     </td>
                     <td class="no-wrap">
@@ -554,7 +552,7 @@
                     <td>Cortesi (Coris) Biancolelli, Orsola</td>
                     <td><em>Bella brutta, La</em></td>
                     <td><div class="no-wrap">Freixeiro Ayo, Irina</div></td>
-                    <td data-sort="1582023669">
+                    <td data-sort="1582027269">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -565,7 +563,7 @@
                     <td>De Palaprat, Jean</td>
                     <td><em>Arlequin Phaéton</em></td>
                     <td><div class="no-wrap">De Luca, Emanuele</div></td>
-                    <td data-sort="1582026197">
+                    <td data-sort="1582029797">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -576,7 +574,7 @@
                     <td>Dosi Grati, Maria Isabella (Dorigista)</td>
                     <td><em>Amore interrotto dalla prudenza</em></td>
                     <td><div class="no-wrap">Gutiérrez Carou, Javier</div></td>
-                    <td data-sort="1582030256">
+                    <td data-sort="1582033856">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -587,7 +585,7 @@
                     <td>Dosi Grati, Maria Isabella (Dorigista)</td>
                     <td><em>Fortune non conosciute del Dottore, Le</em></td>
                     <td><div class="no-wrap">Gutiérrez Carou, Javier</div></td>
-                    <td data-sort="1581956274">
+                    <td data-sort="1581959874">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
@@ -598,19 +596,18 @@
                     <td>Dosi Grati, Maria Isabella (Dorigista)</td>
                     <td><em>Ingannano le donne anche i più saggi</em></td>
                     <td><div class="no-wrap">Gutiérrez Carou, Javier</div></td>
-                    <td data-sort="1582030335">
+                    <td data-sort="1582033935">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/134" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/dorigista-ingannanoledonne-gutierrezcarou-javier-bp31-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="120">
                     <td>Dosi Grati, Maria Isabella (Dorigista)</td>
                     <td><em>Intermezzo di Sandrella e Marseli</em></td>
                     <td><div class="no-wrap">Gutiérrez Carou, Javier</div></td>
-                    <td data-sort="1582030314">
+                    <td data-sort="1582033914">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -621,7 +618,7 @@
                     <td>Dosi Grati, Maria Isabella (Dorigista)</td>
                     <td><em>Intermezzo di Verspina e Vatalcerca</em></td>
                     <td><div class="no-wrap">Gutiérrez Carou, Javier</div></td>
-                    <td data-sort="1582030295">
+                    <td data-sort="1582033895">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -632,7 +629,7 @@
                     <td>Dosi Grati, Maria Isabella (Dorigista)</td>
                     <td><em>Padre accorto della figlia prudente, Il</em></td>
                     <td><div class="no-wrap">Tirendi, Carla</div></td>
-                    <td data-sort="1739901533">
+                    <td data-sort="1739905133">
                         18/02/2025
                     </td>
                     <td class="no-wrap">
@@ -643,7 +640,7 @@
                     <td>Dosi Grati, Maria Isabella (Dorigista)</td>
                     <td><em>Povertà sollevata e l’invidia abbattuta, La</em></td>
                     <td><div class="no-wrap">Gutiérrez Carou, Javier</div></td>
-                    <td data-sort="1582030275">
+                    <td data-sort="1582033875">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -654,7 +651,7 @@
                     <td>Dufresny, Charles</td>
                     <td><em>Attendez-moi sous l'Orme</em></td>
                     <td><div class="no-wrap">Comparini, Lucie</div></td>
-                    <td data-sort="1582025531">
+                    <td data-sort="1582029131">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -665,7 +662,7 @@
                     <td>Dufresny, Charles</td>
                     <td><em>Départ des Comédiens, Le</em></td>
                     <td><div class="no-wrap">De Luca, Emanuele</div></td>
-                    <td data-sort="1582029387">
+                    <td data-sort="1582032987">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -676,19 +673,18 @@
                     <td>Dufresny, Charles</td>
                     <td><em>Mal-assortis, Les</em></td>
                     <td><div class="no-wrap">Miglierina, Stéphane</div></td>
-                    <td data-sort="1582029530">
+                    <td data-sort="1582033130">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/55" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/dufresny-lesmalassortis-stephanemiglierina-bibliotecapregoldonian14-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="166">
                     <td>Dufresny, Charles</td>
                     <td><em>Pasquin et Marforio médecins des moeurs</em></td>
                     <td><div class="no-wrap">Decroisette, Françoise</div></td>
-                    <td data-sort="1736771495">
+                    <td data-sort="1736775095">
                         13/01/2025
                     </td>
                     <td class="no-wrap">
@@ -699,43 +695,40 @@
                     <td>Dufresny, Charles</td>
                     <td><em>Union des deux Opéras, L'</em></td>
                     <td><div class="no-wrap">Fabbricatore, Arianna</div></td>
-                    <td data-sort="1582026215">
+                    <td data-sort="1582029815">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/45" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/dufresny-luniondesdeuxoperas-ariannafabbricatore-bp15-2016-11-23-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="164">
                     <td>Dufresny, Charles - Brugière de Barante, Claude-Ignace (?)</td>
                     <td><em>Fées, Les ou Les Contes de ma mère l'Oye</em></td>
                     <td><div class="no-wrap">Decroisette, Françoise</div></td>
-                    <td data-sort="1721051806">
+                    <td data-sort="1721059006">
                         15/07/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/164" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/000-lesfees-decroisette-definitivo-2024-12-03.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="115">
                     <td>Fagiuoli, Giovan Battista</td>
                     <td><em>Cicisbeo sconsolato, Il</em></td>
                     <td><div class="no-wrap">Turchi, Roberta</div></td>
-                    <td data-sort="1582030702">
+                    <td data-sort="1582034302">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/115" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/fagiuoli-cicisbeosconsolato-turchi-bp32-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="135">
                     <td>Fagiuoli, Giovan Battista</td>
                     <td><em>Commedia che non si fa, La</em></td>
                     <td><div class="no-wrap">Pieri, Marzia</div></td>
-                    <td data-sort="1582030483">
+                    <td data-sort="1582034083">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -746,7 +739,7 @@
                     <td>Fagiuoli, Giovan Battista</td>
                     <td><em>Vero amore non cura interesse, Un</em></td>
                     <td><div class="no-wrap">Turchi, Roberta</div></td>
-                    <td data-sort="1582025577">
+                    <td data-sort="1582029177">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -757,43 +750,40 @@
                     <td>Federico, Gennarantonio</td>
                     <td><em>Birbe, Li</em></td>
                     <td><div class="no-wrap">Rodríguez Mayán, Enma</div></td>
-                    <td data-sort="1705754294">
+                    <td data-sort="1705757894">
                         20/01/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/24" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/federico-libbirbe-maione-bp25.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="131">
                     <td>Frugoni, Francesco Fulvio</td>
                     <td><em>Epulone, L'</em></td>
                     <td><div class="no-wrap">Rodda, Giordano</div></td>
-                    <td data-sort="1582030142">
+                    <td data-sort="1582033742">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/131" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/frugoni-epulone-rodda-bp35-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="142">
                     <td>Frugoni, Francesco Fulvio</td>
                     <td><em>Innocenza riconosciuta, L'</em></td>
                     <td><div class="no-wrap">Chichiriccò, Emanuela</div></td>
-                    <td data-sort="1601117495">
+                    <td data-sort="1601124695">
                         26/09/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/142" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/frugoni-innocenzariconosciuta-cutri-bp-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="152">
                     <td>Gherardi, Evaristo</td>
                     <td><em>Retour de la foire de Bezons, Le</em></td>
                     <td><div class="no-wrap">Sansa, Anna</div></td>
-                    <td data-sort="1640098362">
+                    <td data-sort="1640101962">
                         21/12/2021
                     </td>
                     <td class="no-wrap">
@@ -804,19 +794,18 @@
                     <td>Gigli, Girolamo</td>
                     <td><em>Anagilda, L'</em></td>
                     <td><div class="no-wrap">Marcello, Elena E.</div></td>
-                    <td data-sort="1698055625">
+                    <td data-sort="1698062825">
                         23/10/2023
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/25" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/gigli-fedenetradimenti-marcello-bp34-defintivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="18">
                     <td>Gigli, Girolamo</td>
                     <td><em>Atalipa</em></td>
                     <td><div class="no-wrap">Vazzoler, Franco</div></td>
-                    <td data-sort="1582023596">
+                    <td data-sort="1582027196">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -827,7 +816,7 @@
                     <td>Gigli, Girolamo</td>
                     <td><em>Attilio Regolo, L'</em></td>
                     <td><div class="no-wrap">Decroisette, Françoise</div></td>
-                    <td data-sort="1637837739">
+                    <td data-sort="1637841339">
                         25/11/2021
                     </td>
                     <td class="no-wrap">
@@ -838,31 +827,29 @@
                     <td>Gigli, Girolamo</td>
                     <td><em>Fede ne' tradimenti, La</em></td>
                     <td><div class="no-wrap">Bazoli, Giulietta</div></td>
-                    <td data-sort="1582025944">
+                    <td data-sort="1582029544">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/38" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/gigli-fedenetradimenti-marcello-bp34-defintivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="145">
                     <td>Gigli, Girolamo</td>
                     <td><em>Furberie di Scappino, Le</em></td>
                     <td><div class="no-wrap">Frutos Martínez, María Consuelo de</div></td>
-                    <td data-sort="1707134295">
+                    <td data-sort="1707137895">
                         05/02/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/145" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/gigli-furberiescappino-bp38-defrutos-ceccarelli-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="150">
                     <td>Gigli, Girolamo</td>
                     <td><em>Gara della virtù tra i discepoli di Roma e di Cartagine, La</em></td>
                     <td><div class="no-wrap">Decroisette, Françoise</div></td>
-                    <td data-sort="1637839367">
+                    <td data-sort="1637842967">
                         25/11/2021
                     </td>
                     <td class="no-wrap">
@@ -873,55 +860,51 @@
                     <td>Gigli, Girolamo</td>
                     <td><em>Gorgoleo, Il</em></td>
                     <td><div class="no-wrap">Frutos Martínez, María Consuelo de</div></td>
-                    <td data-sort="1707134069">
+                    <td data-sort="1707137669">
                         05/02/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/23" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/gigli-gorgoleo-bp40-defrutos-definitivo-2024-12-03.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="124">
                     <td>Gigli, Girolamo</td>
                     <td><em>Litiganti ovvero il giudice impazzato, I</em></td>
                     <td><div class="no-wrap">Decroisette, Françoise</div></td>
-                    <td data-sort="1582030743">
+                    <td data-sort="1582034343">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/124" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/gigli-litiganti-decroisette-bp21-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="53">
                     <td>Gigli, Girolamo</td>
                     <td><em>Pazzo guarisce l’altro, Un</em></td>
                     <td><div class="no-wrap">Marcello, Elena E.</div></td>
-                    <td data-sort="1610958413">
+                    <td data-sort="1610962013">
                         18/01/2021
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/53" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/gigli-pazzoguariscelaltro-marcello-bp17-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="96">
                     <td>Gigli, Girolamo</td>
                     <td><em>Sorellina di Don Pilone, La</em></td>
                     <td><div class="no-wrap">Decroisette, Françoise</div></td>
-                    <td data-sort="1582029913">
+                    <td data-sort="1582033513">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/96" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/gigli-lasorellinadidonpilone-decroisette-bp30-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="73">
                     <td>Gori, Antonio</td>
                     <td><em>Conciateste, La</em></td>
                     <td><div class="no-wrap">Tatti, Silvia</div></td>
-                    <td data-sort="1594979576">
+                    <td data-sort="1594986776">
                         17/07/2020
                     </td>
                     <td class="no-wrap">
@@ -932,7 +915,7 @@
                     <td>Gori, Antonio</td>
                     <td><em>Momoletta</em></td>
                     <td><div class="no-wrap">Mascarell Garcia, Maria</div></td>
-                    <td data-sort="1762512402">
+                    <td data-sort="1762516002">
                         07/11/2025
                     </td>
                     <td class="no-wrap">
@@ -942,21 +925,19 @@
                             <tr id="9">
                     <td>Gorini Corio, Giuseppe</td>
                     <td><em>Cerimonie, Le</em></td>
-                    <td><div class="no-wrap">Frare, Pierantonio<br />
-Giovanna Zanlonghi</div></td>
-                    <td data-sort="1581956240">
+                    <td><div class="no-wrap">Frare, Pierantonio - Giovanna Zanlonghi</div></td>
+                    <td data-sort="1581959840">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/9" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/gorinicorio-lecerimonie-frarezanlonghi-bibliotecapregoldoniana08-definitivo-2014-12-31.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="4">
                     <td>Gorini Corio, Giuseppe</td>
                     <td><em>Guascone, Il</em></td>
                     <td><div class="no-wrap">Contini, Milena</div></td>
-                    <td data-sort="1581955888">
+                    <td data-sort="1581959488">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
@@ -967,19 +948,18 @@ Giovanna Zanlonghi</div></td>
                     <td>Gorini Corio, Giuseppe</td>
                     <td><em>Vero cavaliere, Il</em></td>
                     <td><div class="no-wrap">Bisi, Monica</div></td>
-                    <td data-sort="1581955854">
+                    <td data-sort="1581959454">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/2" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/GoriniCorioGiuseppe_IlVeroCavaliere_MonicaBisi_Arprego_2013-12-21_DEFINITIVO.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="49">
                     <td>Imer, Giuseppe</td>
                     <td><em>Troiano schernito, Il</em></td>
                     <td><div class="no-wrap">Ceccarelli, Marilena</div></td>
-                    <td data-sort="1601574528">
+                    <td data-sort="1601581728">
                         01/10/2020
                     </td>
                     <td class="no-wrap">
@@ -990,7 +970,7 @@ Giovanna Zanlonghi</div></td>
                     <td>Lazzarini, Domenico</td>
                     <td><em>Sanese, La</em></td>
                     <td><div class="no-wrap">Bisi, Monica</div></td>
-                    <td data-sort="1633257806">
+                    <td data-sort="1633265006">
                         03/10/2021
                     </td>
                     <td class="no-wrap">
@@ -1001,19 +981,18 @@ Giovanna Zanlonghi</div></td>
                     <td>M. B***</td>
                     <td><em>Fausse Coquette, La</em></td>
                     <td><div class="no-wrap">Marchisio, Cristina</div></td>
-                    <td data-sort="1726733642">
+                    <td data-sort="1726740842">
                         19/09/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/162" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/mb-faussecoquette-cederna-bp18-ultimo-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="93">
                     <td>Maffei, Scipione</td>
                     <td><em>Cerimonie, Le</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1768838986">
+                    <td data-sort="1768842586">
                         19/01/2026
                     </td>
                     <td class="no-wrap">
@@ -1024,7 +1003,7 @@ Giovanna Zanlonghi</div></td>
                     <td>Maffei, Scipione</td>
                     <td><em>Raguet, Il</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1768839459">
+                    <td data-sort="1768843059">
                         19/01/2026
                     </td>
                     <td class="no-wrap">
@@ -1035,7 +1014,7 @@ Giovanna Zanlonghi</div></td>
                     <td>Maggi, Carlo Maria</td>
                     <td><em>Bianca di Castiglia, La</em></td>
                     <td><div class="no-wrap">Cutrì, Maicol.</div></td>
-                    <td data-sort="1769106089">
+                    <td data-sort="1769109689">
                         22/01/2026
                     </td>
                     <td class="no-wrap">
@@ -1046,7 +1025,7 @@ Giovanna Zanlonghi</div></td>
                     <td>Maggi, Carlo Maria</td>
                     <td><em>Consigli di Meneghino, I</em></td>
                     <td><div class="no-wrap">Morgani, Silvia</div></td>
-                    <td data-sort="1582030781">
+                    <td data-sort="1582034381">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1057,7 +1036,7 @@ Giovanna Zanlonghi</div></td>
                     <td>Maggi, Carlo Maria</td>
                     <td><em>Griselda di Saluzzo, La</em></td>
                     <td><div class="no-wrap">Cutrì, Maicol.</div></td>
-                    <td data-sort="1752578500">
+                    <td data-sort="1752585700">
                         15/07/2025
                     </td>
                     <td class="no-wrap">
@@ -1068,31 +1047,29 @@ Giovanna Zanlonghi</div></td>
                     <td>Maggi, Carlo Maria</td>
                     <td><em>Lucrina, La</em></td>
                     <td><div class="no-wrap">Rodríguez Mayán, Enma.</div></td>
-                    <td data-sort="1704201908">
+                    <td data-sort="1704205508">
                         02/01/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/165" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/maggi-lalucrina-miglierina-bp37-definitivodocx.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="27">
                     <td>Martello, Pier Jacopo</td>
                     <td><em>Che bei pazzi</em></td>
                     <td><div class="no-wrap">Pieri, Marzia</div></td>
-                    <td data-sort="1582025551">
+                    <td data-sort="1582029151">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/27" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/martello-chebeipazzi-marziapieri-bp20-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="109">
                     <td>Martello, Pier Jacopo</td>
                     <td><em>Ifigenia in Tauris</em></td>
                     <td><div class="no-wrap">Pizzamiglio, Gilberto</div></td>
-                    <td data-sort="1582029470">
+                    <td data-sort="1582033070">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1103,7 +1080,7 @@ Giovanna Zanlonghi</div></td>
                     <td>Martinelli, Vincenzo</td>
                     <td><em>Filizzio medico</em></td>
                     <td><div class="no-wrap">Contini, Milena</div></td>
-                    <td data-sort="1613415030">
+                    <td data-sort="1613418630">
                         15/02/2021
                     </td>
                     <td class="no-wrap">
@@ -1114,7 +1091,7 @@ Giovanna Zanlonghi</div></td>
                     <td>Mauduit de Fatouville, Anne</td>
                     <td><em>Colombine femme vengée</em></td>
                     <td><div class="no-wrap">Sansa, Anna</div></td>
-                    <td data-sort="1584635369">
+                    <td data-sort="1584638969">
                         19/03/2020
                     </td>
                     <td class="no-wrap">
@@ -1125,7 +1102,7 @@ Giovanna Zanlonghi</div></td>
                     <td>Mauduit de Fatouville, Anne</td>
                     <td><em>Matrone d'Ephèse, La; ou Arlequin Grapignan</em></td>
                     <td><div class="no-wrap">Sansa, Anna</div></td>
-                    <td data-sort="1584215366">
+                    <td data-sort="1584218966">
                         14/03/2020
                     </td>
                     <td class="no-wrap">
@@ -1135,20 +1112,19 @@ Giovanna Zanlonghi</div></td>
                             <tr id="6">
                     <td>Mauduit de Fatouville, Anne</td>
                     <td><em>Précaution inutile, La</em></td>
-                    <td><div class="no-wrap">Comparini, Lucie </div></td>
-                    <td data-sort="1581956057">
+                    <td><div class="no-wrap">Comparini, Lucie</div></td>
+                    <td data-sort="1581959657">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/6" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/fatouville-laprecautioninutile-luciecomparini-bibliotecapregoldoniana06.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="126">
                     <td>Miti, Pompilio</td>
                     <td><em>Nerone detronato dal trionfo di Sergio Galba</em></td>
                     <td><div class="no-wrap">Morgani, Silvia</div></td>
-                    <td data-sort="1582030801">
+                    <td data-sort="1582034401">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1159,32 +1135,29 @@ Giovanna Zanlonghi</div></td>
                     <td>Miti, Pompilio</td>
                     <td><em>Ottaviano trionfante di Marcantonio</em></td>
                     <td><div class="no-wrap">Scannapieco, Anna</div></td>
-                    <td data-sort="1768915712">
+                    <td data-sort="1768919312">
                         20/01/2026
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/173" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/miti-ottavianotrionfante-scannapieco-arprego4-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="133">
                     <td>Mondini, Tomaso</td>
                     <td><em>Amori sfortunati di Pantalone, Gl'</em></td>
-                    <td><div class="no-wrap">Almeida, Maria João<br />
-José Camões </div></td>
-                    <td data-sort="1582030433">
+                    <td><div class="no-wrap">Almeida, Maria João - José Camões</div></td>
+                    <td data-sort="1582034033">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/133" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/mondini-amorisfortunatipantalone-almeida-camoes-arprego4-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="169">
                     <td>Mondini, Tomaso</td>
                     <td><em>Nuove pazzie del Dottore, Le</em></td>
                     <td><div class="no-wrap">Mascarell Garcia, Maria</div></td>
-                    <td data-sort="1756743382">
+                    <td data-sort="1756750582">
                         01/09/2025
                     </td>
                     <td class="no-wrap">
@@ -1195,19 +1168,18 @@ José Camões </div></td>
                     <td>Mondini, Tomaso</td>
                     <td><em>Pantalone mercante fallito</em></td>
                     <td><div class="no-wrap">Vescovo, Piermario</div></td>
-                    <td data-sort="1707470304">
+                    <td data-sort="1707473904">
                         09/02/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/46" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/mondini-mercantefallito-ghelfi-vescovo-bp26.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="171">
                     <td>Mondini, Tomaso</td>
                     <td><em>Scioccherie di Gradellino, Le</em></td>
                     <td><div class="no-wrap">Garosi, Linda</div></td>
-                    <td data-sort="1752739432">
+                    <td data-sort="1752746632">
                         17/07/2025
                     </td>
                     <td class="no-wrap">
@@ -1218,7 +1190,7 @@ José Camões </div></td>
                     <td>Moniglia, Giovan Andrea</td>
                     <td><em>Pazzo per forza, Il</em></td>
                     <td><div class="no-wrap">Decroisette, Françoise</div></td>
-                    <td data-sort="1582029769">
+                    <td data-sort="1582033369">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1229,31 +1201,29 @@ José Camões </div></td>
                     <td>Moniglia, Giovan Andrea</td>
                     <td><em>Vecchio balordo, Il</em></td>
                     <td><div class="no-wrap">Decroisette, Françoise</div></td>
-                    <td data-sort="1581955907">
+                    <td data-sort="1581959507">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/5" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/giovanniandreamoniglia-vecchiobalordo-francoisedecroisette-bibliotecapregoldoniana07-definitivo-2014-12-31.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="151">
                     <td>Nelli,  Jacopo Angelo</td>
                     <td><em>Dottoressa preziosa, La</em></td>
                     <td><div class="no-wrap">Winter, Susanne</div></td>
-                    <td data-sort="1639671229">
+                    <td data-sort="1639674829">
                         16/12/2021
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/151" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/nelli-dottoressapreziosa-winter-bp33-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="141">
                     <td>Nelli,  Jacopo Angelo</td>
                     <td><em>Geloso in gabbia, Il</em></td>
                     <td><div class="no-wrap">Winter, Susanne</div></td>
-                    <td data-sort="1598010525">
+                    <td data-sort="1598017725">
                         21/08/2020
                     </td>
                     <td class="no-wrap">
@@ -1264,7 +1234,7 @@ José Camões </div></td>
                     <td>Nelli,  Jacopo Angelo</td>
                     <td><em>Moglie in calzoni, La</em></td>
                     <td><div class="no-wrap">Fabris, Angela</div></td>
-                    <td data-sort="1582023558">
+                    <td data-sort="1582027158">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1275,80 +1245,73 @@ José Camões </div></td>
                     <td>Nelli,  Jacopo Angelo</td>
                     <td><em>Serva padrona, La</em></td>
                     <td><div class="no-wrap">Winter, Susanne</div></td>
-                    <td data-sort="1581956256">
+                    <td data-sort="1581959856">
                         17/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/10" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/nelli-servapadrona-winter-bibliotecapregoldoniana13-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="30">
                     <td>Nelli,  Jacopo Angelo</td>
                     <td><em>Suocera e la nuora, La</em></td>
                     <td><div class="no-wrap">Winter, Susanne</div></td>
-                    <td data-sort="1638867396">
+                    <td data-sort="1638870996">
                         07/12/2021
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/30" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/nelli-suocera-e-nuora-winter-bp23-definitivo-2018-09-30.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="132">
                     <td>Nelli,  Jacopo Angelo</td>
                     <td><em>Vecchi rivali, I</em></td>
-                    <td><div class="no-wrap"> Camões, José<br />
-Almeida, Maria João </div></td>
-                    <td data-sort="1596082077">
+                    <td><div class="no-wrap">Camões, José - Almeida, Maria João</div></td>
+                    <td data-sort="1596089277">
                         30/07/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/132" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/nelli-ivecchirivali-almeida-camoes-bp28-2020-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="52">
                     <td>Oliva, Francesco</td>
                     <td><em>Castiello saccheato, Lo</em></td>
                     <td><div class="no-wrap">Santoro, Priscilla</div></td>
-                    <td data-sort="1705243559">
+                    <td data-sort="1705247159">
                         14/01/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/52" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/oliva-locastiello-oliva-trinchera-emilia-maione-bibliotecapregoldoniana10-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="17">
                     <td>Oliva, Francesco, Trinchera, Pietro</td>
                     <td><em>Emilia, L'</em></td>
                     <td><div class="no-wrap">Santoro, Priscilla</div></td>
-                    <td data-sort="1705244000">
+                    <td data-sort="1705247600">
                         14/01/2024
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/17" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/oliva-locastiello-oliva-trinchera-emilia-maione-bibliotecapregoldoniana10-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="116">
-                    <td>[Palazzi, Giovanni]</td>
+                    <td>Palazzi, Giovanni</td>
                     <td><em>Clemenza nella vendetta, La</em></td>
                     <td><div class="no-wrap">Scannapieco, Anna</div></td>
-                    <td data-sort="1582026638">
+                    <td data-sort="1582030238">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/116" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/palazzi-clemenzanellavendetta-scannapieco-bp39-definitivo-2024-12-03.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="146">
                     <td>Querzoli, Giovan Battista</td>
                     <td><em>Villano ladro fortunato, Il</em></td>
                     <td><div class="no-wrap">Contini, Milena</div></td>
-                    <td data-sort="1612519610">
+                    <td data-sort="1612523210">
                         05/02/2021
                     </td>
                     <td class="no-wrap">
@@ -1359,7 +1322,7 @@ Almeida, Maria João </div></td>
                     <td>Raimondi, Luca</td>
                     <td><em>Forza del ritratto, La</em></td>
                     <td><div class="no-wrap">Freixeiro Ayo, Irina</div></td>
-                    <td data-sort="1582029687">
+                    <td data-sort="1582033287">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1370,7 +1333,7 @@ Almeida, Maria João </div></td>
                     <td>Raimondi, Luca</td>
                     <td><em>Innocenza diffesa, L'</em></td>
                     <td><div class="no-wrap">Freixeiro Ayo,Irina</div></td>
-                    <td data-sort="1582030227">
+                    <td data-sort="1582033827">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1381,7 +1344,7 @@ Almeida, Maria João </div></td>
                     <td>Raimondi, Luca</td>
                     <td><em>Onorata povertà di Rinaldo, L'</em></td>
                     <td><div class="no-wrap">Morando, Simona</div></td>
-                    <td data-sort="1582029624">
+                    <td data-sort="1582033224">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1392,7 +1355,7 @@ Almeida, Maria João </div></td>
                     <td>Raimondi, Luca</td>
                     <td><em>Stratonica, La</em></td>
                     <td><div class="no-wrap">Freixeiro Ayo, Irina</div></td>
-                    <td data-sort="1582030072">
+                    <td data-sort="1582033672">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1403,7 +1366,7 @@ Almeida, Maria João </div></td>
                     <td>Raimondi, Luca</td>
                     <td><em>Trionfi d'amore de' deliri dell'inganno, I; overo La propria passione accieca</em></td>
                     <td><div class="no-wrap">Freixeiro Ayo, Irina</div></td>
-                    <td data-sort="1582030050">
+                    <td data-sort="1582033650">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1414,7 +1377,7 @@ Almeida, Maria João </div></td>
                     <td>Riccoboni, Luigi</td>
                     <td><em>Giocatore, Il</em></td>
                     <td><div class="no-wrap">Alfonzetti, Beatrice</div></td>
-                    <td data-sort="1582023617">
+                    <td data-sort="1582027217">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1425,19 +1388,18 @@ Almeida, Maria João </div></td>
                     <td>Rota, Vincenzo</td>
                     <td><em>Fantasima, Il</em></td>
                     <td><div class="no-wrap">Bisi, Monica</div></td>
-                    <td data-sort="1640711467">
+                    <td data-sort="1640715067">
                         28/12/2021
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/107" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/rota-ilfantasima-bisi-cutri-bp36-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="66">
                     <td>Rota, Vincenzo</td>
                     <td><em>Morta viva, La</em></td>
                     <td><div class="no-wrap">Mattioda, Enrico</div></td>
-                    <td data-sort="1582029408">
+                    <td data-sort="1582033008">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1448,19 +1410,18 @@ Almeida, Maria João </div></td>
                     <td>Rucellai, Giulio</td>
                     <td><em>Misantropo a caso maritato, Il</em></td>
                     <td><div class="no-wrap">Bisi, Monica</div></td>
-                    <td data-sort="1698056623">
+                    <td data-sort="1698063823">
                         23/10/2023
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/139" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/rucellai-misantropoacasomaritato-bisi-bp27-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="161">
                     <td>Sacco, Gennaro</td>
                     <td><em>Comedia smascherata, La</em></td>
                     <td><div class="no-wrap">Korneeva, Tatiana</div></td>
-                    <td data-sort="1676971140">
+                    <td data-sort="1676974740">
                         21/02/2023
                     </td>
                     <td class="no-wrap">
@@ -1471,7 +1432,7 @@ Almeida, Maria João </div></td>
                     <td>Spinola, Giovanni Andrea (comosciuto anche come Giovanni  Aleandro Pisani)</td>
                     <td><em>Ariodante, L'</em></td>
                     <td><div class="no-wrap">Aloisio, Alessandra</div></td>
-                    <td data-sort="1771261058">
+                    <td data-sort="1771264658">
                         16/02/2026
                     </td>
                     <td class="no-wrap">
@@ -1482,19 +1443,18 @@ Almeida, Maria João </div></td>
                     <td>Trinchera, Pietro</td>
                     <td><em>Abbate Collarone, L'</em></td>
                     <td><div class="no-wrap">Gregores Pereira, Paula</div></td>
-                    <td data-sort="1702636249">
+                    <td data-sort="1702639849">
                         15/12/2023
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/163" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/trinchera-labbatecollarone-maione-bp29-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="159">
                     <td>Valaresso, Zaccaria</td>
                     <td><em>Rutzvanscad il giovine</em></td>
                     <td><div class="no-wrap">Rodríguez Mayán, Enma</div></td>
-                    <td data-sort="1668676540">
+                    <td data-sort="1668680140">
                         17/11/2022
                     </td>
                     <td class="no-wrap">
@@ -1505,19 +1465,18 @@ Almeida, Maria João </div></td>
                     <td>Zanotti Cavazzoni, Giampietro</td>
                     <td><em>Ignorante presuntuoso, L'</em></td>
                     <td><div class="no-wrap">Contini, Milena</div></td>
-                    <td data-sort="1748390590">
+                    <td data-sort="1748397790">
                         28/05/2025
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/3" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/zanotti-ignorantepresuntuoso-contini-bp43-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             <tr id="125">
                     <td>Zeno, Apostolo</td>
                     <td><em>Don Chisciotte in Sierra Morena</em></td>
                     <td><div class="no-wrap">Rodda, Giordano</div></td>
-                    <td data-sort="1582030123">
+                    <td data-sort="1582033723">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
@@ -1527,19 +1486,18 @@ Almeida, Maria João </div></td>
                             <tr id="15">
                     <td>Zeno, Apostolo</td>
                     <td><em>Ormisda (Cosroe)</em></td>
-                    <td><div class="no-wrap">Beniscelli, Alberto<br />
-Giordano Rodda</div></td>
-                    <td data-sort="1582023537">
+                    <td><div class="no-wrap">Beniscelli, Alberto - Giordano Rodda</div></td>
+                    <td data-sort="1582027137">
                         18/02/2020
                     </td>
                     <td class="no-wrap">
                                                     <a href="/bancadati/15" class="no-mark" title="['Scheda']">Scheda</a>
-                                                            - <a href="/upload/doc/apostolozeno-ormisda-rodda-beniscelli-bp19-definitivo.pdf" class="no-mark" target="_blank">Edizione</a>
                                                                         </td>
                 </tr>
                             </tbody>
     </table>
-</div>        </div>
+</div>
+        </div>
     </section>
 
     </main>
@@ -1580,18 +1538,19 @@ Giordano Rodda</div></td>
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

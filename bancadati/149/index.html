@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/149" />
+    <meta name="description" content="Sotto le mura di Cartagine assediata da Regolo, Metello e Prisco espongono la situazione, i precedenti successi militari del generale, la sua fortezza d’animo,..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Attilio Regolo, L'</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,7 +159,7 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
@@ -181,14 +190,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
-                        <div class="value">-</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -218,13 +227,13 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">17. Personaggi che parlano solo in verso</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -236,13 +245,13 @@
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -254,7 +263,7 @@
                 <tr>
                     <td>
                         <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -276,7 +285,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p>Sotto le mura di Cartagine assediata da Regolo, Metello e Prisco espongono la situazione, i precedenti successi militari del generale, la sua fortezza d’animo, la sua bravura militare e, all’opposto, la viltà di Mannio. Metello evoca il futuro matrimonio di Regolo con Fulvia, la sua carissima figlia. Regolo è vedovo e padre di un giovane figlio, Attilio, che lo ha seguito nel campo per l’assedio. Prisco e Metello vorrebbero allontanare Fulvia e il giovane Attilio dal campo, perché la situazione è troppo pericolosa per loro, e mettono Regolo in guardia contro Mannio. Questi annuncia l’apertura di una breccia nel recinto cartaginese e aizza Regolo all’attacco finale. Regolo, mostrandosi fiducioso verso Mannio, preferisce nondimeno andare prima da solo alla breccia per decidere dell’attacco. Mannio, rimasto solo, resta dapprima stupito davanti alla fiducia dimostratagli da Regolo, ma le sue esitazioni sono rapidamente cancellate ed egli esprime tutto il suo odio perché è stato umiliato ed ama disperatamente Fulvia. Espone i suoi piani di tradimento, già elaborati con i Cartaginesi.</p>    <p><span class="Aucun">All’atto secondo, dopo che Fulvia abbia discusso con la sua confidente della sua ammirazione per Regolo e del timore per la vita di lui, Regolo giunge e cerca di convincere la donna di partire per mettersi al riparo. Non ci riesce e tutto l’atto è quasi occupato dalle varie discussioni tra Regolo, Metello e Fulvia a proposito dell’allontanamento di Attilio fanciullo e di lei, che lo rifiuta con passione, soprattutto<u> se</u> accompagnata dal tribuno Mannio, al quale poi rimprovera con tono sprezzante di aver accettato questa missione per fuggire il pericolo della futura battaglia. Mannio deluso dall’attitudine di Fulvia, e furioso contro Metello, decide di tradire Regolo andando a offrire i suoi servizi a Santippo a Cartagine. Alla fine dell’atto, Gigli aggiunge una scena (II.8, presente solo nell’edizione Zenobi) che annuncia la cattura di Regolo, e presenta il combattimento in un intermezzo.</span></p>    <p><span class="Aucun">All’inizio dell’atto III, Metello e Prisco discutono sulla cattura di Regolo. Prisco racconta come Regolo fu attratto con un inganno verso una breccia davanti alla quale era preparata una fossa ripiena di soldati nemici, per catturarlo. Giunge Fulvia in cerca di notizie sull’esito della battaglia. Ella è alquanto rassicurata imparando che Regolo è sempre vivo, ma l’attitudine del padre la lascia molto inquieta sulla sorte esatta dell’amato. A Mannio che, dopo averle dato la sua versione della battaglia e aver evocato la poca mansuetudine dei Cartaginesi, osa suggerire a Fulvia che esistono altri eroi romani, lei ripete il suo rimprovero e gli rammenta la sua vigliaccheria. Mannio esasperato le dichiara che si affiderà ai Cartaginesi per vendicarsi. Seguono vari dibattiti tra Metello e Prisco a proposito della scelta di fronte alla quale si trova Regolo: la propria libertà contro la restituzione dei territori già conquistati ai Cartaginesi. Metello si mostra ferocemente attaccato alla grandezza e alla gloria romana, e considera che Regolo, per grande e valoroso che sia, è solo un uomo, un Romano come un altro, la cui vita non può prevalere sul destino di tutto l’impero. Non condivide il parere di Prisco, che vorrebbe ritentare l’assalto per vincere i Cartaginesi e liberare, colla vittoria, il generale. Si tratterebbe di una via impossibile secondo Metello, che ha impegnato la sua parola di rispettare la tregua finché Regolo non abbia dato la sua risposta ai Cartaginesi. L’atto III si chiude con l’annuncio del ritorno di Regolo al campo dei Romani dopo essere stato liberato dai Cartaginesi in applicazione delle condizioni della tregua.</span></p>    <p><span class="Aucun">Dopo un intermezzo “fuori soggetto” che rappresenta Nerone occupato a guardare uno spettacolo di gladiatori, si ritrova, all’atto quarto, Mannio, solo, preoccupato dal ritorno di Regolo presso i Romani. A Lepido che si rallegra di questo ritorno, e si augura che la pace possa essere preservata, Mannio oppone in modo ipocrita il parere inverso: difendere la libertà anche a costo della vita del generale. Tutta la fine dell’atto verte nuovamente intorno alla scelta che dovrà fare Regolo, tra la sua vita e la libertà romana. L’eroe non esita a proporre il sacrificio della vita, respingendo gli argomenti di Metello che pensa all’avvenire di Fulvia e di Attilio fanciullo. Regolo umilia un’altra volta Mannio rimproverandogli di essere stato poco offensivo durante la battaglia. L’atto si chiude con scene patetiche tra Fulvia, Prisco e Lepido, che le annunciano la decisione di Regolo di sacrificarsi per la gloria di Roma. Segue un intermezzo che allude alla cerimonia usata dai Romani per intimare la guerra ai loro nemici, il quale anticipa la battaglia finale, dopo il sacrificio di Regolo.</span></p><p><span class="Aucun"><br></span></p>    <span class="Aucun">All’inizio dell’atto quinto Regolo infuria contro Lepido perché il campo romano si è sollevato per difendere la vita del generale. Intima a Lepido l’ordine di calmare i soldati e di non ostacolare la sua decisione. Lepido evoca la disperazione del giovane Attilio, attaccato alla salvezza del padre, e confessa di essere stato quello che ha aizzato i soldati romani a rifiutare il sacrificio del generale. Anche Prisco cerca di commuovere Regolo evocando il dolore di Fulvia e la sua decisione di non sopravvivergli. Regolo rimane fermo anche davanti al dolore di Fulvia. Alla fine Metello annuncia a Regolo che ha fatto cessare ogni ribellione dei Romani e che il generale può raggiungere il campo cartaginese. Regolo parte. Attilio si mostra pronto a combattere per liberarlo, mentre Fulvia si dispera. A questo punto Gigli introduce una scena inesistente nell’originale, dove mostra Metello pronto a sollevare i Romani contro i cartaginesi per liberare Regolo, seguita da un abbattimento (V.8). Dopo quest’aggiunta, la traduzione segue lo svolgimento del finale: Faustina racconta a Fulvia la fine di Mannio, catturato dai Romani mentre tentava di fuggire, e caduto sotto i loro colpi. Fulvia nondimeno si accusa di essere stata anche lei traditrice dello sposo. Prisco racconta poi come Metello sia riuscito con un inganno a ostacolare la furia dei soldati romani e permettere a Regolo di tornare dai Cartaginesi come prigioniero; come Regolo, pervenuto in alto alle mura di Cartagine, abbia aizzato i suoi soldati all’assalto e sia morto sotto il pugnale di Santippo; e come questa morte abbia risvegliato il furore dei Romani, provocando una feroce battaglia durante la quale Santippo venne ucciso da Metello. Accettando l’invito finale di Prisco a raggiungere suo padre che ha vendicato Regolo, Fulvia, disperata, si mostra pronta a morire sotto le mura di Cartagine.</span></div>
                     </td>
                 </tr>
@@ -295,13 +304,13 @@
                 <tr>
                     <td>
                         <div class="key">27. Comicità</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">28. Elementi polemici, satirici e parodici</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Una giornata intera (ma con analessi negli intermezzi).</div>
                     </td>
                 </tr>
@@ -342,7 +351,7 @@
                 <tr>
                     <td>
                         <div class="key">33. Indicazioni esplicite sul momento temporale presenti nelle battute o nelle didascalie</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p><span class="Aucun">Passi dove l’azione va avanti: tutti e tre gli ultimi atti. Secondo quanto Pradon scrive nella prefazione, la critica stimò che il secondo atto era languente e privo di azione: «On m’a reproché qu’il n’y avoit pas assez d’action dans mon second acte. J’avoue qu’il ne fait que préparer les trois derniers, sur qui tombe toute l’action », Nicolas Pradon <i>Préface</i><i> à Regulus, </i>in <i>Oeuvres</i> de Monsieur Pradon, Paris, Thomas Guillain, 1788, n. p. (traduzione di Gigli : «Altri mi ha tacciato che il secondo atto era povero di fatti, avvenga che abbia solo pensato a preparar gli affetti per gli ultimi tre, dove viene a riuscire il più forte dell’azione»). Proprio così. </span></p></div>
                     </td>
                 </tr>
@@ -400,13 +409,13 @@
                 <tr>
                     <td>
                         <div class="key">40. Uso di oggetti particolari</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -477,10 +486,10 @@
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

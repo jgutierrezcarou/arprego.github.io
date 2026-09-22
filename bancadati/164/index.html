@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/164" />
+    <meta name="description" content="Atto unico. Il principe Octave, che sta disperatamente cercando la sua benamata Isménie, figlia del re Croquignollet, appare su un carro volante condotto da Pie..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                            → <a href="/upload/doc/000-lesfees-decroisette-definitivo-2024-12-03.pdf" target="_blank">Edizione</a>
+                            02. Titolo
+                                                            → <a href="/upload/doc/000-lesfees-decroisette-definitivo-2024-12-03.pdf" target="_blank">Edizione</a>
                                                     </div>
                         <div class="value"><em>Fées, Les ou Les Contes de ma mère l'Oye</em></div>
                     </td>
@@ -124,7 +133,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -151,7 +160,7 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
@@ -182,7 +191,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p><i>Les Fées</i> è la commedia conclusiva dell’attività del Théâtre-Italien di Parigi, gli autori scivono per la Troupe e quindi tutti i personaggi sono derivati dai tipi fissi della commedia dell’arte, in particolare i quattro protagonisti, e integrati parodicamente nell’universo delle fiabe di magia. Lo sono anche Pierrot, servo della Fata e Scaramouche che fa la parte dell’Orco e di un Vecchio lubrico nel finale.</p></div>
                     </td>
                 </tr>
@@ -237,13 +246,13 @@
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -255,7 +264,7 @@
                 <tr>
                     <td>
                         <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -277,7 +286,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p>Atto unico. Il principe Octave, che sta disperatamente cercando la sua benamata Isménie, figlia del re Croquignollet, appare su un carro volante condotto da Pierrot, servo di una Fata (sc.1). Partito Pierrot, Octave si ritrova in una caverna orrida dove vede Isménie legata ad una roccia, con attorno un’orda di orchi. Questi, fiutando odore di carne fresca, afferrano Octave e decidono di cucinarlo per offrirlo poi a cena alla principessa. Di fronte alla disperazione di Isménie, la Fata trasforma il principe in roccia sottraendolo così alla voracità dei mostri (sc. 2). Sopraggiunge Arlequin, servo di Octave, che cerca i suoi padroni. Afferrato a sua volta dagli orchi, viene soccorso dalla Fata che lo interroga sulla sua presenza. Arlequin le racconta la storia del re Croquignollet e dell’infanta Bichette, e della loro bellissima figlia caduta nelle grinfie dell’orco benché rinchiusa dal padre in una torre, aggiungendo che, secondo la predizione di un’altra fata, sarà salvata da un «uomo di un solo pezzo». In quanto «conservatrice dell’onore delle donne», la Fata è risoluta a salvare Isménie. Svela a Arlequin che è proprio lui quest’ «uomo di un solo pezzo», e gli conferisce dei poteri magici (sc. 3 e 4). Si torna a vedere Isménie legata alla sua roccia, sorvegliata dal capo degli orchi, che chiede alla Nutrice di raccontarle una fiaba per calmarla (Storia di Brutalin e di sua figlia Pétille, che, grazie alle manovre di una fata, cova nel suo seno il figlio di Bonbeninguet e della sua defunta moglie Bonbeninguette, ai quali Brutalin ha sotratto un territorio) (sc. 5). Calmata Isménie, l’Orco le propone una scelta: sposarlo o essere divorata. Isménie rifiuta di sposarlo e cerca di sfuggirgli (sc. 6). É salvata all’ultimo momento da Arlequin che, con la bacchetta magica datagli dalla Fata, trasforma Isménie in roccia. Dopo di che, sempre con la sua bacchetta, Arlequin fa tornare i due amanti nella loro forma umana, e li spinge a sposarsi senza aspettare il consenso del padre. Coquignollet, uscendo per magia da un’ urna, benedice di sfuggita la giovane coppia. Arlequin trasforma poi la grotta oscura degli orchi in un magnifico Palazzo, dove appaiono strani oggetti e animali (una farfalla, una lanterna, una coclea, un orologio a pendolo) che sono in realtà una ninfa, un pastore, un vecchio, e una dama fatati. Il finale è un seguito di canzoni cantate da questi personaggi liberati dall’incantesimo grazie alla bacchetta di Arlequin, e così termina la festa e la commedia (sc. 7).</p></div>
                     </td>
                 </tr>
@@ -330,7 +339,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Tempo dell’azione scenica propriametne detto, abbastanza impreciso, tranne l’indicazione dei minuti di cui la fata dispone ancora per salvare l’onore di Isménie: sei minuti (sc. 3); il tempo dell’intreccio è più lungo se si considerano i racconti interni che ampliano considerevolmente il tempo e lo spazio.</div>
                     </td>
                 </tr>
@@ -383,7 +392,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>L’unità di azione è mantenuta se escludiamo, ovviamente, i racconti interni.</p>  <p>Racconti <i>mis en abyme</i>: il primo è quasi l’antefatto raccontato, il secondo è la chiave di lettura della parodia e della satira politica. </p></div>
                     </td>
                 </tr>
@@ -448,7 +457,7 @@
                 <tr>
                     <td>
                         <div class="key">46. Altre recite nel Settecento</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -478,10 +487,10 @@
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -494,7 +503,7 @@
                 <tr>
                     <td>
                         <div class="key">50. Osservazioni</div>
-                        <div class="value"><p>Di uno degli autori il frontespizio indica solo le iniziali: «Monsieur B***»; potrebbe trattarsi di Claude-Ignace Brugière de Barante?</p><p>La decodificazione dei doppi sensi, dei giochi di parole e dei ‘nomi parlanti’, rivela allusioni satiriche molto acute sulla situazione politica francese esterna ed interna, che prendono di mira addiritura la famiglia reale, <i>Mademoiselle</i> figlia di <i>Monsieur</i> duca d’Orléans e della Principessa Palatina, Madame de Maintenon, sposa segreta di Louis XIV, e lo stesso re. Ne deriva che la commediola vada certamente considerata come la ‘goccia che fece traboccare il vaso’, uno dei motivi della chiusura definitiva del teatro e la cacciata dei comici il 14 maggio 1697.</p></div>
+                        <div class="value"><p>Di uno degli autori il frontespizio indica solo le iniziali: «Monsieur B***»; potrebbe trattarsi di Claude-Ignace Brugière de Barante?</p><p>La decodificazione dei doppi sensi, dei giochi di parole e dei ‘nomi parlanti’, rivela allusioni satiriche molto acute sulla situazione politica francese esterna ed interna, che prendono di mira addiritura la famiglia reale, <i>Mademoiselle</i> figlia di <i>Monsieur</i> duca d’Orléans e della Principessa Palatina, Madame de Maintenon, sposa segreta di Louis XIV, e lo stesso re. Ne deriva che la commediola vada certamente considerata come la ‘goccia che fece traboccare il vaso’, uno dei motivi della chiusura definitiva del teatro e la cacciata dei comici il 14 maggio 1697.</p><p><br></p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -542,18 +551,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

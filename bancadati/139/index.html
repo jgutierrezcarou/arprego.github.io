@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/139" />
+    <meta name="description" content="Atto primo: una serie di dialoghi concatenati fa entrare in scena tutti i personaggi. Alceste, solitario e neghittoso al matrimonio, si lamenta con il servo di..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                            → <a href="/upload/doc/rucellai-misantropoacasomaritato-bisi-bp27-definitivo.pdf" target="_blank">Edizione</a>
+                            02. Titolo
+                                                            → <a href="/upload/doc/rucellai-misantropoacasomaritato-bisi-bp27-definitivo.pdf" target="_blank">Edizione</a>
                                                     </div>
                         <div class="value"><em>Misantropo a caso maritato, Il</em></div>
                     </td>
@@ -124,7 +133,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -151,11 +160,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -182,7 +191,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Scappino, con la sua presunta astuzia e con la sua naturale inclinazione alla fuga e all’inganno riprende il nome e il carattere di Scapino, benché in questo caso non ricopra esplicitamente il ruolo del servo, ma del servo che si fa padrone rubando la livrea.</p></div>
                     </td>
                 </tr>
@@ -219,31 +228,31 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">17. Personaggi che parlano solo in verso</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">18. Personaggi che parlano solo in prosa</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -255,13 +264,13 @@
                 <tr>
                     <td>
                         <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -277,7 +286,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p><strong>Atto primo</strong>: una serie di dialoghi concatenati fa entrare in scena tutti i personaggi. Alceste, solitario e neghittoso al matrimonio, si lamenta con il servo di casa Crespino dell’avidità dello zio Pandolfo, cui egli fu affidato da ragazzo e che ora vuole imporgli di sposare Doralice, figlia di Argante: una donna superficiale, vanitosa e opportunista, ma molto ricca. Da parte sua, Pandolfo, che succede al nipote nel dialogo con il servo, maledice la formazione culturale del nipote e intona un inno all’ignoranza e al buon senso che hanno invece fatto di lui un accorto economo e gestore delle proprie ricchezze; le sue proteste trovano seguito alla comparsa dell’amico Argante, con cui Pandolfo si lamenta della resistenza di Alceste al matrimonio e della conseguente impossibilità di avere eredi: Argante tuttavia gli ricorda che lui è solo amministratore dei beni del nipote, sui quali dunque non può vantare diritti. Pandolfo rivela allora di essersi rivolto ad un indovino che gli ha consigliato di diseredare il nipote e di procurarsi un erede sposandosi o adottando un figlio. Per questo chiede per sé ad Argante la mano di Doralice, sua figlia. Argante rifiuta in nome della giustizia e della propria rettitudine, e rilancia l’idea del matrimonio fra Doralice e Alceste. Pandolfo non si arrende e incarica la serva Elisa di convincere Doralice a sposarlo. La serva cerca di fargli cambiare idea, poi finge di ubbidire, ma nel suo dialogo con Doralice esalta la cultura di Alceste. La giovane, tuttavia, difende la sua presunta libertà contro la dura legge del matrimonio, preferendo le molteplici seduzioni al legame autentico: nel dialogo emergono così due concezioni dell’amore e del matrimonio: ‘tradizionale’, per così dire, quella della serva e libertina quella di Doralice. La serva è assediata anche su un altro fronte per spingere Doralice alle nozze: Lisca, servo di Scappino, la incalza affinché acceleri quelle fra Scappino e Doralice, chiave di volta del piano criminale dei due falsi nobili per arricchirsi. Nel dialogo fra questi ultimi, che conclude il primo atto, Lisca espone a Scappino i propri timori per l’impresa dolosa di voler conquistare con l’inganno la mano di Doralice.</p>    <p><strong>Atto secondo</strong>: dopo un rapido confronto con Crespino sulla concezione del matrimonio, speculare a quello fra Elisa e Doralice, Alceste deplora il miserabile stato dell’uomo, illuso che la ragione possa dominare sui sensi, dei quali invece l’uomo è schiavo. Quando Pandolfo gli annuncia che ha già concluso il suo matrimonio con Doralice, alla visione gretta, incolta e utilitaristica dello zio, Alceste contrappone la prospettiva di nozze fondate sulla libertà e la fiducia di entrambe le parti nonché sul reciproco amore e chiarisce gli aspetti positivi e negativi del matrimonio da un punto di vista filosofico. Lisca porta per Alceste un foglio di sfida a duello da parte del finto marchese de la Source: motivo del duello, l’amore per Doralice. Pandolfo approfitta della circostanza per insistere ancora affinché Alceste ceda alle nozze, risolvendo così anche il problema del duello, ma il nipote si rifiuta, appellandosi alla propria libertà. Con azione uguale e contraria, ma con una concezione ben diversa di libertà, Pandolfo afferma allora la propria, annunciando che lo diserederà, ma Alceste resta – stoicamente – fermo nella propria posizione, non senza ricordare allo zio l’origine dell’eredità.</p>    <p><strong>Atto terzo</strong>: Doralice attende la visita di Scappino nella casa di Alceste pregustando una sorta di ripicca contro di lui; Elisa fa notare a Doralice l’ingiustizia che sta compiendo nei confronti di Alceste; Doralice la mette a tacere: vuole essere sorpresa mentre scrive un biglietto d’amore. Giunge Scappino con il biglietto con cui Alceste rifiuta la sfida a duello facendo appello alle leggi, e ribadisce di non voler sposare Doralice. Segue un confronto fra la concezione superficiale e puntigliosa del diritto difesa da Doralice e Scappino e la saggezza di Elisa, che difende invece la giustizia da cui è animato Alceste. Scappino minaccia di uccidere Alceste; Doralice opta per una pena minore, ma il solo nome di Argante richiamato da Elisa placa i toni delle minacce. Scappino, per portare altrove l’attenzione delle donne, dà sfoggio di abilità retorica nel parlar d’amore nascondendo i propri veri sentimenti, finché ad un certo punto trova una scusa per andarsene, ma prima, congedata Elisa, insinua in Doralice il sospetto che la serva voglia sposare il padre Argante e diventare sua matrigna, e la spinge a fare in modo che sia cacciata via di casa. La stessa cosa Scappino riporta ad Argante, nel dialogo successivo, come notizia avuta da Doralice stessa, provocandogli così confusione e molti dubbi aggiungendo che Doralice non cederà al matrimonio finché Elisa sarà in casa.</p>    <p><strong>Atto quarto</strong>:<i> </i>Argante intima alla figlia di scegliere un marito, lei gli rinfaccia di voler sposare Elisa, e, nutrendo sentimenti di vendetta contro la serva che le ha dato consigli di giustizia, accetta di scegliere lo sposo a patto che questa sia cacciata: Argante accetta, propone come sposo Alceste, ma Doralice rilancia su Scappino. Argante cerca di dissuaderla e poi le rivela che Scappino se ne è andato, provocandole una disperazione dai toni tragici, che egli stesso consola con espressioni di pacato buon senso. Elisa nel frattempo ha deciso di andarsene ed Argante cerca di dissuaderla. Ella invece chiede aiuto a Crespino per avvicinare Alceste e parlargli: Crespino le lascia aperto il cancello del giardino affinché possa sorprendere Alceste durante la notte. Nel frattempo Scappino è tornato in casa di Alceste e ha raggiunto Doralice: richiesto di spiegazioni da Argante, egli elenca una serie di casi fortuiti che gli hanno impedito di partire e si dice forzato dal destino a chiedere la mano di Doralice per sposarla immediatamente. Argante finge di acconsentire, ma cerca di prende tempo con la scusa di voler organizzare dei festeggiamenti, che Scappino dice essere già in preparazione grazie alla sua servitù. Doralice lo invita a lasciare la casa di Alceste mentre Argante, ormai rassegnato alla forza del destino, va in cerca di Pandolfo per informarlo di quanto accaduto. </p>    <strong>Atto quinto</strong>: ribadita la propria signoria sulla fortuna, Alceste si reca nel giardino a meditare e chiede a Crespino di chiudere il varco a chiunque. Facendosi beffe del padrone, il servo introduce nel giardino Elisa, che ha preso le vesti di Elvira e spera di poter far cedere Alceste al matrimonio. Questi giunge deplorando i colpi di fortuna e dubitando della propria virtù a resistervi: lo zio, tramite un avvocato, gli ha infatti intimato di lasciare la casa immediatamente. Il fatto è pretesto per un lungo monologo (improntato da un certo atomismo) sulla disperata condizione dell’uomo, schiavo dei sensi e nato al dolore, e sull’utilità del suicidio per troncare la sofferenza. Alceste prende il pugnale per trafiggersi, ma mentre combatte un ignoto terrore, si palesa Elisa travestita da Elvira, lo ferma e lo confonde minacciando di uccidersi essa stessa. Alceste, dapprima irato, si impietosisce e i due condividono i propri dolori mentre Elvira racconta la storia del proprio passato e il dialogo assume un andamento filosofico sul rapporto fra amore, schiavitù e libertà. Alceste cede al fascino della donna e si innamora di lei, tanto che quando d’improvviso li sorprende Pandolfo e li rimprovera, il nipote gli annuncia che la donna sarà la sua sposa. Pandolfo erompe in un’invettiva contro la plebe e contro le leggi –a suo dire ingiuste– che la favoriscono a danno della nobiltà. Argante lo ha appena informato che Doralice è sposa al marchese, cercando di convincerlo che i matrimoni sono frutto del caso, quando arriva Doralice sconvolta e piena di vergogna e racconta di come il presunto marchese de la Source e il suo lacché sono stati smascherati come omicidi, ladri e impostori e arrestati proprio mentre lei era con loro. Pandolfo rientra in scena, una volta accertatosi dell’identità dei due malfattori presso il giudice del processo, e racconta il loro torbido passato e i motivi dell’arresto. Mentre Alceste cerca di consolare Doralice con riflessioni filosofiche sull’utile e il dannoso, l’individuo e il cosmo, Pandolfo approfitta per accusarlo di aver sposato una serva senza dote, prestando il destro perché venga raccontata la vera storia che rivela gli impensati nobili natali di Elvira: una storia di illusione amorosa, errori, tradimenti, abbandoni, poi di coraggio, di virtù ma anche di orgoglio. Elvira stessa la narra nel dettaglio a consolazione di Doralice, per mostrarle come il caso operi in modo impensato e dispensi beni nelle circostanze in cui l’uomo non se li aspetta. Nella soddisfazione generale, solo Pandolfo si dice disgraziato bersaglio della sfortuna, mentre Alceste enuncia la morale della commedia.</div>
                     </td>
                 </tr>
@@ -330,7 +339,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Una giornata.</div>
                     </td>
                 </tr>
@@ -383,7 +392,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>Fulcro dell’azione è l’orgoglioso rifiuto di Alceste alle nozze, in generale, e con Doralice in particolare. Di qui si sviluppano il tentativo di matrimonio fra Doralice e Scappino e la promessa fra Elvira ed Alceste.</p></div>
                     </td>
                 </tr>
@@ -407,13 +416,13 @@
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -448,7 +457,7 @@
                 <tr>
                     <td>
                         <div class="key">46. Altre recite nel Settecento</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -471,30 +480,30 @@
                 <tr>
                     <td>
                         <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
                         <div class="key">49. Dati dei paratesti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">50. Osservazioni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -542,18 +551,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

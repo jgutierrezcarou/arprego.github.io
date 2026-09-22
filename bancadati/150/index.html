@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/150" />
+    <meta name="description" content="All’apertura della tragedia, Laodice confida a Nicomede di temere che la regia di Bitinia sia più pericolosa per lui, che non il campo di battaglia, a causa del..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Gara della virtù tra i discepoli di Roma e di Cartagine, La</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -181,14 +190,14 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
-                        <div class="value">-</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">11. Valore allusivo dei nomi dei personaggi</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -218,13 +227,13 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">17. Personaggi che parlano solo in verso</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -236,13 +245,13 @@
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -254,7 +263,7 @@
                 <tr>
                     <td>
                         <div class="key">22. Personaggi che parlano solo in dialetto, in forme di italiano regionale o storpiato, o in una lingua straniera</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -276,7 +285,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p><span class="Aucun" style="background-color: initial; font-family: inherit;">All’apertura della tragedia, Laodice confida a Nicomede di temere che la regia di Bitinia sia più pericolosa per lui, che non il campo di battaglia, a causa della debolezza del re Prussia, troppo sottomesso alla moglie, e della possibile gelosia di Attalo, che è innamorato di lei. Nicomede ricorda gli antefatti che hanno permesso ad Attalo di tornare in Bitinia, e rammenta il suicidio di Annibale per non cadere nelle mani dei Romani. Riafferma la sua volontà di non cedere ai Romani e di continuare l’opera di Annibale, e la ferma volontà di salvare Laodice dalla malvagità di Arsinoe e dalle brame di Attalo. Lei si dimostra nondimeno offesa, affermando che avrebbe potuto resistere da sola, senza il suo ritorno, in quanto regina e non suddita di Prussia, e gli riafferma la sua fede. Nicomede le rivela che anche al campo la matrigna ha cercato di farlo uccidere da sicari, che lui riconduce presso suo padre per dimostragli la falsità della moglie. </span><span class="Aucun" style="background-color: initial; font-family: inherit;">Giunge </span><span class="Aucun" style="background-color: initial; font-family: inherit;">Attalo, che avendo passato tutta la sua infanzia e adolescenza a Roma, non conosce il fratello. Davanti a questi, ripete la sua passione per Laodice. Nicomede senza farsi prima conoscere, dimostra ironicamente ad Attalo che, agli occhi dei suoi alleati romani, sarebbe un affronto se spossasse una regina straniera. Con Arsinoe poi, sorpresa di vedere Nicomede vivo e tornato in Bitinia, l’eroe dimostra di essere risoluto a salvare il suo trono e il suo amore, per cui Attalo capisce che ha davanti il fratello. Confuso, gli chiede scusa e Nicomede lo esorta a una maggiore fermezza se vuol difendere Laodice dai Romani. L’atto si chiude con una scena tra Arsinoe e il suo confidente, Cleonzio, al quale lei ricorda le circostanze della morte di Annibale e la causa dell’odio di Flaminio per Nicomede., che lei ha saputo alimentare secondo un piano machiavellico.</span></p>    <p><span class="Aucun">All’atto secondo, Prussia si dimostra anche lui sorpreso dal brusco ritorno di Nicomede. È irritato dalle sue conquiste territoriali, che interpreta, contro il giudizio positivo di Araspe che non ha nessun dubbio sulla ‘virtù’ del principe, come l’ambizione di rapirgli il trono, sprezzando padre e re. Prussia affronta poi Nicomede, che si dichiara pronto ad obbedirgli e a tornare al campo, ma chiede al padre e al re  di lasciare partire anche la regina d’Armenia. Prussia sta per accettare, ma sopraggiunge Flaminio, che chiede al re  di elevare il giovane Attalo alla dignità regale senza perdere tempo, per non offendere i Romani. Nicomede dichiara sottomettersi alla volontà del re, ma denuncia con vigore l’ingerenza dei Romani negli affari della successione del trono. Ricorda indirettamente al padre tutto quanto ha fatto per la grandezza del suo regno, affronta decisamente Flaminio e il padre ricordando loro le sue conquiste e la sua virtù militare. Dubita che Attalo, educato fino a quel momento nell’ozio romano, abbia questa stessa virtù indispensabile a un re, e si arrabbia sentendo il padre chiedere scusa a Flaminio per la sua sfacciatezza. Prussia conferma poi a Flaminio di assecondare in tutto le decisioni di Roma, in particolare in quanto riguarda la regina Laodice.</span></p>    <p><span class="Aucun">L’atto terzo si apre su uno scontro tra Laodice, Prussia e Flaminio. Lei, con grande dignità e insistendo sempre sul suo rango di regina, si dimostra decisa a non cedere e a non tradire Nicomede. Flaminio, rimasto solo con lei, non esita a minacciare anche il suo regno d’Armenia, affermando che solo l’alleanza con Roma può salvarla, ma invano. Lei denuncia con vigore le conquiste di Roma, diventata abusivamente ‘maestrà del mondo’. Flaminio è di nuovo umiliato da Nicomede, che poi rivela a Laodice di aver informato Prussia del tradimento di sua moglie. Nicomede è convocato dal re a proposito dei sicari. Alla fine dell’atto, Attalo appare già pronto a non seguire più ciecamente la via tracciata dalla madre e dichiara di esitare ad opporsi direttamene al fratello.</span></p>    <p><span class="Aucun">L’atto quarto è tutto occupato dal confronto tra Arsinoe e Nicomede in presenza del re. Nicomede è accusato di menzogna da parte della matrigna. Il debole re, convinto dalle accuse delle moglie, dimostra però di non saper cosa decidere, esitante tra l’amore paterno e la passione per la moglie. Nicomede gli dà una lezione di regalità e gli consiglia di essere solo re. Il re, irritato, segue il consiglio quando Nicomede suggerisce che la sua ‘virtù’ militare, che ha assicurato il trono del padre, potrebbe anche servirgli per conservare il proprio trono. Prussia ordina di arrestare Nicomede e di mandarlo a Roma come ostaggio, al posto di Attalo. Questi capisce finalmente che anche se fosse elevato alla dignità di re, sarebbe sottomesso alla volontà e al controllo dei Romani. </span></p><p><span class="Aucun"><br></span></p>    <span class="Aucun">Quando si apre l’atto quinto, il popolo si è sollevato contro l’imprigionamento di Nicomede. Arsinoe, sempre fiduciosa nella credulità di Prussia e nell’aiuto di Flaminio, esorta Attalo a salire sul trono, anche rinunciando a Laodice. Poi, avvertita della progressione violenta del sollevamento, spiega ad Attalo e a Flaminio un nuovo inganno per eliminare definitivamente Nicomede e metterlo fra i ferri a Roma sotto la custodia di Flaminio (V.5). Attalo si mostra pronto ad assecondare i piani macchiavellici di Arsinoe e di Flaminio, mentre Laodice accusando Arsinoe di perfidia, rivela essere stata quella che ha aizzato il popolo alla rivolta, e la considera come suo ostaggio (V.6). Dopo la zuffa violenta avvenuta tra il popolo e la guardia di Prussia, nella quale Araspe muore trucidato (racconto di Attalo, V.7), tutti i congiurati si preparano a morire (V.8). Nicomede riappare, chiede clemenza al re  per il popolo, mostrandosi perfino pronto a lasciare il trono a suo fratello e a perdonare alla matrigna. Quando Attalo rivela di essere stato quello che l’ha salvato, Nicomede riconosce il fratello come davvero degno di regnare, e propone la concordia ai Romani.</span></div>
                     </td>
                 </tr>
@@ -295,13 +304,13 @@
                 <tr>
                     <td>
                         <div class="key">27. Comicità</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">28. Elementi polemici, satirici e parodici</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Un giorno intero dalla mattina all’alba seguente (vedi § 33).</div>
                     </td>
                 </tr>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p><span class="Aucun">L’azione è tutta concentrata nella lotta di Nicomede per difendere il suo amore (Laodice) e il suo rango di principe erede contro le manovre della matrigna e l’odio del romano Flaminio. Deve convincere suo padre, e re, della la malvagità della sposa e della troppo grande prepotenza dei Romani sulla regia di Bitinia. Per confondere la matrigna, gli servono i due sicari (Métrobate e Zenon), mandati da Arsinoe per eliminarlo mentre stava in campo, che lui mette nelle mani del re. I primi tre atti sono consacrati ai dibattiti e agli scontri dei vari protagonisti, l’azione è rilanciata all’atto quarto quando Arsinoe riesce a convincere Prussia di imprigionare Nicomede. Il popolo si solleva in suo favore (tra l’atto quarto e quinto), e i due sicari sono uccisi. Questo sollevamento è la circostanza esterna, raccontata, che conduce l’azione alla risoluzione finale: grazie all’intervento di uno sconosciuto (che si rivela poi essere Attalo), Nicomede è strappato alle mani dei suoi guardiani, e fallisce il piano machiavellico di Arsinoe.</span></p></div>
                     </td>
                 </tr>
@@ -400,19 +409,19 @@
                 <tr>
                     <td>
                         <div class="key">40. Uso di oggetti particolari</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -464,23 +473,23 @@
                 <tr>
                     <td>
                         <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

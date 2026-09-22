@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/75" />
+    <meta name="description" content="Atto I: la nobildonna Usimberta, madre di Fabio, lamenta con l’amico Giulio la malattia del figlio che si rifiuta di mangiare dal momento in cui la madre stessa..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Amalato, L'</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -181,7 +190,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Brunetta presenta alcune caratteristiche proprie alla serva della commedia dell’arte, come la vivacità, la sfrontatezza, la leggerezza, l’ardire, la capacità di iniziativa. Il suo nome e quello del cuoco Chichibio, qui a lei prossimo per condizione sociale, rimandano naturalmente all’universo delle novelle di Boccaccio, autore molto amato da Becelli.</p></div>
                     </td>
                 </tr>
@@ -218,7 +227,7 @@
                 <tr>
                     <td>
                         <div class="key">16. Uso particolarmente rilevante degli a parte</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -230,19 +239,19 @@
                 <tr>
                     <td>
                         <div class="key">18. Personaggi che parlano solo in prosa</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +269,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value"><p>Usimberta: metafora mensa = ipotetica speranza, che già sembra presagire la soluzione che Giulio troverà per risanare il malato: «e della stessa vana speme donde / a me la mensa i medici imbandiscono / cercai pascer la sposa e il padre ancora» (I.1.72-74); modo di dire che svilisce a priori il possibile  contributo dei due medici: «tra voi due / una mano di noccioli accozzare»=trarre da due pareri diversi un terzo che possa essere utile (II.4.48-49);</p>    <p> Brunetta: metafora a sfondo sessuale relativa all’eventualità di Malagevole di sposare una giovane donna nel tempo della vecchiaia: «macineresti senza dar ricolta», cioè senza la pazienza di aspettare, (I.3.16); metafora tagliapanni= maldicenti; eufemismo novellisti= calunniatori (entrambe in II.2.53 contro il costume della maldicenza); </p>      Uno dei biancovestiti: paradosso che convince Fabio a mangiare: «se voglion vivere / ben è forza che mangino pur essi [i morti]» (V.1.55-56).</div>
+                        <div class="value"><p>Usimberta: metafora mensa = ipotetica speranza, che già sembra presagire la soluzione che Giulio troverà per risanare il malato: «e della stessa vana speme donde / a me la mensa i medici imbandiscono / cercai pascer la sposa e il padre ancora» (I.1.72-74); modo di dire che svilisce a priori il possibile  contributo dei due medici: «tra voi due / una mano di noccioli accozzare»=trarre da due pareri diversi un terzo che possa essere utile (II.4.48-49);</p><p><br></p><p><br></p>    <p> Brunetta: metafora a sfondo sessuale relativa all’eventualità di Malagevole di sposare una giovane donna nel tempo della vecchiaia: «macineresti senza dar ricolta», cioè senza la pazienza di aspettare, (I.3.16); metafora tagliapanni= maldicenti; eufemismo novellisti= calunniatori (entrambe in II.2.53 contro il costume della maldicenza); </p><p><br></p><p><br></p>      Uno dei biancovestiti: paradosso che convince Fabio a mangiare: «se voglion vivere / ben è forza che mangino pur essi [i morti]» (V.1.55-56).</div>
                     </td>
                 </tr>
                 </tbody>
@@ -276,8 +285,8 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
-                        <div class="value"><p>Atto I: la nobildonna Usimberta, madre di Fabio, lamenta con l’amico Giulio la malattia del figlio che si rifiuta di mangiare dal momento in cui la madre stessa ha preso accordi per il suo matrimonio con la giovane contessa d’Altocolle. Fabio sembra preferire al cibo i costosi e inutili medicamenti prescritti, da un lato, dal medico Menarco Purgone (e procurati dallo speziale Malagevole, i cui interessi economici vengono messi in ridicolo nel suo dialogo con la serva Brunetta) e, dall’altro, del giovane medico Panfilo Neoterico, che ha studiato in Francia e che consiglia medicinali di opposta natura.</p>      <p>Atto II: la famiglia d’Altocolle concede ancora un mese di tempo prima di annullare la promessa di matrimonio: mentre Giulio e Usimberta lamentano l’imperizia e la vanità dei medici e cercano di smuovere la situazione, Brunetta raggiunge Menarco nella sua abitazione per convincerlo a prescrivere un brodo di carne da somministrare a Fabio. Il medico accetta. Poco dopo Usimberta impone a Menarco di sospendere i suoi farmaci in attesa di avere un responso da Panfilo e di collaborare con lui per guarire il figlio. Il confronto fra i due medici sui rimedi da adottare manifesta la loro opposizione, che viene reiterata di fronte a Giulio, il quale chiede ad entrambi di sintetizzare le loro proposte e, prima ancora, di formulare una diagnosi: la richiesta dà vita ad una sorta di disputa filosofica il cui impianto logico vorrebbe riprodurre quello aristotelico e il cui lessico richiama la fisica del XVI secolo, ma che risulta priva di contenuti. Al termine di essa Giulio mette in scacco entrambi i medici. Panfilo torna a studiare il caso; Menarco rinuncia a collaborare e se ne va; la serva ha così il destro per allontanare dalla casa anche lo speziale.</p>      <p>Atto III: Giulio tenta di spiegare ad Usimberta che il male di Fabio è una convinzione mentale e che potrebbe essere curato con un po’ di svago, passeggiate e soprattutto buon cibo. Intanto il cuoco si lamenta del molto lavoro e del poco compenso.</p><p>Atto IV: disperata perché apprende dalla serva che, in realtà, sono due giorni che il figlio non si nutre, Usimberta attende il parere di Panfilo, che non tarda ad arrivare: si allestisca una cucina nella camera dell’ammalato e lì il cuoco si metta all’opera, in modo che i profumi del cibo inducano Fabio a mangiare. Giulio mette subito in guardia Usimberta da una simile risoluzione con ragioni che concludono, con apparente rigore ma non senza errori di argomentazione, alla fallacia di alcune teorie della medicina e della fisica. L’esperimento infatti fallisce, in quanto l’ammalato dichiara addirittura di essere morto e di non sentire, pertanto, né odori né sapori. Giulio allora annuncia di avere in mente un rimedio alternativo alla medicina: si prepari cibo per dodici convitati e si apparecchi una mensa nella camera dell’ammalato. Mentre il cuoco si lamenta della quantità di lavoro che gli tocca e Menarco e il Malagevole promettono di calunniare la casa da cui sono stati esiliati, Giulio ingaggia Lurco, capo della compagnia dei biancovestiti, per un’impresa cui sono avvezzi: in cambio di un compenso e della cena, di cui sono sempre bisognosi, dovranno fingere di essere morti e consumare il pasto in silenzio nella camera dell’ammalato per indurlo a fare altrettanto, dal momento che anche lui si crede trapassato.<br></p>      Atto V: Brunetta racconta a Giulio il felice svolgersi del convito e la condivisione del cibo anche da parte di Fabio, addormentatosi dopo il pasto. Giulio dà ordine che la stanza del malato sia sgombrata e attende con ansia il suo risveglio per vedere se cibo e sonno hanno scacciato dalla sua mente l’idea di essere morto. Usimberta è incredula e, con Giulio, ascolta il racconto di Lurco, che conferma quanto detto dalla serva. Finalmente Brunetta torna in scena e, nel gaudio generale, annuncia che Fabio si è svegliato e sta bene.</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
+                        <div class="value"><p>Atto I: la nobildonna Usimberta, madre di Fabio, lamenta con l’amico Giulio la malattia del figlio che si rifiuta di mangiare dal momento in cui la madre stessa ha preso accordi per il suo matrimonio con la giovane contessa d’Altocolle. Fabio sembra preferire al cibo i costosi e inutili medicamenti prescritti, da un lato, dal medico Menarco Purgone (e procurati dallo speziale Malagevole, i cui interessi economici vengono messi in ridicolo nel suo dialogo con la serva Brunetta) e, dall’altro, del giovane medico Panfilo Neoterico, che ha studiato in Francia e che consiglia medicinali di opposta natura.</p><p><br></p><p><br></p>      <p>Atto II: la famiglia d’Altocolle concede ancora un mese di tempo prima di annullare la promessa di matrimonio: mentre Giulio e Usimberta lamentano l’imperizia e la vanità dei medici e cercano di smuovere la situazione, Brunetta raggiunge Menarco nella sua abitazione per convincerlo a prescrivere un brodo di carne da somministrare a Fabio. Il medico accetta. Poco dopo Usimberta impone a Menarco di sospendere i suoi farmaci in attesa di avere un responso da Panfilo e di collaborare con lui per guarire il figlio. Il confronto fra i due medici sui rimedi da adottare manifesta la loro opposizione, che viene reiterata di fronte a Giulio, il quale chiede ad entrambi di sintetizzare le loro proposte e, prima ancora, di formulare una diagnosi: la richiesta dà vita ad una sorta di disputa filosofica il cui impianto logico vorrebbe riprodurre quello aristotelico e il cui lessico richiama la fisica del XVI secolo, ma che risulta priva di contenuti. Al termine di essa Giulio mette in scacco entrambi i medici. Panfilo torna a studiare il caso; Menarco rinuncia a collaborare e se ne va; la serva ha così il destro per allontanare dalla casa anche lo speziale.</p><p><br></p><p><br></p>      <p>Atto III: Giulio tenta di spiegare ad Usimberta che il male di Fabio è una convinzione mentale e che potrebbe essere curato con un po’ di svago, passeggiate e soprattutto buon cibo. Intanto il cuoco si lamenta del molto lavoro e del poco compenso.</p><p><br></p><p><br></p><p>Atto IV: disperata perché apprende dalla serva che, in realtà, sono due giorni che il figlio non si nutre, Usimberta attende il parere di Panfilo, che non tarda ad arrivare: si allestisca una cucina nella camera dell’ammalato e lì il cuoco si metta all’opera, in modo che i profumi del cibo inducano Fabio a mangiare. Giulio mette subito in guardia Usimberta da una simile risoluzione con ragioni che concludono, con apparente rigore ma non senza errori di argomentazione, alla fallacia di alcune teorie della medicina e della fisica. L’esperimento infatti fallisce, in quanto l’ammalato dichiara addirittura di essere morto e di non sentire, pertanto, né odori né sapori. Giulio allora annuncia di avere in mente un rimedio alternativo alla medicina: si prepari cibo per dodici convitati e si apparecchi una mensa nella camera dell’ammalato. Mentre il cuoco si lamenta della quantità di lavoro che gli tocca e Menarco e il Malagevole promettono di calunniare la casa da cui sono stati esiliati, Giulio ingaggia Lurco, capo della compagnia dei biancovestiti, per un’impresa cui sono avvezzi: in cambio di un compenso e della cena, di cui sono sempre bisognosi, dovranno fingere di essere morti e consumare il pasto in silenzio nella camera dell’ammalato per indurlo a fare altrettanto, dal momento che anche lui si crede trapassato.<br></p><p><br></p><p><br></p>      Atto V: Brunetta racconta a Giulio il felice svolgersi del convito e la condivisione del cibo anche da parte di Fabio, addormentatosi dopo il pasto. Giulio dà ordine che la stanza del malato sia sgombrata e attende con ansia il suo risveglio per vedere se cibo e sonno hanno scacciato dalla sua mente l’idea di essere morto. Usimberta è incredula e, con Giulio, ascolta il racconto di Lurco, che conferma quanto detto dalla serva. Finalmente Brunetta torna in scena e, nel gaudio generale, annuncia che Fabio si è svegliato e sta bene.</div>
                     </td>
                 </tr>
                 <tr>
@@ -329,7 +338,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
                         <div class="value">Mezza giornata.</div>
                     </td>
                 </tr>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>L’azione si concentra sulla ricerca di una soluzione per la malattia di Fabio, figlio della protagonista Usimberta: attorno a lei, la serva Brunetta; il medico tradizionale Menarco, che si affida per i farmaci allo speziale Malagevole; il giovane medico Panfilo che ha studiato in Francia e ne viene con ritrovati innovativi; e soprattutto il fidato amico Giulio che, convinto che quello di Fabio non sia un male fisico, propone per esso una soluzione di buon senso, benché pittoresca, e mette così in scacco l’ostentata sapienza dei due medici.</p></div>
                     </td>
                 </tr>
@@ -400,31 +409,31 @@
                 <tr>
                     <td>
                         <div class="key">40. Uso di oggetti particolari</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">43. Scena con ampia presenza di personaggi</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">44. Didascalie di particolare importanza</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -447,7 +456,7 @@
                 <tr>
                     <td>
                         <div class="key">46. Altre recite nel Settecento</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -470,30 +479,30 @@
                 <tr>
                     <td>
                         <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>
                         <div class="key">49. Dati dei paratesti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">50. Osservazioni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>

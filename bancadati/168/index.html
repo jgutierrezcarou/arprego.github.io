@@ -4,22 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Archivio del Teatro Pregoldoniano</title>
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
-<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.0" />
-<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.0" /></head>
+    <link rel="canonical" href="/bancadati/168" />
+    <meta name="description" content="Atto I: Alessandro ha appena passato una notte d’amore con Violante, una cortigiana. Lo racconta a Frappella. Insieme decidono di tacere con il padre di Alessan..." />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/assets/frontend/img/favicon.ico" />
+<link rel="stylesheet" href="/assets/vendor/bootstrap4/dist/css/bootstrap.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables/media/css/dataTables.bootstrap4.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.dataTables.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/datatables.fixedheader/css/fixedHeader.bootstrap4.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/animate.css/animate.min.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/dist/leaflet.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css?v=2.2.2" />
+<link rel="stylesheet" href="/assets/frontend/css/main.css?v=2.2.2" />
+
+    <meta name="google-site-verification" content="RjXLuyYyYT1yoGaIaiIGf_utf7yukS1fZh5wM7Qm_78" />
+</head>
 <body>
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="/">
-        ArpreGo
+    <div class="navbar-brand">
+        <a class="navbar-brand-link" href="/">ArpreGo</a>
         <br />
-        <small class="navbar-brand-subtitle">Ideato e diretto da<br />Javier Gutiérrez Carou</small>
-    </a>
+        <small class="navbar-brand-subtitle">Ideato e diretto da<br /><a class="navbar-brand-link" href="https://jgutierrezcarou.github.io/" target="_blank" rel="noopener">Javier Gutiérrez Carou</a></small>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,43 +44,45 @@
                 <a class="nav-link " href="/canzoni">Archivio musicale<br /> Gherardi</a>
             </li>
                             <li class="nav-item nav-item-default">
-                    <a class="nav-link " href="/saggi">
-                        Saggi
-                    </a>
-                </li>
-                            <li class="nav-item nav-item-default">
                     <a class="nav-link " href="/links">
                         Link
                     </a>
                 </li>
+                            <li class="nav-item nav-item-default">
+                    <a class="nav-link " href="/saggi">
+                        Saggi
+                    </a>
+                </li>
                         <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    L'équipe
+                    L&#039;équipe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <div class="dropdown-item">
-                        <a href="/lequipe/1">L'équipe 1</a> -
+                        <a href="/lequipe/1">L&#039;équipe 1</a> -
                         <a href="/archivio/1">Convegno 1</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/2">L'équipe 2</a> -
+                        <a href="/lequipe/2">L&#039;équipe 2</a> -
                         <a href="/archivio/2">Convegno 2</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/3">L'équipe 3</a> -
+                        <a href="/lequipe/3">L&#039;équipe 3</a> -
                         <a href="/archivio/3">Convegno 3</a>
                     </div>
                     <div class="dropdown-item">
-                        <a href="/lequipe/4">L'équipe 4</a> -
+                        <a href="/lequipe/4">L&#039;équipe 4</a> -
                         <a href="/archivio/4">Convegno 4</a>
                     </div>
                 </div>
             </li>
+            <!--
             <li class="nav-item nav-item-tall text-lg-center ml-lg-4">
                 <a class="nav-link" target="_blank" href="https://www.cini.it/eventi/convegno-internazionale-di-studi-goldoni-avant-la-lettre-evoluzione-involuzione-trasformazione-dei-generi-teatrali-1650-1750">
                     Terzo convegno ArpreGo<br />Riprese video
                 </a>
             </li>
+            -->
         </ul>
         <form class="form-inline my-2 my-lg-0" action="/ricerca" method="get">
             <input class="form-control mr-sm-2" type="search" name="terms" value="" placeholder="Ricerca" aria-label="Search">
@@ -85,6 +92,7 @@
         </form>
     </div>
 </nav>
+
     <main id="main">
         
     <section class="profile first">
@@ -114,7 +122,8 @@
                 <tr>
                     <td width="35%">
                         <div class="key">
-                            02. Titolo                                                    </div>
+                            02. Titolo
+                                                    </div>
                         <div class="value"><em>Gostanza, commedia, La</em></div>
                     </td>
                     <td width="30%">
@@ -123,7 +132,7 @@
                     </td>
                     <td>
                         <div class="key">04. Manoscritti</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -150,11 +159,11 @@
                     </td>
                     <td width="33%">
                         <div class="key">06. Sottogenere</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                     <td width="33%">
                         <div class="key">07. Generi interni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -181,7 +190,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">10. Personaggi e maschere della commedia dell’arte o da essi derivati</div>
+                        <div class="key">10. Personaggi e maschere della commedia dell&#039;arte o da essi derivati</div>
                         <div class="value"><p>Tra i personaggi che ricordano le maschere della commedia dell’arte, spicca quello di Capitan Ramagasso che, fin dalle prime battute de <i>La Gostanza</i>, ricorda il Capitano della commedia dell’arte: un uomo spavaldo e spaccone, ma che si dimostra in realtà pavido e codardo. Inoltre, il nome ricorda il Barnagasso, altro personaggio presente in alcune commedie dell’arte. A testimonianza della sbruffoneria del Capitano, ecco le prime due battute con il quale il personaggio si presenta in scena: «Olà, olà, qualunque tu se’ se ben redato avessi la nobiltà, e ’l valore de’ miei gloriosissimi antenati, di tosto, senza pensarci un momento, di che ragionavi tu colla mia dama? E dopo sgombra Firenze, e la Toscana tutta infra tre ore. Ne pensar di tornare, finché il formidabilissimo Capitan Ramagasso terrà la protezione di questa casa»; «Io parlo con te, e parlerei così con cento, mille e milioni d’eserciti armati tutti di spada e di lancia» (I.3).</p></div>
                     </td>
                 </tr>
@@ -224,7 +233,7 @@
                 <tr>
                     <td>
                         <div class="key">17. Personaggi che parlano solo in verso</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -236,13 +245,13 @@
                 <tr>
                     <td>
                         <div class="key">19. Personaggi che parlano a soggetto</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">20. Personaggi che alternano testo scritto e improvvisazione</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +269,7 @@
                 <tr>
                     <td>
                         <div class="key">23. Uso significativo e iterativo di figure retoriche o risorse simili</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -276,7 +285,7 @@
                 <tbody>
                 <tr>
                     <td>
-                        <div class="key">24. Riassunto dell’argomento del testo</div>
+                        <div class="key">24. Riassunto dell&#039;argomento del testo</div>
                         <div class="value"><p>Atto I: Alessandro ha appena passato una notte d’amore con Violante, una cortigiana. Lo racconta a Frappella. Insieme decidono di tacere con il padre di Alessandro sull’accaduto. Ferdinando scopre Alessandro e lo rimprovera aspramente. Andati via, Violante racconta a Messer Ferdinando che in realtà ama un altro uomo ma è costretta a vedere Alessandro per volere della madre Dianora, che ne brama il denaro. Dunque consiglia a Ferdinando di far maritare il figlio per contentare entrambi. Nel frattempo Frappella, non visto, li ascolta. Pippo (Gostanza) e Anassimandro ricordano tutti gli eventi che li hanno portati lì. Il pedante è innamorato di Gostanza e l’ha aiutata nel travestimento in Pippo; la donna però pensa ancora ad Alessandro, sebbene sappia della sua tresca con Violante. Il loro piano è quello di far saltare le nozze che Ferdinando vuole per Alessandro. Ferdinando e Frappella discutono. Il servo sapeva tutto su Violante e il suo amante, e vuol anch’egli che Alessandro se ne allontani. Ferdinando allora ordina a Frappella di convincere Alessandro a sposarsi con la figlia del napoletano Minecaniello. Violante ordina a Checca di andare a porgere i suoi saluti al suo innamorato Pippo, di nascosto tanto dalla madre Dianora che da Alessandro e Ferdinando. Dianora, ex prostituta anche lei, si arrabbia con Violante perché sa quello che ha appena fatto con la Checca. Cerca di ostacolare il suo amore per Pippo, più povero di Alessandro. Le due donne si scontrano attraverso visioni differenti sull’amore. Alla fine la madre promette di aiutare la figlia.</p>  <p>Atto II: Casimiro racconta al suo famiglio la tormentata storia d’amore con Fortunata (figlia di Minecaniello). Appena arrivato a Firenze da Padova, ordina a Fabio di scoprire dove sia la ragazza. Minecaniello rivela con un lungo monologo che Fortunata in realtà non è sua figlia. Pippo convince – sfruttando il suo ascendente – Violante a far sì che ritardi le nozze di Alessandro con Fortunata, sebbene la cortigiana non sia inizialmente d’accordo. Voragine cerca inizialmente di convincere il suo padrone (il Capitan Ramagasso) a non sposare Violante, donna della quale è innamorato, poiché è una prostituta. Violante, uscita di casa, dà il benvenuto al capitano, che le ribadisce il suo amore. Con una scusa, Violante sfila un prezioso anello dalle mani dell’ingenuo e vanaglorioso capitan Ramagasso, il quale troppo tardi capisce di essere stato derubato. Minecaniello e il Capitano si rivedono sotto casa di Violante e riprendono a minacciarsi di morte, prima che quest’ultimo si allontani. Minecaniello e il suo famiglio Vespa tendono poi un agguato al Capitano e a Voragine.</p>  <p>Atto III: Alessandro vede Checca per strada e le chiede chi sia il giovane di cui è innamorato Violante. Alla fine, la serva vuota il sacco e fa il nome di Pippo (Gostanza), computista del padre. Fabio rivela le novità su Fortunata riferitegli da Vespa, servo del napoletano. Casimiro non sa ancora se la giovane sia stata costretta alle nozze o si sia veramente innamorata di un altro uomo. Minecaniello ribadisce a Vespa che il matrimonio fra la figlia e Alessandro si deve fare, nonostante i dubbi del famiglio. Nel frattempo Casimiro e Fabio organizzano e discutono della fuga con Fortunata, che dovrà avvenire quella stessa notte a causa delle imminenti nozze. Minecaniello sostiene che, una volta sposata Violante, eviterà che Alessandro ritorni in quella casa. Nel frattempo il ragazzo ascolta tutto e poi entra in scena confrontandosi con il napoletano. La discussione fra i due si accende. Messer Ferdinando vede Alessandro e lo rimprovera per essere ancora nei pressi di casa della Violante. Con Minecaniello si danno appuntamento per firmare i documenti del matrimonio insieme ad un notaio. Violante, presa dalla rabbia per essere stata insultata da Messer Ferdinando, gli rivela che in realtà Fortunata non è la figlia di Minecaniello. Ferdinando non crede a ciò, sebbene Dianora lo confermi, e ricopre di insulti le due, che a loro volta offendono l’uomo.</p>  <p>Atto IV: Alessandro si confronta con Pippo che, imbarazzato, gli racconta del corteggiamento di Violante. Pippo, preso dalla rabbia, quasi si rivela come Gostanza.  Casimiro organizza il rapimento di Fortunata, supportato dai due famigli, Fabio e Vespa (servo di Minecaniello), ed incrocia per strada Messer Ferdinando, che gli chiede se davvero Fortunata sia la figlia del napoletano. Pippo-Gostanza ha saputo che Messer Ferdinando vuol esiliare Violante e accelerare così la pratica del matrimonio fra Alessandro e Fortunata e che, per tale motivo, Alessandro vuole subito prendere in moglie Violante, così da evitare l’esilio della ragazza e il matrimonio con Fortunata. Allora Pippo, poiché sa che Violante è innamorata di lui, decide di andare a sposare la prostituta in modo tale che non possa maritarsi con Alessandro. Frappella rivela a Violante i piani di Messer Ferdinando (vuole esiliare lei e la madre e far sposare quanto prima il figlio con Fortunata). I due si accorgono che sta arrivando proprio Ferdinando. Sapendo di essere ascoltati dal vecchio, Frappella fa ribadire a Violante che Fortunata non è la figlia del napoletano, bensì la sua concubina. Ferdinando incrocia Minecaniello e gli chiede se davvero Fortunata sia sua figlia. Il vecchio dice al napoletano che è stato il Capitano Ramagasso a spargere questa voce. Frappella incrocia il Capitano e, sapendo che gli altri sono tutti in ascolto, gli fa dire a voce alta che Fortunata non è la figlia del napoletano bensì la sua concubina. Casimiro ascolta le parole del Capitano e lo insulta. Il suo arrivo, suo malgrado, permette di risolvere la diatriba fra Ferdinando e il Napoletano, che rinnovano l’impegno delle nozze. Violante scende di casa e dialoga con Pippo. Alessandro si accorge di Pippo e Violante e li spia in segreto. Preso dalla gelosia, irrompe e ferisce gravemente Pippo dinanzi a Violante ed Anassimandro.</p>  Atto V: Alessandro prova dolore e rimorso per quanto appena fatto a Pippo. Dianora e Violante escono di casa per cercare un chirurgo. Frappella le incrocia e viene a sapere dalle donne che Pippo è in realtà Gostanza. Le due gli raccontano come riuscì a fuggire dopo il sacco di Roma e perché tutti la credevano morta. Fabio racconta a Casimiro del fallito tentativo di Vespa di consegnargli in segreto Fortunata poiché fermato dalla polizia. Il piano di fuga così non ha dunque ha dunque avuto buon esito. Casimiro incontra Messer Ferdinando e Minecaniello. Il primo ha scoperto che Fortunata, figlia di Minecaniello, possedeva dei gioielli che gli appartenevano e quindi vuole far incarcerare il napoletano. Con la complicità di Casimiro, Minecaniello non viene portato al Bargello ma confessa che Fortunata non è sua figlia ma di Ferdinando. Casimiro rivela finalmente il suo amore per la ragazza e il piano che aveva escogitato per fuggire con lei. Alessandro rivela al padre che in realtà Pippo è Gostanza e che dunque ha ferito lei.<del> </del>Il Capitano vuole entrare in casa per vedere Violante e prenderla in sposa ma Dianora gli dice che è stato anticipato dal napoletano poiché Violante si è sposata con Minecaniello. Alessandro e Gostanza escono dalla casa di Violante, felici di rivedersi e scortati da Frappella. I personaggi rimasti in scena salutano dandosi la buonanotte e ribadendo i nuovi legami amorosi nati in seguito alle vicende avvenute in giornata.</div>
                     </td>
                 </tr>
@@ -301,7 +310,7 @@
                 <tr>
                     <td>
                         <div class="key">28. Elementi polemici, satirici e parodici</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
@@ -329,8 +338,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <div class="key">31. Durata totale dell’azione</div>
-                        <div class="value">Una sola giornata, dal giorno alla notte. Non ci sono salti significativi nel tempo. </div>
+                        <div class="key">31. Durata totale dell&#039;azione</div>
+                        <div class="value">Una sola giornata, dal giorno alla notte. Non ci sono salti significativi nel tempo.</div>
                     </td>
                 </tr>
                 <tr>
@@ -382,7 +391,7 @@
                         <div class="value">Sì</div>
                     </td>
                     <td>
-                        <div class="key">39. Circostanze particolari dello sviluppo dell’argomento</div>
+                        <div class="key">39. Circostanze particolari dello sviluppo dell&#039;argomento</div>
                         <div class="value"><p>La trama si sviluppa seguendo le storie di vari personaggi che, alla fine – pur attraversando vari inganni, malintesi e peripezie –, riescono a concludere felicemente le loro intrecciate vicende amorose.</p></div>
                     </td>
                 </tr>
@@ -406,13 +415,13 @@
                 <tr>
                     <td>
                         <div class="key">41. Uso di effetti sonori e musicali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">42. Uso di effetti speciali</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
@@ -464,23 +473,23 @@
                 <tr>
                     <td>
                         <div class="key">47. Riferimenti, diretti o indiretti, al testo o al suo autore presenti negli scritti o nelle opere di Goldoni</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="key">48. Aspetti del testo particolarmente rilevanti in rapporto con il teatro goldoniano.</div>
-                        <div class="value">-</div>
+                        <div class="value"><p>-</p></div>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <!-- section 10-->
-            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse">
+            <table class="data-table data-table-profile page-break" summary="X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse">
                 <thead>
                 <tr>
-                    <th scope="col">X. Altri eventuali dati d’importanza presenti nei paratesti proemiali e altre osservazioni d’interesse</th>
+                    <th scope="col">X. Altri eventuali dati d&#039;importanza presenti nei paratesti proemiali e altre osservazioni d&#039;interesse</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -541,18 +550,19 @@
                             </div>
         </div>
     </block>
-</footer>    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.0"></script>
-<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.0"></script>
-<script src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.0"></script>
-<script defer src="/assets/frontend/js/main.js?v=2.2.0"></script>
+</footer>
+    <script defer src="/assets/vendor/leaflet/dist/leaflet.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/jquery/dist/jquery.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/bootstrap4/dist/js/bootstrap.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables/media/js/dataTables.bootstrap4.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/dataTables.fixedHeader.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.fixedheader/js/fixedHeader.bootstrap4.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/mark.js/dist/jquery.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/datatables.mark.js/dist/datatables.mark.min.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.stemmer.support.js?v=2.2.2"></script>
+<script defer src="/assets/vendor/lunr.js/lunr.it.js?v=2.2.2"></script>
+<script defer src="/assets/frontend/js/main.js?v=2.2.2"></script>
 </body>
 </html>
