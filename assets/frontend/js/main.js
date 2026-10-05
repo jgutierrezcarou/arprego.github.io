@@ -221,10 +221,6 @@ var Main =
         var options = {
             "autoWidth": false,
             "info":      false,
-            "mark":      {
-                className: 'highlight',
-                exclude: ['.no-mark']
-            },
             "order":     [],
             "paging":    false,
             "sort":      true
@@ -295,17 +291,13 @@ var Main =
 
                 if(term && Main.searchIndex)
                 {
-                    var query = Main.buildQuery(term);
-                    var results = [];
-                    try { results = Main.searchIndex.search(query); } catch(e) {}
-
                     Main.searchIds[sectionAttr] = new Set();
-                    results.forEach(function(r)
+                    Main.lookup(term).forEach(function(ref)
                     {
-                        var sep = r.ref.indexOf(':');
-                        if(r.ref.substring(0, sep) === sectionAttr)
+                        var sep = ref.indexOf(':');
+                        if(ref.substring(0, sep) === sectionAttr)
                         {
-                            Main.searchIds[sectionAttr].add(r.ref.substring(sep + 1));
+                            Main.searchIds[sectionAttr].add(ref.substring(sep + 1));
                         }
                     });
 
@@ -366,7 +358,8 @@ var Main =
 
         table.on('draw.dt', function()
         {
-            var term = Main.currentTerms;
+            // Las tablas sin sección filtran con la búsqueda nativa de DataTables en vez de con lunr
+            var term = Main.currentTerms || instance.search();
 
             table.closest('.container').find('h1 .count').text(instance.rows({ filter: 'applied' }).count());
 
@@ -411,15 +404,11 @@ var Main =
                 if(section) Main.searchIds[section] = new Set();
             });
 
-            var query = Main.buildQuery(terms);
-            var results = [];
-            try { results = Main.searchIndex.search(query); } catch(e) { console.error('lunr search error:', e, query); }
-
-            results.forEach(function(r)
+            Main.lookup(terms).forEach(function(ref)
             {
-                var sep = r.ref.indexOf(':');
-                var section = r.ref.substring(0, sep);
-                var id = r.ref.substring(sep + 1);
+                var sep = ref.indexOf(':');
+                var section = ref.substring(0, sep);
+                var id = ref.substring(sep + 1);
                 if(Main.searchIds[section]) Main.searchIds[section].add(id);
             });
         }
@@ -457,50 +446,67 @@ var Main =
         $('.zero-results').toggle(terms.length > 0 && total === 0);
     },
 
-    termVariants: function(terms)
+    // Variantes ortográficas de una palabra (i/j, u/v), incluida la propia palabra
+    termVariants: function(term)
     {
         var pairs = [['i', 'j'], ['j', 'i'], ['u', 'v'], ['v', 'u']];
-        var seen = {};
-        var result = [];
+        var group = [term];
 
-        terms.toLowerCase().split(/\s+/)
-            .forEach(function(term)
+        pairs.forEach(function(pair)
+        {
+            var current = term;
+            while(current.indexOf(pair[0]) !== -1)
             {
-                var group = [term];
+                current = current.replace(pair[0], pair[1]);
+                if(group.indexOf(current) === -1) group.push(current);
+            }
+        });
 
-                pairs.forEach(function(pair)
-                {
-                    var current = term;
-                    while(current.indexOf(pair[0]) !== -1)
-                    {
-                        current = current.replace(pair[0], pair[1]);
-                        if(group.indexOf(current) === -1) group.push(current);
-                    }
-                });
-
-                group.forEach(function(variant)
-                {
-                    if(!seen[variant])
-                    {
-                        seen[variant] = true;
-                        result.push(variant);
-                    }
-                });
-            });
-
-        return result;
+        return group;
     },
 
+    // Devuelve una consulta por palabra buscada, con sus variantes ortográficas como alternativas.
     // Las consultas con comodín ('*') desactivan el pipeline de lunr (no se aplica el stemmer),
     // así que hay que stemizar el término a mano para comparar con la misma forma que hay en el índice.
-    buildQuery: function(terms)
+    // Las palabras vacías (artículos, preposiciones...) no se indexan, así que se ignoran salvo que no haya otras.
+    // Las formadas sólo por signos ('-', '?') se quedan sin texto tras el pipeline y se descartan siempre.
+    buildQueries: function(terms)
     {
-        var variants = Main.termVariants(terms);
+        var indexing = new lunr.Pipeline();
+        indexing.add(lunr.it.trimmer, lunr.it.stopWordFilter, lunr.it.stemmer);
 
-        return variants.map(function(v)
+        // Mismo separador que usa lunr al indexar (espacios y guiones): '1747-1748' son dos palabras
+        var words = terms.toLowerCase().split(lunr.tokenizer.separator);
+        var indexed = words.filter(function(word) { return indexing.runString(word).join('') !== ''; });
+
+        return (indexed.length ? indexed : words).map(function(word)
         {
-            return Main.searchIndex.pipeline.runString(v).map(function(t) { return t + '*'; }).join(' ');
-        }).join(' ');
+            return Main.termVariants(word).map(function(variant)
+            {
+                return Main.searchIndex.pipeline.runString(variant)
+                    .filter(function(token) { return token !== ''; })
+                    .map(function(token) { return token + '*'; })
+                    .join(' ');
+            }).join(' ').trim();
+        }).filter(function(query) { return query !== ''; });
+    },
+
+    // Referencias ('sección:id') de los documentos que contienen todas las palabras buscadas
+    lookup: function(terms)
+    {
+        var refs = null;
+
+        Main.buildQueries(terms).forEach(function(query)
+        {
+            var found = new Set();
+
+            try { Main.searchIndex.search(query).forEach(function(result) { found.add(result.ref); }); }
+            catch(e) { console.error('lunr search error:', e, query); }
+
+            refs = refs === null ? found : new Set(Array.from(refs).filter(function(ref) { return found.has(ref); }));
+        });
+
+        return refs === null ? [] : Array.from(refs);
     }
 };
 
